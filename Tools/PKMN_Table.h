@@ -7,7 +7,7 @@
 #include <map>
 #include <fstream>
 
-/** \brief Get the keys of a map dictionary ceci est une modification
+/** \brief Get the keys of a map dictionary a tu vois quelquechose ? 
  *
  * \param T = type of keys
  * \param  T2 = type of values
