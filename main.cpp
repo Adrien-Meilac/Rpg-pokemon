@@ -1,10 +1,11 @@
-#include "Tools/PKMN_TableParser.h"
+#include "Tools/PKMN_Table.h"
 #include <iostream>
 
 using namespace std;
 
 int main()
 {
-    cout << "Hello World";
+    PKMN_Table t("TypeChart.txt");
+    cout << t.getValue("Ghost", "Weaknesses");
     return 0;
 }

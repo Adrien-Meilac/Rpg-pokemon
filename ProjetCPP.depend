@@ -1,11 +1,29 @@
 # depslib dependency file v1.0
-1511943261 source:c:\users\adrie\documents\github\rpg-pokemon\main.cpp
-	"Tools/PKMN_Tuple.h"
+1511951369 source:c:\users\adrie\documents\github\rpg-pokemon\main.cpp
+	"Tools/PKMN_Table.h"
 	<iostream>
 
-1511949807 c:\users\adrie\documents\github\rpg-pokemon\tools\pkmn_tuple.h
-	<string>
+1511952213 c:\users\adrie\documents\github\rpg-pokemon\tools\pkmn_tuple.h
 
-1511950032 source:c:\users\adrie\documents\github\rpg-pokemon\tools\pkmn_tuple.cpp
+1511952394 source:c:\users\adrie\documents\github\rpg-pokemon\tools\pkmn_tuple.cpp
 	"PKMN_Tuple.h"
+
+1511951125 source:c:\users\adrie\documents\github\rpg-pokemon\tools\pkmn_tableparser.cpp
+	"PKMN_TableParser.h"
+
+1511950262 c:\users\adrie\documents\github\rpg-pokemon\tools\pkmn_tableparser.h
+	"PKMN_Tuple.h"
+	<vector>
+	<map>
+	<fstream>
+
+1511952236 c:\users\adrie\documents\github\rpg-pokemon\tools\pkmn_table.h
+	<string>
+	"PKMN_Tuple.h"
+	<vector>
+	<map>
+	<fstream>
+
+1511952438 source:c:\users\adrie\documents\github\rpg-pokemon\tools\pkmn_table.cpp
+	"PKMN_Table.h"
 

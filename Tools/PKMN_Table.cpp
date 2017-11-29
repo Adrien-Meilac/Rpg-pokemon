@@ -1,4 +1,4 @@
-#include "PKMN_TableParser.h"
+#include "PKMN_Table.h"
 
 template<class T, class T2>
 std::vector<T> map_keys(std::map<T,T2> dictionary)
@@ -65,20 +65,19 @@ PKMN_Table::PKMN_Table(std::string FilePath)
             if(firstLine)
             {
                 m_headerColumn = dic[key];
-                firstLine=false;
+                firstLine = false;
             }
             else
             {
                 m_headerLine.push_back(key);
                 std::vector<std::string> values = dic[key];
-                std::vector<PKMN_Tuple> tupleKeys;
+                std::vector<PKMN_Tuple<std::string> > tupleKeys;
                 const unsigned int length = values.size();
                 for(unsigned int i = 0; i < length; i++)
                 {
-                    tupleKeys.push_back(PKMN_Tuple(key, m_headerColumn[i]));
-//                    m_table[tupleKeys[i]] = values[i];
+                    tupleKeys.push_back(PKMN_Tuple<std::string>(key, m_headerColumn[i]));
                 }
-                PKMN_Tuple t;
+                PKMN_Tuple<std::string> t;
                 for(unsigned int i = 0; i < length; i++)
                 {
                     t = tupleKeys[i];
@@ -96,7 +95,7 @@ PKMN_Table::~PKMN_Table()
 
 std::string PKMN_Table::getValue(std::string nameLine, std::string nameColumn)
 {
-    PKMN_Tuple t(nameLine, nameColumn);
+    PKMN_Tuple<std::string> t(nameLine, nameColumn);
     return m_table[t];
 }
 

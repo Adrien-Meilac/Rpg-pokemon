@@ -1,6 +1,7 @@
 #ifndef PKMN_TABLEPARSER_H_INCLUDED
 #define PKMN_TABLEPARSER_H_INCLUDED
 
+#include <string>
 #include "PKMN_Tuple.h"
 #include <vector>
 #include <map>
@@ -48,7 +49,7 @@ private:
 
     std::vector<std::string> m_headerColumn; /* Name of column, directly accessible without searching them in keys */
     std::vector<std::string> m_headerLine; /* Give name of line, directly accessible without searching them */
-    std::map<PKMN_Tuple, std::string>  m_table; /* dictionnary[key] = value with key = (x, y) */
+    std::map<PKMN_Tuple<std::string>, std::string>  m_table; /* dictionnary[key] = value with key = (x, y) */
 };
 
 
