@@ -4,7 +4,7 @@
 #include "PKMN_Tuple.h"
 #include <vector>
 #include <map>
-
+#include <fstream>
 
 /** \brief Get the keys of a map dictionary
  *
@@ -28,28 +28,28 @@ std::map<std::string, std::vector<std::string> > splitLine(std::string line, con
 /** \brief Extract a table from a file path, allow data to be accessed by column name and row name
  */
 
-//class PKMN_Table
-//{
-//public:
-//
-//    Table();
-//    Table(std::string FilePath);
-//
-//    //std::vector<unsigned int> getDimension();
-//    void transpose();
-////    std::vector<std::string> getLineValues(std::string nameLine);
-////    std::vector<std::string> getColumnValues(std::string nomColumn);
-////    std::vector<std::string> getLineNames(std::string nameLine);
-////    std::vector<std::string> getColumnNames(std::string nomColumn);
-////    std::string getValue(std::string nameColumn, std::string nameLine);
-//    virtual ~Table();
-//
-//private:
-//
-//    std::vector<std::string> m_headerColumn; /* Name of column, directly accessible without searching them in keys */
-//    std::vector<std::string> m_headerLine; /* Give name of line, directly accessible without searching them */
-//    std::map<PKMN_Tuple, std::string>  m_table; /* dictionnary[key] = value with key = (x, y) */
-//};
+class PKMN_Table
+{
+public:
+
+    PKMN_Table();
+    PKMN_Table(std::string FilePath);
+
+    //std::vector<unsigned int> getDimension();
+    //void transpose();
+//    std::vector<std::string> getLineValues(std::string nameLine);
+//    std::vector<std::string> getColumnValues(std::string nomColumn);
+//    std::vector<std::string> getLineNames(std::string nameLine);
+//    std::vector<std::string> getColumnNames(std::string nomColumn);
+//    std::string getValue(std::string nameColumn, std::string nameLine);
+    virtual ~PKMN_Table();
+
+private:
+
+    std::vector<std::string> m_headerColumn; /* Name of column, directly accessible without searching them in keys */
+    std::vector<std::string> m_headerLine; /* Give name of line, directly accessible without searching them */
+    std::map<PKMN_Tuple, std::string>  m_table; /* dictionnary[key] = value with key = (x, y) */
+};
 
 
 #endif // PKMN_TABLEPARSER_H_INCLUDED

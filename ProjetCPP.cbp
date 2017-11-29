@@ -32,12 +32,10 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="PKMN_LevelingRate.cpp" />
-		<Unit filename="PKMN_LevelingRate.h" />
-		<Unit filename="PKMN_Moves.cpp" />
-		<Unit filename="PKMN_Moves.h" />
-		<Unit filename="PKMN_Type.cpp" />
-		<Unit filename="PKMN_Type.h" />
+		<Unit filename="Tools/PKMN_TableParser.cpp" />
+		<Unit filename="Tools/PKMN_TableParser.h" />
+		<Unit filename="Tools/PKMN_Tuple.cpp" />
+		<Unit filename="Tools/PKMN_Tuple.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />

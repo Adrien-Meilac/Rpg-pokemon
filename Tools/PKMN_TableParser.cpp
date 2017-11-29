@@ -14,7 +14,7 @@ std::vector<T> map_keys(std::map<T,T2> dictionary)
 std::map<std::string, std::vector<std::string> > splitLine(std::string line, const char sep)
 {
 
-    std::map<std::string, std::vector<std::string> > L;
+    std::map<std::string, std::vector<std::string> > dic;
     std::string key;
     const unsigned int length = line.size();
     bool firstWord(true);
@@ -31,60 +31,61 @@ std::map<std::string, std::vector<std::string> > splitLine(std::string line, con
             {
                 key = word;
                 std::vector<std::string> value;
-                L[word] = value;
+                dic[word] = value;
                 firstWord = false;
             }
             else
             {
-                L[key].push_back(word);
+                dic[key].push_back(word);
             }
             newWordIndice = i + 1;
         }
     }
-    return L;
+    return dic;
 }
 
-//Table::Table()
-//{
-//
-//}
-//
-//Table::Table(std::string FilePath)
-//{
-//    std::ifstream flux(FilePath.c_str());
-//    if(flux)
-//    {
-//        std::string line;
-//        std::map<std::string, std::vector<std::string> > dic;
-//        bool firstLine(true);
-//        while(getline(flux, line))
-//        {
-//            dic = splitLine(line);
-//            std::vector<std::string> keys(map_keys(dic));
-//            std::string key(keys[0])
-//            if(firstLine)
-//            {
-//                m_headerColumn = dic[key];
-//                firstLine=false;
-//            }
-//            else
-//            {
-//                m_headerLine.push_back(key);
-//                const unsigned int length = dic[key].size();
-//                for (unsigned int i=0; i < length; i++)
-//                {
-//                    PKMN_Tuple Tuple(key, m_headerColumn[i]);
-//                    m_table[Tuple] = dic[key][i];
-//                }
-//            }
-//        }
-//    }
-//}
-//
-//virtual PKMN_Table::~Table()
-//{
-//
-//}
+PKMN_Table::PKMN_Table()
+{
+
+}
+
+PKMN_Table::PKMN_Table(std::string FilePath)
+{
+    std::ifstream flux(FilePath.c_str());
+    if(flux)
+    {
+        std::string line;
+        std::map<std::string, std::vector<std::string> > dic;
+        bool firstLine(true);
+        while(getline(flux, line))
+        {
+            dic = splitLine(line);
+            std::vector<std::string> keys(map_keys(dic));
+            std::string key(keys[0]);
+            if(firstLine)
+            {
+                m_headerColumn = dic[key];
+                firstLine=false;
+            }
+            else
+            {
+                m_headerLine.push_back(key);
+                const unsigned int length = dic[key].size();
+                for (unsigned int i=0; i < length; i++)
+                {
+                    PKMN_Tuple Tuple(key, m_headerColumn[i]);
+                    m_table[Tuple] = dic[key][i];
+                }
+            }
+        }
+    }
+}
+
+
+PKMN_Table::~PKMN_Table()
+{
+
+}
 
 //
 //void Table::transpose() //inverser les éléments à chaque fois qu'on voit un tuple avec une copie
