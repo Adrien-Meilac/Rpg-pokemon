@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1511943261 source:c:\users\adrie\documents\github\rpg-pokemon\main.cpp
+	"Tools/PKMN_Tuple.h"
+	<iostream>
+
+1511943467 c:\users\adrie\documents\github\rpg-pokemon\tools\pkmn_tuple.h
+	<string>
+
+1511943462 source:c:\users\adrie\documents\github\rpg-pokemon\tools\pkmn_tuple.cpp
+	"PKMN_Tuple.h"
+

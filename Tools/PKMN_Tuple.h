@@ -5,16 +5,17 @@
 
 class PKMN_Tuple
 {
-    public:
+public:
     PKMN_Tuple();
     PKMN_Tuple(PKMN_Tuple const& Tuple);
     PKMN_Tuple(std::string x, std::string y);
     PKMN_Tuple& operator=(PKMN_Tuple const&);
     virtual ~PKMN_Tuple();
+
     std::string getx() const;
     std::string gety() const;
 
-    private:
+private:
     std::string m_x;
     std::string m_y;
 };
