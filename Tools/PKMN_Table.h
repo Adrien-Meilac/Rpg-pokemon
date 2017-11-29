@@ -42,7 +42,7 @@ public:
 //    std::vector<std::string> getColumnValues(std::string nomColumn);
 //    std::vector<std::string> getLineNames(std::string nameLine);
 //    std::vector<std::string> getColumnNames(std::string nomColumn);
-    std::string getValue(std::string nameLine, std::string nameColumn);
+    //std::string getValue(std::string nameLine, std::string nameColumn);
     virtual ~PKMN_Table();
 
 private:

@@ -1,8 +1,9 @@
 #ifndef TUPLE_H_INCLUDED
 #define TUPLE_H_INCLUDED
 
-template<class T>
-class PKMN_Tuple /// PKMN_Tuple objects are a couple of 2 variables
+#include <string>
+
+template<class T> class PKMN_Tuple /// PKMN_Tuple objects are a couple of 2 variables
 {
 public:
 
@@ -41,5 +42,8 @@ template<class T>
 bool operator>=(PKMN_Tuple<T> const& Tuple1, PKMN_Tuple<T> const& Tuple2);
 template<class T>
 bool operator!=(PKMN_Tuple<T> const& Tuple1, PKMN_Tuple<T> const& Tuple2);
+
+template class PKMN_Tuple<std::string>;
+template class PKMN_Tuple<int>;
 
 #endif // TUPLE_H_INCLUDED

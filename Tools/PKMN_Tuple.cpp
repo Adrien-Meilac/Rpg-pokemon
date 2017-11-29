@@ -86,5 +86,3 @@ bool operator!=(PKMN_Tuple<T> const& Tuple1, PKMN_Tuple<T> const& Tuple2)
     return !(Tuple1 == Tuple2);
 }
 
-#include <string>
-template class PKMN_Tuple<std::string>;
