@@ -70,21 +70,34 @@ PKMN_Table::PKMN_Table(std::string FilePath)
             else
             {
                 m_headerLine.push_back(key);
-                const unsigned int length = dic[key].size();
-                for (unsigned int i=0; i < length; i++)
+                std::vector<std::string> values = dic[key];
+                std::vector<PKMN_Tuple> tupleKeys;
+                const unsigned int length = values.size();
+                for(unsigned int i = 0; i < length; i++)
                 {
-                    PKMN_Tuple Tuple(key, m_headerColumn[i]);
-                    m_table[Tuple] = dic[key][i];
+                    tupleKeys.push_back(PKMN_Tuple(key, m_headerColumn[i]));
+//                    m_table[tupleKeys[i]] = values[i];
+                }
+                PKMN_Tuple t;
+                for(unsigned int i = 0; i < length; i++)
+                {
+                    t = tupleKeys[i];
+                    m_table[t] = values[i];
                 }
             }
         }
     }
 }
 
-
 PKMN_Table::~PKMN_Table()
 {
 
+}
+
+std::string PKMN_Table::getValue(std::string nameLine, std::string nameColumn)
+{
+    PKMN_Tuple t(nameLine, nameColumn);
+    return m_table[t];
 }
 
 //

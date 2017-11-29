@@ -21,5 +21,10 @@ private:
 };
 
 bool operator==(PKMN_Tuple const& Tuple1, PKMN_Tuple const& Tuple2);
+bool operator<(PKMN_Tuple const& Tuple1, PKMN_Tuple const& Tuple2);
+bool operator>(PKMN_Tuple const& Tuple1, PKMN_Tuple const& Tuple2);
+bool operator<=(PKMN_Tuple const& Tuple1, PKMN_Tuple const& Tuple2);
+bool operator>=(PKMN_Tuple const& Tuple1, PKMN_Tuple const& Tuple2);
+bool operator!=(PKMN_Tuple const& Tuple1, PKMN_Tuple const& Tuple2);
 
 #endif // TUPLE_H_INCLUDED
