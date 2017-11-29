@@ -1,40 +1,55 @@
 #ifndef PKMN_TABLEPARSER_H_INCLUDED
 #define PKMN_TABLEPARSER_H_INCLUDED
 
+#include "PKMN_Tuple.h"
 #include <vector>
 #include <map>
-#include "PKMN_Tuple.h"
+
+
+/** \brief Get the keys of a map dictionary
+ *
+ * \param T = type of keys
+ * \param  T2 = type of values
+ * \return  std::vector<T> = returns list of keys
+ *
+ */
+template<class T, class T2> std::vector<T> map_keys(std::map<T,T2> dictionary);
 
 
 /** \brief Returns a map with the first word of the line as a key and the rest of the line in a vector as a value, words being separated by char sep.
  *
- * \param line std::string
- * \param const char sep = ';'
- * \return std::map<std::string, std::vector<std::string>>
+ * \param line std::string = sentence to cut
+ * \param const char sep = ';' = split character
+ * \return std::map<std::string, std::vector<std::string>> dictionary [ first value ] = list of the remaining line splitted
  *
  */
-std::map<std::string, std::vector<std::string> > splitLine(std::string line, const char sep = ';')
+std::map<std::string, std::vector<std::string> > splitLine(std::string line, const char sep = ';');
 
-class Table
-{
-public:
+/** \brief Extract a table from a file path, allow data to be accessed by column name and row name
+ */
 
-    Table();
-    Table(std::string FilePath);
-    std::vector<std::vector<std::string> > getTable();
-    std::vector<unsigned int> getDimension();
-    void transpose();
-    std::vector<std::string> getLine(std::string nameLine);
-    std::vector<std::string> getColumn(std::string nomColumn);
-    std::string getValue(std::string nameColumn, std::string nameLine);
-    virtual ~Table();
-
-private:
-
-    std::vector<std::string> m_headerColumn;
-    std::vector<std::string> m_headerLine;
-    std::map<PKMN_Tuple, std::string>  m_table;
-};
+//class PKMN_Table
+//{
+//public:
+//
+//    Table();
+//    Table(std::string FilePath);
+//
+//    //std::vector<unsigned int> getDimension();
+//    void transpose();
+////    std::vector<std::string> getLineValues(std::string nameLine);
+////    std::vector<std::string> getColumnValues(std::string nomColumn);
+////    std::vector<std::string> getLineNames(std::string nameLine);
+////    std::vector<std::string> getColumnNames(std::string nomColumn);
+////    std::string getValue(std::string nameColumn, std::string nameLine);
+//    virtual ~Table();
+//
+//private:
+//
+//    std::vector<std::string> m_headerColumn; /* Name of column, directly accessible without searching them in keys */
+//    std::vector<std::string> m_headerLine; /* Give name of line, directly accessible without searching them */
+//    std::map<PKMN_Tuple, std::string>  m_table; /* dictionnary[key] = value with key = (x, y) */
+//};
 
 
 #endif // PKMN_TABLEPARSER_H_INCLUDED
