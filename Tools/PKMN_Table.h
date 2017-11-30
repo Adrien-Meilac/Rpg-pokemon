@@ -5,6 +5,7 @@
 #include "PKMN_Tuple.h"
 #include <vector>
 #include <map>
+#include <iostream>
 #include <fstream>
 
 /** \brief Get the keys of a map dictionary
@@ -35,21 +36,24 @@ public:
 
     PKMN_Table();
     PKMN_Table(std::string FilePath);
-
+    std::vector<int> dimension() const;
     //std::vector<unsigned int> getDimension();
     //void transpose();
 //    std::vector<std::string> getLineValues(std::string nameLine);
 //    std::vector<std::string> getColumnValues(std::string nomColumn);
-//    std::vector<std::string> getLineNames(std::string nameLine);
-//    std::vector<std::string> getColumnNames(std::string nomColumn);
+    std::vector<std::string> getLineNames(std::string nameLine) const;
+    std::vector<std::string> getColumnNames(std::string nomColumn) const;
+    std::string operator()(std::string lineName, std::string columnName) const;
     //std::string getValue(std::string nameLine, std::string nameColumn);
     virtual ~PKMN_Table();
 
 private:
 
+    friend std::ofstream& operator<<(std::ofstream &flux, PKMN_Table const& Table);
+
     std::vector<std::string> m_headerColumn; /* Name of column, directly accessible without searching them in keys */
     std::vector<std::string> m_headerLine; /* Give name of line, directly accessible without searching them */
-    std::map<PKMN_Tuple<std::string>, std::string>  m_table; /* dictionnary[key] = value with key = (x, y) */
+    std::map<PKMN_Tuple, std::string>  m_table; /* dictionnary[key] = value with key = (x, y) */
 };
 
 

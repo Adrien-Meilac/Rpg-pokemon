@@ -71,11 +71,11 @@ PKMN_Table::PKMN_Table(std::string FilePath)
             {
                 m_headerLine.push_back(key);
                 std::vector<std::string> values = dic[key];
-                std::vector<PKMN_Tuple<std::string> > tupleKeys;
+                std::vector<PKMN_Tuple> tupleKeys;
                 const unsigned int length = values.size();
                 for(unsigned int i = 0; i < length; i++)
                 {
-                    m_table.insert(std::pair<PKMN_Tuple<std::string>, std::string>(PKMN_Tuple<std::string>(key, m_headerColumn[i]), values[i]));
+                    m_table.insert(std::pair<PKMN_Tuple, std::string>(PKMN_Tuple(key, m_headerColumn[i]), values[i]));
                 }
             }
         }
@@ -85,6 +85,45 @@ PKMN_Table::PKMN_Table(std::string FilePath)
 PKMN_Table::~PKMN_Table()
 {
 
+}
+
+std::vector<int> PKMN_Table::dimension() const
+{
+    std::vector<int> dim(2);
+    dim[0] = m_headerLine.size();
+    dim[1] = m_headerColumn.size();
+    return dim;
+}
+
+std::vector<std::string> PKMN_Table::getLineNames(std::string nameLine) const
+{
+    return m_headerLine;
+}
+
+std::vector<std::string> PKMN_Table::getColumnNames(std::string nomColumn) const
+{
+    return m_headerColumn;
+}
+
+std::ofstream& operator<<(std::ofstream &flux, PKMN_Table const& Table)
+{
+    std::vector<int>  dim = Table.dimension();
+    for(int i = 0; i < dim[0] - 1; i++)
+    {
+        for(int j = 0; j < dim[1] - 1; j++)
+        {
+            flux << Table(Table.m_headerLine[i], Table.m_headerColumn[j]) << "\t";
+        }
+        flux << Table(Table.m_headerLine[i], Table.m_headerColumn[dim[1] - 1]) << "\n";
+    }
+    flux << Table(Table.m_headerLine[dim[0] - 1], Table.m_headerColumn[dim[1] - 1]);
+    return flux;
+}
+
+std::string PKMN_Table::operator()(std::string lineName, std::string columnName) const
+{
+    PKMN_Tuple t(lineName, columnName);
+    return m_table[t];
 }
 
 //std::string PKMN_Table::getValue(std::string nameLine, std::string nameColumn)
