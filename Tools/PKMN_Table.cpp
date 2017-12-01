@@ -131,7 +131,7 @@ std::ofstream& operator<<(std::ofstream &flux, PKMN_Table const& Table)
 
 std::string PKMN_Table::operator()(std::string lineName, std::string columnName) const
 {
-    return m_table[PKMN_Tuple(lineName, columnName)];
+    return m_table.at(PKMN_Tuple(lineName, columnName));
 }
 
 std::vector<std::string> PKMN_Table::getLineValues(std::string nameLine) const
@@ -140,7 +140,7 @@ std::vector<std::string> PKMN_Table::getLineValues(std::string nameLine) const
     const int length = m_headerColumn.size();
     for(int i = 0; i <= length; i++)
     {
-        line.push_back(m_table[PKMN_Tuple(nameLine,m_headerColumn[i])]);
+        line.push_back(m_table.at(PKMN_Tuple(nameLine,m_headerColumn[i])));
     }
     return line;
 }
@@ -151,7 +151,7 @@ std::vector<std::string> PKMN_Table::getColumnValues(std::string nameColumn) con
     const int length = m_headerLine.size();
     for(int j = 0; j <= length; j++)
     {
-        column.push_back(m_table[PKMN_Tuple(m_headerLine[j],nameColumn)]);
+        column.push_back(m_table.at(PKMN_Tuple(m_headerLine[j],nameColumn)));
     }
     return column;
 }
