@@ -41,17 +41,17 @@ public:
 
     PKMN_Table();
     PKMN_Table(std::string FilePath);
-    std::vector<int> dimension() const;
-    std::vector<std::string> getLineValues(std::string nameLine) const;
-    std::vector<std::string> getColumnValues(std::string nomColumn) const;
-    std::vector<std::string> getLineNames(std::string nameLine) const;
-    std::vector<std::string> getColumnNames(std::string nomColumn) const;
-    std::string operator()(std::string lineName, std::string columnName) const;
+//    std::vector<int> dimension() const;
+//    std::vector<std::string> getLineValues(std::string nameLine) const;
+//    std::vector<std::string> getColumnValues(std::string nomColumn) const;
+//    std::vector<std::string> getLineNames(std::string nameLine) const;
+//    std::vector<std::string> getColumnNames(std::string nomColumn) const;
+//    std::string operator()(std::string lineName, std::string columnName) const;
     virtual ~PKMN_Table();
 
 private:
 
-    friend std::ostream& operator<<(std::ostream &flux, PKMN_Table const& Table);
+//    friend std::ostream& operator<<(std::ostream &flux, PKMN_Table const& Table);
 
     std::vector<std::string> m_headerColumn; /* Name of column, directly accessible without searching them in keys */
     std::vector<std::string> m_headerLine; /* Give name of line, directly accessible without searching them */

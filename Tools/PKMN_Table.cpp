@@ -68,71 +68,71 @@ PKMN_Table::~PKMN_Table()
 
 }
 
-std::vector<int> PKMN_Table::dimension() const
-{
-    std::vector<int> dim(2);
-    dim[0] = m_headerLine.size();
-    dim[1] = m_headerColumn.size();
-    return dim;
-}
-
-std::vector<std::string> PKMN_Table::getLineNames(std::string nameLine) const
-{
-    return m_headerLine;
-}
-
-std::vector<std::string> PKMN_Table::getColumnNames(std::string nomColumn) const
-{
-    return m_headerColumn;
-}
-
-std::ostream& operator<<(std::ostream &flux, PKMN_Table const& Table)
-{
-    std::vector<int>  dim = Table.dimension();
-    for(int i = 0; i <= dim[0]; i++)
-    {
-        for(int j = 0; j <= dim[1]; j++)
-        {
-            flux << Table(Table.m_headerLine[i], Table.m_headerColumn[j]);
-            if(j == dim[1] - 1)
-            {
-                if(i != dim[0] - 1)
-                {
-                    flux << "\n";
-                }
-            }
-            else
-            {
-                flux << "\t";
-            }
-        }
-    }
-    return flux;
-}
-
-std::string PKMN_Table::operator()(std::string lineName, std::string columnName) const
-{
-    return m_table.at(PKMN_Tuple(lineName, columnName));
-}
-
-std::vector<std::string> PKMN_Table::getLineValues(std::string nameLine) const
-{
-    std::vector<std::string> line;
-    const int length = m_headerColumn.size();
-    for(int i = 0; i <= length; i++)
-    {
-        line.push_back(m_table.at(PKMN_Tuple(nameLine,m_headerColumn[i])));
-    }
-    return line;
-}
-
-std::vector<std::string> PKMN_Table::getColumnValues(std::string nameColumn) const
-{
-    std::vector<std::string> column;
-    const int length = m_headerLine.size();
-    for(int j = 0; j <= length; j++)
-    {
-        column.push_back(m_table.at(PKMN_Tuple(m_headerLine[j],nameColumn)));
-    }
-    return column;
-}
+//std::vector<int> PKMN_Table::dimension() const
+//{
+//    std::vector<int> dim(2);
+//    dim[0] = m_headerLine.size();
+//    dim[1] = m_headerColumn.size();
+//    return dim;
+//}
+//
+//std::vector<std::string> PKMN_Table::getLineNames(std::string nameLine) const
+//{
+//    return m_headerLine;
+//}
+//
+//std::vector<std::string> PKMN_Table::getColumnNames(std::string nomColumn) const
+//{
+//    return m_headerColumn;
+//}
+//
+//std::ostream& operator<<(std::ostream &flux, PKMN_Table const& Table)
+//{
+//    std::vector<int>  dim = Table.dimension();
+//    for(int i = 0; i <= dim[0]; i++)
+//    {
+//        for(int j = 0; j <= dim[1]; j++)
+//        {
+//            flux << Table(Table.m_headerLine[i], Table.m_headerColumn[j]);
+//            if(j == dim[1] - 1)
+//            {
+//                if(i != dim[0] - 1)
+//                {
+//                    flux << "\n";
+//                }
+//            }
+//            else
+//            {
+//                flux << "\t";
+//            }
+//        }
+//    }
+//    return flux;
+//}
+//
+//std::string PKMN_Table::operator()(std::string lineName, std::string columnName) const
+//{
+//    return m_table.at(PKMN_Tuple(lineName, columnName));
+//}
+//
+//std::vector<std::string> PKMN_Table::getLineValues(std::string nameLine) const
+//{
+//    std::vector<std::string> line;
+//    const int length = m_headerColumn.size();
+//    for(int i = 0; i <= length; i++)
+//    {
+//        line.push_back(m_table.at(PKMN_Tuple(nameLine,m_headerColumn[i])));
+//    }
+//    return line;
+//}
+//
+//std::vector<std::string> PKMN_Table::getColumnValues(std::string nameColumn) const
+//{
+//    std::vector<std::string> column;
+//    const int length = m_headerLine.size();
+//    for(int j = 0; j <= length; j++)
+//    {
+//        column.push_back(m_table.at(PKMN_Tuple(m_headerLine[j],nameColumn)));
+//    }
+//    return column;
+//}
