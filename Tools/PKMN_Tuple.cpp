@@ -73,3 +73,12 @@ bool operator!=(PKMN_Tuple const& Tuple1, PKMN_Tuple const& Tuple2)
     return !(Tuple1 == Tuple2);
 }
 
+std::ostream& operator<<(std::ostream& flux, PKMN_Tuple const& Tuple)
+{
+    flux << '(';
+    flux << Tuple.m_x;
+    flux << ", ";
+    flux << Tuple.m_y;
+    flux << ')';
+    return flux;
+}

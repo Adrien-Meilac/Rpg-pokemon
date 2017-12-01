@@ -6,6 +6,9 @@
 #include <map>
 #include <iostream>
 #include <fstream>
+#include <sstream>
+#include <cstddef>
+#include <valarray>
 #include "PKMN_Tuple.h"
 
 
@@ -29,7 +32,7 @@ template<class T, class T2> std::vector<T> map_keys(std::map<T,T2> dictionary);
             dictionary [ first value ] = list of the remaining line splitted
  *
  */
-std::map<std::string, std::vector<std::string> > splitLine(std::string line, const char sep = ';');
+std::vector<std::string> split(const std::string& line, const char delim = ';');
 
 
 class PKMN_Table ///Extract a table from a file path, allow data to be accessed by column name and row name
@@ -48,7 +51,7 @@ public:
 
 private:
 
-    friend std::ofstream& operator<<(std::ofstream &flux, PKMN_Table const& Table);
+    friend std::ostream& operator<<(std::ostream &flux, PKMN_Table const& Table);
 
     std::vector<std::string> m_headerColumn; /* Name of column, directly accessible without searching them in keys */
     std::vector<std::string> m_headerLine; /* Give name of line, directly accessible without searching them */

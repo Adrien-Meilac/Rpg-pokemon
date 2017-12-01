@@ -11,37 +11,16 @@ std::vector<T> map_keys(std::map<T,T2> dictionary)
     return keys;
 }
 
-std::map<std::string, std::vector<std::string> > splitLine(std::string line, const char sep)
+std::vector<std::string> split(const std::string& line, const char delim)
 {
-
-    std::map<std::string, std::vector<std::string> > dic;
-    std::string key;
-    const unsigned int length = line.size();
-    bool firstWord(true);
-    for(unsigned int i = 0, newWordIndice = 0; i < length; i++)
+    std::stringstream ss(line);
+    std::string item;
+    std::vector<std::string> L;
+    while (getline(ss, item, delim))
     {
-        if(line[i] == sep)
-        {
-            std::string word("");
-            for(unsigned int j = newWordIndice; j < i; j++)
-            {
-                word += line[j];
-            }
-            if(firstWord)
-            {
-                key = word;
-                std::vector<std::string> value;
-                dic[word] = value;
-                firstWord = false;
-            }
-            else
-            {
-                dic[key].push_back(word);
-            }
-            newWordIndice = i + 1;
-        }
+        L.push_back(item);
     }
-    return dic;
+    return L;
 }
 
 PKMN_Table::PKMN_Table()
@@ -55,27 +34,29 @@ PKMN_Table::PKMN_Table(std::string FilePath)
     if(flux)
     {
         std::string line;
-        std::map<std::string, std::vector<std::string> > dic;
+        std::vector<std::string> L;
         bool firstLine(true);
+        unsigned int length;
         while(getline(flux, line))
         {
-            dic = splitLine(line);
-            std::vector<std::string> keys(map_keys(dic));
-            std::string key(keys[0]);
+            L = split(line);
+            length = L.size();
             if(firstLine)
             {
-                m_headerColumn = dic[key];
+                for(unsigned int i = 1; i < length; i++)
+                {
+                     m_headerColumn.push_back(L[i]);
+                }
                 firstLine = false;
             }
             else
             {
+                std::string key(L[0]);
                 m_headerLine.push_back(key);
-                std::vector<std::string> values = dic[key];
-                std::vector<PKMN_Tuple> tupleKeys;
-                const unsigned int length = values.size();
-                for(unsigned int i = 0; i < length; i++)
+                for(unsigned int i = 1; i < length; i++)
                 {
-                    m_table.insert(std::pair<PKMN_Tuple, std::string>(PKMN_Tuple(key, m_headerColumn[i]), values[i]));
+                     m_headerLine.push_back(L[i]);
+                     m_table.insert(std::pair<PKMN_Tuple, std::string>(PKMN_Tuple(key, m_headerColumn[i]), L[i]));
                 }
             }
         }
@@ -105,7 +86,7 @@ std::vector<std::string> PKMN_Table::getColumnNames(std::string nomColumn) const
     return m_headerColumn;
 }
 
-std::ofstream& operator<<(std::ofstream &flux, PKMN_Table const& Table)
+std::ostream& operator<<(std::ostream &flux, PKMN_Table const& Table)
 {
     std::vector<int>  dim = Table.dimension();
     for(int i = 0; i <= dim[0]; i++)

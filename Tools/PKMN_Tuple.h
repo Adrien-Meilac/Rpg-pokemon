@@ -2,6 +2,8 @@
 #define TUPLE_H_INCLUDED
 
 #include <string>
+#include <iostream>
+#include <fstream>
 
 class PKMN_Tuple /// PKMN_Tuple objects are a couple of 2 string variables
 {
@@ -23,6 +25,8 @@ public:
     virtual ~PKMN_Tuple();
 
 private:
+
+    friend std::ostream& operator<<(std::ostream& flux, PKMN_Tuple const& Tuple);
 
     std::string m_x;
     std::string m_y;
