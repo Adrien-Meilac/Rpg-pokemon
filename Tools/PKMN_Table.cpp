@@ -108,90 +108,50 @@ std::vector<std::string> PKMN_Table::getColumnNames(std::string nomColumn) const
 std::ofstream& operator<<(std::ofstream &flux, PKMN_Table const& Table)
 {
     std::vector<int>  dim = Table.dimension();
-    for(int i = 0; i < dim[0] - 1; i++)
+    for(int i = 0; i <= dim[0]; i++)
     {
-        for(int j = 0; j < dim[1] - 1; j++)
+        for(int j = 0; j <= dim[1]; j++)
         {
-            flux << Table(Table.m_headerLine[i], Table.m_headerColumn[j]) << "\t";
+            flux << Table(Table.m_headerLine[i], Table.m_headerColumn[j]);
+            if(j == dim[1] - 1)
+            {
+                if(i != dim[0] - 1)
+                {
+                    flux << "\n";
+                }
+            }
+            else
+            {
+                flux << "\t";
+            }
         }
-        flux << Table(Table.m_headerLine[i], Table.m_headerColumn[dim[1] - 1]) << "\n";
     }
-    flux << Table(Table.m_headerLine[dim[0] - 1], Table.m_headerColumn[dim[1] - 1]);
     return flux;
 }
 
 std::string PKMN_Table::operator()(std::string lineName, std::string columnName) const
 {
-    PKMN_Tuple t(lineName, columnName);
-    return m_table[t];
+    return m_table[PKMN_Tuple(lineName, columnName)];
 }
 
-//std::string PKMN_Table::getValue(std::string nameLine, std::string nameColumn)
-//{
-//    PKMN_Tuple<std::string> t(nameLine, nameColumn);
-//    return m_table[t];
-//}
+std::vector<std::string> PKMN_Table::getLineValues(std::string nameLine) const
+{
+    std::vector<std::string> line;
+    const int length = m_headerColumn.size();
+    for(int i = 0; i <= length; i++)
+    {
+        line.push_back(m_table[PKMN_Tuple(nameLine,m_headerColumn[i])]);
+    }
+    return line;
+}
 
-//
-//void Table::transpose() //inverser les éléments à chaque fois qu'on voit un tuple avec une copie
-//{
-//    const unsigned int dimensionColumn(this->getDimension()[0]);
-//    const unsigned int dimensionLine(this->getDimension()[1]);
-//    std::vector<std::vector<std::string> > tableTranspose;
-//    for(unsigned int i(0); i < dimensionColumn; i++)
-//    {
-//        std::vector<std::string> L;
-//        for(unsigned int j(0); j < dimensionLine; j++)
-//        {
-//            L.push_back(m_table[j][i]);
-//        }
-//        tableTranspose.push_back(L);
-//        while (!L.empty())
-//        {
-//            L.pop_back();
-//        }
-//    }
-//    std::vector<std::string> tempC;
-//    for(unsigned int i(0); i < dimensionColumn; i++)
-//    {
-//        temp.push_back(m_headerColumn[i]);
-//    }
-//    std::vector<std::string> tempL;
-//    for(unsigned int i(0); i < dimensionColumn; i++)
-//    {
-//        temp.push_back(m_headerColumn[i]);
-//    }
-//}
-//
-//std::vector<std::string> Table::getLine(std::string nomLigne)//a modifier avec return[keys]
-//{
-//    const unsigned int dimensionLine(this->getDimension()[1]);
-//    for(unsigned int i(0); i < dimensionLine; i++)
-//    {
-//        if(nomLigne == m_headerLine[i])
-//        {
-//            return m_table[i];
-//        }
-//    }
-//}
-//
-//std::vector<std::string> Table::getColumn(std::string nomColumn)  //a modifier
-//{
-//    const unsigned int dimensionColumn(this->getDimension()[0]);
-//    const unsigned int dimensionLine(this->getDimension()[1]);
-//    for(unsigned int j(0); j < dimensionColumn; j++)
-//    {
-//        if(nomLigne == m_headerLine[j])
-//        {
-//            std::vector<std::string> column;
-//            for(unsigned int i(0); i < dimensionLine; i++)
-//            {
-//                column.push_back(m_table[i][j]);
-//            }
-//            return column;
-//        }
-//    }
-//}
-//
-//std::string getValue(std::string nomColumn, std::string nomLigne);
-
+std::vector<std::string> PKMN_Table::getColumnValues(std::string nameColumn) const
+{
+    std::vector<std::string> column;
+    const int length = m_headerLine.size();
+    for(int j = 0; j <= length; j++)
+    {
+        column.push_back(m_table[PKMN_Tuple(m_headerLine[j],nameColumn)]);
+    }
+    return column;
+}

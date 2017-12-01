@@ -3,7 +3,7 @@
 
 #include <string>
 
-class PKMN_Tuple /// PKMN_Tuple objects are a couple of 2 variables
+class PKMN_Tuple /// PKMN_Tuple objects are a couple of 2 string variables
 {
 public:
 
