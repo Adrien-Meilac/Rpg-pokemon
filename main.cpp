@@ -53,13 +53,15 @@ int main()
         {
             std::string key(L[0]);
             m_headerLine.push_back(key);
+            PKMN_Tuple* ptr = 0;
             for(unsigned int i = 1; i < length; i++)
             {
-                cout << i << " "<< m_headerColumn.size() << endl;
-                cout << PKMN_Tuple(key, m_headerColumn[i-1]) << endl;
-                cout << i << " "<< L.size() << endl;
-                //m_table.insert(std::pair<PKMN_Tuple, std::string>(PKMN_Tuple(key, m_headerColumn[i]), L[i]));
+                ptr = new PKMN_Tuple(key, m_headerColumn[i-1]);
+                m_table.at(*ptr) = L[i];
+                cout << key << "\t" << m_headerColumn[i-1] << "\t" << L[i] << endl;
             }
+
         }
     }
+
 }
