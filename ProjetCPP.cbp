@@ -32,8 +32,6 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="Tools/PKMN_Table.cpp" />
-		<Unit filename="Tools/PKMN_Table.h" />
 		<Unit filename="Tools/PKMN_Tuple.cpp" />
 		<Unit filename="Tools/PKMN_Tuple.h" />
 		<Unit filename="main.cpp" />
