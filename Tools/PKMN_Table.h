@@ -18,6 +18,8 @@ public:
     std::vector<int> dimension() const;
     std::vector<std::string> getLineValues(std::string nameLine) const;
     std::vector<std::string> getColumnValues(std::string nomColumn) const;
+    std::vector<std::string> getLineValuesWithLineName(std::string nameLine) const;
+    std::vector<std::string> getColumnValuesWithColumnName(std::string nomColumn) const;
     std::vector<std::string> getLineNames(std::string nameLine) const;
     std::vector<std::string> getColumnNames(std::string nomColumn) const;
     std::string operator()(std::string lineName, std::string columnName) const;

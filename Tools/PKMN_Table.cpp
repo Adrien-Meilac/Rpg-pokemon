@@ -132,3 +132,27 @@ std::vector<std::string> PKMN_Table::getColumnValues(std::string nameColumn) con
     }
     return column;
 }
+
+std::vector<std::string> PKMN_Table::getLineValuesWithLineName(std::string nameLine) const
+{
+    std::vector<std::string> line;
+    line.push_back(nameLine);
+    const unsigned int length = m_headerColumn.size();
+    for(unsigned int i = 0; i < length; i++)
+    {
+        line.push_back(this->operator()(nameLine,m_headerColumn[i]));
+    }
+    return line;
+}
+
+std::vector<std::string> PKMN_Table::getColumnValuesWithColumnName(std::string nameColumn) const
+{
+    std::vector<std::string> column;
+    column.push_back(nameColumn);
+    const unsigned int length = m_headerLine.size();
+    for(unsigned int j = 0; j < length; j++)
+    {
+        column.push_back(this->operator()(m_headerLine[j],nameColumn));
+    }
+    return column;
+}

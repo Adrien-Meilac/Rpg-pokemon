@@ -7,7 +7,7 @@ using namespace std;
 int main()
 {
     PKMN_Table table("TypeChart.txt");
-    PKMN_Type t("Fire", table.getLineValues("Fire"));
-    int a = string_to_int("1234");
-    cout << a;
+    PKMN_Type t(table.getLineValuesWithLineName("Fire"));
+    PKMN_Type t2(table.getLineValuesWithLineName("Water"));
+    cout << PKMN_Type_message(t.effectiveness(t2));
 }

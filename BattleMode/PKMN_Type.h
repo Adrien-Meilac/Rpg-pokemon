@@ -15,27 +15,32 @@
 class PKMN_Type
 {
 public:
+
     PKMN_Type();
-    PKMN_Type(std::string InternalName,
-              std::string Name,
+    PKMN_Type(std::string Name,
+              std::string InternalName,
               std::string Weaknesses,
               std::string Immunities,
               std::string Resistances,
               std::string IsSpecialType);
-    PKMN_Type(std::string Name,
-              std::vector<std::string> Line);
+    PKMN_Type(std::vector<std::string> Line);
     double effectiveness(PKMN_Type const Type_att) const;
     double effectiveness(std::pair<PKMN_Type, PKMN_Type> PairType_att) const;
     std::string getName() const;
+    std::string getInternalName() const;
+    std::vector<std::string> getWeaknesses() const;
+    std::vector<std::string> getImmunities() const;
+    std::vector<std::string> getResistances() const;
 
 private:
 
-    std::string m_InternalName;
     std::string m_Name;
+    std::string m_InternalName;
     std::vector<std::string> m_Weaknesses;
     std::vector<std::string> m_Immunities;
     std::vector<std::string> m_Resistances;
     bool m_IsSpecialType;
+
 };
 
 std::string PKMN_Type_message(double typeMultiplicativeFactor);
