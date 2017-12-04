@@ -1,13 +1,13 @@
 #include "./Tools/PKMN_Table.h"
+#include "./BattleMode/PKMN_Type.h"
+#include "./Tools/PKMN_Conversion.h"
 
 using namespace std;
 
 int main()
 {
     PKMN_Table table("TypeChart.txt");
-    std::vector<std::string> L(table.getLineValues("Fire"));
-    for(unsigned int i = 0; i < L.size(); i++)
-    {
-        std::cout << L[i] << "\t";
-    }
+    PKMN_Type t("Fire", table.getLineValues("Fire"));
+    int a = string_to_int("1234");
+    cout << a;
 }

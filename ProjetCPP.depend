@@ -1,6 +1,8 @@
 # depslib dependency file v1.0
-1512402999 source:c:\users\adrie\documents\github\rpg-pokemon\main.cpp
+1512415455 source:c:\users\adrie\documents\github\rpg-pokemon\main.cpp
 	"./Tools/PKMN_Table.h"
+	"./BattleMode/PKMN_Type.h"
+	"./Tools/PKMN_Conversion.h"
 
 1512163115 c:\users\adrie\documents\github\rpg-pokemon\tools\pkmn_tuple.h
 	<string>
@@ -19,16 +21,16 @@
 	<map>
 	<fstream>
 
-1512404908 c:\users\adrie\documents\github\rpg-pokemon\tools\pkmn_table.h
+1512416234 c:\users\adrie\documents\github\rpg-pokemon\tools\pkmn_table.h
 	"PKMN_TableCoordinates.h"
+	"PKMN_VectorMethod.h"
 	<iostream>
 	<string>
 	<vector>
 	<fstream>
 	<map>
-	<sstream>
 
-1512404964 source:c:\users\adrie\documents\github\rpg-pokemon\tools\pkmn_table.cpp
+1512415695 source:c:\users\adrie\documents\github\rpg-pokemon\tools\pkmn_table.cpp
 	"PKMN_Table.h"
 
 1512385706 source:c:\users\adrie\documents\github\rpg-pokemon\tools\pkmn_pairstring.cpp
@@ -45,4 +47,43 @@
 
 1512387721 source:c:\users\adrie\documents\github\rpg-pokemon\tools\pkmn_tablecoordinates.cpp
 	"PKMN_TableCoordinates.h"
+
+1512411199 source:c:\users\adrie\documents\github\rpg-pokemon\battlemode\pkmn_type.cpp
+	"PKMN_Type.h"
+
+1512415144 c:\users\adrie\documents\github\rpg-pokemon\battlemode\pkmn_type.h
+	"../Tools/PKMN_Table.h"
+	"../Tools/PKMN_Conversion.h"
+	<string>
+	<vector>
+
+1512415055 c:\users\adrie\documents\github\rpg-pokemon\tools\pkmn_conversion.h
+	<string>
+	<iostream>
+
+1512415493 source:c:\users\adrie\documents\github\rpg-pokemon\tools\pkmn_conversion.cpp
+	"PKMN_Conversion.h"
+
+1512415789 c:\users\adrie\documents\github\rpg-pokemon\tools\pkmn_vectorandmap.h
+	<vector>
+	<string>
+	<map>
+
+1512416189 c:\users\adrie\documents\github\rpg-pokemon\tools\pkmn_vectormethod.h
+	<vector>
+	<string>
+	<sstream>
+
+1512416010 source:c:\users\adrie\documents\github\rpg-pokemon\tools\pkmn_mapmethod.cpp
+	"PKMN_MapMethod.h"
+
+1512416212 c:\users\adrie\documents\github\rpg-pokemon\tools\pkmn_mapmethod.h
+	"PKMN_TableCoordinates.h"
+	<iostream>
+	<string>
+	<vector>
+	<map>
+
+1512416018 source:c:\users\adrie\documents\github\rpg-pokemon\tools\pkmn_vectormethod.cpp
+	"PKMN_VectorMethod.h"
 

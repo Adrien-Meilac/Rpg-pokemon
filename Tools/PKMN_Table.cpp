@@ -1,57 +1,5 @@
 #include "PKMN_Table.h"
 
-bool str_to_bool(const std::string& str_bool)
-{
-    if(str_bool == "True")
-    {
-        return true;
-    }
-    return false;
-}
-
-bool vector_in(std::vector<std::string> L, std::string mot)
-{
-    const unsigned int length = L.size();
-    for(unsigned int i = 0; i < length; i++)
-    {
-        if(L[i] == mot)
-        {
-            return true;
-        }
-    }
-    return false;
-}
-
-std::vector<PKMN_TableCoordinates> map_keys(std::map<PKMN_TableCoordinates, std::string> dictionary)
-{
-    std::vector<PKMN_TableCoordinates> keys;
-    for(std::map<PKMN_TableCoordinates, std::string>::iterator i(dictionary.begin()); i != dictionary.end(); i++)
-    {
-        keys.push_back(i->first);
-    }
-    return keys;
-}
-
-void map_print(std::map<PKMN_TableCoordinates, std::string> dictionnary)
-{
-    for(std::map<PKMN_TableCoordinates, std::string>::iterator i(dictionnary.begin()); i != dictionnary.end(); i++)
-    {
-        std::cout << i->first << " : " << i->second << std::endl;
-    }
-}
-
-std::vector<std::string> string_split(const std::string& line, const char delim)
-{
-    std::stringstream ss(line);
-    std::string item;
-    std::vector<std::string> L;
-    while (getline(ss, item, delim))
-    {
-        L.push_back(item);
-    }
-    return L;
-}
-
 PKMN_Table::PKMN_Table()
 {
 

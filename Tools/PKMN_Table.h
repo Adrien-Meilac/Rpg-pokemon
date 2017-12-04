@@ -2,18 +2,12 @@
 #define PKMN_TABLEPARSER_H_INCLUDED
 
 #include "PKMN_TableCoordinates.h"
+#include "PKMN_VectorMethod.h"
 #include <iostream>
 #include <string>
 #include <vector>
 #include <fstream>
 #include <map>
-#include <sstream>
-
-std::vector<PKMN_TableCoordinates> map_keys(std::map<PKMN_TableCoordinates, std::string> dictionary);
-void map_print(std::map<PKMN_TableCoordinates, std::string> dictionary);
-std::vector<std::string> string_split(const std::string& line, const char delim = ';');
-bool str_to_bool(const std::string& str_bool);
-bool vector_in(std::vector<std::string> L, std::string mot);
 
 class PKMN_Table
 {
