@@ -32,6 +32,8 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="BattleMode/PKMN_Type.cpp" />
+		<Unit filename="BattleMode/PKMN_Type.h" />
 		<Unit filename="Tools/PKMN_Table.cpp" />
 		<Unit filename="Tools/PKMN_Table.h" />
 		<Unit filename="Tools/PKMN_TableCoordinates.cpp" />

@@ -1,6 +1,5 @@
 # depslib dependency file v1.0
-1512388924 source:c:\users\adrie\documents\github\rpg-pokemon\main.cpp
-	"./Tools/PKMN_TableCoordinates.h"
+1512402999 source:c:\users\adrie\documents\github\rpg-pokemon\main.cpp
 	"./Tools/PKMN_Table.h"
 
 1512163115 c:\users\adrie\documents\github\rpg-pokemon\tools\pkmn_tuple.h
@@ -20,7 +19,7 @@
 	<map>
 	<fstream>
 
-1512389031 c:\users\adrie\documents\github\rpg-pokemon\tools\pkmn_table.h
+1512404908 c:\users\adrie\documents\github\rpg-pokemon\tools\pkmn_table.h
 	"PKMN_TableCoordinates.h"
 	<iostream>
 	<string>
@@ -29,7 +28,7 @@
 	<map>
 	<sstream>
 
-1512389006 source:c:\users\adrie\documents\github\rpg-pokemon\tools\pkmn_table.cpp
+1512404964 source:c:\users\adrie\documents\github\rpg-pokemon\tools\pkmn_table.cpp
 	"PKMN_Table.h"
 
 1512385706 source:c:\users\adrie\documents\github\rpg-pokemon\tools\pkmn_pairstring.cpp
