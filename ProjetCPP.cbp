@@ -34,10 +34,18 @@
 		</Compiler>
 		<Unit filename="BattleMode/PKMN_Type.cpp" />
 		<Unit filename="BattleMode/PKMN_Type.h" />
+		<Unit filename="Tools/PKMN_Conversion.cpp" />
+		<Unit filename="Tools/PKMN_Conversion.h" />
+		<Unit filename="Tools/PKMN_MapMethod.cpp" />
+		<Unit filename="Tools/PKMN_MapMethod.h" />
+		<Unit filename="Tools/PKMN_StatSet.cpp" />
+		<Unit filename="Tools/PKMN_StatSet.h" />
 		<Unit filename="Tools/PKMN_Table.cpp" />
 		<Unit filename="Tools/PKMN_Table.h" />
 		<Unit filename="Tools/PKMN_TableCoordinates.cpp" />
 		<Unit filename="Tools/PKMN_TableCoordinates.h" />
+		<Unit filename="Tools/PKMN_VectorMethod.cpp" />
+		<Unit filename="Tools/PKMN_VectorMethod.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />
