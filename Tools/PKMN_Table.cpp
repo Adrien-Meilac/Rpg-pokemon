@@ -130,30 +130,31 @@ std::vector<std::string> PKMN_Table::getLineValues(std::string nameLine) const
     return m_table[0];
 }
 
-//std::vector<std::string> PKMN_Table::getColumnValues(std::string nameColumn) const
-//{
-//    std::vector<std::string> column;
-//    const unsigned int length = m_headerLine.size();
-//    for(unsigned int j = 0; j < length; j++)
-//    {
-//        column.push_back(this->operator()(m_headerLine[j],nameColumn));
-//    }
-//    return column;
-//}
+std::vector<std::string> PKMN_Table::getColumnValues(std::string nameColumn) const
+{
+    std::vector<int> dim = this->dimension();
+    std::vector<std::string> column(dim[0]);
+    int j_col = 0;
+    for(int j = 0; j < dim[1]; j++)
+    {
+        if(m_headerColumn[j] == nameColumn)
+        {
+            j_col = j;
+        }
+    }
+    for(int i = 0; i < dim[0]; i++)
+    {
+        column[i] = m_table[i][j_col];
+    }
+    return column;
+}
 
 std::vector<std::string> PKMN_Table::getLineValuesWithLineName(std::string nameLine) const
 {
     return vector_insert(this->getLineValues(nameLine), nameLine, 0);
 }
 
-//std::vector<std::string> PKMN_Table::getColumnValuesWithColumnName(std::string nameColumn) const
-//{
-//    std::vector<std::string> column;
-//    column.push_back(nameColumn);
-//    const unsigned int length = m_headerLine.size();
-//    for(unsigned int j = 0; j < length; j++)
-//    {
-//        column.push_back(this->operator()(m_headerLine[j],nameColumn));
-//    }
-//    return column;
-//}
+std::vector<std::string> PKMN_Table::getColumnValuesWithColumnName(std::string nameColumn) const
+{
+    return vector_insert(this->getColumnValues(nameColumn), nameColumn, 0);
+}
