@@ -1,36 +1,21 @@
-#include <iostream>
-#include <vector>
-#include <string>
-#include "Tools/PKMN_Tuple.h"
-#include <string>
-#include <vector>
-#include <map>
-#include <iostream>
-#include <fstream>
-#include <sstream>
-#include <cstddef>
-#include <valarray>
-//#include "Tools/PKMN_Table.h"
+#include "./Tools/PKMN_TableCoordinates.h"
+#include "./Tools/PKMN_Table.h"
 
 using namespace std;
 
-std::vector<std::string> split(const std::string& line, const char delim = ';')
-{
-    std::stringstream ss(line);
-    std::string item;
-    std::vector<std::string> L;
-    while (getline(ss, item, delim))
-    {
-        L.push_back(item);
-    }
-    return L;
-}
-
 int main()
 {
+    PKMN_TableCoordinates t("alhe", "alge");
+    PKMN_TableCoordinates t2("alhe", "alhe");
+    std::cout << t;
+    std::map<PKMN_TableCoordinates, std::string> dictionnary;
+    dictionnary[t] = "rien";
+    dictionnary[t2] = "test";
+    map_print(dictionnary);
+    std::vector<std::string> v = string_split("je suis un chat", ' ');
     std::vector<std::string> m_headerColumn; /* Name of column, directly accessible without searching them in keys */
     std::vector<std::string> m_headerLine; /* Give name of line, directly accessible without searching them */
-    std::map<PKMN_Tuple, std::string>  m_table;
+    std::map<PKMN_TableCoordinates, std::string>  m_table;
     std::ifstream flux("TypeChart.txt");
     std::string line;
     std::vector<std::string> L;
@@ -39,7 +24,7 @@ int main()
     while(getline(flux, line))
     {
         cout << line << endl;
-        L = split(line);
+        L = string_split(line);
         length = L.size();
         if(firstLine)
         {
@@ -53,11 +38,11 @@ int main()
         {
             std::string key(L[0]);
             m_headerLine.push_back(key);
-            PKMN_Tuple* ptr = 0;
+            PKMN_TableCoordinates* ptr = 0;
             for(unsigned int i = 1; i < length; i++)
             {
-                ptr = new PKMN_Tuple(key, m_headerColumn[i-1]);
-                m_table.at(*ptr) = L[i];
+                ptr = new PKMN_TableCoordinates(key, m_headerColumn[i-1]);
+                m_table[*ptr] = L[i];
                 cout << key << "\t" << m_headerColumn[i-1] << "\t" << L[i] << endl;
             }
 

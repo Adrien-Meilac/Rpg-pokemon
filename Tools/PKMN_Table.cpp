@@ -1,17 +1,24 @@
 #include "PKMN_Table.h"
 
-template<class T, class T2>
-std::vector<T> map_keys(std::map<T,T2> dictionary)
+std::vector<PKMN_TableCoordinates> map_keys(std::map<PKMN_TableCoordinates, std::string> dictionary)
 {
-    std::vector<T> keys;
-    for (typename std::map<T,T2>::iterator i(dictionary.begin()); i != dictionary.end(); i++)
+    std::vector<PKMN_TableCoordinates> keys;
+    for(std::map<PKMN_TableCoordinates, std::string>::iterator i(dictionary.begin()); i != dictionary.end(); i++)
     {
         keys.push_back(i->first);
     }
     return keys;
 }
 
-std::vector<std::string> split(const std::string& line, const char delim)
+void map_print(std::map<PKMN_TableCoordinates, std::string> dictionnary)
+{
+  for(std::map<PKMN_TableCoordinates, std::string>::iterator i(dictionnary.begin()); i != dictionnary.end(); i++)
+  {
+        std::cout << i->first << " : " << i->second << std::endl;
+  }
+}
+
+std::vector<std::string> string_split(const std::string& line, const char delim)
 {
     std::stringstream ss(line);
     std::string item;
@@ -23,50 +30,50 @@ std::vector<std::string> split(const std::string& line, const char delim)
     return L;
 }
 
-PKMN_Table::PKMN_Table()
-{
-
-}
-
-PKMN_Table::PKMN_Table(std::string FilePath)
-{
-    std::ifstream flux(FilePath.c_str());
-    if(flux)
-    {
-        std::string line;
-        std::vector<std::string> L;
-        bool firstLine(true);
-        unsigned int length;
-        while(getline(flux, line))
-        {
-            L = split(line);
-            length = L.size();
-            if(firstLine)
-            {
-                for(unsigned int i = 1; i < length; i++)
-                {
-                     m_headerColumn.push_back(L[i]);
-                }
-                firstLine = false;
-            }
-            else
-            {
-                std::string key(L[0]);
-                m_headerLine.push_back(key);
-                for(unsigned int i = 1; i < length; i++)
-                {
-                     m_headerLine.push_back(L[i]);
-                     m_table.insert(std::pair<PKMN_Tuple, std::string>(PKMN_Tuple(key, m_headerColumn[i]), L[i]));
-                }
-            }
-        }
-    }
-}
-
-PKMN_Table::~PKMN_Table()
-{
-
-}
+//PKMN_Table::PKMN_Table()
+//{
+//
+//}
+//
+//PKMN_Table::PKMN_Table(std::string FilePath)
+//{
+//    std::ifstream flux(FilePath.c_str());
+//    if(flux)
+//    {
+//        std::string line;
+//        std::vector<std::string> L;
+//        bool firstLine(true);
+//        unsigned int length;
+//        while(getline(flux, line))
+//        {
+//            L = split(line);
+//            length = L.size();
+//            if(firstLine)
+//            {
+//                for(unsigned int i = 1; i < length; i++)
+//                {
+//                     m_headerColumn.push_back(L[i]);
+//                }
+//                firstLine = false;
+//            }
+//            else
+//            {
+//                std::string key(L[0]);
+//                m_headerLine.push_back(key);
+//                for(unsigned int i = 1; i < length; i++)
+//                {
+//                     m_headerLine.push_back(L[i]);
+//                     m_table.insert(std::pair<PKMN_Tuple, std::string>(PKMN_Tuple(key, m_headerColumn[i]), L[i]));
+//                }
+//            }
+//        }
+//    }
+//}
+//
+//PKMN_Table::~PKMN_Table()
+//{
+//
+//}
 
 //std::vector<int> PKMN_Table::dimension() const
 //{

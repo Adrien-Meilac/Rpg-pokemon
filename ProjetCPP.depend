@@ -1,17 +1,7 @@
 # depslib dependency file v1.0
-1512299807 source:c:\users\adrie\documents\github\rpg-pokemon\main.cpp
-	<iostream>
-	<vector>
-	<string>
-	"Tools/PKMN_Tuple.h"
-	<string>
-	<vector>
-	<map>
-	<iostream>
-	<fstream>
-	<sstream>
-	<cstddef>
-	<valarray>
+1512388924 source:c:\users\adrie\documents\github\rpg-pokemon\main.cpp
+	"./Tools/PKMN_TableCoordinates.h"
+	"./Tools/PKMN_Table.h"
 
 1512163115 c:\users\adrie\documents\github\rpg-pokemon\tools\pkmn_tuple.h
 	<string>
@@ -30,17 +20,30 @@
 	<map>
 	<fstream>
 
-1512165336 c:\users\adrie\documents\github\rpg-pokemon\tools\pkmn_table.h
+1512389031 c:\users\adrie\documents\github\rpg-pokemon\tools\pkmn_table.h
+	"PKMN_TableCoordinates.h"
+	<iostream>
 	<string>
 	<vector>
-	<map>
-	<iostream>
 	<fstream>
+	<map>
 	<sstream>
-	<cstddef>
-	<valarray>
-	"PKMN_Tuple.h"
 
-1512165355 source:c:\users\adrie\documents\github\rpg-pokemon\tools\pkmn_table.cpp
+1512389006 source:c:\users\adrie\documents\github\rpg-pokemon\tools\pkmn_table.cpp
 	"PKMN_Table.h"
+
+1512385706 source:c:\users\adrie\documents\github\rpg-pokemon\tools\pkmn_pairstring.cpp
+	"PKMN_PairString.h"
+
+1512386500 c:\users\adrie\documents\github\rpg-pokemon\tools\pkmn_pairstring.h
+	<string>
+	<iostream>
+	<utility>
+
+1512387725 c:\users\adrie\documents\github\rpg-pokemon\tools\pkmn_tablecoordinates.h
+	<iostream>
+	<string>
+
+1512387721 source:c:\users\adrie\documents\github\rpg-pokemon\tools\pkmn_tablecoordinates.cpp
+	"PKMN_TableCoordinates.h"
 
