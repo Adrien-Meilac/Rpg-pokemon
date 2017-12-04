@@ -3,6 +3,7 @@
 
 #include "../Tools/PKMN_Table.h"
 #include "../Tools/PKMN_Conversion.h"
+#include "../Tools/PKMN_VectorMethod.h"
 #include <string>
 #include <vector>
 
