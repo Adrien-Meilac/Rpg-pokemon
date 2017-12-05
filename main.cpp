@@ -14,13 +14,13 @@ int main()
 //    PKMN_Type t(table.getLineValuesWithLineName("Fire"));
 //    PKMN_Type t2(table.getLineValuesWithLineName("Water"));
 //    cout << PKMN_Type_message(t2.effectiveness(t));
-//    PKMN_StatSet Base(45,49,49,65,65,45);
-//    PKMN_StatSet IV;
-//    PKMN_StatSet EV(0,0,0,0,0,0);
-//    cout << NormalStatistics(Base, IV, EV, 100, "");
-    PKMN_Table table3("PokedexBaseStat.txt");
-    cout << table3;
-    cout << endl << endl;
-    vector_print(table3.getColumnValuesWithColumnName("Def"));
+    PKMN_StatSet Base(45,49,49,65,65,45);
+    PKMN_StatSet IV;
+    PKMN_StatSet EV(0,0,0,0,0,0);
+    cout << NormalStatistics(Base, IV, EV, 100, "");
+//    PKMN_Table table3("PokedexBaseStat.txt");
+//    cout << table3;
+//    cout << endl << endl;
+//    vector_print(table3.getColumnValuesWithColumnName("Def"));
 //    cout << table3("37", "Species");
 }

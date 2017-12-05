@@ -1,6 +1,6 @@
 #include "PKMN_StatSet.h"
 
-PKMN_StatSet::PKMN_StatSet():
+PKMN_StatSet::PKMN_StatSet(): // iv Génération algorithm
     m_HP(rand()%32),
     m_Att(rand()%32),
     m_Def(rand()%32),
