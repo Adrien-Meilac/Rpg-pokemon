@@ -18,8 +18,8 @@ public:
     std::vector<std::string> getColumnValues(std::string nomColumn) const;
     std::vector<std::string> getLineValuesWithLineName(std::string nameLine) const;
     std::vector<std::string> getColumnValuesWithColumnName(std::string nomColumn) const;
-    std::vector<std::string> getLineNames(std::string nameLine) const;
-    std::vector<std::string> getColumnNames(std::string nomColumn) const;
+    std::vector<std::string> getLineNames() const;
+    std::vector<std::string> getColumnNames() const;
     std::string operator()(std::string lineName, std::string columnName) const;
     virtual ~PKMN_Table();
 

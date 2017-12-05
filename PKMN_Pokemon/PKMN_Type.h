@@ -24,8 +24,9 @@ public:
               std::string Immunities,
               std::string Resistances,
               std::string IsSpecialType);
-    PKMN_Type(std::string Name); // Or internal name ? ?
+    PKMN_Type(std::string InternalName);
     PKMN_Type(std::vector<std::string> Line);
+    PKMN_Type& operator=(PKMN_Type const& other);
     double effectiveness(PKMN_Type const Type_att) const;
     double effectiveness(std::pair<PKMN_Type, PKMN_Type> PairType_att) const;
     std::string getName() const;
@@ -36,8 +37,8 @@ public:
 
 private:
 
-    std::string m_Name;
     std::string m_InternalName;
+    std::string m_Name;
     std::vector<std::string> m_Weaknesses;
     std::vector<std::string> m_Immunities;
     std::vector<std::string> m_Resistances;

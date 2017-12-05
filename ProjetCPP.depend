@@ -1,10 +1,11 @@
 # depslib dependency file v1.0
-1512473821 source:c:\users\adrie\documents\github\rpg-pokemon\main.cpp
+1512493327 source:c:\users\adrie\documents\github\rpg-pokemon\main.cpp
 	"./PKMN_Tools/PKMN_Table.h"
 	"./PKMN_Pokemon/PKMN_Type.h"
 	"./PKMN_Tools/PKMN_Conversion.h"
 	"./PKMN_Tools/PKMN_StatSet.h"
 	"./PKMN_Pokemon/PKMN_ExpAndLevel.h"
+	"./PKMN_Pokemon/PKMN_Moves.h"
 
 1512163115 c:\users\adrie\documents\github\rpg-pokemon\tools\pkmn_tuple.h
 	<string>
@@ -130,7 +131,7 @@
 	<cstdlib>
 	<ctime>
 
-1512431871 c:\users\adrie\documents\github\rpg-pokemon\pkmn_tools\pkmn_table.h
+1512488663 c:\users\adrie\documents\github\rpg-pokemon\pkmn_tools\pkmn_table.h
 	"PKMN_VectorMethod.h"
 	<iostream>
 	<string>
@@ -143,7 +144,7 @@
 	<sstream>
 	<iostream>
 
-1512474117 c:\users\adrie\documents\github\rpg-pokemon\pkmn_pokemon\pkmn_type.h
+1512492003 c:\users\adrie\documents\github\rpg-pokemon\pkmn_pokemon\pkmn_type.h
 	<string>
 	<vector>
 	"../PKMN_Tools/PKMN_Table.h"
@@ -170,7 +171,7 @@
 1512473069 source:c:\users\adrie\documents\github\rpg-pokemon\pkmn_pokemon\pkmn_expandlevel.cpp
 	"PKMN_ExpAndLevel.h"
 
-1512417482 source:c:\users\adrie\documents\github\rpg-pokemon\pkmn_pokemon\pkmn_type.cpp
+1512492359 source:c:\users\adrie\documents\github\rpg-pokemon\pkmn_pokemon\pkmn_type.cpp
 	"PKMN_Type.h"
 
 1512415493 source:c:\users\adrie\documents\github\rpg-pokemon\pkmn_tools\pkmn_conversion.cpp
@@ -193,7 +194,7 @@
 1512465785 source:c:\users\adrie\documents\github\rpg-pokemon\pkmn_tools\pkmn_statset.cpp
 	"PKMN_StatSet.h"
 
-1512431881 source:c:\users\adrie\documents\github\rpg-pokemon\pkmn_tools\pkmn_table.cpp
+1512490356 source:c:\users\adrie\documents\github\rpg-pokemon\pkmn_tools\pkmn_table.cpp
 	"PKMN_Table.h"
 
 1512387721 source:c:\users\adrie\documents\github\rpg-pokemon\pkmn_tools\pkmn_tablecoordinates.cpp
@@ -213,4 +214,12 @@
 
 1512432411 source:c:\users\adrie\documents\github\rpg-pokemon\pkmn_tools\pkmn_vectormethod.cpp
 	"PKMN_VectorMethod.h"
+
+1512493440 source:c:\users\adrie\documents\github\rpg-pokemon\pkmn_pokemon\pkmn_moves.cpp
+	"PKMN_Moves.h"
+
+1512492425 c:\users\adrie\documents\github\rpg-pokemon\pkmn_pokemon\pkmn_moves.h
+	"PKMN_Type.h"
+	<iostream>
+	<string>
 

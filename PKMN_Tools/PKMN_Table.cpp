@@ -88,12 +88,12 @@ std::vector<int> PKMN_Table::dimension() const
     return dim;
 }
 
-std::vector<std::string> PKMN_Table::getLineNames(std::string nameLine) const
+std::vector<std::string> PKMN_Table::getLineNames() const
 {
     return m_headerLine;
 }
 
-std::vector<std::string> PKMN_Table::getColumnNames(std::string nomColumn) const
+std::vector<std::string> PKMN_Table::getColumnNames() const
 {
     return m_headerColumn;
 }
@@ -125,7 +125,10 @@ std::vector<std::string> PKMN_Table::getLineValues(std::string nameLine) const
     std::vector<int> dim = this->dimension();
     for(int i = 0; i < dim[0]; i++)
     {
-        return m_table[i];
+        if(m_headerLine[i] == nameLine)
+        {
+            return m_table[i];
+        }
     }
     return m_table[0];
 }
