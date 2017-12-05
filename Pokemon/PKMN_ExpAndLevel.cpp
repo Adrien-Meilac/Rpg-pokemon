@@ -28,6 +28,14 @@ PKMN_ExpAndLevel::PKMN_ExpAndLevel(std::string name,
     m_ExpToNextLevel = expToNextLevel();
 }
 
+PKMN_ExpAndLevel::PKMN_ExpAndLevel(std::string name)
+{
+    m_Name = name;
+    m_Exp = 0;
+    m_Level = 1;
+    m_ExpToNextLevel = expToNextLevel();
+}
+
 PKMN_ExpAndLevel::PKMN_ExpAndLevel(std::string name,
                                 std::pair<unsigned int, unsigned int> level_range)
 {
@@ -46,23 +54,23 @@ unsigned int PKMN_ExpAndLevel::expToNextLevel()
 unsigned int PKMN_ExpAndLevel::expLevel(unsigned int level)
 {
 	double n = static_cast<double>(level);
-	if(m_Name == FAST)
+	if(m_Name == PKMN_EXPANDLEVEL_FAST)
     {
         return static_cast<int>(ceil(4 * pow(n, 3) / 5));
     }
-	else if(m_Name == MEDIUMFAST)
+	else if(m_Name == PKMN_EXPANDLEVEL_MEDIUMFAST)
     {
         return static_cast<int>(pow(n, 3));
     }
-	else if(m_Name == MEDIUMSLOW)
+	else if(m_Name == PKMN_EXPANDLEVEL_MEDIUMSLOW)
     {
 		return static_cast<int>(ceil(6 * pow(n, 3) / 5 - 15 * pow(n, 2) + 100 * n - 140));
     }
-	else if(m_Name == SLOW)
+	else if(m_Name == PKMN_EXPANDLEVEL_SLOW)
     {
         return static_cast<int>(ceil(5 * pow(n, 3) / 4));
     }
-	else if(m_Name == ERRATIC)
+	else if(m_Name == PKMN_EXPANDLEVEL_ERRATIC)
     {
         if(level <= 50)
         {
@@ -81,7 +89,7 @@ unsigned int PKMN_ExpAndLevel::expLevel(unsigned int level)
             return static_cast<int>(ceil(pow(n, 3) * (160 - n) / 100));
         }
     }
-    else if(m_Name == FLUCTUATING)
+    else if(m_Name == PKMN_EXPANDLEVEL_FLUCTUATING)
     {
         if(level <= 15)
         {

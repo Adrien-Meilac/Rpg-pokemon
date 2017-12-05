@@ -6,12 +6,12 @@
 #include <cstdlib>
 #include <ctime>
 
-#define SLOW "SLOW"
-#define MEDIUMSLOW "MEDIUMSLOW"
-#define MEDIUMFAST "MEDIUMFAST"
-#define FAST "FAST"
-#define ERRATIC "ERRATIC"
-#define FLUCTUATING "FLUCTUATING"
+#define PKMN_EXPANDLEVEL_SLOW "SLOW"
+#define PKMN_EXPANDLEVEL_MEDIUMSLOW "MEDIUMSLOW"
+#define PKMN_EXPANDLEVEL_MEDIUMFAST "MEDIUMFAST"
+#define PKMN_EXPANDLEVEL_FAST "FAST"
+#define PKMN_EXPANDLEVEL_ERRATIC "ERRATIC"
+#define PKMN_EXPANDLEVEL_FLUCTUATING "FLUCTUATING"
 
 class PKMN_ExpAndLevel
 {
@@ -25,6 +25,7 @@ public:
                     unsigned int level);
     PKMN_ExpAndLevel(std::string name,
                     std::pair<unsigned int, unsigned int> level_range);
+    PKMN_ExpAndLevel(std::string name);
     void addExperience(unsigned int exp);
     unsigned int getExperience() const;
     unsigned int getLevel() const;
