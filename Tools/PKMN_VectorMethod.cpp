@@ -33,10 +33,21 @@ std::vector<std::string> vector_insert(std::vector<std::string> L, const std::st
     {
         L2.push_back(L[i]);
     }
-    L2.push_back(L[pos]);
+    L2.push_back(str);
     for(unsigned int i = pos; i < length;i++)
     {
         L2.push_back(L[i]);
     }
     return L2;
+}
+
+void vector_print(std::vector<std::string> v)
+{
+    const unsigned int length = v.size();
+    std::cout << "(";
+    for(unsigned int i = 0; i < length - 1; i++)
+    {
+        std::cout << v[i] << ", ";
+    }
+    std::cout << v[length - 1] << ")";
 }

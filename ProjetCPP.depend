@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1512429568 source:c:\users\adrie\documents\github\rpg-pokemon\main.cpp
+1512432273 source:c:\users\adrie\documents\github\rpg-pokemon\main.cpp
 	"./Tools/PKMN_Table.h"
 	"./BattleMode/PKMN_Type.h"
 	"./Tools/PKMN_Conversion.h"
@@ -29,7 +29,7 @@
 	<vector>
 	<fstream>
 
-1512430610 source:c:\users\adrie\documents\github\rpg-pokemon\tools\pkmn_table.cpp
+1512431881 source:c:\users\adrie\documents\github\rpg-pokemon\tools\pkmn_table.cpp
 	"PKMN_Table.h"
 
 1512385706 source:c:\users\adrie\documents\github\rpg-pokemon\tools\pkmn_pairstring.cpp
@@ -69,10 +69,11 @@
 	<string>
 	<map>
 
-1512430702 c:\users\adrie\documents\github\rpg-pokemon\tools\pkmn_vectormethod.h
+1512432226 c:\users\adrie\documents\github\rpg-pokemon\tools\pkmn_vectormethod.h
 	<vector>
 	<string>
 	<sstream>
+	<iostream>
 
 1512416010 source:c:\users\adrie\documents\github\rpg-pokemon\tools\pkmn_mapmethod.cpp
 	"PKMN_MapMethod.h"
@@ -84,7 +85,7 @@
 	<vector>
 	<map>
 
-1512430639 source:c:\users\adrie\documents\github\rpg-pokemon\tools\pkmn_vectormethod.cpp
+1512432213 source:c:\users\adrie\documents\github\rpg-pokemon\tools\pkmn_vectormethod.cpp
 	"PKMN_VectorMethod.h"
 
 1512427054 c:\users\adrie\documents\github\rpg-pokemon\tools\pkmn_statset.h

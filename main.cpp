@@ -20,5 +20,7 @@ int main()
 //    cout << NormalStatistics(Base, IV, EV, 100, "");
     PKMN_Table table3("PokedexBaseStat.txt");
     cout << table3;
+    cout << endl << endl;
+    vector_print(table3.getColumnValuesWithColumnName("Def"));
 //    cout << table3("37", "Species");
 }
