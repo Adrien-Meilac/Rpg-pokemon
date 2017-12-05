@@ -2,6 +2,7 @@
 #include "./Pokemon/PKMN_Type.h"
 #include "./Tools/PKMN_Conversion.h"
 #include "./Tools/PKMN_StatSet.h"
+#include "./Pokemon/PKMN_ExpAndLevel.h"
 
 using namespace std;
 
@@ -18,6 +19,15 @@ int main()
     PKMN_StatSet IV;
     PKMN_StatSet EV(0,0,0,0,0,0);
     cout << NormalStatistics(Base, IV, EV, 100, "");
+    PKMN_ExpAndLevel lvl("FAST",0, 10);
+    cout << lvl.getLevel() << "," << lvl.getExperience() << endl;
+    unsigned int compteur = 0;
+    while(compteur <= 2000)
+    {
+        lvl.addExperience(100);
+        cout << lvl.getLevel() << "," << lvl.getExperience()<< endl;
+        compteur ++;
+    }
 //    PKMN_Table table3("PokedexBaseStat.txt");
 //    cout << table3;
 //    cout << endl << endl;

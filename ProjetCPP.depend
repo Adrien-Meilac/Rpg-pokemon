@@ -1,9 +1,10 @@
 # depslib dependency file v1.0
-1512432273 source:c:\users\adrie\documents\github\rpg-pokemon\main.cpp
+1512472379 source:c:\users\adrie\documents\github\rpg-pokemon\main.cpp
 	"./Tools/PKMN_Table.h"
-	"./BattleMode/PKMN_Type.h"
+	"./Pokemon/PKMN_Type.h"
 	"./Tools/PKMN_Conversion.h"
 	"./Tools/PKMN_StatSet.h"
+	"./Pokemon/PKMN_ExpAndLevel.h"
 
 1512163115 c:\users\adrie\documents\github\rpg-pokemon\tools\pkmn_tuple.h
 	<string>
@@ -95,7 +96,7 @@
 	<cstdlib>
 	<ctime>
 
-1512427000 source:c:\users\adrie\documents\github\rpg-pokemon\tools\pkmn_statset.cpp
+1512465785 source:c:\users\adrie\documents\github\rpg-pokemon\tools\pkmn_statset.cpp
 	"PKMN_StatSet.h"
 
 1512429113 source:c:\users\adrie\documents\github\rpg-pokemon\tools\pkmn_tablemap.cpp
@@ -109,4 +110,23 @@
 	<vector>
 	<fstream>
 	<map>
+
+1512429018 c:\users\adrie\documents\github\rpg-pokemon\pokemon\pkmn_type.h
+	"../Tools/PKMN_Table.h"
+	"../Tools/PKMN_Conversion.h"
+	"../Tools/PKMN_VectorMethod.h"
+	<string>
+	<vector>
+
+1512417482 source:c:\users\adrie\documents\github\rpg-pokemon\pokemon\pkmn_type.cpp
+	"PKMN_Type.h"
+
+1512472229 source:c:\users\adrie\documents\github\rpg-pokemon\pokemon\pkmn_expandlevel.cpp
+	"PKMN_ExpAndLevel.h"
+
+1512472642 c:\users\adrie\documents\github\rpg-pokemon\pokemon\pkmn_expandlevel.h
+	<cmath>
+	<string>
+	<cstdlib>
+	<ctime>
 
