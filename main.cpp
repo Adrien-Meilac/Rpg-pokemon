@@ -1,5 +1,5 @@
 #include "./Tools/PKMN_Table.h"
-#include "./BattleMode/PKMN_Type.h"
+#include "./Pokemon/PKMN_Type.h"
 #include "./Tools/PKMN_Conversion.h"
 #include "./Tools/PKMN_StatSet.h"
 
