@@ -134,4 +134,5 @@ PKMN_Type& PKMN_Type::operator=(PKMN_Type const& other)
     m_Immunities = other.m_Immunities;
     m_Resistances = other.m_Resistances;
     m_IsSpecialType = other.m_IsSpecialType;
+    return *this;
 }

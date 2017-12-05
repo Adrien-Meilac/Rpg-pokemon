@@ -37,5 +37,5 @@ int main()
     PKMN_Type t1("FIRE");
     PKMN_Type t2("WATER");
     cout << endl << t1.effectiveness(t2);
-    PKMN_Moves m1("MEGAHORN",1,"Megahorn","000",120,"BUG","Physical",85,10,0,"00",0,"abef","Using its tough and impressive horn, the user rams into the target with no letup.");
+    PKMN_Moves m1();//("MEGAHORN",1,"Megahorn","000",120,"BUG","Physical",85,10,0,"00",0,"abef","Using its tough and impressive horn, the user rams into the target with no letup.");
 }

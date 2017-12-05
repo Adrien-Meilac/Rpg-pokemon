@@ -2,12 +2,12 @@
 <CodeBlocks_project_file>
 	<FileVersion major="1" minor="6" />
 	<Project>
-		<Option title="ProjetCPP" />
+		<Option title="rpg" />
 		<Option pch_mode="2" />
 		<Option compiler="gcc" />
 		<Build>
 			<Target title="Debug">
-				<Option output="bin/Debug/ProjetCPP" prefix_auto="1" extension_auto="1" />
+				<Option output="bin/Debug/rpg" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Debug/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
@@ -16,7 +16,7 @@
 				</Compiler>
 			</Target>
 			<Target title="Release">
-				<Option output="bin/Release/ProjetCPP" prefix_auto="1" extension_auto="1" />
+				<Option output="bin/Release/rpg" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Release/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
@@ -34,6 +34,8 @@
 		</Compiler>
 		<Unit filename="PKMN_Pokemon/PKMN_ExpAndLevel.cpp" />
 		<Unit filename="PKMN_Pokemon/PKMN_ExpAndLevel.h" />
+		<Unit filename="PKMN_Pokemon/PKMN_Moves.cpp" />
+		<Unit filename="PKMN_Pokemon/PKMN_Moves.h" />
 		<Unit filename="PKMN_Pokemon/PKMN_Type.cpp" />
 		<Unit filename="PKMN_Pokemon/PKMN_Type.h" />
 		<Unit filename="PKMN_Tools/PKMN_Conversion.cpp" />
