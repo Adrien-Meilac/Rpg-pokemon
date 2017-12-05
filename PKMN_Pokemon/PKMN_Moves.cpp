@@ -19,36 +19,37 @@ PKMN_Moves::PKMN_Moves():
 
 }
 
-//PKMN_Moves::PKMN_Moves(std::string InternalName,
-//                        unsigned int ID,
-//                        std::string DisplayName,
-//                        std::string FunctionCode, // Hexadecimal number
-//                        unsigned int BasePower,
-//                        std::string Type_InternalName,
-//                        std::string DamageCategory,
-//                        unsigned int Accuracy,
-//                        unsigned int TotalPP,
-//                        unsigned int AdditionalEffectChance,
-//                        std::string Target,
-//                        int Priority,
-//                        std::string Flags,
-//                        std::string Description):
-//    m_Type(Type_InternalName)
-//{
-//    m_InternalName = InternalName;
-//    m_ID = ID;
-//    m_DisplayName = DisplayName;
-//    m_FunctionCode = FunctionCode;
-//    m_BasePower = BasePower;
-//    m_DamageCategory = DamageCategory;
-//    m_Accuracy = Accuracy;
-//    m_TotalPP = TotalPP;
-//    m_AdditionalEffectChance = AdditionalEffectChance;
-//    m_Target = Target;
-//    m_Priority = Priority;
-//    m_Flags = Flags;
-//    m_Description = Description;
-//}
+PKMN_Moves::PKMN_Moves(std::string InternalName,
+                        unsigned int ID,
+                        std::string DisplayName,
+                        std::string FunctionCode, // Hexadecimal number
+                        unsigned int BasePower,
+                        std::string Type_InternalName,
+                        std::string DamageCategory,
+                        unsigned int Accuracy,
+                        unsigned int TotalPP,
+                        unsigned int AdditionalEffectChance,
+                        std::string Target,
+                        int Priority,
+                        std::string Flags,
+                        std::string Description):
+    m_InternalName(InternalName),
+    m_ID(ID),
+    m_DisplayName(DisplayName),
+    m_FunctionCode(FunctionCode), // Hexadecimal number
+    m_BasePower(BasePower),
+    m_Type(Type_InternalName),
+    m_DamageCategory(DamageCategory),
+    m_Accuracy(Accuracy),
+    m_TotalPP(TotalPP),
+    m_AdditionalEffectChance(AdditionalEffectChance),
+    m_Target(Target),
+    m_Priority(Priority),
+    m_Flags(Flags),
+    m_Description(Description)
+{
+
+}
 
 PKMN_Moves::~PKMN_Moves()
 {
