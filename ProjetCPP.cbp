@@ -44,6 +44,8 @@
 		<Unit filename="Tools/PKMN_Table.h" />
 		<Unit filename="Tools/PKMN_TableCoordinates.cpp" />
 		<Unit filename="Tools/PKMN_TableCoordinates.h" />
+		<Unit filename="Tools/PKMN_TableMap.cpp" />
+		<Unit filename="Tools/PKMN_TableMap.h" />
 		<Unit filename="Tools/PKMN_VectorMethod.cpp" />
 		<Unit filename="Tools/PKMN_VectorMethod.h" />
 		<Unit filename="main.cpp" />
