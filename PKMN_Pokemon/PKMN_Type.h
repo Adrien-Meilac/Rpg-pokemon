@@ -1,11 +1,11 @@
 #ifndef TYPE_H
 #define TYPE_H
 
-#include "../Tools/PKMN_Table.h"
-#include "../Tools/PKMN_Conversion.h"
-#include "../Tools/PKMN_VectorMethod.h"
 #include <string>
 #include <vector>
+#include "../PKMN_Tools/PKMN_Table.h"
+#include "../PKMN_Tools/PKMN_Conversion.h"
+#include "../PKMN_Tools/PKMN_VectorMethod.h"
 
 #define INEFFECTIVE 0
 #define NOT_VERY_EFFECTIVE 0.5
@@ -24,6 +24,7 @@ public:
               std::string Immunities,
               std::string Resistances,
               std::string IsSpecialType);
+    PKMN_Type(std::string Name); // Or internal name ? ?
     PKMN_Type(std::vector<std::string> Line);
     double effectiveness(PKMN_Type const Type_att) const;
     double effectiveness(std::pair<PKMN_Type, PKMN_Type> PairType_att) const;

@@ -1,10 +1,10 @@
 # depslib dependency file v1.0
-1512472379 source:c:\users\adrie\documents\github\rpg-pokemon\main.cpp
-	"./Tools/PKMN_Table.h"
-	"./Pokemon/PKMN_Type.h"
-	"./Tools/PKMN_Conversion.h"
-	"./Tools/PKMN_StatSet.h"
-	"./Pokemon/PKMN_ExpAndLevel.h"
+1512473821 source:c:\users\adrie\documents\github\rpg-pokemon\main.cpp
+	"./PKMN_Tools/PKMN_Table.h"
+	"./PKMN_Pokemon/PKMN_Type.h"
+	"./PKMN_Tools/PKMN_Conversion.h"
+	"./PKMN_Tools/PKMN_StatSet.h"
+	"./PKMN_Pokemon/PKMN_ExpAndLevel.h"
 
 1512163115 c:\users\adrie\documents\github\rpg-pokemon\tools\pkmn_tuple.h
 	<string>
@@ -129,4 +129,88 @@
 	<string>
 	<cstdlib>
 	<ctime>
+
+1512431871 c:\users\adrie\documents\github\rpg-pokemon\pkmn_tools\pkmn_table.h
+	"PKMN_VectorMethod.h"
+	<iostream>
+	<string>
+	<vector>
+	<fstream>
+
+1512432226 c:\users\adrie\documents\github\rpg-pokemon\pkmn_tools\pkmn_vectormethod.h
+	<vector>
+	<string>
+	<sstream>
+	<iostream>
+
+1512474117 c:\users\adrie\documents\github\rpg-pokemon\pkmn_pokemon\pkmn_type.h
+	<string>
+	<vector>
+	"../PKMN_Tools/PKMN_Table.h"
+	"../PKMN_Tools/PKMN_Conversion.h"
+	"../PKMN_Tools/PKMN_VectorMethod.h"
+
+1512415055 c:\users\adrie\documents\github\rpg-pokemon\pkmn_tools\pkmn_conversion.h
+	<string>
+	<iostream>
+
+1512427054 c:\users\adrie\documents\github\rpg-pokemon\pkmn_tools\pkmn_statset.h
+	<cmath>
+	<string>
+	<iostream>
+	<cstdlib>
+	<ctime>
+
+1512473037 c:\users\adrie\documents\github\rpg-pokemon\pkmn_pokemon\pkmn_expandlevel.h
+	<cmath>
+	<string>
+	<cstdlib>
+	<ctime>
+
+1512473069 source:c:\users\adrie\documents\github\rpg-pokemon\pkmn_pokemon\pkmn_expandlevel.cpp
+	"PKMN_ExpAndLevel.h"
+
+1512417482 source:c:\users\adrie\documents\github\rpg-pokemon\pkmn_pokemon\pkmn_type.cpp
+	"PKMN_Type.h"
+
+1512415493 source:c:\users\adrie\documents\github\rpg-pokemon\pkmn_tools\pkmn_conversion.cpp
+	"PKMN_Conversion.h"
+
+1512416010 source:c:\users\adrie\documents\github\rpg-pokemon\pkmn_tools\pkmn_mapmethod.cpp
+	"PKMN_MapMethod.h"
+
+1512416212 c:\users\adrie\documents\github\rpg-pokemon\pkmn_tools\pkmn_mapmethod.h
+	"PKMN_TableCoordinates.h"
+	<iostream>
+	<string>
+	<vector>
+	<map>
+
+1512387725 c:\users\adrie\documents\github\rpg-pokemon\pkmn_tools\pkmn_tablecoordinates.h
+	<iostream>
+	<string>
+
+1512465785 source:c:\users\adrie\documents\github\rpg-pokemon\pkmn_tools\pkmn_statset.cpp
+	"PKMN_StatSet.h"
+
+1512431881 source:c:\users\adrie\documents\github\rpg-pokemon\pkmn_tools\pkmn_table.cpp
+	"PKMN_Table.h"
+
+1512387721 source:c:\users\adrie\documents\github\rpg-pokemon\pkmn_tools\pkmn_tablecoordinates.cpp
+	"PKMN_TableCoordinates.h"
+
+1512429113 source:c:\users\adrie\documents\github\rpg-pokemon\pkmn_tools\pkmn_tablemap.cpp
+	"PKMN_TableMap.h"
+
+1512429098 c:\users\adrie\documents\github\rpg-pokemon\pkmn_tools\pkmn_tablemap.h
+	"PKMN_TableCoordinates.h"
+	"PKMN_VectorMethod.h"
+	<iostream>
+	<string>
+	<vector>
+	<fstream>
+	<map>
+
+1512432411 source:c:\users\adrie\documents\github\rpg-pokemon\pkmn_tools\pkmn_vectormethod.cpp
+	"PKMN_VectorMethod.h"
 

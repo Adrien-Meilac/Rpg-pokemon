@@ -1,8 +1,8 @@
-#include "./Tools/PKMN_Table.h"
-#include "./Pokemon/PKMN_Type.h"
-#include "./Tools/PKMN_Conversion.h"
-#include "./Tools/PKMN_StatSet.h"
-#include "./Pokemon/PKMN_ExpAndLevel.h"
+#include "./PKMN_Tools/PKMN_Table.h"
+#include "./PKMN_Pokemon/PKMN_Type.h"
+#include "./PKMN_Tools/PKMN_Conversion.h"
+#include "./PKMN_Tools/PKMN_StatSet.h"
+#include "./PKMN_Pokemon/PKMN_ExpAndLevel.h"
 
 using namespace std;
 

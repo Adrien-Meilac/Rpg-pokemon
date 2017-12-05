@@ -32,22 +32,24 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="BattleMode/PKMN_Type.cpp" />
-		<Unit filename="BattleMode/PKMN_Type.h" />
-		<Unit filename="Tools/PKMN_Conversion.cpp" />
-		<Unit filename="Tools/PKMN_Conversion.h" />
-		<Unit filename="Tools/PKMN_MapMethod.cpp" />
-		<Unit filename="Tools/PKMN_MapMethod.h" />
-		<Unit filename="Tools/PKMN_StatSet.cpp" />
-		<Unit filename="Tools/PKMN_StatSet.h" />
-		<Unit filename="Tools/PKMN_Table.cpp" />
-		<Unit filename="Tools/PKMN_Table.h" />
-		<Unit filename="Tools/PKMN_TableCoordinates.cpp" />
-		<Unit filename="Tools/PKMN_TableCoordinates.h" />
-		<Unit filename="Tools/PKMN_TableMap.cpp" />
-		<Unit filename="Tools/PKMN_TableMap.h" />
-		<Unit filename="Tools/PKMN_VectorMethod.cpp" />
-		<Unit filename="Tools/PKMN_VectorMethod.h" />
+		<Unit filename="PKMN_Pokemon/PKMN_ExpAndLevel.cpp" />
+		<Unit filename="PKMN_Pokemon/PKMN_ExpAndLevel.h" />
+		<Unit filename="PKMN_Pokemon/PKMN_Type.cpp" />
+		<Unit filename="PKMN_Pokemon/PKMN_Type.h" />
+		<Unit filename="PKMN_Tools/PKMN_Conversion.cpp" />
+		<Unit filename="PKMN_Tools/PKMN_Conversion.h" />
+		<Unit filename="PKMN_Tools/PKMN_MapMethod.cpp" />
+		<Unit filename="PKMN_Tools/PKMN_MapMethod.h" />
+		<Unit filename="PKMN_Tools/PKMN_StatSet.cpp" />
+		<Unit filename="PKMN_Tools/PKMN_StatSet.h" />
+		<Unit filename="PKMN_Tools/PKMN_Table.cpp" />
+		<Unit filename="PKMN_Tools/PKMN_Table.h" />
+		<Unit filename="PKMN_Tools/PKMN_TableCoordinates.cpp" />
+		<Unit filename="PKMN_Tools/PKMN_TableCoordinates.h" />
+		<Unit filename="PKMN_Tools/PKMN_TableMap.cpp" />
+		<Unit filename="PKMN_Tools/PKMN_TableMap.h" />
+		<Unit filename="PKMN_Tools/PKMN_VectorMethod.cpp" />
+		<Unit filename="PKMN_Tools/PKMN_VectorMethod.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />

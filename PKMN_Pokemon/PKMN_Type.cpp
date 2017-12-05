@@ -26,6 +26,24 @@ PKMN_Type::PKMN_Type(std::string Name,
     m_IsSpecialType = string_to_bool(IsSpecialType);
 }
 
+PKMN_Type::PKMN_Type(std::string Name)
+{
+    PKMN_Table table("./PKMN_Data/TypeChart.txt");
+    std::vector<std::string> Line = table.getLineValuesWithLineName(Name);
+    //std::string Name = Line[0];
+    std::string InternalName = Line[1];
+    std::string Weaknesses = Line[2];
+    std::string Immunities = Line[3];
+    std::string Resistances = Line[4];
+    std::string IsSpecialType = Line[5];
+    m_Name = Name;
+    m_InternalName = InternalName;
+    m_Weaknesses = string_split(Weaknesses, ',');
+    m_Immunities = string_split(Immunities, ',');
+    m_Resistances = string_split(Resistances, ',');
+    m_IsSpecialType = string_to_bool(IsSpecialType);
+}
+
 PKMN_Type::PKMN_Type(std::vector<std::string> Line)
 {
     std::string Name = Line[0];
