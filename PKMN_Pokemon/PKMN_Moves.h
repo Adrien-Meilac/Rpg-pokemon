@@ -5,11 +5,15 @@
 #include <iostream>
 #include <string>
 
+#define PATH_TO_MOVES_FILE "./PKMN_Data/Moves.txt"
+
 class PKMN_Moves
 {
 public:
 
     PKMN_Moves();
+    PKMN_Moves(std::string InternalName);
+
     PKMN_Moves(std::string InternalName,
                 unsigned int ID,
                 std::string DisplayName,

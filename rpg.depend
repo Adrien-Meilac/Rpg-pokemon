@@ -1,11 +1,12 @@
 # depslib dependency file v1.0
-1512558942 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\main.cpp
+1512592590 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\main.cpp
 	"./PKMN_Tools/PKMN_Table.h"
 	"./PKMN_Pokemon/PKMN_Type.h"
 	"./PKMN_Tools/PKMN_Conversion.h"
 	"./PKMN_Tools/PKMN_StatSet.h"
 	"./PKMN_Pokemon/PKMN_ExpAndLevel.h"
 	"./PKMN_Pokemon/PKMN_Moves.h"
+	"./PKMN_Pokemon/PKMN_Pokemon.h"
 
 1512564146 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pkmn_tools\pkmn_table.h
 	"PKMN_VectorMethod.h"
@@ -44,7 +45,7 @@
 	<cstdlib>
 	<ctime>
 
-1512497687 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pkmn_pokemon\pkmn_moves.h
+1512591784 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pkmn_pokemon\pkmn_moves.h
 	"PKMN_Type.h"
 	<iostream>
 	<string>
@@ -52,10 +53,10 @@
 1512570786 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pkmn_pokemon\pkmn_expandlevel.cpp
 	"PKMN_ExpAndLevel.h"
 
-1512497792 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pkmn_pokemon\pkmn_moves.cpp
+1512592597 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pkmn_pokemon\pkmn_moves.cpp
 	"PKMN_Moves.h"
 
-1512558987 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pkmn_pokemon\pkmn_type.cpp
+1512591738 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pkmn_pokemon\pkmn_type.cpp
 	"PKMN_Type.h"
 
 1512415493 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pkmn_tools\pkmn_conversion.cpp
@@ -113,4 +114,11 @@
 
 1512571664 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pkmn_pokemon\pkmn_evolution.h
 	<string>
+
+1512572330 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pkmn_pokemon\pkmn_pokemon.cpp
+	"PKMN_Pokemon.h"
+
+1512572004 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pkmn_pokemon\pkmn_pokemon.h
+	<string>
+	"PKMN_Species.h"
 

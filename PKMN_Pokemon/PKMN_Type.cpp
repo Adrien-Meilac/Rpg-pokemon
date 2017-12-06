@@ -30,7 +30,7 @@ PKMN_Type::PKMN_Type(std::string InternalName,
 
 PKMN_Type::PKMN_Type(std::string InternalName)
 {
-    PKMN_Table table("./PKMN_Data/Type.txt");
+    PKMN_Table table(PATH_TO_TYPE_FILE);
     std::vector<std::string> Line = table.getLineValues(InternalName);
     std::string Name = Line[0];
     std::string Weaknesses = Line[1];

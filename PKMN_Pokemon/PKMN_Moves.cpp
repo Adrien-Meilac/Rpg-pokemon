@@ -51,6 +51,42 @@ PKMN_Moves::PKMN_Moves(std::string InternalName,
 
 }
 
+PKMN_Moves::PKMN_Moves(std::string InternalName)
+{
+    PKMN_Table table(PATH_TO_MOVES_FILE);
+    std::vector<std::string> Line = table.getLineValues(InternalName);
+    vector_print(Line);
+    std::cout << std::endl;
+    unsigned int ID = string_to_int(Line[0]);
+    std::string DisplayName = Line[1];
+    std::string Description = Line[2];
+    unsigned int TotalPP = string_to_int(Line[3]);
+    unsigned int BasePower = string_to_int(Line[4]);
+    int Priority = string_to_int(Line[5]);
+    std::string DamageCategory = Line[6];
+    std::string FunctionCode = Line[7];
+    std::string Flags = Line[8];
+    unsigned int Accuracy = string_to_int(Line[9]);
+    std::string Type_InternalName = Line[10];
+    unsigned int AdditionalEffectChance = string_to_int(Line[11]);
+    std::string Target = Line[12];
+    m_InternalName = InternalName;
+    m_ID = ID;
+    m_DisplayName = DisplayName;
+    m_FunctionCode  =  FunctionCode;
+    m_BasePower  = BasePower;
+    m_Type= PKMN_Type(Type_InternalName);
+    m_DamageCategory  = DamageCategory;
+    m_Accuracy  = Accuracy;
+    m_TotalPP = TotalPP;
+    m_AdditionalEffectChance = AdditionalEffectChance;
+    m_Target = Target;
+    m_Priority = Priority;
+    m_Flags = Flags;
+    m_Description = Description;
+}
+
+
 PKMN_Moves::~PKMN_Moves()
 {
     delete &m_ID;

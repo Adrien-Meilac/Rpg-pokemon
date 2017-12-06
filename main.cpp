@@ -53,7 +53,9 @@ int main()
 //    int m_Priority(0);
 //    std::string m_Flags("abef");
 //    std::string m_Description("Using its tough and impressive horn, the user rams into the target with no letup.");
-    PKMN_Moves m1("MEGAHORN",1,"Megahorn","000",120,"BUG","Physical",85,10,0,"00",0,"abef","Using its tough and impressive horn, the user rams into the target with no letup.");
+    PKMN_Table table(PATH_TO_MOVES_FILE);
+    cout << table << endl;
+    PKMN_Moves m1("STRUGGLEBUG");
 //    PKMN_Type fire("FIRE");
 //    PKMN_Type water("STEEL");
 //    PKMN_Type ice("GRASS");
