@@ -75,7 +75,7 @@ PKMN_Moves::PKMN_Moves(std::string InternalName)
     m_DisplayName = DisplayName;
     m_FunctionCode  =  FunctionCode;
     m_BasePower  = BasePower;
-    m_Type= PKMN_Type(Type_InternalName);
+    m_Type = PKMN_Type(Type_InternalName);
     m_DamageCategory  = DamageCategory;
     m_Accuracy  = Accuracy;
     m_TotalPP = TotalPP;
