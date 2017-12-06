@@ -1,5 +1,5 @@
-#ifndef PKMN_VECTORANDMAP_H_INCLUDED
-#define PKMN_VECTORANDMAP_H_INCLUDED
+#ifndef PKMN_VECTORMETHOD_H_INCLUDED
+#define PKMN_VECTORMETHOD_H_INCLUDED
 
 #include <vector>
 #include <string>

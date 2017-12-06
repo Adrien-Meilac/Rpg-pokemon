@@ -1,5 +1,5 @@
-#ifndef STATSET_H
-#define STATSET_H
+#ifndef STATSET_H_INCLUDED
+#define STATSET_H_INCLUDED
 
 #include <cmath>
 #include <string>

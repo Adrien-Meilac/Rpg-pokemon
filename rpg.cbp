@@ -36,6 +36,8 @@
 		<Unit filename="PKMN_Pokemon/PKMN_ExpAndLevel.h" />
 		<Unit filename="PKMN_Pokemon/PKMN_Moves.cpp" />
 		<Unit filename="PKMN_Pokemon/PKMN_Moves.h" />
+		<Unit filename="PKMN_Pokemon/PKMN_Species.cpp" />
+		<Unit filename="PKMN_Pokemon/PKMN_Species.h" />
 		<Unit filename="PKMN_Pokemon/PKMN_Type.cpp" />
 		<Unit filename="PKMN_Pokemon/PKMN_Type.h" />
 		<Unit filename="PKMN_Tools/PKMN_Conversion.cpp" />

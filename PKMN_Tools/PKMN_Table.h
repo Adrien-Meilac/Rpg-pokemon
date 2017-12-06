@@ -1,5 +1,5 @@
-#ifndef PKMN_TABLEPARSER_H_INCLUDED
-#define PKMN_TABLEPARSER_H_INCLUDED
+#ifndef PKMN_TABLE_H_INCLUDED
+#define PKMN_TABLE_H_INCLUDED
 
 #include "PKMN_VectorMethod.h"
 #include <iostream>

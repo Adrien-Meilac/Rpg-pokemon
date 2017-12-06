@@ -1,5 +1,5 @@
-#ifndef TYPE_H
-#define TYPE_H
+#ifndef PKMN_TYPE_H_INCLUDED
+#define PKMN_TYPE_H_INCLUDED
 
 #include <string>
 #include <vector>

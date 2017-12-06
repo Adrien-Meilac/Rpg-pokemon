@@ -1,5 +1,5 @@
-#ifndef LEVELINGRATE_H
-#define LEVELINGRATE_H
+#ifndef PKMN_EXPANDLEVEL_H_INCLUDED
+#define PKMN_EXPANDLEVEL_H_INCLUDED
 
 #include <cmath>
 #include <string>

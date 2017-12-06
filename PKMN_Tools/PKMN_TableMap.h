@@ -1,5 +1,5 @@
-#ifndef PKMN_TableMapPARSER_H_INCLUDED
-#define PKMN_TableMapPARSER_H_INCLUDED
+#ifndef PKMN_TABLEMAP_H_INCLUDED
+#define PKMN_TABLEMAP_H_INCLUDED
 
 #include "PKMN_TableCoordinates.h"
 #include "PKMN_VectorMethod.h"
