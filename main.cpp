@@ -29,7 +29,7 @@ int main()
 //        cout << lvl.getLevel() << "," << lvl.getExperience()<< endl;
 //        compteur ++;
 //    }
-//    PKMN_Table table3("PokedexBaseStat.txt");
+//    PKMN_Table table3(PATH_TO_TYPE_FILE);//"./PKMN_Data/PokedexBaseStat.txt");
 //    cout << table3;
 //    cout << endl << endl;
 //    vector_print(table3.getColumnValuesWithColumnName("Def"));
@@ -52,5 +52,10 @@ int main()
 //    int m_Priority(0);
 //    std::string m_Flags("abef");
 //    std::string m_Description("Using its tough and impressive horn, the user rams into the target with no letup.");
-    PKMN_Moves m1("MEGAHORN",1,"Megahorn","000",120,"BUG","Physical",85,10,0,"00",0,"abef","Using its tough and impressive horn, the user rams into the target with no letup.");
+//    PKMN_Moves m1("MEGAHORN",1,"Megahorn","000",120,"BUG","Physical",85,10,0,"00",0,"abef","Using its tough and impressive horn, the user rams into the target with no letup.");
+    PKMN_Type fire("FIRE");
+    PKMN_Type water("STEEL");
+    PKMN_Type ice("GRASS");
+    std::pair<PKMN_Type, PKMN_Type> t(water, ice);
+    std::cout << typeEffectiveness(fire, t);
 }
