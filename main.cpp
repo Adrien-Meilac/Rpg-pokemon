@@ -4,6 +4,7 @@
 #include "./PKMN_Tools/PKMN_StatSet.h"
 #include "./PKMN_Pokemon/PKMN_ExpAndLevel.h"
 #include "./PKMN_Pokemon/PKMN_Moves.h"
+#include "./PKMN_Pokemon/PKMN_Pokemon.h"
 
 using namespace std;
 

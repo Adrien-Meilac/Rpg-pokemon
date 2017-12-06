@@ -139,4 +139,6 @@ void PKMN_ExpAndLevel::addLevel()
     {
         m_Level += 1;
     }
+    m_Exp = 0;
+    m_ExpToNextLevel = expToNextLevel();
 }

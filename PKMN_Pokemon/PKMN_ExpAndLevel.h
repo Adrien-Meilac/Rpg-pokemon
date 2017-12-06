@@ -29,10 +29,10 @@ public:
     void addExperience(unsigned int exp);
     unsigned int getExperience() const;
     unsigned int getLevel() const;
+    void addLevel();
 
 private:
 
-    void addLevel();
     unsigned int expToNextLevel();
     unsigned int expLevel(unsigned int level);
 
