@@ -16,11 +16,13 @@ PKMN_Type::PKMN_Type():
 PKMN_Type::PKMN_Type(std::string InternalName)
 {
     PKMN_Table table(PATH_TO_TYPE_FILE);
-    m_Name = table(InternalName,"Name");
-    m_Weaknesses = string_split(table(InternalName,"Weaknesses"), ',');
-    m_Resistances = string_split(table(InternalName,"Resistances"), ',');
-    m_Immunities = string_split(table(InternalName,"Immunities"), ',');
-    m_IsSpecialType = string_to_bool(table(InternalName,"IsSpecialType"));
+    std::map<std::string, std::string> type = table.getDicLineValues(InternalName);
+    m_InternalName = InternalName;
+    m_Name = type["Name"];
+    m_Weaknesses = string_split(type["Weaknesses"], ',');
+    m_Resistances = string_split(type["Resistances"], ',');
+    m_Immunities = string_split(type["Immunities"], ',');
+    m_IsSpecialType = string_to_bool(type["IsSpecialType"]);
 }
 
 /// ///////////////////////////////////////// ///
@@ -101,19 +103,19 @@ PKMN_Type& PKMN_Type::operator=(PKMN_Type const& other)
 
 /// ///////////////////////////////////////// ///
 
-double typeEffectiveness(PKMN_Type Type_def, PKMN_Type Type_att)
+double PKMN_Type_effectiveness(PKMN_Type Type_def, PKMN_Type Type_att)
 {
     return Type_def.effectiveness(Type_att);
 }
 
-double typeEffectiveness(PKMN_Type Type_def, std::pair<PKMN_Type, PKMN_Type> Type_att)
+double PKMN_Type_effectiveness(PKMN_Type Type_def, std::pair<PKMN_Type, PKMN_Type> Type_att)
 {
-    return typeEffectiveness(Type_def, Type_att.first) * typeEffectiveness(Type_def, Type_att.second);
+    return PKMN_Type_effectiveness(Type_def, Type_att.first) * PKMN_Type_effectiveness(Type_def, Type_att.second);
 }
 
-double typeEffectiveness(std::pair<PKMN_Type, PKMN_Type> Type_def, PKMN_Type Type_att)
+double PKMN_Type_effectiveness(std::pair<PKMN_Type, PKMN_Type> Type_def, PKMN_Type Type_att)
 {
-    return typeEffectiveness(Type_def.first, Type_att) * typeEffectiveness(Type_def.second, Type_att);
+    return PKMN_Type_effectiveness(Type_def.first, Type_att) * PKMN_Type_effectiveness(Type_def.second, Type_att);
 }
 
 

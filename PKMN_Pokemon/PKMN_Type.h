@@ -61,7 +61,7 @@ private:
 };
 
 
-double typeEffectiveness(PKMN_Type Type_def, PKMN_Type Type_att);
+double PKMN_Type_effectiveness(PKMN_Type Type_def, PKMN_Type Type_att);
 /** \brief Give the effectiveness coefficient
  *
  * \param Type_def PKMN_Type : Type of the receiver of an attack
@@ -70,7 +70,7 @@ double typeEffectiveness(PKMN_Type Type_def, PKMN_Type Type_att);
  *
  */
 
-double typeEffectiveness(PKMN_Type Type_def, std::pair<PKMN_Type, PKMN_Type> Type_att);
+double PKMN_Type_effectiveness(PKMN_Type Type_def, std::pair<PKMN_Type, PKMN_Type> Type_att);
 /** \brief Give the type coefficient effectiveness in the case it is a 2 type attack
 (for example Water Type Move on a Fire Type Pokemon will be given a type advantage)
  *
@@ -79,7 +79,7 @@ double typeEffectiveness(PKMN_Type Type_def, std::pair<PKMN_Type, PKMN_Type> Typ
  *
  */
 
-double typeEffectiveness(std::pair<PKMN_Type, PKMN_Type> Type_def, PKMN_Type Type_att);
+double PKMN_Type_effectiveness(std::pair<PKMN_Type, PKMN_Type> Type_def, PKMN_Type Type_att);
 /** \brief Give the effectiveness coefficient
  *
  * \param Type_def std::pair<PKMN_Type, PKMN_Type> : Type of the receiver of an attack (2 type pokemon)

@@ -99,20 +99,20 @@ std::vector<std::string> PKMN_Table::getColumnNames() const
 }
 
 
-std::string PKMN_Table::operator()(std::string lineName, std::string columnName) const
+std::string PKMN_Table::operator()(std::string nameLine, std::string nameColumn) const
 {
     std::vector<int> dim = this->dimension();
     std::vector<int> i_value(2);
     for(int i = 0; i < dim[0]; i++)
     {
-        if(m_headerLine[i] == lineName)
+        if(m_headerLine[i] == nameLine)
         {
             i_value[0] = i;
         }
     }
     for(int j = 0; j < dim[1]; j++)
     {
-        if(m_headerColumn[j] == columnName)
+        if(m_headerColumn[j] == nameColumn)
         {
             i_value[1] = j;
         }
@@ -160,4 +160,42 @@ std::vector<std::string> PKMN_Table::getLineValuesWithLineName(std::string nameL
 std::vector<std::string> PKMN_Table::getColumnValuesWithColumnName(std::string nameColumn) const
 {
     return vector_insert(this->getColumnValues(nameColumn), nameColumn, 0);
+}
+
+std::map<std::string, std::string> PKMN_Table::getDicLineValues(std::string nameLine) const
+{
+    std::vector<std::string> Line = this->getLineValues(nameLine);
+    std::map<std::string, std::string> mapy;
+    const unsigned int length = Line.size();
+    for(unsigned int i = 0; i < length; i++)
+    {
+        mapy[m_headerColumn[i]] = Line[i];
+    }
+    return mapy;
+}
+
+std::map<std::string, std::string> PKMN_Table::getDicColumnValues(std::string nameColumn) const
+{
+    std::vector<std::string> Column = this->getColumnValues(nameColumn);
+    std::map<std::string, std::string> mapy;
+    const unsigned int length = Column.size();
+    for(unsigned int i = 0; i < length; i++)
+    {
+        mapy[m_headerLine[i]] = Column[i];
+    }
+    return mapy;
+}
+
+std::map<std::string, std::string> PKMN_Table::getDicLineValuesWithLineName(std::string nameLine) const
+{
+    std::map<std::string, std::string> mapy = this->getDicLineValues(nameLine);
+    mapy["nameLine"] = nameLine;
+    return mapy;
+}
+
+std::map<std::string, std::string> PKMN_Table::getDicColumnValuesWithColumnName(std::string nameColumn) const
+{
+    std::map<std::string, std::string> mapy = this->getDicColumnValues(nameColumn);
+    mapy["nameColumn"] = nameColumn;
+    return mapy;
 }

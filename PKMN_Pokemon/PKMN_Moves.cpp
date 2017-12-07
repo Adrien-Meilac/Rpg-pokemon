@@ -1,5 +1,7 @@
 #include "PKMN_Moves.h"
 
+                /// CONSTRUCTORS ///
+
 PKMN_Moves::PKMN_Moves():
     m_InternalName(),
     m_ID(),
@@ -38,6 +40,9 @@ PKMN_Moves::PKMN_Moves(std::string InternalName)
     m_Description = table(InternalName,"Description");
 }
 
+/// ///////////////////////////////////////// ///
+
+                /// DESTRUCTOR ///
 
 PKMN_Moves::~PKMN_Moves()
 {

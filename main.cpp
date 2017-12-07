@@ -56,6 +56,7 @@ int main()
     PKMN_Table table(PATH_TO_MOVES_FILE);
     cout << table << endl;
     PKMN_Moves m1("STRUGGLEBUG");
+    PKMN_Type m("FIRE");
 //    PKMN_Type fire("FIRE");
 //    PKMN_Type water("STEEL");
 //    PKMN_Type ice("GRASS");
