@@ -32,16 +32,6 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="PKMN_Pokemon/PKMN_Evolution.cpp" />
-		<Unit filename="PKMN_Pokemon/PKMN_Evolution.h" />
-		<Unit filename="PKMN_Pokemon/PKMN_ExpAndLevel.cpp" />
-		<Unit filename="PKMN_Pokemon/PKMN_ExpAndLevel.h" />
-		<Unit filename="PKMN_Pokemon/PKMN_Moves.cpp" />
-		<Unit filename="PKMN_Pokemon/PKMN_Moves.h" />
-		<Unit filename="PKMN_Pokemon/PKMN_Pokemon.cpp" />
-		<Unit filename="PKMN_Pokemon/PKMN_Pokemon.h" />
-		<Unit filename="PKMN_Pokemon/PKMN_Species.cpp" />
-		<Unit filename="PKMN_Pokemon/PKMN_Species.h" />
 		<Unit filename="PKMN_Pokemon/PKMN_Type.cpp" />
 		<Unit filename="PKMN_Pokemon/PKMN_Type.h" />
 		<Unit filename="PKMN_Tools/PKMN_Conversion.cpp" />

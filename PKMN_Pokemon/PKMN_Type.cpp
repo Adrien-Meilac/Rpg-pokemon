@@ -16,13 +16,17 @@ PKMN_Type::PKMN_Type():
 PKMN_Type::PKMN_Type(std::string InternalName)
 {
     PKMN_Table table(PATH_TO_TYPE_FILE);
-    std::map<std::string, std::string> type = table.getDicLineValues(InternalName);
     m_InternalName = InternalName;
-    m_Name = type["Name"];
-    m_Weaknesses = string_split(type["Weaknesses"], ',');
-    m_Resistances = string_split(type["Resistances"], ',');
-    m_Immunities = string_split(type["Immunities"], ',');
-    m_IsSpecialType = string_to_bool(type["IsSpecialType"]);
+    std::string Name = table(InternalName, "Name");
+    m_Name = Name;
+    std::string Weaknesses = table(InternalName,"Weaknesses");
+    m_Weaknesses = string_split(Weaknesses, ',');
+    std::string Resistances = table(InternalName,"Resistances");
+    m_Resistances = string_split(Resistances, ',');
+    std::string Immunities = table(InternalName,"Immunities");
+    m_Immunities = string_split(Immunities, ',');
+    std::string IsSpecialType = table(InternalName,"IsSpecialType");
+    m_IsSpecialType = string_to_bool(IsSpecialType);
 }
 
 /// ///////////////////////////////////////// ///

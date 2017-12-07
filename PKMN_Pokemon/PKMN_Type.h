@@ -1,11 +1,9 @@
 #ifndef PKMN_TYPE_H_INCLUDED
 #define PKMN_TYPE_H_INCLUDED
 
-#include <string>
-#include <vector>
 #include "../PKMN_Tools/PKMN_Table.h"
 #include "../PKMN_Tools/PKMN_Conversion.h"
-#include "../PKMN_Tools/PKMN_VectorMethod.h"
+#include <string>
 
 #define INEFFECTIVE 0
 #define NOT_VERY_EFFECTIVE 0.5

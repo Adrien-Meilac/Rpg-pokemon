@@ -22,6 +22,10 @@ std::vector<std::string> string_split(const std::string& line, const char delim)
     {
         L.push_back(item);
     }
+    if(line[line.size() - 1] == delim)
+    {
+        L.push_back("");
+    }
     return L;
 }
 

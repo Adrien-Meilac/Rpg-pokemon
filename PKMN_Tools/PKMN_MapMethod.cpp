@@ -17,3 +17,11 @@ void map_print(std::map<PKMN_TableCoordinates, std::string> dictionnary)
         std::cout << i->first << " : " << i->second << std::endl;
     }
 }
+
+void map_print(std::map<std::string, std::string> dictionnary)
+{
+    for(std::map<std::string, std::string>::iterator i(dictionnary.begin()); i != dictionnary.end(); i++)
+    {
+        std::cout << i->first << " : " << i->second << std::endl;
+    }
+}
