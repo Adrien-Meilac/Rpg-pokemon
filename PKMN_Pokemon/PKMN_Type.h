@@ -27,13 +27,6 @@ public:
      */
 
     // constructor for tests :
-    PKMN_Type(std::string Name,
-              std::string InternalName,
-              std::string Weaknesses,
-              std::string Immunities,
-              std::string Resistances,
-              std::string IsSpecialType);
-    PKMN_Type(std::vector<std::string> Line);
 
     PKMN_Type& operator=(PKMN_Type const& other);
 

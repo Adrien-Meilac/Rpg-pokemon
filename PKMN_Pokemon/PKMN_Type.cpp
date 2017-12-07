@@ -13,52 +13,14 @@ PKMN_Type::PKMN_Type():
 
 }
 
-PKMN_Type::PKMN_Type(std::string InternalName,
-                    std::string Name,
-                    std::string Weaknesses,
-                    std::string Immunities,
-                    std::string Resistances,
-                    std::string IsSpecialType)
-{
-    m_InternalName = InternalName;
-    m_Name = Name;
-    m_Weaknesses = string_split(Weaknesses, ',');
-    m_Immunities = string_split(Immunities, ',');
-    m_Resistances = string_split(Resistances, ',');
-    m_IsSpecialType = string_to_bool(IsSpecialType);
-}
-
 PKMN_Type::PKMN_Type(std::string InternalName)
 {
     PKMN_Table table(PATH_TO_TYPE_FILE);
-    std::vector<std::string> Line = table.getLineValues(InternalName);
-    std::string Name = Line[0];
-    std::string Weaknesses = Line[1];
-    std::string Immunities = Line[2];
-    std::string Resistances = Line[3];
-    std::string IsSpecialType = Line[4];
-    m_InternalName = InternalName;
-    m_Name = Name;
-    m_Weaknesses = string_split(Weaknesses, ',');
-    m_Immunities = string_split(Immunities, ',');
-    m_Resistances = string_split(Resistances, ',');
-    m_IsSpecialType = string_to_bool(IsSpecialType);
-}
-
-PKMN_Type::PKMN_Type(std::vector<std::string> Line)
-{
-    std::string InternalName = Line[0];
-    std::string Name = Line[1];
-    std::string Weaknesses = Line[2];
-    std::string Immunities = Line[3];
-    std::string Resistances = Line[4];
-    std::string IsSpecialType = Line[5];
-    m_InternalName = InternalName;
-    m_Name = Name;
-    m_Weaknesses = string_split(Weaknesses, ',');
-    m_Immunities = string_split(Immunities, ',');
-    m_Resistances = string_split(Resistances, ',');
-    m_IsSpecialType = string_to_bool(IsSpecialType);
+    m_Name = table(InternalName,"Name");
+    m_Weaknesses = string_split(table(InternalName,"Weaknesses"), ',');
+    m_Resistances = string_split(table(InternalName,"Resistances"), ',');
+    m_Immunities = string_split(table(InternalName,"Immunities"), ',');
+    m_IsSpecialType = string_to_bool(table(InternalName,"IsSpecialType"));
 }
 
 /// ///////////////////////////////////////// ///

@@ -14,20 +14,6 @@ public:
     PKMN_Moves();
     PKMN_Moves(std::string InternalName);
 
-    PKMN_Moves(std::string InternalName,
-                unsigned int ID,
-                std::string DisplayName,
-                std::string FunctionCode, // Hexadecimal number
-                unsigned int BasePower,
-                std::string Type_InternalName,
-                std::string DamageCategory,
-                unsigned int Accuracy,
-                unsigned int TotalPP,
-                unsigned int AdditionalEffectChance,
-                std::string Target,
-                int Priority,
-                std::string Flags,
-                std::string Description);
     virtual ~PKMN_Moves();
     //void print() const;
 
