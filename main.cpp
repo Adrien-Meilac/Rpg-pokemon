@@ -14,6 +14,6 @@ int main()
     PKMN_Type t2("WATER");
     cout << t.effectiveness(t2) << endl;
     cout << t.getName() << endl;
-    cout << t.effectiveness(t2) << endl;
+    cout << t2.effectiveness(t) << endl;
     return 0;
 }

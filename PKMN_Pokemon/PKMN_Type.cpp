@@ -11,16 +11,11 @@ PKMN_Type::PKMN_Type(std::string InternalName)
 {
     PKMN_Table table(FILE_POKEMON_TYPE);
     m_InternalName = InternalName;
-    std::string Name = table(InternalName, "Name");
-    m_Name = Name;
-    std::string Weaknesses = table(InternalName,"Weaknesses");
-    m_Weaknesses = string_split(Weaknesses, ',');
-    std::string Resistances = table(InternalName,"Resistances");
-    m_Resistances = string_split(Resistances, ',');
-    std::string Immunities = table(InternalName,"Immunities");
-    m_Immunities = string_split(Immunities, ',');
-    std::string IsSpecialType = table(InternalName,"IsSpecialType");
-    m_IsSpecialType = string_to_bool(IsSpecialType);
+    m_Name = table(InternalName, "Name");
+    m_Weaknesses = string_split(table(InternalName,"Weaknesses"), ',');
+    m_Resistances = string_split(table(InternalName,"Resistances"), ',');
+    m_Immunities = string_split(table(InternalName,"Immunities"), ',');
+    m_IsSpecialType = string_to_bool(table(InternalName,"IsSpecialType"));
 }
 
 /// ///////////////////////////////////////// ///
