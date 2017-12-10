@@ -40,20 +40,20 @@ std::string PKMN_Type::getInternalName() const
 {
     return m_InternalName;
 }
-std::vector<std::string> PKMN_Type::getWeaknesses() const
-{
-    return m_Weaknesses;
-}
-
-std::vector<std::string> PKMN_Type::getImmunities() const
-{
-    return m_Immunities;
-}
-
-std::vector<std::string> PKMN_Type::getResistances() const
-{
-    return m_Resistances;
-}
+//std::vector<std::string> PKMN_Type::getWeaknesses() const
+//{
+//    return m_Weaknesses;
+//}
+//
+//std::vector<std::string> PKMN_Type::getImmunities() const
+//{
+//    return m_Immunities;
+//}
+//
+//std::vector<std::string> PKMN_Type::getResistances() const
+//{
+//    return m_Resistances;
+//}
 
 /// ///////////////////////////////////////// ///
 
@@ -87,6 +87,16 @@ PKMN_Type& PKMN_Type::operator=(PKMN_Type const& other)
     m_Resistances = other.m_Resistances;
     m_IsSpecialType = other.m_IsSpecialType;
     return *this;
+}
+
+void PKMN_Type::print() const
+{
+    std::cout << "PKMN_Type " << m_InternalName << std::endl;
+    std::cout << "\t" << "Name = " << m_Name << std::endl;
+    std::cout << "\t" << "Weaknesses = " << vector_join(m_Weaknesses) << std::endl;
+    std::cout << "\t" << "Immunities = " << vector_join(m_Immunities) << std::endl;
+    std::cout << "\t" << "Resistances = " << vector_join(m_Resistances) << std::endl;
+    std::cout << "\t" << "IsSpecialType = " << m_IsSpecialType << std::endl;
 }
 
 /// ///////////////////////////////////////// ///

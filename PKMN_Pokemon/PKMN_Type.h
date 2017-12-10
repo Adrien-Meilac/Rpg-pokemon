@@ -4,6 +4,7 @@
 #include "../PKMN_Tools/PKMN_Table.h"
 #include "../PKMN_FilePath.h"
 #include "../PKMN_Tools/PKMN_Conversion.h"
+#include "../PKMN_Tools/PKMN_VectorMethod.h"
 #include <string>
 #include <iostream>
 
@@ -25,7 +26,7 @@ public:
      *
      */
 
-    // constructor for tests :
+    /// constructor for tests :
 
     PKMN_Type& operator=(PKMN_Type const& other);
 
@@ -38,24 +39,26 @@ public:
      *
      */
 
-    // getters :
+     void print() const;
+
+    /// getters :
     std::string getName() const;
     std::string getInternalName() const;
-    std::vector<std::string> getWeaknesses() const;
-    std::vector<std::string> getImmunities() const;
-    std::vector<std::string> getResistances() const;
+//    std::vector<std::string> getWeaknesses() const;
+//    std::vector<std::string> getImmunities() const;
+//    std::vector<std::string> getResistances() const;
 
-    // destructor :
-    virtual ~PKMN_Type();
+    /// destructor :
+    ~PKMN_Type();
 
 private:
 
-    std::string m_InternalName; // Unique ID
-    std::string m_Name; // Name that is displayed in the game
-    std::vector<std::string> m_Weaknesses; // InternalName of weaknesses of a type
-    std::vector<std::string> m_Immunities; // InternalName of immunities of a type
-    std::vector<std::string> m_Resistances; // InternalName of resistance of a type
-    bool m_IsSpecialType; // Is the type special ?
+    std::string m_InternalName; /// Unique ID
+    std::string m_Name; /// Name that is displayed in the game
+    std::vector<std::string> m_Weaknesses; /// InternalName of weaknesses of a type
+    std::vector<std::string> m_Immunities; /// InternalName of immunities of a type
+    std::vector<std::string> m_Resistances; /// InternalName of resistance of a type
+    bool m_IsSpecialType; /// Is the type special ?
 
 };
 

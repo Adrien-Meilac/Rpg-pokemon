@@ -1,9 +1,9 @@
 #include <iostream>
-#include "PKMN_Tools/PKMN_Conversion.h"
-#include "PKMN_Tools/PKMN_StatSet.h"
-#include "PKMN_Tools/PKMN_VectorMethod.h"
-#include "PKMN_Tools/PKMN_Table.h"
+#include <vector>
+#include <string>
 #include "PKMN_Pokemon/PKMN_Type.h"
+#include "PKMN_Pokemon/PKMN_Moves.h"
+
 
 using namespace std;
 
@@ -11,9 +11,12 @@ int main()
 {
     cout << "Hello world!" << endl;
     PKMN_Type t("FIRE");
-    PKMN_Type t2("WATER");
+    PKMN_Type t2("DARK");
+    t2.print();
     cout << t.effectiveness(t2) << endl;
     cout << t.getName() << endl;
     cout << t2.effectiveness(t) << endl;
+    PKMN_Moves t3("BEATUP");
+    t3.print();
     return 0;
 }

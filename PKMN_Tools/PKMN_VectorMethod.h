@@ -34,12 +34,14 @@ std::vector<std::string> vector_insert(std::vector<std::string> L, const std::st
      *
      */
 
-void vector_print(const std::vector<std::string>& v);
+void vector_print(const std::vector<std::string>& L);
     /** \brief print a vector (Ex (1; 2; 3)
      *
      * \param v const std::vector<std::string>& : vector to print
      * \return void
      *
      */
+
+std::string vector_join(const std::vector<std::string>& L, const char& delim = ';');
 
 #endif // PKMN_VECTORMETHOD_H_INCLUDED

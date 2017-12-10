@@ -45,13 +45,28 @@ std::vector<std::string> vector_insert(std::vector<std::string> L, const std::st
     return L2;
 }
 
-void vector_print(const std::vector<std::string>& v)
+void vector_print(const std::vector<std::string>& L)
 {
-    const unsigned int length = v.size();
+    const unsigned int length = L.size();
     std::cout << "(";
     for(unsigned int i = 0; i < length - 1; i++)
     {
-        std::cout << v[i] << "; ";
+        std::cout << L[i] << "; ";
     }
-    std::cout << v[length - 1] << ")";
+    std::cout << L[length - 1] << ")";
+}
+
+std::string vector_join(const std::vector<std::string>& L, const char& delim)
+{
+    const unsigned int length = L.size();
+    std::string joinedText = "";
+    if(length != 0)
+    {
+        for(unsigned int i = 0; i < length - 1; i++)
+        {
+            joinedText += L[i] + delim;
+        }
+        joinedText += L[length - 1];
+    }
+    return joinedText;
 }
