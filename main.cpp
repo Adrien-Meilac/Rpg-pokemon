@@ -4,21 +4,14 @@
 #include "PKMN_Pokemon/PKMN_Type.h"
 #include "PKMN_Pokemon/PKMN_Moves.h"
 #include "PKMN_Pokemon/PKMN_ExpAndLevel.h"
+#include "PKMN_Pokemon/PKMN_Species.h"
+#include "PKMN_Pokemon/PKMN_Pokemon.h"
 
 
 using namespace std;
 
 int main()
 {
-    cout << "Hello world!" << endl;
-    PKMN_Type t("FIRE");
-    PKMN_Type t2("DARK");
-    t2.print();
-    cout << t.effectiveness(t2) << endl;
-    cout << t.getName() << endl;
-    cout << t2.effectiveness(t) << endl;
-    PKMN_Moves t3("BEATUP");
-    PKMN_ExpAndLevel lvl("Parabolic", 6);
-    lvl.print();
+    PKMN_Pokemon a("1");
     return 0;
 }

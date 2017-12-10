@@ -6,6 +6,9 @@
 #include <iostream> // For ostream flux
 #include <cstdlib> // for rand()
 #include <ctime> // for rand()
+#include <vector> // for spliting statset
+#include "PKMN_Conversion.h"
+#include "PKMN_VectorMethod.h"
 
 class PKMN_StatSet
 /// PKMN_StatSet is a class that allow to save statistics (HP, Att, Def, SpAtt, SpDef, Speed)
@@ -17,6 +20,7 @@ public:
     PKMN_StatSet(); // IV generator
     PKMN_StatSet(int HP, int Att, int Def, int SpAtt, int SpDef, int Speed);
     PKMN_StatSet(double HP, double Att, double Def, double SpAtt, double SpDef, double Speed);
+    PKMN_StatSet(std::string Stat);
     PKMN_StatSet(PKMN_StatSet const& Other);
 
     // Getters :

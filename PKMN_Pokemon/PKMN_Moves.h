@@ -17,7 +17,7 @@ public:
 
     PKMN_Moves& operator=(PKMN_Moves const& other);
 
-    virtual ~PKMN_Moves();
+    ~PKMN_Moves();
     void print() const;
 
 private:
@@ -38,5 +38,7 @@ private:
     std::string m_Description;
 
 };
+
+std::vector<PKMN_Moves> read_moves(std::string moves);
 
 #endif // PKMN_MOVES_H_INCLUDED

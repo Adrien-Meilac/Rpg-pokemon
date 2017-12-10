@@ -6,23 +6,27 @@
 	<string>
 	<cmath>
 
-1512925505 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\main.cpp
+1512940134 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\main.cpp
 	<iostream>
 	<vector>
 	<string>
 	"PKMN_Pokemon/PKMN_Type.h"
 	"PKMN_Pokemon/PKMN_Moves.h"
 	"PKMN_Pokemon/PKMN_ExpAndLevel.h"
+	"PKMN_Pokemon/PKMN_Species.h"
 
-1512910932 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pkmn_tools\pkmn_statset.cpp
+1512940315 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pkmn_tools\pkmn_statset.cpp
 	"PKMN_StatSet.h"
 
-1512910773 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pkmn_tools\pkmn_statset.h
+1512939517 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pkmn_tools\pkmn_statset.h
 	<cmath>
 	<string>
 	<iostream>
 	<cstdlib>
 	<ctime>
+	<vector>
+	"PKMN_Conversion.h"
+	"PKMN_VectorMethod.h"
 
 1512921465 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pkmn_tools\pkmn_vectormethod.cpp
 	"PKMN_VectorMethod.h"
@@ -44,7 +48,7 @@
 	<vector>
 	<fstream>
 
-1512912168 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pkmn_filepath.h
+1512943236 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pkmn_filepath.h
 
 1512922065 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pkmn_pokemon\pkmn_type.h
 	"../PKMN_Tools/PKMN_Table.h"
@@ -54,17 +58,17 @@
 	<string>
 	<iostream>
 
-1512921518 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pkmn_pokemon\pkmn_type.cpp
+1512940198 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pkmn_pokemon\pkmn_type.cpp
 	"PKMN_Type.h"
 
-1512922096 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pkmn_pokemon\pkmn_moves.h
+1512943907 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pkmn_pokemon\pkmn_moves.h
 	"PKMN_Type.h"
 	"../PKMN_Tools/PKMN_Table.h"
 	"../PKMN_FilePath.h"
 	<iostream>
 	<string>
 
-1512924449 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pkmn_pokemon\pkmn_moves.cpp
+1512944122 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pkmn_pokemon\pkmn_moves.cpp
 	"PKMN_Moves.h"
 
 1512925577 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pkmn_pokemon\pkmn_expandlevel.cpp
@@ -76,4 +80,26 @@
 	<cstdlib>
 	<ctime>
 	<iostream>
+
+1512941124 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pkmn_pokemon\pkmn_species.cpp
+	"PKMN_Species.h"
+
+1512944347 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pkmn_pokemon\pkmn_species.h
+	"PKMN_Type.h"
+	"PKMN_ExpAndLevel.h"
+	"PKMN_Moves.h"
+	"../PKMN_Tools/PKMN_StatSet.h"
+	<string>
+	<vector>
+	<iostream>
+
+1512944304 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pkmn_pokemon\pkmn_pokemon.cpp
+	"PKMN_Pokemon.h"
+
+1512944185 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pkmn_pokemon\pkmn_pokemon.h
+	"../PKMN_Tools/PKMN_StatSet.h"
+	"../PKMN_FilePath.h"
+	"PKMN_Species.h"
+	"PKMN_Moves.h"
+	"PKMN_ExpAndLevel.h"
 

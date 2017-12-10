@@ -4,7 +4,7 @@
 
 PKMN_Moves::PKMN_Moves()
 {
-
+    m_InternalName = "";
 }
 
 PKMN_Moves::PKMN_Moves(std::string InternalName)
@@ -72,4 +72,16 @@ void PKMN_Moves::print() const
     std::cout << "\t" << "Description = " << m_Description << std::endl << std::endl;
     std::cout << "DESCRIPTION PARAMETERS :" << std::endl;
     m_Type.print();
+}
+
+std::vector<PKMN_Moves> read_moves(std::string moves)
+{
+    std::vector<std::string> L = string_split(moves, ',');
+    std::vector<PKMN_Moves> M;
+    const unsigned int length = L.size();
+    for(unsigned int i=0; i < length; i++)
+    {
+        M.push_back(PKMN_Moves(L[i]));
+    }
+    return M;
 }

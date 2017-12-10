@@ -5,4 +5,6 @@
 #define FILE_POKEMON_SPECIES "./PKMN_Data/PKMN_Species.txt"
 #define FILE_POKEMON_MOVES "./PKMN_Data/PKMN_Moves.txt"
 
+#define BACKUP_POKEMON_HOLD "./PKMN_BackUp/PKMN_PokemonHold.txt"
+
 #endif // PKMN_FILEPATH_H_INCLUDED

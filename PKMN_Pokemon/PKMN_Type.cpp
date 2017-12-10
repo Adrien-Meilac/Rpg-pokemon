@@ -4,7 +4,7 @@
 
 PKMN_Type::PKMN_Type()
 {
-
+    m_InternalName = "";
 }
 
 PKMN_Type::PKMN_Type(std::string InternalName)

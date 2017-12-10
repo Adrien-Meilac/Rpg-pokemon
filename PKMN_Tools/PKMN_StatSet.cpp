@@ -30,6 +30,20 @@ PKMN_StatSet::PKMN_StatSet(double HP, double Att, double Def, double SpAtt, doub
     m_Speed = Speed;
 }
 
+PKMN_StatSet::PKMN_StatSet(std::string Stat)
+{
+    std::vector<std::string> L = string_split(Stat, ',');
+    if(L.size() == 6)
+    {
+        m_HP = string_to_int(L[0]);
+        m_Att = string_to_int(L[1]);
+        m_Def = string_to_int(L[2]);
+        m_SpAtt = string_to_int(L[3]);
+        m_SpDef = string_to_int(L[4]);
+        m_Speed = string_to_int(L[5]);
+    }
+}
+
 PKMN_StatSet::PKMN_StatSet(PKMN_StatSet const& Other)
 {
     m_HP = Other.m_HP;
@@ -42,7 +56,7 @@ PKMN_StatSet::PKMN_StatSet(PKMN_StatSet const& Other)
 
 PKMN_StatSet::~PKMN_StatSet()
 {
-    std::cout << "Statstruct deleted";
+    std::cout << "Statstruct deleted" << std::endl;
 }
 
 int PKMN_StatSet::getHP() const
