@@ -15,6 +15,8 @@ public:
     PKMN_Moves();
     PKMN_Moves(std::string InternalName);
 
+    PKMN_Moves& operator=(PKMN_Moves const& other);
+
     virtual ~PKMN_Moves();
     void print() const;
 

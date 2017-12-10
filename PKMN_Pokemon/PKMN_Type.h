@@ -26,8 +26,6 @@ public:
      *
      */
 
-    /// constructor for tests :
-
     PKMN_Type& operator=(PKMN_Type const& other);
 
     double effectiveness(PKMN_Type const Type_att) const;
