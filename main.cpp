@@ -18,7 +18,7 @@ int main()
     cout << t.getName() << endl;
     cout << t2.effectiveness(t) << endl;
     PKMN_Moves t3("BEATUP");
-    PKMN_ExpAndLevel lvl("Parabolic", 43);
+    PKMN_ExpAndLevel lvl("Parabolic", 6);
     lvl.print();
     return 0;
 }

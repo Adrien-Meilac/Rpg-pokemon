@@ -22,23 +22,6 @@ PKMN_ExpAndLevel::PKMN_ExpAndLevel(std::string name,
     m_ExpToNextLevel = this->expToNextLevel();
 }
 
-//PKMN_ExpAndLevel::PKMN_ExpAndLevel(std::string name,
-//                                    unsigned int level)
-//{
-//    m_Name = name;
-//    m_Level = level;
-//    m_Exp = 0;
-//    m_ExpToNextLevel = this->expToNextLevel();
-//}
-//
-//PKMN_ExpAndLevel::PKMN_ExpAndLevel(std::string name)
-//{
-//    m_Name = name;
-//    m_Exp = 0;
-//    m_Level = 1;
-//    m_ExpToNextLevel = this->expToNextLevel();
-//}
-
 PKMN_ExpAndLevel::PKMN_ExpAndLevel(std::string name,
                                 std::pair<unsigned int, unsigned int> level_range)
 {
@@ -49,7 +32,10 @@ PKMN_ExpAndLevel::PKMN_ExpAndLevel(std::string name,
 }
 
 unsigned int PKMN_ExpAndLevel::expToNextLevel() const
-{
+{   if(m_Level == 1)
+    {
+        return this->expLevel(m_Level + 1);
+    }
     return this->expLevel(m_Level + 1) - this->expLevel(m_Level);
 }
 
@@ -143,6 +129,10 @@ unsigned int PKMN_ExpAndLevel::getExpToNextLevel() const
 
 unsigned int PKMN_ExpAndLevel::getTotalExp() const
 {
+    if(m_Level == 1)
+    {
+            return 0;
+    }
     return this->expLevel(m_Level) + m_Exp;
 }
 
@@ -152,6 +142,6 @@ void PKMN_ExpAndLevel::print() const
     std::cout << "\t" << "Exp = " << m_Exp << std::endl;
     std::cout << "\t" << "Level = " << m_Level << std::endl;
     std::cout << "\t" << "ExpToNextLevel = " << m_ExpToNextLevel << std::endl;
-    std::cout << "\t" << "ExpToNextLevel = " << m_ExpToNextLevel << std::endl;
+    std::cout << "\t" << "TotalExp = " << this->getTotalExp() << std::endl;
 }
 
