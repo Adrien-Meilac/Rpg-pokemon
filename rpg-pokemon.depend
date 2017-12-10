@@ -6,3 +6,18 @@
 	<string>
 	<cmath>
 
+1512910977 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\main.cpp
+	<iostream>
+	"PKMN_Tools/PKMN_Conversion.h"
+	"PKMN_Tools/PKMN_StatSet.h"
+
+1512910932 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pkmn_tools\pkmn_statset.cpp
+	"PKMN_StatSet.h"
+
+1512910773 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pkmn_tools\pkmn_statset.h
+	<cmath>
+	<string>
+	<iostream>
+	<cstdlib>
+	<ctime>
+
