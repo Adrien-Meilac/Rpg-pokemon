@@ -29,7 +29,7 @@ PKMN_Type::PKMN_Type(std::string InternalName)
 
 PKMN_Type::~PKMN_Type()
 {
-    std::cout << "Type is deleted";
+    std::cout << m_Name <<" : Type is deleted" << std::endl;
 }
 
 /// ///////////////////////////////////////// ///

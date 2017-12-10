@@ -12,6 +12,8 @@ int main()
     cout << "Hello world!" << endl;
     PKMN_Type t("FIRE");
     PKMN_Type t2("WATER");
-    cout << t.effectiveness(t2);
+    cout << t.effectiveness(t2) << endl;
+    cout << t.getName() << endl;
+    cout << t.effectiveness(t2) << endl;
     return 0;
 }
