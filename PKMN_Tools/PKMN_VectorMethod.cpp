@@ -1,11 +1,11 @@
 #include "PKMN_VectorMethod.h"
 
-bool vector_in(std::vector<std::string> L, std::string mot)
+bool vector_in(const std::vector<std::string>& L, const std::string& word)
 {
     const unsigned int length = L.size();
     for(unsigned int i = 0; i < length; i++)
     {
-        if(L[i] == mot)
+        if(L[i] == word)
         {
             return true;
         }
@@ -13,7 +13,7 @@ bool vector_in(std::vector<std::string> L, std::string mot)
     return false;
 }
 
-std::vector<std::string> string_split(const std::string& line, const char delim)
+std::vector<std::string> string_split(const std::string& line, const char& delim)
 {
     std::stringstream ss(line);
     std::string item;
@@ -29,7 +29,7 @@ std::vector<std::string> string_split(const std::string& line, const char delim)
     return L;
 }
 
-std::vector<std::string> vector_insert(std::vector<std::string> L, const std::string& str, unsigned int pos)
+std::vector<std::string> vector_insert(std::vector<std::string> L, const std::string& str, const unsigned int& pos)
 {
     const unsigned int length = L.size();
     std::vector<std::string> L2;
@@ -45,13 +45,13 @@ std::vector<std::string> vector_insert(std::vector<std::string> L, const std::st
     return L2;
 }
 
-void vector_print(std::vector<std::string> v)
+void vector_print(const std::vector<std::string>& v)
 {
     const unsigned int length = v.size();
     std::cout << "(";
     for(unsigned int i = 0; i < length - 1; i++)
     {
-        std::cout << v[i] << ", ";
+        std::cout << v[i] << "; ";
     }
     std::cout << v[length - 1] << ")";
 }

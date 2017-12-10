@@ -51,8 +51,6 @@ double string_to_double(const std::string& str)
             }
             int nb1 = string_to_int(str1);
             int nb2 = string_to_int(str2);
-            std::cout << nb1;
-            std::cout << nb2 << std::endl;
             return nb1 + nb2 / pow(10, length - i - 1);
         }
     }

@@ -38,9 +38,8 @@ PKMN_Type::~PKMN_Type()
     delete &m_InternalName;
     delete &m_Name;
     delete &m_Weaknesses;
-    delete &m_Immunities;
     delete &m_Resistances;
-    delete &m_IsSpecialType;
+    delete &m_Immunities;
 }
 
 /// ///////////////////////////////////////// ///

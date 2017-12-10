@@ -1,14 +1,13 @@
 #include "PKMN_StatSet.h"
 
-PKMN_StatSet::PKMN_StatSet(): // iv Génération algorithm
-    m_HP(rand()%32),
-    m_Att(rand()%32),
-    m_Def(rand()%32),
-    m_SpAtt(rand()%32),
-    m_SpDef(rand()%32),
-    m_Speed(rand()%32)
+PKMN_StatSet::PKMN_StatSet() // for IV generation
 {
-
+    m_HP = rand() % 32;
+    m_Att = rand() % 32;
+    m_Def = rand() % 32;
+    m_SpAtt = rand() % 32;
+    m_SpDef = rand() % 32;
+    m_Speed = rand() % 32;
 }
 
 PKMN_StatSet::PKMN_StatSet(int HP, int Att, int Def, int SpAtt, int SpDef, int Speed)
@@ -43,12 +42,7 @@ PKMN_StatSet::PKMN_StatSet(PKMN_StatSet const& Other)
 
 PKMN_StatSet::~PKMN_StatSet()
 {
-    delete &m_HP;
-    delete &m_Att;
-    delete &m_Def;
-    delete &m_SpAtt;
-    delete &m_SpDef;
-    delete &m_Speed;
+
 }
 
 int PKMN_StatSet::getHP() const
@@ -99,11 +93,11 @@ PKMN_StatSet NormalStatistics(PKMN_StatSet const& Base,
 std::ostream& operator<<(std::ostream &flux, PKMN_StatSet const& Stat)
 {
     flux << "(";
-    flux << Stat.m_HP << ", ";
-    flux << Stat.m_Att << ", ";
-    flux << Stat.m_Def << ", ";
-    flux << Stat.m_SpAtt << ", ";
-    flux << Stat.m_SpDef << ", ";
+    flux << Stat.m_HP << "; ";
+    flux << Stat.m_Att << "; ";
+    flux << Stat.m_Def << "; ";
+    flux << Stat.m_SpAtt << "; ";
+    flux << Stat.m_SpDef << "; ";
     flux << Stat.m_Speed << ")";
     return flux;
 }

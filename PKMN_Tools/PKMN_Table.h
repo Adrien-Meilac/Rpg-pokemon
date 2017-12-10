@@ -11,6 +11,7 @@ class PKMN_Table
 {
 public:
 
+    // Constructor
     PKMN_Table();
     PKMN_Table(std::string FilePath);
     std::vector<int> dimension() const;

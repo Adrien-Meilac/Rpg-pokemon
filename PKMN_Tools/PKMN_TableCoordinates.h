@@ -1,8 +1,8 @@
 #ifndef PKMN_TABLECOORDINATES_H_INCLUDED
 #define PKMN_TABLECOORDINATES_H_INCLUDED
 
-#include <iostream>
-#include <string>
+#include <iostream> // To use ostream
+#include <string> // To use string
 
 class PKMN_TableCoordinates
 /// PKMN_TableCoordinates objects are a couple of 2 string variables
