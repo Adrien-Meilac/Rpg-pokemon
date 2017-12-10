@@ -33,6 +33,8 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="PKMN_FilePath.h" />
+		<Unit filename="PKMN_Pokemon/PKMN_Type.cpp" />
+		<Unit filename="PKMN_Pokemon/PKMN_Type.h" />
 		<Unit filename="PKMN_Tools/PKMN_Conversion.cpp" />
 		<Unit filename="PKMN_Tools/PKMN_Conversion.h" />
 		<Unit filename="PKMN_Tools/PKMN_StatSet.cpp" />

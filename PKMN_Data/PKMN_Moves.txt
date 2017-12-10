@@ -1,4 +1,4 @@
-﻿InternalName;IDnumber;DisplayName;Description;TotalPP;BasePower;Priority;DamageCategory;FunctionCode;Flags;Accuracy;Type;AdditionalEffectChance;Target
+﻿InternalName;IDnumber;Name;Description;TotalPP;BasePower;Priority;DamageCategory;FunctionCode;Flags;Accuracy;Type;AdditionalEffectChance;Target
 MEGAHORN;1;Megahorn;Using its tough and impressive horn, the user rams into the target with no letup.;10;120;0;Physical;000;abef;85;BUG;0;00
 ATTACKORDER;2;Attack Order;The user calls out its underlings to pummel the target. Critical hits land more easily.;15;90;0;Physical;000;befh;100;BUG;0;00
 BUGBUZZ;3;Bug Buzz;The user vibrates its wings to generate a damaging sound wave. It may also lower the target's Sp. Def stat.;10;90;0;Special;046;befk;100;BUG;10;00

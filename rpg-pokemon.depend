@@ -6,12 +6,13 @@
 	<string>
 	<cmath>
 
-1512911766 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\main.cpp
+1512912701 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\main.cpp
 	<iostream>
 	"PKMN_Tools/PKMN_Conversion.h"
 	"PKMN_Tools/PKMN_StatSet.h"
 	"PKMN_Tools/PKMN_VectorMethod.h"
 	"PKMN_Tools/PKMN_Table.h"
+	"PKMN_Pokemon/PKMN_Type.h"
 
 1512910932 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pkmn_tools\pkmn_statset.cpp
 	"PKMN_StatSet.h"
@@ -44,4 +45,14 @@
 	<fstream>
 
 1512912168 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pkmn_filepath.h
+
+1512912561 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pkmn_pokemon\pkmn_type.h
+	"../PKMN_Tools/PKMN_Table.h"
+	"../PKMN_FilePath.h"
+	"../PKMN_Tools/PKMN_Conversion.h"
+	<string>
+	<iostream>
+
+1512912652 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pkmn_pokemon\pkmn_type.cpp
+	"PKMN_Type.h"
 
