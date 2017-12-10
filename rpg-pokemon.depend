@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1512910549 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pkmn_tools\pkmn_conversion.cpp
+	"PKMN_Conversion.h"
+
+1512910532 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pkmn_tools\pkmn_conversion.h
+	<string>
+	<cmath>
+
