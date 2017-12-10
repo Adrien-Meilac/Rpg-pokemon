@@ -9,7 +9,7 @@ using namespace std;
 int main()
 {
     cout << "Hello world!" << endl;
-    PKMN_Table t("./PKMN_Data/PKMN_Type.txt");
+    PKMN_Table t(FILE_POKEMON_MOVES);
     cout << t;
     return 0;
 }

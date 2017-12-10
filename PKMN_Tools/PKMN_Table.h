@@ -2,6 +2,7 @@
 #define PKMN_TABLE_H_INCLUDED
 
 #include "PKMN_VectorMethod.h"
+#include "../PKMN_FilePath.h"
 #include <iostream>
 #include <string>
 #include <vector>

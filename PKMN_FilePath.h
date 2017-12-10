@@ -1,0 +1,8 @@
+#ifndef PKMN_FILEPATH_H_INCLUDED
+#define PKMN_FILEPATH_H_INCLUDED
+
+#define FILE_POKEMON_TYPE "./PKMN_Data/PKMN_Type.txt"
+#define FILE_POKEMON_SPECIES "./PKMN_Data/PKMN_Species.txt"
+#define FILE_POKEMON_MOVES "./PKMN_Data/PKMN_Moves.txt"
+
+#endif // PKMN_FILEPATH_H_INCLUDED

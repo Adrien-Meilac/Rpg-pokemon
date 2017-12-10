@@ -32,6 +32,15 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="PKMN_FilePath.h" />
+		<Unit filename="PKMN_Tools/PKMN_Conversion.cpp" />
+		<Unit filename="PKMN_Tools/PKMN_Conversion.h" />
+		<Unit filename="PKMN_Tools/PKMN_StatSet.cpp" />
+		<Unit filename="PKMN_Tools/PKMN_StatSet.h" />
+		<Unit filename="PKMN_Tools/PKMN_Table.cpp" />
+		<Unit filename="PKMN_Tools/PKMN_Table.h" />
+		<Unit filename="PKMN_Tools/PKMN_VectorMethod.cpp" />
+		<Unit filename="PKMN_Tools/PKMN_VectorMethod.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />
