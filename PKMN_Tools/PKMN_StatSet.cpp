@@ -115,3 +115,217 @@ std::ostream& operator<<(std::ostream &flux, PKMN_StatSet const& Stat)
     flux << Stat.m_Speed << ")";
     return flux;
 }
+
+int PKMN_StatSet::getStat(std::string name) const
+{
+    if(name == PKMN_STATSET_HP)
+    {
+        return this->getHP();
+    }
+    else if(name == PKMN_STATSET_ATT)
+    {
+        return this->getAtt();
+    }
+    else if(name == PKMN_STATSET_DEF)
+    {
+        return this->getDef();
+    }
+        else if(name == PKMN_STATSET_SPATT)
+    {
+        return this->getSpAtt();
+    }
+    else if(name == PKMN_STATSET_SPDEF)
+    {
+        return this->getSpDef();
+    }
+        else if(name == PKMN_STATSET_SPEED)
+    {
+        return this->getSpeed();
+    }
+    return 0;
+}
+
+void PKMN_StatSet::statSwap(std::string name1, std::string name2)
+{
+    if((name1 == PKMN_STATSET_HP && name2 == PKMN_STATSET_ATT)||(name2 == PKMN_STATSET_HP && name1 == PKMN_STATSET_ATT))
+    {
+        this->statSwapHPAtt();
+    }
+    else if((name1 == PKMN_STATSET_HP && name2 == PKMN_STATSET_DEF)||(name2 == PKMN_STATSET_HP && name1 == PKMN_STATSET_DEF))
+    {
+        this->statSwapHPDef();
+    }
+    else if((name1 == PKMN_STATSET_HP && name2 == PKMN_STATSET_SPATT)||(name2 == PKMN_STATSET_HP && name1 == PKMN_STATSET_SPATT))
+    {
+        this->statSwapHPSpAtt();
+    }
+    else if((name1 == PKMN_STATSET_HP && name2 == PKMN_STATSET_SPDEF)||(name2 == PKMN_STATSET_HP && name1 == PKMN_STATSET_SPDEF))
+    {
+        this->statSwapHPSpDef();
+    }
+    else if((name1 == PKMN_STATSET_HP && name2 == PKMN_STATSET_SPEED)||(name2 == PKMN_STATSET_HP && name1 == PKMN_STATSET_SPEED))
+    {
+        this->statSwapHPSpeed();
+    }
+    else if((name1 == PKMN_STATSET_ATT && name2 == PKMN_STATSET_DEF)||(name2 == PKMN_STATSET_ATT && name1 == PKMN_STATSET_DEF))
+    {
+        this->statSwapAttDef();
+    }
+    else if((name1 == PKMN_STATSET_ATT && name2 == PKMN_STATSET_SPATT)||(name2 == PKMN_STATSET_ATT && name1 == PKMN_STATSET_SPATT))
+    {
+        this->statSwapAttSpAtt();
+    }
+    else if((name1 == PKMN_STATSET_ATT && name2 == PKMN_STATSET_SPDEF)||(name2 == PKMN_STATSET_ATT && name1 == PKMN_STATSET_SPDEF))
+    {
+        this->statSwapAttSpDef();
+    }
+    else if((name1 == PKMN_STATSET_ATT && name2 == PKMN_STATSET_SPEED)||(name2 == PKMN_STATSET_ATT && name1 == PKMN_STATSET_SPEED))
+    {
+        this->statSwapAttSpeed();
+    }
+    else if((name1 == PKMN_STATSET_DEF && name2 == PKMN_STATSET_SPATT)||(name2 == PKMN_STATSET_DEF && name1 == PKMN_STATSET_SPATT))
+    {
+        this->statSwapDefSpAtt();
+    }
+    else if((name1 == PKMN_STATSET_DEF && name2 == PKMN_STATSET_SPDEF)||(name2 == PKMN_STATSET_DEF && name1 == PKMN_STATSET_SPDEF))
+    {
+        this->statSwapDefSpDef();
+    }
+    else if((name1 == PKMN_STATSET_DEF && name2 == PKMN_STATSET_SPATT)||(name2 == PKMN_STATSET_DEF && name1 == PKMN_STATSET_SPATT))
+    {
+        this->statSwapDefSpeed();
+    }
+    else if((name1 == PKMN_STATSET_SPATT && name2 == PKMN_STATSET_SPDEF)||(name2 == PKMN_STATSET_SPATT && name1 == PKMN_STATSET_SPDEF))
+    {
+        this->statSwapSpAttSpDef();
+    }
+    else if((name1 == PKMN_STATSET_SPATT && name2 == PKMN_STATSET_SPEED)||(name2 == PKMN_STATSET_SPATT && name1 == PKMN_STATSET_SPEED))
+    {
+        this->statSwapSpAttSpeed();
+    }
+    else if((name1 == PKMN_STATSET_SPDEF && name2 == PKMN_STATSET_SPEED)||(name2 == PKMN_STATSET_SPDEF && name1 == PKMN_STATSET_SPEED))
+    {
+        this->statSwapSpDefSpeed();
+    }
+}
+
+void PKMN_StatSet::statSwapHPAtt()
+{
+    double c;
+    c = m_HP;
+    m_HP = m_Att;
+    m_Att = c;
+}
+
+void PKMN_StatSet::statSwapHPDef()
+{
+    double c;
+    c = m_HP;
+    m_HP = m_Def;
+    m_Def = c;
+}
+
+void PKMN_StatSet::statSwapHPSpAtt()
+{
+    double c;
+    c = m_HP;
+    m_HP = m_SpAtt;
+    m_SpAtt = c;
+}
+
+void PKMN_StatSet::statSwapHPSpDef()
+{
+    double c;
+    c = m_HP;
+    m_HP = m_SpDef;
+    m_SpDef = c;
+}
+
+void PKMN_StatSet::statSwapHPSpeed()
+{
+    double c;
+    c = m_HP;
+    m_HP = m_Speed;
+    m_Speed = c;
+}
+
+void PKMN_StatSet::statSwapAttDef()
+{
+    double c;
+    c = m_Att;
+    m_Att = m_Def;
+    m_Def = c;
+}
+
+void PKMN_StatSet::statSwapAttSpAtt()
+{
+    double c;
+    c = m_Att;
+    m_Att = m_SpAtt;
+    m_SpAtt = c;
+}
+
+void PKMN_StatSet::statSwapAttSpDef()
+{
+    double c;
+    c = m_Att;
+    m_Att = m_SpDef;
+    m_SpDef = c;
+}
+
+void PKMN_StatSet::statSwapAttSpeed()
+{
+    double c;
+    c = m_Att;
+    m_Att = m_Speed;
+    m_Speed = c;
+}
+
+void PKMN_StatSet::statSwapDefSpAtt()
+{
+    double c;
+    c = m_Def;
+    m_Def = m_SpAtt;
+    m_SpAtt = c;
+}
+
+void PKMN_StatSet::statSwapDefSpDef()
+{
+    double c;
+    c = m_Def;
+    m_Def = m_SpDef;
+    m_SpDef = c;
+}
+
+void PKMN_StatSet::statSwapDefSpeed()
+{
+    double c;
+    c = m_Def;
+    m_Def = m_Speed;
+    m_Speed = c;
+}
+
+void PKMN_StatSet::statSwapSpAttSpDef()
+{
+    double c;
+    c = m_SpAtt;
+    m_SpAtt = m_SpDef;
+    m_SpDef = c;
+}
+
+void PKMN_StatSet::statSwapSpAttSpeed()
+{
+    double c;
+    c = m_SpAtt;
+    m_SpAtt = m_Speed;
+    m_Speed = c;
+}
+
+void PKMN_StatSet::statSwapSpDefSpeed()
+{
+    double c;
+    c = m_SpDef;
+    m_SpDef = m_Speed;
+    m_Speed = c;
+}
+

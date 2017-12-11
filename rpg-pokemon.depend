@@ -6,7 +6,7 @@
 	<string>
 	<cmath>
 
-1512940134 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\main.cpp
+1512944390 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\main.cpp
 	<iostream>
 	<vector>
 	<string>
@@ -14,11 +14,12 @@
 	"PKMN_Pokemon/PKMN_Moves.h"
 	"PKMN_Pokemon/PKMN_ExpAndLevel.h"
 	"PKMN_Pokemon/PKMN_Species.h"
+	"PKMN_Pokemon/PKMN_Pokemon.h"
 
 1512940315 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pkmn_tools\pkmn_statset.cpp
 	"PKMN_StatSet.h"
 
-1512939517 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pkmn_tools\pkmn_statset.h
+1512987639 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pkmn_tools\pkmn_statset.h
 	<cmath>
 	<string>
 	<iostream>
@@ -93,10 +94,10 @@
 	<vector>
 	<iostream>
 
-1512944304 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pkmn_pokemon\pkmn_pokemon.cpp
+1512987600 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pkmn_pokemon\pkmn_pokemon.cpp
 	"PKMN_Pokemon.h"
 
-1512944185 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pkmn_pokemon\pkmn_pokemon.h
+1512987683 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pkmn_pokemon\pkmn_pokemon.h
 	"../PKMN_Tools/PKMN_StatSet.h"
 	"../PKMN_FilePath.h"
 	"PKMN_Species.h"
