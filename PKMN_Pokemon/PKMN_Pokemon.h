@@ -15,9 +15,14 @@ public:
     PKMN_Pokemon();
     PKMN_Pokemon(std::string Position);
 
-    bool addOrSubstractStage(std::string statChange, int difference);
-    bool statSwap(std::string stat1, std::string stat2);
-    bool statSwap(PKMN_Pokemon other);
+    void outBattle();
+    bool isAlive();
+//    PKMN_Moves chooseAnAttack() const;
+    void attack(PKMN_Pokemon Other, unsigned int i);
+
+//    bool addOrSubstractStage(std::string statChange, int difference);
+//    bool statSwap(std::string stat1, std::string stat2);
+//    bool statSwap(PKMN_Pokemon other);
 
     ~PKMN_Pokemon();
 
@@ -27,7 +32,14 @@ private:
     PKMN_StatSet m_Pokemon_IV;
     PKMN_StatSet m_Pokemon_EV;
     PKMN_StatSet m_Pokemon_NormalStat;
-    PKMN_StatSet m_Pokemon_CurStat;
+    unsigned int m_pokemon_cur_HP;
+    unsigned int m_pokemon_cur_Att;
+    unsigned int m_pokemon_cur_Def;
+    unsigned int m_pokemon_cur_SpAtt;
+    unsigned int m_pokemon_cur_SpDef;
+    unsigned int m_pokemon_cur_Speed;
+    unsigned int m_pokemon_cur_Accuracy;
+    unsigned int m_pokemon_cur_Evasiveness;
     std::vector<int> m_Pokemon_StageSet;
     std::vector<PKMN_Moves> m_Pokemon_Moves;
     PKMN_ExpAndLevel m_Pokemon_ExpAndLevel;

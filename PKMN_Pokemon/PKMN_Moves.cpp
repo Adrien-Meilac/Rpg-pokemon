@@ -85,3 +85,18 @@ std::vector<PKMN_Moves> read_moves(std::string moves)
     }
     return M;
 }
+
+std::string PKMN_Moves::getDamageCategory() const
+{
+    return m_DamageCategory;
+}
+
+unsigned int PKMN_Moves::getBasePower() const
+{
+    return m_BasePower;
+}
+
+PKMN_Type PKMN_Moves::getType() const
+{
+    return m_Type;
+}

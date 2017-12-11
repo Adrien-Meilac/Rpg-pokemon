@@ -37,24 +37,24 @@ public:
     int getSpAtt() const;
     int getSpDef() const;
     int getSpeed() const;
-    int getStat(std::string name) const;
-
-    void statSwap(std::string name1, std::string name2);
-    void statSwapHPAtt();
-    void statSwapHPDef();
-    void statSwapHPSpAtt();
-    void statSwapHPSpDef();
-    void statSwapHPSpeed();
-    void statSwapAttDef();
-    void statSwapAttSpAtt();
-    void statSwapAttSpDef();
-    void statSwapAttSpeed();
-    void statSwapDefSpAtt();
-    void statSwapDefSpDef();
-    void statSwapDefSpeed();
-    void statSwapSpAttSpDef();
-    void statSwapSpAttSpeed();
-    void statSwapSpDefSpeed();
+//    int getStat(std::string name) const;
+//
+//    void statSwap(std::string name1, std::string name2);
+//    void statSwapHPAtt();
+//    void statSwapHPDef();
+//    void statSwapHPSpAtt();
+//    void statSwapHPSpDef();
+//    void statSwapHPSpeed();
+//    void statSwapAttDef();
+//    void statSwapAttSpAtt();
+//    void statSwapAttSpDef();
+//    void statSwapAttSpeed();
+//    void statSwapDefSpAtt();
+//    void statSwapDefSpDef();
+//    void statSwapDefSpeed();
+//    void statSwapSpAttSpDef();
+//    void statSwapSpAttSpeed();
+//    void statSwapSpDefSpeed();
 
     // Destructor :
     virtual ~PKMN_StatSet();

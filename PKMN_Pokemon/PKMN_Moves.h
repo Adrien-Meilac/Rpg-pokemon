@@ -8,12 +8,21 @@
 #include <iostream>
 #include <string>
 
+#define PKMN_DAMAGE_CATEGORY_PHYSICAL "Physical"
+#define PKMN_DAMAGE_CATEGORY_SPECIAL "Special"
+#define PKMN_DAMAGE_CATEGORY_STATUS "Status"
+
+
 class PKMN_Moves
 {
 public:
 
     PKMN_Moves();
     PKMN_Moves(std::string InternalName);
+
+    std::string getDamageCategory() const;
+    unsigned int getBasePower() const;
+    PKMN_Type getType() const;
 
     PKMN_Moves& operator=(PKMN_Moves const& other);
 

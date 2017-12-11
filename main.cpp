@@ -13,5 +13,7 @@ using namespace std;
 int main()
 {
     PKMN_Pokemon a("1");
+    PKMN_Pokemon b("2");
+    a.attack(b, 1);
     return 0;
 }
