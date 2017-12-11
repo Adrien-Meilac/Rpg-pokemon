@@ -120,27 +120,27 @@ int PKMN_StatSet::getStat(std::string name) const
 {
     if(name == PKMN_STATSET_HP)
     {
-        return this->getHP();
+        return getHP();
     }
     else if(name == PKMN_STATSET_ATT)
     {
-        return this->getAtt();
+        return getAtt();
     }
     else if(name == PKMN_STATSET_DEF)
     {
-        return this->getDef();
+        return getDef();
     }
         else if(name == PKMN_STATSET_SPATT)
     {
-        return this->getSpAtt();
+        return getSpAtt();
     }
     else if(name == PKMN_STATSET_SPDEF)
     {
-        return this->getSpDef();
+        return getSpDef();
     }
         else if(name == PKMN_STATSET_SPEED)
     {
-        return this->getSpeed();
+        return getSpeed();
     }
     return 0;
 }
@@ -149,63 +149,63 @@ void PKMN_StatSet::statSwap(std::string name1, std::string name2)
 {
     if((name1 == PKMN_STATSET_HP && name2 == PKMN_STATSET_ATT)||(name2 == PKMN_STATSET_HP && name1 == PKMN_STATSET_ATT))
     {
-        this->statSwapHPAtt();
+        statSwapHPAtt();
     }
     else if((name1 == PKMN_STATSET_HP && name2 == PKMN_STATSET_DEF)||(name2 == PKMN_STATSET_HP && name1 == PKMN_STATSET_DEF))
     {
-        this->statSwapHPDef();
+        statSwapHPDef();
     }
     else if((name1 == PKMN_STATSET_HP && name2 == PKMN_STATSET_SPATT)||(name2 == PKMN_STATSET_HP && name1 == PKMN_STATSET_SPATT))
     {
-        this->statSwapHPSpAtt();
+        statSwapHPSpAtt();
     }
     else if((name1 == PKMN_STATSET_HP && name2 == PKMN_STATSET_SPDEF)||(name2 == PKMN_STATSET_HP && name1 == PKMN_STATSET_SPDEF))
     {
-        this->statSwapHPSpDef();
+        statSwapHPSpDef();
     }
     else if((name1 == PKMN_STATSET_HP && name2 == PKMN_STATSET_SPEED)||(name2 == PKMN_STATSET_HP && name1 == PKMN_STATSET_SPEED))
     {
-        this->statSwapHPSpeed();
+        statSwapHPSpeed();
     }
     else if((name1 == PKMN_STATSET_ATT && name2 == PKMN_STATSET_DEF)||(name2 == PKMN_STATSET_ATT && name1 == PKMN_STATSET_DEF))
     {
-        this->statSwapAttDef();
+        statSwapAttDef();
     }
     else if((name1 == PKMN_STATSET_ATT && name2 == PKMN_STATSET_SPATT)||(name2 == PKMN_STATSET_ATT && name1 == PKMN_STATSET_SPATT))
     {
-        this->statSwapAttSpAtt();
+        statSwapAttSpAtt();
     }
     else if((name1 == PKMN_STATSET_ATT && name2 == PKMN_STATSET_SPDEF)||(name2 == PKMN_STATSET_ATT && name1 == PKMN_STATSET_SPDEF))
     {
-        this->statSwapAttSpDef();
+        statSwapAttSpDef();
     }
     else if((name1 == PKMN_STATSET_ATT && name2 == PKMN_STATSET_SPEED)||(name2 == PKMN_STATSET_ATT && name1 == PKMN_STATSET_SPEED))
     {
-        this->statSwapAttSpeed();
+        statSwapAttSpeed();
     }
     else if((name1 == PKMN_STATSET_DEF && name2 == PKMN_STATSET_SPATT)||(name2 == PKMN_STATSET_DEF && name1 == PKMN_STATSET_SPATT))
     {
-        this->statSwapDefSpAtt();
+        statSwapDefSpAtt();
     }
     else if((name1 == PKMN_STATSET_DEF && name2 == PKMN_STATSET_SPDEF)||(name2 == PKMN_STATSET_DEF && name1 == PKMN_STATSET_SPDEF))
     {
-        this->statSwapDefSpDef();
+        statSwapDefSpDef();
     }
     else if((name1 == PKMN_STATSET_DEF && name2 == PKMN_STATSET_SPATT)||(name2 == PKMN_STATSET_DEF && name1 == PKMN_STATSET_SPATT))
     {
-        this->statSwapDefSpeed();
+        statSwapDefSpeed();
     }
     else if((name1 == PKMN_STATSET_SPATT && name2 == PKMN_STATSET_SPDEF)||(name2 == PKMN_STATSET_SPATT && name1 == PKMN_STATSET_SPDEF))
     {
-        this->statSwapSpAttSpDef();
+        statSwapSpAttSpDef();
     }
     else if((name1 == PKMN_STATSET_SPATT && name2 == PKMN_STATSET_SPEED)||(name2 == PKMN_STATSET_SPATT && name1 == PKMN_STATSET_SPEED))
     {
-        this->statSwapSpAttSpeed();
+        statSwapSpAttSpeed();
     }
     else if((name1 == PKMN_STATSET_SPDEF && name2 == PKMN_STATSET_SPEED)||(name2 == PKMN_STATSET_SPDEF && name1 == PKMN_STATSET_SPEED))
     {
-        this->statSwapSpDefSpeed();
+        statSwapSpDefSpeed();
     }
 }
 
