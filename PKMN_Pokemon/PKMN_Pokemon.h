@@ -16,9 +16,14 @@ public:
     PKMN_Pokemon(std::string Position);
 
     void outBattle();
-    bool isAlive();
+    bool isAlive() const;
+    void deathMessage() const;
+    void messageGetExp(unsigned int expPoint) const;
+    void lowerHP(unsigned int damagePoint);
+    void printStat() const;
+    unsigned int expGained(PKMN_Pokemon& PkmnDead) const;
 //    PKMN_Moves chooseAnAttack() const;
-    void attack(PKMN_Pokemon Other, unsigned int i);
+    void attack(PKMN_Pokemon& Other, unsigned int i);
 
 //    bool addOrSubstractStage(std::string statChange, int difference);
 //    bool statSwap(std::string stat1, std::string stat2);

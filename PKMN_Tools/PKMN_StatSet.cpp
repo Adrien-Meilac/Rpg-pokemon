@@ -56,7 +56,7 @@ PKMN_StatSet::PKMN_StatSet(PKMN_StatSet const& Other)
 
 PKMN_StatSet::~PKMN_StatSet()
 {
-    std::cout << "Statstruct deleted" << std::endl;
+//    std::cout << "Statstruct deleted" << std::endl;
 }
 
 int PKMN_StatSet::getHP() const
@@ -89,18 +89,18 @@ int PKMN_StatSet::getSpeed() const
     return static_cast<int>(ceil(m_Speed));
 }
 
-PKMN_StatSet NormalStatistics(PKMN_StatSet const& Base,
-                                          PKMN_StatSet const& IV,
-                                          PKMN_StatSet const& EV,
+PKMN_StatSet NormalStatistics(PKMN_StatSet const Base,
+                                          PKMN_StatSet const IV,
+                                          PKMN_StatSet const EV,
                                           unsigned int level,
                                           std::string Nature)
 {
-    double HP = ceil((2 * Base.m_HP + IV.m_HP + ceil(EV.m_HP / 4)) * level / 100) + level + 10;
-    double Att = ceil(((2 * Base.m_Att + IV.m_Att + ceil(EV.m_Att / 4)) * level / 100) + 5) * 1; // NatureEffect normalement
-    double Def = ceil(((2 * Base.m_Def + IV.m_Def + ceil(EV.m_Def / 4)) * level / 100) + 5) * 1; // NatureEffect normalement
-    double SpAtt = ceil(((2 * Base.m_SpAtt + IV.m_SpAtt + ceil(EV.m_SpAtt / 4)) * level / 100) + 5) * 1; // NatureEffect normalement
-    double SpDef = ceil(((2 * Base.m_SpDef + IV.m_SpDef + ceil(EV.m_SpDef / 4)) * level / 100) + 5) * 1; // NatureEffect normalement
-    double Speed = ceil(((2 * Base.m_Speed + IV.m_Speed + ceil(EV.m_Speed / 4)) * level / 100) + 5) * 1; // NatureEffect normalement
+    double HP = floor((2 * Base.m_HP + IV.m_HP + floor(EV.m_HP / 4)) * level / 100) + level + 10;
+    double Att = floor(((2 * Base.m_Att + IV.m_Att + floor(EV.m_Att / 4)) * level / 100) + 5) * 1; // NatureEffect normalement
+    double Def = floor(((2 * Base.m_Def + IV.m_Def + floor(EV.m_Def / 4)) * level / 100) + 5) * 1; // NatureEffect normalement
+    double SpAtt = floor(((2 * Base.m_SpAtt + IV.m_SpAtt + floor(EV.m_SpAtt / 4)) * level / 100) + 5) * 1; // NatureEffect normalement
+    double SpDef = floor(((2 * Base.m_SpDef + IV.m_SpDef + floor(EV.m_SpDef / 4)) * level / 100) + 5) * 1; // NatureEffect normalement
+    double Speed = floor(((2 * Base.m_Speed + IV.m_Speed + floor(EV.m_Speed / 4)) * level / 100) + 5) * 1; // NatureEffect normalement
     return PKMN_StatSet(HP, Att, Def, SpAtt, SpDef, Speed);
 }
 

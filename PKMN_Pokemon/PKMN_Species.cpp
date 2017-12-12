@@ -55,6 +55,10 @@ PKMN_Species::PKMN_Species(std::string InternalName)
 
 PKMN_Species::~PKMN_Species()
 {
-    std::cout << m_InternalName << " : PKMN_Species deleted\n";
+//    std::cout << m_InternalName << " : PKMN_Species deleted\n";
 }
 
+PKMN_StatSet PKMN_Species::getBaseStats() const
+{
+    return m_BaseStats;
+}

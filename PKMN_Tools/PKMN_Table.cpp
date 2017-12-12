@@ -43,7 +43,7 @@ PKMN_Table::PKMN_Table(std::string FilePath)
 
 PKMN_Table::~PKMN_Table()
 {
-    std::cout << "Table deleted" << std::endl;
+//    std::cout << "Table deleted" << std::endl;
 }
 
 std::ostream& operator<<(std::ostream &flux, PKMN_Table const& Table)

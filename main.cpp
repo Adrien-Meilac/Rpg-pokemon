@@ -13,7 +13,15 @@ using namespace std;
 int main()
 {
     PKMN_Pokemon a("1");
+    a.printStat();
     PKMN_Pokemon b("2");
-    a.attack(b, 1);
+    b.printStat();
+    a.attack(b, 3);
+    a.printStat();
+    b.printStat();
+    a.attack(b, 2);
+    a.printStat();
+    b.printStat();
+    a.messageGetExp(a.expGained(b));
     return 0;
 }

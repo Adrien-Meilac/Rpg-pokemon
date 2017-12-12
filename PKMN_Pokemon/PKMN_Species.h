@@ -15,6 +15,8 @@ public:
     PKMN_Species();
     PKMN_Species(std::string m_InternalName);
 
+    PKMN_StatSet getBaseStats() const;
+
     virtual ~PKMN_Species();
 
 protected:

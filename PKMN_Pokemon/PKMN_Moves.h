@@ -21,6 +21,7 @@ public:
     PKMN_Moves(std::string InternalName);
 
     std::string getDamageCategory() const;
+    std::string getName() const;
     unsigned int getBasePower() const;
     PKMN_Type getType() const;
 

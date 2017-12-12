@@ -9,7 +9,7 @@ PKMN_ExpAndLevel::PKMN_ExpAndLevel()
 
 PKMN_ExpAndLevel::~PKMN_ExpAndLevel()
 {
-    std::cout << m_Name << " : PKMN_ExpAndLevel destructed" << std::endl;
+//    std::cout << m_Name << " : PKMN_ExpAndLevel destructed" << std::endl;
 }
 
 PKMN_ExpAndLevel::PKMN_ExpAndLevel(std::string name,

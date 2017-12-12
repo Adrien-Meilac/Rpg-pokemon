@@ -64,9 +64,9 @@ private:
     // flux for cout :
     friend std::ostream& operator<<(std::ostream &flux, PKMN_StatSet const& Stat);
 
-    friend PKMN_StatSet NormalStatistics(PKMN_StatSet const& Base,
-                              PKMN_StatSet const& IV,
-                              PKMN_StatSet const& EV,
+    friend PKMN_StatSet NormalStatistics(PKMN_StatSet const Base,
+                              PKMN_StatSet const IV,
+                              PKMN_StatSet const EV,
                               unsigned int level,
                               std::string Nature);
     /** \brief Give the stats of a pokemon, given some information related to it species, IV and EV that are StatSet

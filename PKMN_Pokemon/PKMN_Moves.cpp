@@ -51,7 +51,7 @@ PKMN_Moves& PKMN_Moves::operator=(PKMN_Moves const& other)
 
 PKMN_Moves::~PKMN_Moves()
 {
-    std::cout << m_InternalName << " : PKMN_Moves deleted" << std::endl;
+//    std::cout << m_InternalName << " : PKMN_Moves deleted" << std::endl;
 }
 
 void PKMN_Moves::print() const
@@ -99,4 +99,9 @@ unsigned int PKMN_Moves::getBasePower() const
 PKMN_Type PKMN_Moves::getType() const
 {
     return m_Type;
+}
+
+std::string PKMN_Moves::getName() const
+{
+    return m_Name;
 }
