@@ -6,7 +6,11 @@
 #include <sstream> // for split method
 #include <iostream> // for print method
 
-std::vector<std::string> string_split(const std::string& line, const char& delim = ';');
+namespace PKMN
+{
+
+std::vector<std::string> string_split(const std::string& line,
+                                      const char& delim = ';');
     /** \brief Split a line into a vector
      *
      * \param line const std::string& : phrase to cut
@@ -15,7 +19,8 @@ std::vector<std::string> string_split(const std::string& line, const char& delim
      *
      */
 
-bool vector_in(const std::vector<std::string>& L, const std::string& word);
+bool vector_in(const std::vector<std::string>& L,
+               const std::string& word);
     /** \brief Boolean test : Is the word in L ?
      *
      * \param L const std::vector<std::string>&
@@ -24,7 +29,9 @@ bool vector_in(const std::vector<std::string>& L, const std::string& word);
      *
      */
 
-std::vector<std::string> vector_insert(std::vector<std::string> L, const std::string& str, const unsigned int& pos);
+std::vector<std::string> vector_insert(std::vector<std::string> L,
+                                       const std::string& str,
+                                       const unsigned int& pos);
     /** \brief Insert a string in a list of string
      *
      * \param L std::vector<std::string> : not modified by the function
@@ -38,10 +45,19 @@ void vector_print(const std::vector<std::string>& L);
     /** \brief print a vector (Ex (1; 2; 3)
      *
      * \param v const std::vector<std::string>& : vector to print
-     * \return void
      *
      */
 
-std::string vector_join(const std::vector<std::string>& L, const char& delim = ';');
+std::string vector_join(const std::vector<std::string>& L,
+                        const char& delim = ';');
+    /** \brief join a list on a separator character
+     *
+     * \param L const std::vector<std::string>& : list to join
+     * \param const char& delim = ';' : character to add at the end of each cell
+     * \return std::string : text contained in the vector L
+     *
+     */
+
+}
 
 #endif // PKMN_VECTORMETHOD_H_INCLUDED

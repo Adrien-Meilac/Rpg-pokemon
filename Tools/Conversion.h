@@ -6,6 +6,7 @@
 
 namespace PKMN
 {
+
 bool string_to_bool(const std::string& str);
     /** \brief Convert a string into a boolean variable (Supposing that true = "True" and false = "False")
      *
@@ -29,6 +30,7 @@ double string_to_double(const std::string& str);
      * \return bool
      *
      */
+
 }
 
 

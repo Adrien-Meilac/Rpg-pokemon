@@ -1,84 +1,34 @@
-#include "PKMN_Type.h"
+#include "Type.h"
 
                 /// CONSTRUCTORS ///
 
-PKMN_Type::PKMN_Type()
+PKMN::Type::Type()
 {
     m_InternalName = "";
 }
 
-PKMN_Type::PKMN_Type(std::string InternalName)
+PKMN::Type::Type(std::string IntName)
 {
-    PKMN_Table table(FILE_POKEMON_TYPE);
-    m_InternalName = InternalName;
-    m_Name = table(InternalName, "Name");
-    m_Weaknesses = string_split(table(InternalName,"Weaknesses"), ',');
-    m_Resistances = string_split(table(InternalName,"Resistances"), ',');
-    m_Immunities = string_split(table(InternalName,"Immunities"), ',');
-    m_IsSpecialType = string_to_bool(table(InternalName,"IsSpecialType"));
+    PKMN::Table table(FILE_PKMN_TYPE);
+    m_InternalName = IntName;
+    m_Name = table(IntName, "Name");
+    m_Weaknesses = string_split(table(IntName,"Weaknesses"), ',');
+    m_Resistances = string_split(table(IntName,"Resistances"), ',');
+    m_Immunities = string_split(table(IntName,"Immunities"), ',');
+    m_IsSpecialType = string_to_bool(table(IntName,"IsSpecialType"));
 }
 
-/// ///////////////////////////////////////// ///
-
-                /// DESTRUCTOR ///
-
-PKMN_Type::~PKMN_Type()
+PKMN::Type::Type(PKMN::Type const& other)
 {
-//    std::cout << m_Name <<" : Type is deleted" << std::endl;
+    m_InternalName = other.m_InternalName;
+    m_Name = other.m_Name;
+    m_Weaknesses = other.m_Weaknesses;
+    m_Immunities = other.m_Immunities;
+    m_Resistances = other.m_Resistances;
+    m_IsSpecialType = other.m_IsSpecialType;
 }
 
-/// ///////////////////////////////////////// ///
-
-                /// GETTERS ///
-
-std::string PKMN_Type::getName() const
-{
-    return m_Name;
-}
-
-std::string PKMN_Type::getInternalName() const
-{
-    return m_InternalName;
-}
-//std::vector<std::string> PKMN_Type::getWeaknesses() const
-//{
-//    return m_Weaknesses;
-//}
-//
-//std::vector<std::string> PKMN_Type::getImmunities() const
-//{
-//    return m_Immunities;
-//}
-//
-//std::vector<std::string> PKMN_Type::getResistances() const
-//{
-//    return m_Resistances;
-//}
-
-/// ///////////////////////////////////////// ///
-
-                /// METHODS ///
-
-double PKMN_Type::effectiveness(PKMN_Type const Type_att) const
-{
-    double typeMultiplicativeFactor = NORMAL_EFFECTIVENESS;
-    if(vector_in(m_Immunities, Type_att.m_InternalName))
-    {
-        typeMultiplicativeFactor = INEFFECTIVE;
-    }
-    else if(vector_in(m_Weaknesses, Type_att.m_InternalName))
-    {
-        typeMultiplicativeFactor = SUPER_EFFECTIVE;
-    }
-    else if(vector_in(m_Resistances, Type_att.m_InternalName))
-    {
-        typeMultiplicativeFactor = NOT_VERY_EFFECTIVE;
-    }
-
-    return typeMultiplicativeFactor;
-}
-
-PKMN_Type& PKMN_Type::operator=(PKMN_Type const& other)
+PKMN::Type& PKMN::Type::operator=(PKMN::Type const& other)
 {
     m_InternalName = other.m_InternalName;
     m_Name = other.m_Name;
@@ -89,46 +39,90 @@ PKMN_Type& PKMN_Type::operator=(PKMN_Type const& other)
     return *this;
 }
 
-void PKMN_Type::print() const
+/// ///////////////////////////////////////// ///
+
+                /// DESTRUCTOR ///
+
+PKMN::Type::~Type()
 {
-    std::cout << "PKMN_Type " << m_InternalName << std::endl;
-    std::cout << "\t" << "Name = " << m_Name << std::endl;
-    std::cout << "\t" << "Weaknesses = " << vector_join(m_Weaknesses) << std::endl;
-    std::cout << "\t" << "Immunities = " << vector_join(m_Immunities) << std::endl;
-    std::cout << "\t" << "Resistances = " << vector_join(m_Resistances) << std::endl;
-    std::cout << "\t" << "IsSpecialType = " << m_IsSpecialType << std::endl;
+
 }
 
 /// ///////////////////////////////////////// ///
 
-double PKMN_Type_effectiveness(PKMN_Type Type_def, PKMN_Type Type_att)
+                /// GETTERS ///
+
+std::string PKMN::Type::getName() const
+{
+    return m_Name;
+}
+
+std::string PKMN::Type::getInternalName() const
+{
+    return m_InternalName;
+}
+
+/// ///////////////////////////////////////// ///
+
+                /// METHODS ///
+
+double PKMN::Type::effectiveness(PKMN::Type const Type_att) const
+{
+    double typeMultiplicativeFactor = TYPE_NORMAL_EFFECTIVENESS;
+    if(vector_in(m_Immunities, Type_att.m_InternalName))
+    {
+        typeMultiplicativeFactor = TYPE_INEFFECTIVE;
+    }
+    else if(vector_in(m_Weaknesses, Type_att.m_InternalName))
+    {
+        typeMultiplicativeFactor = TYPE_SUPER_EFFECTIVE;
+    }
+    else if(vector_in(m_Resistances, Type_att.m_InternalName))
+    {
+        typeMultiplicativeFactor = TYPE_NOT_VERY_EFFECTIVE;
+    }
+
+    return typeMultiplicativeFactor;
+}
+
+void PKMN::Type::print() const
+{
+    std::cout   << "PKMN_Type " << m_InternalName << std::endl
+                << "\t" << "Name = " << m_Name << std::endl
+                << "\t" << "Weaknesses = " << vector_join(m_Weaknesses) << std::endl
+                << "\t" << "Immunities = " << vector_join(m_Immunities) << std::endl
+                << "\t" << "Resistances = " << vector_join(m_Resistances) << std::endl
+                << "\t" << "IsSpecialType = " << m_IsSpecialType << std::endl;
+}
+
+/// ///////////////////////////////////////// ///
+
+double PKMN::Type_effectiveness(PKMN::Type Type_def,
+                                PKMN::Type Type_att)
 {
     return Type_def.effectiveness(Type_att);
 }
 
-double PKMN_Type_effectiveness(PKMN_Type Type_def, std::pair<PKMN_Type, PKMN_Type> Type_att)
+double PKMN::Type_effectiveness(std::pair<PKMN::Type, PKMN::Type> Type_def,
+                                PKMN::Type Type_att)
 {
-    return PKMN_Type_effectiveness(Type_def, Type_att.first) * PKMN_Type_effectiveness(Type_def, Type_att.second);
-}
-
-double PKMN_Type_effectiveness(std::pair<PKMN_Type, PKMN_Type> Type_def, PKMN_Type Type_att)
-{
-    return PKMN_Type_effectiveness(Type_def.first, Type_att) * PKMN_Type_effectiveness(Type_def.second, Type_att);
+    return PKMN::Type_effectiveness(Type_def.first, Type_att)
+            * PKMN::Type_effectiveness(Type_def.second, Type_att);
 }
 
 
-std::string PKMN_Type_message(double typeMultiplicativeFactor)
+std::string PKMN::Type_message(double typeMultiplicativeFactor)
 {
     std::string message("");
-    if(typeMultiplicativeFactor == INEFFECTIVE)
+    if(typeMultiplicativeFactor == TYPE_INEFFECTIVE)
     {
         message = "It's totally ineffective !";
     }
-    else if(typeMultiplicativeFactor < NORMAL_EFFECTIVENESS)
+    else if(typeMultiplicativeFactor < TYPE_NORMAL_EFFECTIVENESS)
     {
         message = "It's not very effective !";
     }
-    else if(typeMultiplicativeFactor > NORMAL_EFFECTIVENESS)
+    else if(typeMultiplicativeFactor > TYPE_NORMAL_EFFECTIVENESS)
     {
         message = "It's super effective !";
     }

@@ -6,15 +6,12 @@
 	<string>
 	<cmath>
 
-1513042426 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\main.cpp
+1513285126 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\main.cpp
 	<iostream>
 	<vector>
 	<string>
-	"PKMN_Pokemon/PKMN_Type.h"
-	"PKMN_Pokemon/PKMN_Moves.h"
-	"PKMN_Pokemon/PKMN_ExpAndLevel.h"
-	"PKMN_Pokemon/PKMN_Species.h"
-	"PKMN_Pokemon/PKMN_Pokemon.h"
+	"Pokemon/Type.h"
+	"Pokemon/Move.h"
 
 1513040909 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pkmn_tools\pkmn_statset.cpp
 	"PKMN_StatSet.h"
@@ -103,4 +100,67 @@
 	"PKMN_Species.h"
 	"PKMN_Moves.h"
 	"PKMN_ExpAndLevel.h"
+
+1513281641 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\tools\conversion.h
+	<string>
+	<cmath>
+
+1513274060 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\tools\conversion.cpp
+	"Conversion.h"
+
+1513277519 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\tools\statset.cpp
+	"StatSet.h"
+
+1513285864 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\tools\statset.h
+	"Conversion.h"
+	"VectorMethod.h"
+	<cmath>
+	<iostream>
+	<cstdlib>
+	<ctime>
+	<vector>
+	<string>
+
+1513283456 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\tools\vectormethod.h
+	<vector>
+	<string>
+	<sstream>
+	<iostream>
+
+1513282071 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\tools\table.cpp
+	"Table.h"
+
+1513285918 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\tools\table.h
+	"VectorMethod.h"
+	"../FilePath.h"
+	<iostream>
+	<string>
+	<vector>
+	<fstream>
+
+1513273753 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\filepath.h
+
+1513281602 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\tools\vectormethod.cpp
+	"VectorMethod.h"
+
+1513286604 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pokemon\type.cpp
+	"Type.h"
+
+1513286583 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pokemon\type.h
+	"../Tools/Table.h"
+	"../FilePath.h"
+	"../Tools/Conversion.h"
+	"../Tools/VectorMethod.h"
+	<string>
+	<iostream>
+
+1513285049 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pokemon\move.cpp
+	"Move.h"
+
+1513286553 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pokemon\move.h
+	"../Tools/Table.h"
+	"Type.h"
+	"../FilePath.h"
+	<iostream>
+	<string>
 

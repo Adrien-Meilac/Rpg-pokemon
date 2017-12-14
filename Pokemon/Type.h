@@ -1,53 +1,100 @@
 #ifndef PKMN_TYPE_H_INCLUDED
 #define PKMN_TYPE_H_INCLUDED
 
-#include "../PKMN_Tools/PKMN_Table.h"
-#include "../PKMN_FilePath.h"
-#include "../PKMN_Tools/PKMN_Conversion.h"
-#include "../PKMN_Tools/PKMN_VectorMethod.h"
+#include "../Tools/Table.h"
+#include "../FilePath.h"
+#include "../Tools/Conversion.h"
+#include "../Tools/VectorMethod.h"
+
 #include <string>
 #include <iostream>
 
-#define INEFFECTIVE 0
-#define NOT_VERY_EFFECTIVE 0.5
-#define NORMAL_EFFECTIVENESS 1
-#define SUPER_EFFECTIVE 2
+#define TYPE_INEFFECTIVE             0
+#define TYPE_NOT_VERY_EFFECTIVE      0.5
+#define TYPE_NORMAL_EFFECTIVENESS    1
+#define TYPE_SUPER_EFFECTIVE         2
 
-class PKMN_Type
+namespace PKMN
+{
+    class Type;
+}
+
+
+class PKMN::Type
+/// Class that code the type of a pokemon of a move
 {
 public:
 
-    PKMN_Type();
+/// CONSTRUCTORS :
 
-    PKMN_Type(std::string InternalName);
-    /** \brief Construct a type with only it InternalName by searching it in a file
-     *
-     * \param InternalName std::string : internal name
-     *
-     */
+    Type();
+        /** \brief void constructor
+         *
+         */
 
-    PKMN_Type& operator=(PKMN_Type const& other);
+    Type(std::string IntName);
+        /** \brief Construct a type with only it InternalName by searching it in a file
+         *
+         * \param IntName std::string : internal name
+         *
+         */
 
-    double effectiveness(PKMN_Type const Type_att) const;
-    /** \brief Give the type coefficient effectiveness
-    (for example Water Type Move on a Fire Type Pokemon will be given a type advantage)
-     *
-     * \param Type_att PKMN_Type const : Type of the attack
-     * \return double : the coefficient is a float number is the pokemon is resistant to the attack type
-     *
-     */
+    Type& operator=(Type const& other);
+        /** \brief = asigment for simplify code
+         *
+         * \param other Type const& : other type to copy
+         * \return Type& : *this value
+         *
+         */
+
+
+    Type(Type const& other);
+        /** \brief Copy constructor for function (no reference)
+         *
+         * \param other Type const& : other type to copy
+         *
+         */
+
+/// DESTRUCTOR :
+
+    ~Type();
+        /** \brief Non virtual destructor
+         *
+         */
+
+/// GETTERS :
+
+    std::string getName() const;
+        /** \brief Return the name of the type
+         *
+         * \return m_Name
+         *
+         */
+
+    std::string getInternalName() const;
+        /** \brief Return the internal name of the type
+         *
+         * \return m_InternalName
+         *
+         */
+
+/// METHODS :
+
+    double effectiveness(Type const Type_att) const;
+        /** \brief Give the type coefficient effectiveness
+         * (for example Water Type Move on a Fire Type Pokemon will
+         * be given a type advantage)
+         *
+         * \param Type_att PKMN_Type const : Type of the attack
+         * \return double : the coefficient is a float number
+         * is the pokemon is resistant to the attack type
+         *
+         */
 
      void print() const;
-
-    /// getters :
-    std::string getName() const;
-    std::string getInternalName() const;
-//    std::vector<std::string> getWeaknesses() const;
-//    std::vector<std::string> getImmunities() const;
-//    std::vector<std::string> getResistances() const;
-
-    /// destructor :
-    ~PKMN_Type();
+        /** \brief Print type characteristics
+         *
+         */
 
 private:
 
@@ -60,41 +107,37 @@ private:
 
 };
 
+namespace PKMN
+{
 
-double PKMN_Type_effectiveness(PKMN_Type Type_def, PKMN_Type Type_att);
-/** \brief Give the effectiveness coefficient
- *
- * \param Type_def PKMN_Type : Type of the receiver of an attack
- * \param Type_att PKMN_Type : Type of the attack
- * \return double : coefficient of effectiveness
- *
- */
+double Type_effectiveness(Type Type_def,
+                          Type Type_att);
+    /** \brief Give the effectiveness coefficient
+     *
+     * \param Type_def PKMN_Type : Type of the receiver of an attack
+     * \param Type_att PKMN_Type : Type of the attack
+     * \return double : coefficient of effectiveness
+     *
+     */
 
-double PKMN_Type_effectiveness(PKMN_Type Type_def, std::pair<PKMN_Type, PKMN_Type> Type_att);
-/** \brief Give the type coefficient effectiveness in the case it is a 2 type attack
-(for example Water Type Move on a Fire Type Pokemon will be given a type advantage)
- *
- * \param Type_att std::pair<PKMN_Type, PKMN_Type> : types of the pokemon
- * \return double : the coefficient is a float number is the pokemon is resistant to the attack type
- *
- */
+double Type_effectiveness(std::pair<Type, Type> Type_def, Type Type_att);
+    /** \brief Give the effectiveness coefficient
+     *
+     * \param Type_def std::pair<PKMN_Type, PKMN_Type> : Type of the receiver of an attack (2 type pokemon)
+     * \param Type_att PKMN_Type : Type of the attack
+     * \return double : coefficient of effectiveness
+     *
+     */
 
-double PKMN_Type_effectiveness(std::pair<PKMN_Type, PKMN_Type> Type_def, PKMN_Type Type_att);
-/** \brief Give the effectiveness coefficient
- *
- * \param Type_def std::pair<PKMN_Type, PKMN_Type> : Type of the receiver of an attack (2 type pokemon)
- * \param Type_att PKMN_Type : Type of the attack
- * \return double : coefficient of effectiveness
- *
- */
+std::string Type_message(double typeMultiplicativeFactor);
+    /** \brief Give a message that will be displayed when the attack happened
+     *
+     * \param typeMultiplicativeFactor double : coefficient of effectiveness
+     * \return std::string : message
+     *
+     */
 
-std::string PKMN_Type_message(double typeMultiplicativeFactor);
-/** \brief Give a message that will be displayed when the attack happened
- *
- * \param typeMultiplicativeFactor double : coefficient of effectiveness
- * \return std::string : message
- *
- */
+}
 
 
 #endif // PKMN_TYPE_H_INCLUDED

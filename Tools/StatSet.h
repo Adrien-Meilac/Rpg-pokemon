@@ -19,21 +19,18 @@ namespace PKMN
 
 
 class PKMN::StatSet
-/// StatSet is a class that allow to save statistics
-///    (HP, Att, Def, SpAtt, SpDef, Speed)
-/// in one object.
+/** StatSet is a class that allow to save statistics
+    (HP, Att, Def, SpAtt, SpDef, Speed)
+    in one object. **/
 {
 public:
 
 /// CONSTRUCTORS :
 
     StatSet();
-    /** \brief Construct a StatSet as a zero vector
-     *
-     * \param none
-     * \return none
-     *
-     */
+        /** \brief Construct a StatSet as a zero vector
+         *
+         */
 
     StatSet(int HP,
             int Att,
@@ -41,18 +38,17 @@ public:
             int SpAtt,
             int SpDef,
             int Speed);
-    /** \brief Construct a StatSet with int values
-     *   (changing them into double)
-     *
-     * \param HP int : HP value for m_HP
-     * \param Att int : Att value for m_Att
-     * \param Def int : Def value for m_Def
-     * \param SpAtt int : SpAtt value for m_SpAtt
-     * \param SpDef int : SpDef value for m_SpDef
-     * \param Speed int : Speed value for m_Speed
-     * \return none
-     *
-     */
+        /** \brief Construct a StatSet with int values
+         *   (changing them into double)
+         *
+         * \param HP int : HP value for m_HP
+         * \param Att int : Att value for m_Att
+         * \param Def int : Def value for m_Def
+         * \param SpAtt int : SpAtt value for m_SpAtt
+         * \param SpDef int : SpDef value for m_SpDef
+         * \param Speed int : Speed value for m_Speed
+         *
+         */
 
     StatSet(double HP,
             double Att,
@@ -60,135 +56,129 @@ public:
             double SpAtt,
             double SpDef,
             double Speed);
-    /** \brief Construct a StatSet with double values
-     *
-     * \param HP double : HP value for m_HP
-     * \param Att double : Att value for m_Att
-     * \param Def double : Def value for m_Def
-     * \param SpAtt double : SpAtt value for m_SpAtt
-     * \param SpDef double : SpDef value for m_SpDef
-     * \param Speed double : Speed value for m_Speed
-     * \return none
-     *
-     */
+        /** \brief Construct a StatSet with double values
+         *
+         * \param HP double : HP value for m_HP
+         * \param Att double : Att value for m_Att
+         * \param Def double : Def value for m_Def
+         * \param SpAtt double : SpAtt value for m_SpAtt
+         * \param SpDef double : SpDef value for m_SpDef
+         * \param Speed double : Speed value for m_Speed
+         *
+         */
 
     StatSet(std::string Stat);
-    /** \brief Transform a list of value separated by the char delimitor ',' into StatSet
-     *
-     * \param Stat std::string : for example "232,121,12,78,32,90" (6 values)
-     * will give the StatSet (232, 121, 12, 78, 32, 90)
-     * \return none
-     *
-     */
+        /** \brief Transform a list of value separated by the char delimitor ',' into StatSet
+         *
+         * \param Stat std::string : for example "232,121,12,78,32,90" (6 values)
+         * will give the StatSet (232, 121, 12, 78, 32, 90)
+         *
+         */
 
     StatSet(StatSet const& Other);
-    /** \brief Copy constructor for function (no reference)
-     *
-     * \param Other StatSet const& : Other StatSet to copy
-     * \return none
-     *
-     */
+        /** \brief Copy constructor for function (no reference)
+         *
+         * \param Other StatSet const& : Other StatSet to copy
+         *
+         */
 
 
 /// DESTRUCTOR :
 
     virtual ~StatSet();
-    /** \brief Virtual destructor because of CurStatSet
-     *
-     * \param none
-     * \return none
-     *
-     */
+        /** \brief Virtual destructor because of CurStatSet
+         *
+         */
 
 
 /// GETTERS :
 
     int getHP() const;
-    /** \brief Return the HP value of the StatSet
-     *
-     * \param none
-     * \return int : HP value
-     *
-     */
+        /** \brief Return the HP value of the StatSet
+         *
+         * \return int : HP value
+         *
+         */
+
     int getAtt() const;
-    /** \brief Return the Att value of the StatSet
-     *
-     * \param none
-     * \return int : Att value
-     *
-     */
+        /** \brief Return the Att value of the StatSet
+         *
+         * \return int : Att value
+         *
+         */
+
     int getDef() const;
-    /** \brief Return the Def value of the StatSet
-     *
-     * \param none
-     * \return int : Def value
-     *
-     */
+        /** \brief Return the Def value of the StatSet
+         *
+         * \return int : Def value
+         *
+         */
+
     int getSpAtt() const;
-    /** \brief Return the SpAtt value of the StatSet
-     *
-     * \param none
-     * \return int : SpAtt value
-     *
-     */
+        /** \brief Return the SpAtt value of the StatSet
+         *
+         * \return int : SpAtt value
+         *
+         */
+
     int getSpDef() const;
-    /** \brief Return the SpDef value of the StatSet
-     *
-     * \param none
-     * \return int : SpDef value
-     *
-     */
+        /** \brief Return the SpDef value of the StatSet
+         *
+         * \return int : SpDef value
+         *
+         */
+
     int getSpeed() const;
-    /** \brief Return the Speed value of the StatSet
-     *
-     * \param none
-     * \return int : Speed value
-     *
-     */
+        /** \brief Return the Speed value of the StatSet
+         *
+         * \return int : Speed value
+         *
+         */
 
 
 /// METHODS :
 
     void zeros();
-    /** \brief Set the StatSet with zero values
-     *
-     * \param none
-     * \return void
-     *
-     */
+        /** \brief Set the StatSet with zero values
+         *
+         */
 
     void random(unsigned int mod = 32);
-    /** \brief Set the StatSet with random values between 0 and the mod value,
-     *
-     *
-     * \param mod unsigned int mod : modulo value, by default it is set to 32
-     * because IV are numbers between 0 and 31
-     * \return void
-     *
-     */
+        /** \brief Set the StatSet with random values between 0 and the mod value,
+         *
+         * \param mod unsigned int mod : modulo value, by default it is set to 32
+         * because IV are numbers between 0 and 31
+         *
+         */
 
 private:
 
 /// FRIEND FUNCTION :
-    // flux for cout :
-    friend std::ostream& operator<<(std::ostream &flux,
-                                    StatSet const& Stat);
+
+    friend std::ostream& operator<<(std::ostream &flux, StatSet const& Stat);
+        /** \brief
+         *
+         * \param flux std::ostream&
+         * \param Stat StatSet const&
+         * \return friend std::ostream&
+         *
+         */
 
     friend StatSet NormalStatistics(StatSet const Base,
                                     StatSet const IV,
                                     StatSet const EV,
                                     unsigned int level,
                                     std::string Nature);
-    /** \brief Give the stats of a pokemon, given some information related
-     *  to it species, IV and EV that are StatSet
-     *
-     * \param IV, EV PKMN_StatSet const& : Given for each pokemon
-     * \param Base PKMN_StatSet const& : Specific to the species
-     * \param level unsigned int : Level of the pokemon
-     * \param Nature std::string : Nature of the pokemon
-     * \return
-     *
-     */
+        /** \brief Give the stats of a pokemon, given some information related
+         *  to it species, IV and EV that are StatSet
+         *
+         * \param IV, EV PKMN_StatSet const& : Given for each pokemon
+         * \param Base PKMN_StatSet const& : Specific to the species
+         * \param level unsigned int : Level of the pokemon
+         * \param Nature std::string : Nature of the pokemon
+         * \return
+         *
+         */
 
 /// MEMBER VARIABLES :
     double m_HP; /// Life point of a pokemon
