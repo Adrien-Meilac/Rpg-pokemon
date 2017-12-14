@@ -1,6 +1,6 @@
-#include "PKMN_Conversion.h"
+#include "Conversion.h"
 
-bool string_to_bool(const std::string& str)
+bool PKMN::string_to_bool(const std::string& str)
 {
     if(str == "True")
     {
@@ -9,7 +9,7 @@ bool string_to_bool(const std::string& str)
     return false;
 }
 
-int string_to_int(const std::string& str)
+int PKMN::string_to_int(const std::string& str)
 {
     int number = 0;
     const unsigned int length = str.size();
@@ -33,7 +33,7 @@ int string_to_int(const std::string& str)
     }
 }
 
-double string_to_double(const std::string& str)
+double PKMN::string_to_double(const std::string& str)
 {
     const unsigned int length = str.size();
     for(unsigned int i = 0; i < length; i++)
