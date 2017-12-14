@@ -32,6 +32,10 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="PKMN_Battle/PKMN_Player.cpp" />
+		<Unit filename="PKMN_Battle/PKMN_Player.h" />
+		<Unit filename="PKMN_Battle/PKMN_Trainer.cpp" />
+		<Unit filename="PKMN_Battle/PKMN_Trainer.h" />
 		<Unit filename="PKMN_FilePath.h" />
 		<Unit filename="PKMN_Pokemon/PKMN_ExpAndLevel.cpp" />
 		<Unit filename="PKMN_Pokemon/PKMN_ExpAndLevel.h" />
