@@ -42,8 +42,9 @@ public:
          *
          */
 
-    ExpAndLevel(std::string name, std::pair<unsigned int, unsigned int> level_range); // when create a wild pokemon
-        /** \brief
+    ExpAndLevel(std::string name,
+                std::pair<unsigned int, unsigned int> level_range);
+        /** \brief To create a wild pokemon
          *
          * \param name std::string :
          * \param level_range std::pair<unsigned, unsigned int> :

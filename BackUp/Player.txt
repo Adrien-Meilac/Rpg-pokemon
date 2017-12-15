@@ -1,0 +1,2 @@
+Trainer;Name;Type name;Gender;Public ID;Secret ID;Language;Money;Bagdes;Has Pokedex
+Player;Jean;Pkmn Trainer;Male;2321;2321;English;0;False,False,False,False,False,False,False,False;False

@@ -1,16 +1,16 @@
 #ifndef PKMN_MOVE_H_INCLUDED
 #define PKMN_MOVE_H_INCLUDED
 
-#include "../Tools/Table.h"
 #include "Type.h"
+#include "DamageCategory.h"
+
 #include "../FilePath.h"
+
+#include "../Tools/Table.h"
 
 #include <iostream> // to use ostream flux
 #include <string> // to stock string values
 
-#define MOVE_DAMAGE_CATEGORY_PHYSICAL   "Physical"
-#define MOVE_DAMAGE_CATEGORY_SPECIAL    "Special"
-#define MOVE_DAMAGE_CATEGORY_STATUS     "Status"
 
 namespace PKMN
 {
@@ -45,7 +45,7 @@ public:
     Move& operator=(Move const& other);
         /** \brief to simplify assignment of Move objects
          *
-         * \param other Moves const& : other Move to copy
+         * \param other Move const& : other Move to copy
          * \return Move& : *this
          *
          */
@@ -59,10 +59,24 @@ public:
 
 /// GETTERS :
 
-    std::string getDamageCategory() const;
-        /** \brief send back the damage category
+    bool isPhysicalCategory() const;
+        /** \brief Is the move physical ?
          *
-         * \return std::string : m_DamageCategory
+         * \return bool
+         *
+         */
+
+    bool isStatusCategory() const;
+        /** \brief Is the move a status attack ?
+         *
+         * \return bool
+         *
+         */
+
+    bool isSpecialCategory() const;
+        /** \brief Is the move special ?
+         *
+         * \return bool
          *
          */
 
@@ -120,7 +134,7 @@ private:
     std::string m_FunctionCode; /// Hexadecimal number that code the effects
     unsigned int m_BasePower; /// power of the attack
     Type m_Type; /// Type of a move
-    std::string m_DamageCategory; /// Will change the damage calculus
+    DamageCategory m_DamageCategory; /// Will change the damage calculus
     unsigned int m_Accuracy; /// Accuracy of the move
     unsigned int m_TotalPP; /// Max Power Point of a move (how much time we could use an attack)
     unsigned int m_AdditionalEffectChance; /// Bonus of accuracy

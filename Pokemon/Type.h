@@ -1,8 +1,9 @@
 #ifndef PKMN_TYPE_H_INCLUDED
 #define PKMN_TYPE_H_INCLUDED
 
-#include "../Tools/Table.h"
 #include "../FilePath.h"
+
+#include "../Tools/Table.h"
 #include "../Tools/Conversion.h"
 #include "../Tools/VectorMethod.h"
 

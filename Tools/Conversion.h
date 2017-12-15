@@ -3,6 +3,7 @@
 
 #include <string> // To manipulate string
 #include <cmath> // To use pow function
+#include <iostream>
 
 namespace PKMN
 {
@@ -30,6 +31,11 @@ double string_to_double(const std::string& str);
      * \return bool
      *
      */
+
+std::string int_to_string(int nb); // bug pour les grands nb
+
+unsigned int nb_of_nb(int nb);
+
 
 }
 

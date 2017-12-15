@@ -11,24 +11,25 @@ PKMN::Move::Move(std::string InternalName)
 {
     PKMN::Table table(FILE_PKMN_MOVES);
     m_InternalName = InternalName;
-    m_ID = string_to_int(table(InternalName,"IDnumber"));
+    m_ID = PKMN::string_to_int(table(InternalName,"IDnumber"));
     m_Name = table(InternalName,"Name");
     m_FunctionCode = table(InternalName,"FunctionCode");
-    m_BasePower = string_to_int(table(InternalName,"BasePower"));
+    m_BasePower = PKMN::string_to_int(table(InternalName,"BasePower"));
     m_Type = PKMN::Type(table(InternalName,"Type"));
     m_DamageCategory = table(InternalName,"DamageCategory");
-    m_Accuracy = string_to_int(table(InternalName,"Accuracy"));
-    m_TotalPP = string_to_int(table(InternalName,"TotalPP"));
-    m_AdditionalEffectChance = string_to_int(table(InternalName,"AdditionalEffectChance"));
+    m_Accuracy = PKMN::string_to_int(table(InternalName,"Accuracy"));
+    m_TotalPP = PKMN::string_to_int(table(InternalName,"TotalPP"));
+    m_AdditionalEffectChance = PKMN::string_to_int(table(InternalName,"AdditionalEffectChance"));
     m_Target = table(InternalName,"Target");
-    m_Priority = string_to_int(table(InternalName,"Priority"));
+    m_Priority = PKMN::string_to_int(table(InternalName,"Priority"));
     m_Flags = table(InternalName,"Flags");
     m_Description = table(InternalName,"Description");
 }
 
 
 PKMN::Move::Move(PKMN::Move const& other):
-    m_Type(other.m_Type)
+    m_Type(other.m_Type),
+    m_DamageCategory(other.m_DamageCategory)
 {
     m_InternalName = other.m_InternalName;
     m_ID = other.m_ID;
@@ -36,7 +37,7 @@ PKMN::Move::Move(PKMN::Move const& other):
     m_FunctionCode = other.m_FunctionCode;
     m_BasePower = other.m_BasePower;
     //m_Type = other.m_Type;
-    m_DamageCategory = other.m_DamageCategory;
+    //m_DamageCategory = other.m_DamageCategory;
     m_Accuracy = other.m_Accuracy;
     m_TotalPP = other.m_TotalPP;
     m_AdditionalEffectChance = other.m_AdditionalEffectChance;
@@ -79,9 +80,19 @@ PKMN::Move::~Move()
 
                 /// GETTERS ///
 
-std::string PKMN::Move::getDamageCategory() const
+bool PKMN::Move::isPhysicalCategory() const
 {
-    return m_DamageCategory;
+    return m_DamageCategory.isPhysicalCategory();
+}
+
+bool PKMN::Move::isStatusCategory() const
+{
+    return m_DamageCategory.isStatusCategory();
+}
+
+bool PKMN::Move::isSpecialCategory() const
+{
+    return m_DamageCategory.isSpecialCategory();
 }
 
 unsigned int PKMN::Move::getBasePower() const
@@ -110,7 +121,7 @@ void PKMN::Move::print() const
                 << "\t" << "FunctionCode = " << m_FunctionCode << std::endl
                 << "\t" << "BasePower = " << m_BasePower << std::endl
                 << "\t" << "Type = " << m_Type.getInternalName() << std::endl
-                << "\t" << "DamageCategory = " << m_DamageCategory << std::endl
+                << "\t" << "DamageCategory = " << m_DamageCategory.getName() << std::endl
                 << "\t" << "Accuracy = " << m_Accuracy << std::endl
                 << "\t" << "TotalPP = " << m_TotalPP << std::endl
                 << "\t" << "AdditionalEffectChance = " << m_AdditionalEffectChance << std::endl
@@ -128,9 +139,9 @@ void PKMN::Move::print() const
 
 namespace PKMN
 {
-std::vector<Move> read_moves(std::string moves)
+std::vector<Move> read_move(std::string moves)
 {
-    std::vector<std::string> L = string_split(moves, ',');
+    std::vector<std::string> L = PKMN::string_split(moves, ',');
     std::vector<Move> M;
     const unsigned int length = L.size();
     for(unsigned int i=0; i < length; i++)

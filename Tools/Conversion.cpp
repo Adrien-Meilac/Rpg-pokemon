@@ -56,3 +56,33 @@ double PKMN::string_to_double(const std::string& str)
     }
     return 0;
 }
+
+std::string PKMN::int_to_string(int nb)
+{
+    std::string str = "";
+    int a;
+    char b;
+    std::string sign = "";
+    if(nb == 0)
+    {
+        return "0";
+    }
+    else if(nb < 0)
+    {
+        sign = "-";// not working
+        nb = - nb;
+    }
+    for(int i = PKMN::nb_of_nb(nb) - 1; i >= 0; i-= 1)
+    {
+        a = static_cast<int>(floor(nb / pow(10,i)));
+        b = static_cast<char>(a + static_cast<int>('0'));
+        str += b;
+        nb -= static_cast<int>(a * pow(10,i));
+    }
+    return sign + str;
+}
+
+unsigned int PKMN::nb_of_nb(int nb)
+{
+    return static_cast<int>(floor(static_cast<double>(log10(nb)))) + 1;
+}

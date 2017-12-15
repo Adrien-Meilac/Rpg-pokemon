@@ -75,3 +75,16 @@ std::string PKMN::vector_join(const std::vector<std::string>& L,
     }
     return joinedText;
 }
+
+std::vector<bool> PKMN::split_string_to_bool(std::string str)
+{
+    std::vector<bool> M;
+    std::vector<std::string> L = PKMN::string_split(str);
+    const unsigned int length = L.size();
+    for(unsigned int i = 0; i < length; i++)
+    {
+        M.push_back(PKMN::string_to_bool(L[i]));
+    }
+    return M;
+}
+

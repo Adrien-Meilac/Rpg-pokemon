@@ -12,10 +12,10 @@ PKMN::Type::Type(std::string IntName)
     PKMN::Table table(FILE_PKMN_TYPE);
     m_InternalName = IntName;
     m_Name = table(IntName, "Name");
-    m_Weaknesses = string_split(table(IntName,"Weaknesses"), ',');
-    m_Resistances = string_split(table(IntName,"Resistances"), ',');
-    m_Immunities = string_split(table(IntName,"Immunities"), ',');
-    m_IsSpecialType = string_to_bool(table(IntName,"IsSpecialType"));
+    m_Weaknesses = PKMN::string_split(table(IntName,"Weaknesses"), ',');
+    m_Resistances = PKMN::string_split(table(IntName,"Resistances"), ',');
+    m_Immunities = PKMN::string_split(table(IntName,"Immunities"), ',');
+    m_IsSpecialType = PKMN::string_to_bool(table(IntName,"IsSpecialType"));
 }
 
 PKMN::Type::Type(PKMN::Type const& other)

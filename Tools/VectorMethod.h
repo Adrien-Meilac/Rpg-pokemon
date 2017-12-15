@@ -6,6 +6,8 @@
 #include <sstream> // for split method
 #include <iostream> // for print method
 
+#include "Conversion.h"
+
 namespace PKMN
 {
 
@@ -58,6 +60,7 @@ std::string vector_join(const std::vector<std::string>& L,
      *
      */
 
+ std::vector<bool> split_string_to_bool(std::string str);
 }
 
 #endif // PKMN_VECTORMETHOD_H_INCLUDED

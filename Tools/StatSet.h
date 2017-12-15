@@ -86,7 +86,7 @@ public:
 /// DESTRUCTOR :
 
     virtual ~StatSet();
-        /** \brief Virtual destructor because of CurStatSet
+        /** \brief Virtual destructor because of StatSetExtended
          *
          */
 
@@ -179,6 +179,9 @@ private:
          * \return
          *
          */
+
+
+protected :
 
 /// MEMBER VARIABLES :
     double m_HP; /// Life point of a pokemon

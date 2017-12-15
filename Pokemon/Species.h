@@ -1,23 +1,63 @@
 #ifndef PKMN_SPECIES_H_INCLUDED
 #define PKMN_SPECIES_H_INCLUDED
 
-#include "PKMN_Type.h"
-#include "PKMN_ExpAndLevel.h"
-#include "PKMN_Moves.h"
-#include "../PKMN_Tools/PKMN_StatSet.h"
+#include "Type.h"
+#include "ExpAndLevel.h"
+
+#include "../FilePath.h"
+
+#include "../Tools/StatSet.h"
+#include "../Tools/Table.h"
+
 #include <string>
 #include <vector>
 #include <iostream>
 
-class PKMN_Species
+namespace PKMN
+{
+    class Species;
+}
+
+class PKMN::Species
+/** Species contains standarts information about a pokemon.
+    They are always the same for each species of pokemon.
+    It is a virtual class ??? */
 {
 public:
-    PKMN_Species();
-    PKMN_Species(std::string m_InternalName);
 
-    PKMN_StatSet getBaseStats() const;
+/// CONSTRUCTORS :
 
-    virtual ~PKMN_Species();
+    Species();
+        /** \brief
+         *
+         *
+         */
+
+    Species(std::string InternalName);
+        /** \brief
+         *
+         * \param InternalName std::string
+         *
+         */
+
+/// DESTRUCTOR :
+
+    virtual ~Species();
+        /** \brief
+         *
+         *
+         */
+
+/// GETTERS :
+
+    StatSet getBaseStats() const; /// necessary ???
+        /** \brief
+         *
+         * \return StatSet
+         *
+         */
+
+    std::string getSpeciesName() const;
 
 protected:
 
@@ -25,12 +65,12 @@ protected:
     unsigned int m_ID;
     std::string m_Name;
     std::string m_FormName;
-    std::pair<PKMN_Type, PKMN_Type> m_Type;
-    PKMN_StatSet m_BaseStats;
+    std::pair<Type, Type> m_Type;
+    StatSet m_BaseStats;
     double m_GenderRate;
     std::string m_GrowthRate;
     unsigned int m_BaseExp;
-    PKMN_StatSet m_EffortPoints;
+    StatSet m_EffortPoints;
     unsigned int m_Rareness;
     unsigned int m_Happiness;
     std::string m_Abilities; // A recoder en classe
