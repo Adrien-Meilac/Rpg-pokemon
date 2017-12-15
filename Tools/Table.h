@@ -97,10 +97,10 @@ public:
 
 /// METHODS :
 
-    std::vector<int> dimension() const;
+    std::vector<unsigned int> dimension() const;
         /** \brief Calculate the dimension of the table (useful for "for" structure)
          *
-         * \return std::vector<int> : (line length, column length)
+         * \return std::vector<unsigned int> : (line length, column length)
          *
          */
 

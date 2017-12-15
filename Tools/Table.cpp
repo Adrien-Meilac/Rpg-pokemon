@@ -68,8 +68,8 @@ std::vector<std::string> PKMN::Table::getColumnNames() const
 
 std::vector<std::string> PKMN::Table::getLineValues(std::string nameLine) const
 {
-    std::vector<int> dim = this->dimension();
-    for(int i = 0; i < dim[0]; i++)
+    std::vector<unsigned int> dim = this->dimension();
+    for(unsigned int i = 0; i < dim[0]; i++)
     {
         if(m_headerLine[i] == nameLine)
         {
@@ -81,17 +81,17 @@ std::vector<std::string> PKMN::Table::getLineValues(std::string nameLine) const
 
 std::vector<std::string> PKMN::Table::getColumnValues(std::string nameColumn) const
 {
-    std::vector<int> dim = this->dimension();
+    std::vector<unsigned int> dim = this->dimension();
     std::vector<std::string> column(dim[0]);
     int j_col = 0;
-    for(int j = 0; j < dim[1]; j++)
+    for(unsigned int j = 0; j < dim[1]; j++)
     {
         if(m_headerColumn[j] == nameColumn)
         {
             j_col = j;
         }
     }
-    for(int i = 0; i < dim[0]; i++)
+    for(unsigned int i = 0; i < dim[0]; i++)
     {
         column[i] = m_table[i][j_col];
     }
@@ -112,9 +112,9 @@ std::vector<std::string> PKMN::Table::getColumnValuesWithColumnName(std::string 
 
                 /// METHODS ///
 
-std::vector<int> PKMN::Table::dimension() const
+std::vector<unsigned int> PKMN::Table::dimension() const
 {
-    std::vector<int> dim(2);
+    std::vector<unsigned int> dim(2);
     dim[0] = m_headerLine.size();
     dim[1] = m_headerColumn.size();
     return dim;
@@ -122,16 +122,16 @@ std::vector<int> PKMN::Table::dimension() const
 
 std::string PKMN::Table::operator()(std::string nameLine, std::string nameColumn) const
 {
-    std::vector<int> dim =  this->dimension();
-    std::vector<int> i_value(2);
-    for(int i = 0; i < dim[0]; i++)
+    std::vector<unsigned int> dim =  this->dimension();
+    std::vector<unsigned int> i_value(2);
+    for(unsigned int i = 0; i < dim[0]; i++)
     {
         if(m_headerLine[i] == nameLine)
         {
             i_value[0] = i;
         }
     }
-    for(int j = 0; j < dim[1]; j++)
+    for(unsigned int j = 0; j < dim[1]; j++)
     {
         if(m_headerColumn[j] == nameColumn)
         {

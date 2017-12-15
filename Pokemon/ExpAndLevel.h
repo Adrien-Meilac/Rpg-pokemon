@@ -7,46 +7,126 @@
 #include <ctime>
 #include <iostream>
 
-#define PKMN_EXPANDLEVEL_SLOW "Slow"
-#define PKMN_EXPANDLEVEL_MEDIUMSLOW "Parabolic"
-#define PKMN_EXPANDLEVEL_MEDIUMFAST "Medium"
-#define PKMN_EXPANDLEVEL_FAST "Fast"
-#define PKMN_EXPANDLEVEL_ERRATIC "Erratic"
-#define PKMN_EXPANDLEVEL_FLUCTUATING "Fluctuating"
+#define EXPANDLEVEL_SLOW           "Slow"
+#define EXPANDLEVEL_MEDIUMSLOW     "Parabolic"
+#define EXPANDLEVEL_MEDIUMFAST     "Medium"
+#define EXPANDLEVEL_FAST           "Fast"
+#define EXPANDLEVEL_ERRATIC        "Erratic"
+#define EXPANDLEVEL_FLUCTUATING    "Fluctuating"
 
-class PKMN_ExpAndLevel
+
+namespace PKMN
+{
+    class ExpAndLevel;
+}
+
+
+class PKMN::ExpAndLevel
 {
 public:
 
-    PKMN_ExpAndLevel();
-    PKMN_ExpAndLevel(std::string name,
-                        unsigned int level = 1,
-                        unsigned int exp = 0); // When read save file
-//    PKMN_ExpAndLevel(std::string name,
-//                    unsigned int level); // When create a dressor pokemon
-    PKMN_ExpAndLevel(std::string name,
-                    std::pair<unsigned int, unsigned int> level_range); // when create a wild pokemon
-    //PKMN_ExpAndLevel(std::string name); // when create a pokemon from an egg
+/// CONSTRUCTORS :
 
-    void addLevel();
+    ExpAndLevel();
+    /** \brief
+     *
+     *
+     */
+
+    ExpAndLevel(std::string name, unsigned int level = 1, unsigned int exp = 0); // When read save file
+        /** \brief
+         *
+         * \param name std::string :
+         * \param unsigned int level = 1 :
+         * \param unsigned int exp = 0 :
+         *
+         */
+
+    ExpAndLevel(std::string name, std::pair<unsigned int, unsigned int> level_range); // when create a wild pokemon
+        /** \brief
+         *
+         * \param name std::string :
+         * \param level_range std::pair<unsigned, unsigned int> :
+         *
+         */
+
+/// DESTRUCTOR :
+
+    ~ExpAndLevel();
+        /** \brief
+         *
+         *
+         */
+
+/// GETTERS :
 
     unsigned int getExp() const;
-    unsigned int getExpToNextLevel() const;
-    unsigned int getTotalExp() const;
-    unsigned int getLevel() const;
-    void print() const;
+        /** \brief
+         *
+         * \return unsigned int
+         *
+         */
 
-    ~PKMN_ExpAndLevel();
+    unsigned int getExpToNextLevel() const;
+        /** \brief
+         *
+         * \return unsigned int
+         *
+         */
+
+    unsigned int getTotalExp() const;
+        /** \brief
+         *
+         * \return unsigned int
+         *
+         */
+
+    unsigned int getLevel() const;
+        /** \brief
+         *
+         * \return unsigned int
+         *
+         */
+
+/// METHODS :
+
+    void print() const;
+        /** \brief
+         *
+         * \return void
+         *
+         */
+
+    void addLevel();
+        /** \brief
+         *
+         * \return void
+         *
+         */
 
 private:
 
     unsigned int expToNextLevel() const;
-    unsigned int expLevel(unsigned int level) const;
+        /** \brief
+         *
+         * \return unsigned int
+         *
+         */
 
-    std::string m_Name;
-    unsigned int m_Exp;
-    unsigned int m_Level;
-    unsigned int m_ExpToNextLevel;
+    unsigned int expLevel(unsigned int level) const;
+        /** \brief
+         *
+         * \param level unsigned int
+         * \return unsigned int
+         *
+         */
+
+/// MEMBER VARIABLES :
+
+    std::string m_Name; /// Name of the growth
+    unsigned int m_Exp; /// exp of a pokemon
+    unsigned int m_Level; /// level of a pokemon
+    unsigned int m_ExpToNextLevel; /// exp needed to level up, saved to avoid multiple calculus
 
 };
 

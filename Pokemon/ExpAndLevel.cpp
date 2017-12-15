@@ -1,20 +1,15 @@
-#include "PKMN_ExpAndLevel.h"
+#include "ExpAndLevel.h"
 
                 /// CONSTRUCTORS ///
 
-PKMN_ExpAndLevel::PKMN_ExpAndLevel()
+PKMN::ExpAndLevel::ExpAndLevel()
 {
 
 }
 
-PKMN_ExpAndLevel::~PKMN_ExpAndLevel()
-{
-//    std::cout << m_Name << " : PKMN_ExpAndLevel destructed" << std::endl;
-}
-
-PKMN_ExpAndLevel::PKMN_ExpAndLevel(std::string name,
-                                    unsigned int level,
-                                    unsigned int exp)
+PKMN::ExpAndLevel::ExpAndLevel(std::string name,
+                               unsigned int level,
+                               unsigned int exp)
 {
     m_Name = name;
     m_Exp = exp;
@@ -22,8 +17,8 @@ PKMN_ExpAndLevel::PKMN_ExpAndLevel(std::string name,
     m_ExpToNextLevel = this->expToNextLevel();
 }
 
-PKMN_ExpAndLevel::PKMN_ExpAndLevel(std::string name,
-                                std::pair<unsigned int, unsigned int> level_range)
+PKMN::ExpAndLevel::ExpAndLevel(std::string name,
+                               std::pair<unsigned int, unsigned int> level_range)
 {
     m_Name = name;
     m_Exp = 0;
@@ -31,7 +26,18 @@ PKMN_ExpAndLevel::PKMN_ExpAndLevel(std::string name,
     m_ExpToNextLevel = this->expToNextLevel();
 }
 
-unsigned int PKMN_ExpAndLevel::expToNextLevel() const
+/// ///////////////////////////////////////// ///
+
+                /// DESTRUCTOR ///
+
+PKMN::ExpAndLevel::~ExpAndLevel()
+{
+
+}
+
+/// ///////////////////////////////////////// ///
+
+unsigned int PKMN::ExpAndLevel::expToNextLevel() const
 {   if(m_Level == 1)
     {
         return this->expLevel(m_Level + 1);
@@ -40,26 +46,26 @@ unsigned int PKMN_ExpAndLevel::expToNextLevel() const
 }
 
 
-unsigned int PKMN_ExpAndLevel::expLevel(unsigned int level) const
+unsigned int PKMN::ExpAndLevel::expLevel(unsigned int level) const
 {
 	double n = static_cast<double>(level);
-	if(m_Name == PKMN_EXPANDLEVEL_FAST)
+	if(m_Name == EXPANDLEVEL_FAST)
     {
         return static_cast<int>(ceil(4 * pow(n, 3) / 5));
     }
-	else if(m_Name == PKMN_EXPANDLEVEL_MEDIUMFAST)
+	else if(m_Name == EXPANDLEVEL_MEDIUMFAST)
     {
         return static_cast<int>(pow(n, 3));
     }
-	else if(m_Name == PKMN_EXPANDLEVEL_MEDIUMSLOW)
+	else if(m_Name == EXPANDLEVEL_MEDIUMSLOW)
     {
 		return static_cast<int>(ceil(6 * pow(n, 3) / 5 - 15 * pow(n, 2) + 100 * n - 140));
     }
-	else if(m_Name == PKMN_EXPANDLEVEL_SLOW)
+	else if(m_Name == EXPANDLEVEL_SLOW)
     {
         return static_cast<int>(ceil(5 * pow(n, 3) / 4));
     }
-	else if(m_Name == PKMN_EXPANDLEVEL_ERRATIC)
+	else if(m_Name == EXPANDLEVEL_ERRATIC)
     {
         if(level <= 50)
         {
@@ -78,7 +84,7 @@ unsigned int PKMN_ExpAndLevel::expLevel(unsigned int level) const
             return static_cast<int>(ceil(pow(n, 3) * (160 - n) / 100));
         }
     }
-    else if(m_Name == PKMN_EXPANDLEVEL_FLUCTUATING)
+    else if(m_Name == EXPANDLEVEL_FLUCTUATING)
     {
         if(level <= 15)
         {
@@ -96,18 +102,18 @@ unsigned int PKMN_ExpAndLevel::expLevel(unsigned int level) const
     return 0;
 }
 
-unsigned int PKMN_ExpAndLevel::getExp() const
+unsigned int PKMN::ExpAndLevel::getExp() const
 {
     return m_Exp;
 }
 
-unsigned int PKMN_ExpAndLevel::getLevel() const
+unsigned int PKMN::ExpAndLevel::getLevel() const
 {
     return m_Level;
 }
 
 
-void PKMN_ExpAndLevel::addLevel()
+void PKMN::ExpAndLevel::addLevel()
 {
     m_Exp = 0;
     if(m_Level < 100)
@@ -122,12 +128,12 @@ void PKMN_ExpAndLevel::addLevel()
 
 }
 
-unsigned int PKMN_ExpAndLevel::getExpToNextLevel() const
+unsigned int PKMN::ExpAndLevel::getExpToNextLevel() const
 {
     return m_ExpToNextLevel;
 }
 
-unsigned int PKMN_ExpAndLevel::getTotalExp() const
+unsigned int PKMN::ExpAndLevel::getTotalExp() const
 {
     if(m_Level == 1)
     {
@@ -136,12 +142,12 @@ unsigned int PKMN_ExpAndLevel::getTotalExp() const
     return this->expLevel(m_Level) + m_Exp;
 }
 
-void PKMN_ExpAndLevel::print() const
+void PKMN::ExpAndLevel::print() const
 {
-    std::cout << "PKMN_ExpAndLevel " << m_Name << std::endl;
-    std::cout << "\t" << "Exp = " << m_Exp << std::endl;
-    std::cout << "\t" << "Level = " << m_Level << std::endl;
-    std::cout << "\t" << "ExpToNextLevel = " << m_ExpToNextLevel << std::endl;
-    std::cout << "\t" << "TotalExp = " << this->getTotalExp() << std::endl;
+    std::cout   << "PKMN_ExpAndLevel " << m_Name << std::endl
+                << "\t" << "Exp = " << m_Exp << std::endl
+                << "\t" << "Level = " << m_Level << std::endl
+                << "\t" << "ExpToNextLevel = " << m_ExpToNextLevel << std::endl
+                << "\t" << "TotalExp = " << this->getTotalExp() << std::endl;
 }
 

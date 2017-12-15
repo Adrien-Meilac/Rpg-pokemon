@@ -120,7 +120,8 @@ double Type_effectiveness(Type Type_def,
      *
      */
 
-double Type_effectiveness(std::pair<Type, Type> Type_def, Type Type_att);
+double Type_effectiveness(std::pair<Type, Type> Type_def,
+                          Type Type_att);
     /** \brief Give the effectiveness coefficient
      *
      * \param Type_def std::pair<PKMN_Type, PKMN_Type> : Type of the receiver of an attack (2 type pokemon)

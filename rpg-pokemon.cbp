@@ -32,29 +32,21 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="PKMN_Battle/PKMN_Player.cpp" />
-		<Unit filename="PKMN_Battle/PKMN_Player.h" />
-		<Unit filename="PKMN_Battle/PKMN_Trainer.cpp" />
-		<Unit filename="PKMN_Battle/PKMN_Trainer.h" />
-		<Unit filename="PKMN_FilePath.h" />
-		<Unit filename="PKMN_Pokemon/PKMN_ExpAndLevel.cpp" />
-		<Unit filename="PKMN_Pokemon/PKMN_ExpAndLevel.h" />
-		<Unit filename="PKMN_Pokemon/PKMN_Moves.cpp" />
-		<Unit filename="PKMN_Pokemon/PKMN_Moves.h" />
-		<Unit filename="PKMN_Pokemon/PKMN_Pokemon.cpp" />
-		<Unit filename="PKMN_Pokemon/PKMN_Pokemon.h" />
-		<Unit filename="PKMN_Pokemon/PKMN_Species.cpp" />
-		<Unit filename="PKMN_Pokemon/PKMN_Species.h" />
-		<Unit filename="PKMN_Pokemon/PKMN_Type.cpp" />
-		<Unit filename="PKMN_Pokemon/PKMN_Type.h" />
-		<Unit filename="PKMN_Tools/PKMN_Conversion.cpp" />
-		<Unit filename="PKMN_Tools/PKMN_Conversion.h" />
-		<Unit filename="PKMN_Tools/PKMN_StatSet.cpp" />
-		<Unit filename="PKMN_Tools/PKMN_StatSet.h" />
-		<Unit filename="PKMN_Tools/PKMN_Table.cpp" />
-		<Unit filename="PKMN_Tools/PKMN_Table.h" />
-		<Unit filename="PKMN_Tools/PKMN_VectorMethod.cpp" />
-		<Unit filename="PKMN_Tools/PKMN_VectorMethod.h" />
+		<Unit filename="FilePath.h" />
+		<Unit filename="Pokemon/ExpAndLevel.cpp" />
+		<Unit filename="Pokemon/ExpAndLevel.h" />
+		<Unit filename="Pokemon/Move.cpp" />
+		<Unit filename="Pokemon/Move.h" />
+		<Unit filename="Pokemon/Type.cpp" />
+		<Unit filename="Pokemon/Type.h" />
+		<Unit filename="Tools/Conversion.cpp" />
+		<Unit filename="Tools/Conversion.h" />
+		<Unit filename="Tools/StatSet.cpp" />
+		<Unit filename="Tools/StatSet.h" />
+		<Unit filename="Tools/Table.cpp" />
+		<Unit filename="Tools/Table.h" />
+		<Unit filename="Tools/VectorMethod.cpp" />
+		<Unit filename="Tools/VectorMethod.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />
