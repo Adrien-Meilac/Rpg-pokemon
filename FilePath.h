@@ -4,9 +4,11 @@
 #define FILE_PKMN_TYPE      "./Data/Type.txt"
 #define FILE_PKMN_SPECIES   "./Data/Species.txt"
 #define FILE_PKMN_MOVES     "./Data/Moves.txt"
+#define FILE_PKMN_PLACE     "./Data/Place.txt"
 
 #define BACKUP_PKMN_PLAYER_POKEMON      "./BackUp/Player_Pokemon.txt"
 #define BACKUP_PKMN_PLAYER              "./BackUp/Player.txt"
+
 
 #include <string>
 #include <iostream>

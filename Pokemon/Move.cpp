@@ -80,6 +80,12 @@ PKMN::Move::~Move()
 
                 /// GETTERS ///
 
+std::string PKMN::Move::getInternalName() const
+{
+    return m_InternalName;
+}
+
+
 bool PKMN::Move::isPhysicalCategory() const
 {
     return m_DamageCategory.isPhysicalCategory();

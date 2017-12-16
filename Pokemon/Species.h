@@ -40,6 +40,11 @@ public:
          *
          */
 
+    Species(Species const& other);
+
+
+    virtual Species& operator=(Species const& other);
+
 /// DESTRUCTOR :
 
     virtual ~Species();

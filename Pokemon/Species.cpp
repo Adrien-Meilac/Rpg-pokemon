@@ -55,6 +55,85 @@ PKMN::Species::Species(std::string InternalName)
     m_WildItemRare = table(InternalName, "WildItemRare");
 }
 
+PKMN::Species::Species(Species const& other):
+    m_InternalName(other.m_InternalName),
+    m_ID(other.m_ID),
+    m_Name(other.m_Name),
+    m_FormName(other.m_FormName),
+    m_Type(other.m_Type),
+    m_BaseStats(other.m_BaseStats),
+    m_GenderRate(other.m_GenderRate),
+    m_GrowthRate(other.m_GrowthRate),
+    m_BaseExp(other.m_BaseExp),
+    m_EffortPoints(other.m_EffortPoints),
+    m_Rareness(other.m_Rareness),
+    m_Happiness(other.m_Happiness),
+    m_Abilities(other.m_Abilities), // A recoder en classe
+    m_HiddenAbility(other.m_HiddenAbility),
+    m_ListMoves(other.m_ListMoves),//(level , move)
+    m_EggMoves(other.m_EggMoves),
+    m_Compatibility(other.m_Compatibility), // =Monster,Grass -> a recoder
+    m_StepsToHatch(other.m_StepsToHatch),
+    m_Height(other.m_Height),
+    m_Weight(other.m_Weight),
+    m_Color(other.m_Color),
+    m_Shape(other.m_Shape),
+    m_Habitat(other.m_Habitat),
+    m_Kind(other.m_Kind),
+    m_Pokedex(other.m_Pokedex),
+    m_BattlerPlayerY(other.m_BattlerPlayerY),
+    m_BattlerEnemyY(other.m_BattlerEnemyY),
+    m_BattlerAltitude(other.m_BattlerAltitude),
+    m_Evolutions(other.m_Evolutions), //=IVYSAUR,Level,16 à recoder
+    m_WildItemUncommon(other.m_WildItemUncommon),
+    m_RegionalNumbers(other.m_RegionalNumbers),
+    m_Incense(other.m_Incense),
+    m_WildItemCommon(other.m_WildItemCommon),
+    m_WildItemRare(other.m_WildItemRare)
+{
+
+}
+
+PKMN::Species& PKMN::Species::operator=(Species const& other)
+{
+    m_InternalName = other.m_InternalName;
+    m_ID = other.m_ID;
+    m_Name = other.m_Name;
+    m_FormName = other.m_FormName;
+    m_Type.first = other.m_Type.first;
+    m_Type.second = other.m_Type.second;
+    m_BaseStats = other.m_BaseStats;
+    m_GenderRate = other.m_GenderRate;
+    m_GrowthRate = other.m_GrowthRate;
+    m_BaseExp = other.m_BaseExp;
+    m_EffortPoints = other.m_EffortPoints;
+    m_Rareness = other.m_Rareness;
+    m_Happiness = other.m_Happiness;
+    m_Abilities = other.m_Abilities; // A recoder en classe
+    m_HiddenAbility = other.m_HiddenAbility;
+    m_ListMoves = other.m_ListMoves;//(level , move)
+    m_EggMoves = other.m_EggMoves;
+    m_Compatibility = other.m_Compatibility; // =Monster,Grass -> a recoder
+    m_StepsToHatch = other.m_StepsToHatch;
+    m_Height = other.m_Height;
+    m_Weight = other.m_Weight;
+    m_Color = other.m_Color;
+    m_Shape = other.m_Shape;
+    m_Habitat = other.m_Habitat;
+    m_Kind = other.m_Kind;
+    m_Pokedex = other.m_Pokedex;
+    m_BattlerPlayerY = other.m_BattlerPlayerY;
+    m_BattlerEnemyY = other.m_BattlerEnemyY;
+    m_BattlerAltitude = other.m_BattlerAltitude;
+    m_Evolutions = other.m_Evolutions; //=IVYSAUR,Level,16 à recoder
+    m_WildItemUncommon = other.m_WildItemUncommon;
+    m_RegionalNumbers = other.m_RegionalNumbers;
+    m_Incense = other.m_Incense;
+    m_WildItemCommon = other.m_WildItemCommon;
+    m_WildItemRare = other.m_WildItemRare;
+    return *this;
+}
+
 /// ///////////////////////////////////////// ///
 
                 /// DESTRUCTOR ///

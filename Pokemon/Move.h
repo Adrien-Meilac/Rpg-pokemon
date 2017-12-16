@@ -83,7 +83,14 @@ public:
     std::string getName() const;
         /** \brief send back the name of a move
          *
-         * \return std::string : m_name
+         * \return std::string : m_Name
+         *
+         */
+
+    std::string getInternalName() const;
+        /** \brief send back the internal name of a move
+         *
+         * \return std::string : m_InternalName
          *
          */
 
