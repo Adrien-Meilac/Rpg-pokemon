@@ -32,10 +32,16 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="Battle/BattleWildPokemon.cpp" />
+		<Unit filename="Battle/BattleWildPokemon.h" />
 		<Unit filename="Battle/Player.cpp" />
 		<Unit filename="Battle/Player.h" />
 		<Unit filename="Battle/Trainer.cpp" />
 		<Unit filename="Battle/Trainer.h" />
+		<Unit filename="Field/Place.cpp" />
+		<Unit filename="Field/Place.h" />
+		<Unit filename="Field/Weather.cpp" />
+		<Unit filename="Field/Weather.h" />
 		<Unit filename="FilePath.h" />
 		<Unit filename="Pokemon/DamageCategory.cpp" />
 		<Unit filename="Pokemon/DamageCategory.h" />
