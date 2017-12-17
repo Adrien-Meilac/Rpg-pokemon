@@ -11,6 +11,8 @@
 #include "../Tools/StatSetExtended.h"
 #include "../Tools/Table.h"
 
+#include "../Field/Place.h"
+
 #include <string>
 #include <vector>
 
@@ -26,6 +28,7 @@ public:
 
     Pokemon();
     Pokemon(std::string Position);
+//    Pokemon(Place place);
 
     ~Pokemon();
 
