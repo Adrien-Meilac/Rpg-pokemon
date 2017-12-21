@@ -33,6 +33,7 @@ public:
     ~Pokemon();
 
     std::string getName() const;
+    std::vector<std::pair<unsigned int,Move> > getListMove();
     void outBattle();
     void heal();
     bool isAlive() const;
@@ -50,9 +51,10 @@ private:
     StatSet m_Pokemon_EV;
     StatSet m_Pokemon_NormalStat;
     StatSetExtended m_Pokemon_CurrentStat;
-    std::vector<Move> m_Pokemon_Moves;
+    std::vector<std::pair<unsigned int,Move> > m_Pokemon_Moves;
     ExpAndLevel m_Pokemon_ExpAndLevel;
     std::string m_Pokemon_gender;
+    bool m_IsShiney;
     // Status //
 };
 

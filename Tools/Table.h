@@ -127,6 +127,13 @@ public:
          */
 
 
+    void write(std::string FilePath) const;
+
+    void setColumn(std::vector<std::string> columnName);
+
+    void addLine(std::vector<std::pair<std::string, std::string> > dictionnary);
+
+
 private:
 
 /// FRIEND METHODS :

@@ -6,13 +6,15 @@
 	<string>
 	<cmath>
 
-1513383000 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\main.cpp
+1513383065 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\main.cpp
 	<iostream>
 	<vector>
 	<string>
 	"Battle/Player.h"
 	"Tools/Conversion.h"
 	"Field/Place.h"
+	"Pokemon/Pokemon.h"
+	"Battle/BattleWildPokemon.h"
 
 1513040909 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pkmn_tools\pkmn_statset.cpp
 	"PKMN_StatSet.h"
@@ -212,7 +214,7 @@
 1513376486 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pokemon\pokemon.cpp
 	"Pokemon.h"
 
-1513376486 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pokemon\pokemon.h
+1513425465 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pokemon\pokemon.h
 	"Species.h"
 	"Move.h"
 	"ExpAndLevel.h"
@@ -220,6 +222,7 @@
 	"../Tools/StatSet.h"
 	"../Tools/StatSetExtended.h"
 	"../Tools/Table.h"
+	"../Field/Place.h"
 	<string>
 	<vector>
 
@@ -239,7 +242,7 @@
 1513382352 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\battle\battlewildpokemon.cpp
 	"BattleWildPokemon.h"
 
-1513381459 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\battle\battlewildpokemon.h
+1513528256 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\battle\battlewildpokemon.h
 	"../Pokemon/Pokemon.h"
 	"../Field/Weather.h"
 	"../Field/Place.h"

@@ -38,3 +38,8 @@ unsigned int PKMN::Player::getID() const
 {
     return static_cast<int>(pow(2,16)) * m_publicID + m_secretID;
 }
+
+std::string PKMN::Player::getPkmn(unsigned int i = 0) const;
+{
+    return m_Party[i];
+}

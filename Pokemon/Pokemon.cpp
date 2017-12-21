@@ -25,6 +25,7 @@ Pokemon::Pokemon(std::string Position):
                                             m_Pokemon_EV,
                                             m_Pokemon_ExpAndLevel.getLevel(),
                                             ""); // nature forgotten
+    m_IsShiney = string_to_bool(table(Position, "Is Shiney"));
 }
 }
 
@@ -121,4 +122,9 @@ void PKMN::Pokemon::messageGetExp(unsigned int expPoint) const
 std::string PKMN::Pokemon::getName() const
 {
     return m_Pokemon_Name;
+}
+
+std::vector<std::pair<unsigned int,Move> > PKMN::Pokemon::getListMove()
+{
+    return m_Pokemon_Moves;
 }

@@ -25,6 +25,7 @@ public:
     ~Player();
 
     std::string getName() const;
+    std::string getPkmn(unsigned int i = 0) const;
     std::string getFullName() const;
 
 private:
@@ -43,7 +44,7 @@ private:
     //m_numbadges; number of badges
     bool m_pokegear; // has a pokegear
     bool m_pokedex; // has a pokedex
-    std::vector<Pokemon> m_team;
+    std::vector<Pokemon> m_Party;
 };
 
 #endif // PKMN_PLAYER_H_INCLUDED

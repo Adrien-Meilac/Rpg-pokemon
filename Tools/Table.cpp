@@ -181,6 +181,47 @@ void PKMN::Table::print(const char& delim) const
     std::cout << this->text(delim);
 }
 
+void PKMN::Table::write(std::string FilePath) const
+{
+    std::ofstream flux(FilePath.c_str());
+    if(flux)
+    {
+        flux << *this;
+    }
+}
+
+void PKMN::Table::setColumn(std::vector<std::string> columnName)
+{
+    m_headerColumn = columnName;
+}
+
+void PKMN::Table::addLine(std::vector<std::pair<std::string, std::string> > dictionnary)
+{
+    const unsigned int nbColumn = m_headerColumn.size();
+    std::vector<std::string> newLine;
+    m_headerLine.push_back(dictionnary[0].second);
+    for(unsigned int j = 0; j < nbColumn; j++)
+    {
+        for(unsigned int j2 = 1; j2 < dictionnary.size(); j2++)
+        {
+            std::cout << j << ", " << j2 << std::endl;
+            if(m_headerColumn[j] == dictionnary[j2].first)
+            {
+                newLine.push_back(dictionnary[j2].second);
+                break;
+            }
+        }
+    }
+    if(newLine.size() == nbColumn)
+    {
+        m_table.push_back(newLine);
+    }
+    else
+    {
+        std::cout << "Table error : not enough column to add a new line !";
+    }
+}
+
 /// ///////////////////////////////////////// ///
 
                 /// FRIEND METHODS ///

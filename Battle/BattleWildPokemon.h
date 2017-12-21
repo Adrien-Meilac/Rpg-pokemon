@@ -20,12 +20,13 @@ public :
     BattleWildPokemon(Player& player, Place place, Pokemon wildPkmn);
     ~BattleWildPokemon();
 
-    void start();
-    void stop();
+    void throwNewPokemon(unsigned int i = 0);
+    void launch();
 
 private:
 
     Player m_Player;
+    unsigned int m_iactivePkmn;
     Pokemon m_WildPkmn;
     Place m_Place;
     Weather m_Weather;
