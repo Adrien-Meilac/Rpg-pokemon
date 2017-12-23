@@ -4,6 +4,8 @@
 #include "Species.h"
 #include "Move.h"
 #include "ExpAndLevel.h"
+#include "Flag.h"
+#include "DamageCategory.h"
 
 #include "../FilePath.h"
 

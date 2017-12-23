@@ -43,27 +43,6 @@ public:
 
 /// GETTERS :
 
-    bool isPhysicalCategory() const;
-        /** \brief Is the move physical ?
-         *
-         * \return bool
-         *
-         */
-
-    bool isStatusCategory() const;
-        /** \brief Is the move a status attack ?
-         *
-         * \return bool
-         *
-         */
-
-    bool isSpecialCategory() const;
-        /** \brief Is the move special ?
-         *
-         * \return bool
-         *
-         */
-
     std::string getName() const;
         /** \brief send back the name of a move
          *
@@ -101,6 +80,20 @@ public:
 
     std::string getDescription() const;
         /** \brief get the description of a move
+         *
+         * \return std::string : m_Description
+         *
+         */
+
+    DamageCategory getDamageCategory() const;
+        /** \brief get the damage category
+         *
+         * \return std::string : m_Description
+         *
+         */
+
+    Flag getFlags() const;
+        /** \brief get the flag list
          *
          * \return std::string : m_Description
          *

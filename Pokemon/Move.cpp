@@ -86,22 +86,6 @@ std::string PKMN::Move::getInternalName() const
     return m_InternalName;
 }
 
-
-bool PKMN::Move::isPhysicalCategory() const
-{
-    return m_DamageCategory.isPhysicalCategory();
-}
-
-bool PKMN::Move::isStatusCategory() const
-{
-    return m_DamageCategory.isStatusCategory();
-}
-
-bool PKMN::Move::isSpecialCategory() const
-{
-    return m_DamageCategory.isSpecialCategory();
-}
-
 unsigned int PKMN::Move::getBasePower() const
 {
     return m_BasePower;
@@ -120,6 +104,16 @@ std::string PKMN::Move::getName() const
 unsigned int PKMN::Move::getTotalPP() const
 {
     return m_TotalPP;
+}
+
+PKMN::DamageCategory PKMN::Move::getDamageCategory() const
+{
+    return m_DamageCategory;
+}
+
+PKMN::Flag PKMN::Move::getFlags() const
+{
+    return m_Flags;
 }
 
 /// ///////////////////////////////////////// ///

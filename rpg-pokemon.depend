@@ -163,10 +163,10 @@
 	<string>
 	<iostream>
 
-1514033458 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pokemon\move.cpp
+1514055235 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pokemon\move.cpp
 	"Move.h"
 
-1514033877 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pokemon\move.h
+1514055020 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pokemon\move.h
 	"Type.h"
 	"DamageCategory.h"
 	"Flag.h"
@@ -213,13 +213,15 @@
 	<iostream>
 	<cmath>
 
-1514026069 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pokemon\pokemon.cpp
+1514055439 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pokemon\pokemon.cpp
 	"Pokemon.h"
 
-1514026061 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pokemon\pokemon.h
+1514055285 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pokemon\pokemon.h
 	"Species.h"
 	"Move.h"
 	"ExpAndLevel.h"
+	"Flag.h"
+	"DamageCategory.h"
 	"../FilePath.h"
 	"../Tools/StatSet.h"
 	"../Tools/StatSetExtended.h"
@@ -275,10 +277,10 @@
 1513382353 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\field\place.cpp
 	"Place.h"
 
-1514036060 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pokemon\flag.cpp
+1514054691 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pokemon\flag.cpp
 	"Flag.h"
 
-1514034786 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pokemon\flag.h
+1514054620 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pokemon\flag.h
 	<string>
 
 1514036017 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pokemon\target.cpp

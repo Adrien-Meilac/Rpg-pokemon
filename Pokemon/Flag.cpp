@@ -26,72 +26,72 @@ PKMN::Flag::~Flag()
 
 }
 
-bool PKMN::Flag::isFlag_a() const
+bool PKMN::Flag::isPhysicalContactMove() const
 {
     return isFlag('a');
 }
 
-bool PKMN::Flag::isFlag_b() const
+bool PKMN::Flag::canBeStoped() const
 {
     return isFlag('b');
 }
 
-bool PKMN::Flag::isFlag_c() const
+bool PKMN::Flag::canBeRedirected() const
 {
     return isFlag('c');
 }
 
-bool PKMN::Flag::isFlag_d() const
+bool PKMN::Flag::effectCanBeStolen() const
 {
     return isFlag('d');
 }
 
-bool PKMN::Flag::isFlag_e() const
+bool PKMN::Flag::canBeCopied() const
 {
     return isFlag('e');
 }
 
-bool PKMN::Flag::isFlag_f() const
+bool PKMN::Flag::canFlinched() const
 {
     return isFlag('f');
 }
 
-bool PKMN::Flag::isFlag_g() const
+bool PKMN::Flag::thawFrozenTarget() const
 {
     return isFlag('g');
 }
 
-bool PKMN::Flag::isFlag_h() const
+bool PKMN::Flag::hasHighCriticalRateMove() const
 {
     return isFlag('h');
 }
 
-bool PKMN::Flag::isFlag_i() const
+bool PKMN::Flag::isABittingMove() const
 {
     return isFlag('i');
 }
 
-bool PKMN::Flag::isFlag_j() const
+bool PKMN::Flag::isPunchingMove() const
 {
     return isFlag('j');
 }
 
-bool PKMN::Flag::isFlag_k() const
+bool PKMN::Flag::isSoundMove() const
 {
     return isFlag('k');
 }
 
-bool PKMN::Flag::isFlag_l() const
+bool PKMN::Flag::isPowderBaseMove() const
 {
     return isFlag('l');
 }
 
-bool PKMN::Flag::isFlag_m() const
+bool PKMN::Flag::isPulseBasedMove() const
 {
     return isFlag('m');
 }
 
-bool PKMN::Flag::isFlag_n() const
+bool PKMN::Flag::isBombBasedMove() const
 {
     return isFlag('n');
 }

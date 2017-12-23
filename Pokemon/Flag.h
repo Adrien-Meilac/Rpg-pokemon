@@ -62,99 +62,106 @@ public:
          *
          */
 
-    bool isFlag_a() const;
-        /** \brief Does the flag 'a' belongs to the flags of the move ?
+    bool isPhysicalContactMove() const;
+        /** \brief a - The move makes physical contact with the target.
          *
          * \return bool
          *
          */
 
-    bool isFlag_b() const;
-        /** \brief Does the flag 'b' belongs to the flags of the move ?
+    bool canBeStoped() const;
+        /** \brief b - The target can use Protect or Detect to protect itself from the move.
          *
          * \return bool
          *
          */
 
-    bool isFlag_c() const;
-        /** \brief Does the flag 'c' belongs to the flags of the move ?
+    bool canBeRedirected() const;
+        /** \brief  c - The target can use Magic Coat to redirect the effect of the move.
+         *          Use this flag if the move deals no damage but causes a negative effect
+         *          on the target. (Flags c and d are mutually exclusive.)
+
          *
          * \return bool
          *
          */
 
-    bool isFlag_d() const;
-        /** \brief Does the flag 'd' belongs to the flags of the move ?
+    bool effectCanBeStolen() const;
+        /** \brief d - The target can use Snatch to steal the effect of the move.
+         *         Use this flag for most moves that target the user.
+         *         (Flags c and d are mutually exclusive.)
          *
          * \return bool
          *
          */
 
-    bool isFlag_e() const;
-        /** \brief Does the flag 'e' belongs to the flags of the move ?
+    bool canBeCopied() const;
+        /** \brief e - The move can be copied by Mirror Move.
          *
          * \return bool
          *
          */
 
-    bool isFlag_f() const;
-        /** \brief Does the flag 'f' belongs to the flags of the move ?
+    bool canFlinched() const;
+        /** \brief     f - The move has a 10% chance of making the opponent flinch if
+         *             the user is holding a King's Rock/Razor Fang. Use this flag
+         *             for all damaging moves that don't already have a flinching effect.
          *
          * \return bool
          *
          */
 
-    bool isFlag_g() const;
-        /** \brief Does the flag 'g' belongs to the flags of the move ?
+    bool thawFrozenTarget() const;
+        /** \brief g - If the user is frozen, the move will thaw it out before it is used.
          *
          * \return bool
          *
          */
 
-    bool isFlag_h() const;
-        /** \brief Does the flag 'h' belongs to the flags of the move ?
+    bool hasHighCriticalRateMove() const;
+        /** \brief h - The move has a high critical hit rate.
          *
          * \return bool
          *
          */
 
-    bool isFlag_i() const;
-        /** \brief Does the flag 'i' belongs to the flags of the move ?
+    bool isABittingMove() const;
+        /** \brief i - The move is a biting move (powered up by the ability Strong Jaw).
          *
          * \return bool
          *
          */
 
-    bool isFlag_j() const;
-        /** \brief Does the flag 'j' belongs to the flags of the move ?
+    bool isPunchingMove() const;
+        /** \brief j - The move is a punching move (powered up by the ability Iron Fist).
          *
          * \return bool
          *
          */
 
-    bool isFlag_k() const;
-        /** \brief Does the flag 'k' belongs to the flags of the move ?
+    bool isSoundMove() const;
+        /** \brief k - The move is a sound-based move.
          *
          * \return bool
          *
          */
 
-    bool isFlag_l() const;
-        /** \brief Does the flag 'l' belongs to the flags of the move ?
+    bool isPowderBaseMove() const;
+        /** \brief l - The move is a powder-based move (Grass-type Pokemon are immune to them).
          *
          * \return bool
          *
          */
 
-    bool isFlag_m() const;
-        /** \brief Does the flag 'm' belongs to the flags of the move ?
+    bool isPulseBasedMove() const;
+        /** \brief m - The move is a pulse-based move (powered up by the ability Mega Launcher).
          *
          * \return bool
          *
          */
 
-    bool isFlag_n() const;
-        /** \brief Does the flag 'n' belongs to the flags of the move ?
+    bool isBombBasedMove() const;
+        /** \brief n - The move is a bomb-based move (resisted by the ability Bulletproof).
          *
          * \return bool
          *

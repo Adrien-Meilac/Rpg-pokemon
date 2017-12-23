@@ -58,11 +58,12 @@ void PKMN::Pokemon::attack(Pokemon& Other, unsigned int i)
     double damagePoint = 0;
     double typeEffect = Type_effectiveness(Other.m_Type, moveUsed.getType());
     double CM = typeEffect;
-    if(moveUsed.isPhysicalCategory())
+    DamageCategory damCategory = moveUsed.getDamageCategory();
+    if(damCategory.isPhysicalCategory())
     {
         damagePoint = ((lvl * 0.4 + 2) * m_Pokemon_CurrentStat.getAtt() * power)/(m_Pokemon_CurrentStat.getDef() * 50) + 2 * CM;
     }
-    else if(moveUsed.isSpecialCategory())
+    else if(damCategory.isSpecialCategory())
     {
         damagePoint = ((lvl * 0.4 + 2) * m_Pokemon_CurrentStat.getSpAtt() * power)/(m_Pokemon_CurrentStat.getSpDef() * 50) + 2 * CM;
     }
