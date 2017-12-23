@@ -155,7 +155,7 @@ private:
 namespace PKMN
 {
 
-std::vector<Move> read_move(std::string moves);
+std::vector<std::pair<unsigned int, Move> > read_move(std::string moves);
     /** \brief Split a string into move names and create associated objects
      *
      * \param moves std::string : for example "Move1,Move2,Move3,Move4, ..."

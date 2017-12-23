@@ -21,7 +21,7 @@ public :
     ~BattleWildPokemon();
 
     void throwNewPokemon(unsigned int i = 0);
-    void launch();
+//    void launch();
 
 private:
 

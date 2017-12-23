@@ -116,6 +116,11 @@ std::string PKMN::Move::getName() const
     return m_Name;
 }
 
+unsigned int PKMN::Move::getTotalPP() const
+{
+    return m_TotalPP;
+}
+
 /// ///////////////////////////////////////// ///
 
                 /// METHODS ///
@@ -145,14 +150,14 @@ void PKMN::Move::print() const
 
 namespace PKMN
 {
-std::vector<Move> read_move(std::string moves)
+std::vector<std::pair<unsigned int, Move> > read_move(std::string moves)
 {
-    std::vector<std::string> L = PKMN::string_split(moves, ',');
-    std::vector<Move> M;
+    std::vector<std::string> L = string_split(moves, ',');
+    std::vector<std::pair<unsigned int, Move> > M;
     const unsigned int length = L.size();
     for(unsigned int i=0; i < length; i++)
     {
-        M.push_back(Move(L[i]));
+        M.push_back(std::pair<unsigned int, Move>(Move(L[i]).getTotalPP(),Move(L[i])));
     }
     return M;
 }

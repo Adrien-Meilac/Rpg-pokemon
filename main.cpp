@@ -15,6 +15,6 @@ int main()
     Player player;
     Pokemon pkmn("RAICHU");
     BattleWildPokemon battle(player, place, pkmn);
-    battle.launch();
+//    battle.launch();
     return 0;
 }

@@ -51,7 +51,7 @@ bool PKMN::Pokemon::isAlive() const
 
 void PKMN::Pokemon::attack(Pokemon& Other, unsigned int i)
 {
-    Move moveUsed = m_Pokemon_Moves[i];
+    Move moveUsed = m_Pokemon_Moves[i].second;
     std::cout << m_Pokemon_Name << " used " << moveUsed.getName() << "." << std::endl;
     unsigned int lvl = m_Pokemon_ExpAndLevel.getLevel();
     unsigned int power = moveUsed.getBasePower();
@@ -124,7 +124,7 @@ std::string PKMN::Pokemon::getName() const
     return m_Pokemon_Name;
 }
 
-std::vector<std::pair<unsigned int,Move> > PKMN::Pokemon::getListMove()
+std::vector<std::pair<unsigned int,PKMN::Move> > PKMN::Pokemon::getListMove()
 {
     return m_Pokemon_Moves;
 }

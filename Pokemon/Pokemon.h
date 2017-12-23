@@ -51,7 +51,7 @@ private:
     StatSet m_Pokemon_EV;
     StatSet m_Pokemon_NormalStat;
     StatSetExtended m_Pokemon_CurrentStat;
-    std::vector<std::pair<unsigned int,Move> > m_Pokemon_Moves;
+    std::vector<std::pair<unsigned int, Move> > m_Pokemon_Moves;
     ExpAndLevel m_Pokemon_ExpAndLevel;
     std::string m_Pokemon_gender;
     bool m_IsShiney;
