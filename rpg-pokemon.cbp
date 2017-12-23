@@ -47,12 +47,16 @@
 		<Unit filename="Pokemon/DamageCategory.h" />
 		<Unit filename="Pokemon/ExpAndLevel.cpp" />
 		<Unit filename="Pokemon/ExpAndLevel.h" />
+		<Unit filename="Pokemon/Flag.cpp" />
+		<Unit filename="Pokemon/Flag.h" />
 		<Unit filename="Pokemon/Move.cpp" />
 		<Unit filename="Pokemon/Move.h" />
 		<Unit filename="Pokemon/Pokemon.cpp" />
 		<Unit filename="Pokemon/Pokemon.h" />
 		<Unit filename="Pokemon/Species.cpp" />
 		<Unit filename="Pokemon/Species.h" />
+		<Unit filename="Pokemon/Target.cpp" />
+		<Unit filename="Pokemon/Target.h" />
 		<Unit filename="Pokemon/Type.cpp" />
 		<Unit filename="Pokemon/Type.h" />
 		<Unit filename="Tools/Conversion.cpp" />

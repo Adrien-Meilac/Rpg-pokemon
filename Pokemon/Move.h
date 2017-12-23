@@ -3,6 +3,7 @@
 
 #include "Type.h"
 #include "DamageCategory.h"
+#include "Flag.h"
 
 #include "../FilePath.h"
 
@@ -24,9 +25,6 @@ public:
 /// CONSTRUCTORS :
 
     Move();
-        /** \brief void constructor
-         *
-         */
 
     Move(std::string InternalName);
         /** \brief Construct a move with the internal name by searching it in a table
@@ -36,26 +34,12 @@ public:
          */
 
     Move(Move const& other);
-        /** \brief Copy constructor
-         *
-         * \param other Move const& : other Move to copy
-         *
-         */
 
     Move& operator=(Move const& other);
-        /** \brief to simplify assignment of Move objects
-         *
-         * \param other Move const& : other Move to copy
-         * \return Move& : *this
-         *
-         */
 
 /// DESTRUCTOR :
 
     ~Move();
-        /** \brief non virtual destructor
-         *
-         */
 
 /// GETTERS :
 
@@ -122,15 +106,6 @@ public:
          *
          */
 
-/// METHODS :
-
-    void print() const;
-        /** \brief print the move
-         *
-         * \return void
-         *
-         */
-
 private:
 
 /// MEMBER VARIABLES :
@@ -147,7 +122,7 @@ private:
     unsigned int m_AdditionalEffectChance; /// Bonus of accuracy
     std::string m_Target; /// Useful in 2 pokemon against 2 pokemon battles
     int m_Priority; /// Will change the natural order of attack determined by speed
-    std::string m_Flags; /// each letter of the string represent a special effect of the move
+    Flag m_Flags; /// each letter of the string represent a special effect of the move
     std::string m_Description; /// Description of the move
 
 };

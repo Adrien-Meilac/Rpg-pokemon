@@ -22,16 +22,13 @@ namespace PKMN
 
 
 class PKMN::Type
-/// Class that code the type of a pokemon of a move
+/** Class that code the type of a Pokemon of a move **/
 {
 public:
 
 /// CONSTRUCTORS :
 
     Type();
-        /** \brief void constructor
-         *
-         */
 
     Type(std::string IntName);
         /** \brief Construct a type with only it InternalName by searching it in a file
@@ -41,27 +38,12 @@ public:
          */
 
     Type& operator=(Type const& other);
-        /** \brief = asigment for simplify code
-         *
-         * \param other Type const& : other type to copy
-         * \return Type& : *this value
-         *
-         */
-
 
     Type(Type const& other);
-        /** \brief Copy constructor for function (no reference)
-         *
-         * \param other Type const& : other type to copy
-         *
-         */
 
 /// DESTRUCTOR :
 
     ~Type();
-        /** \brief Non virtual destructor
-         *
-         */
 
 /// GETTERS :
 
@@ -89,11 +71,6 @@ public:
          * \param Type_att PKMN_Type const : Type of the attack
          * \return double : the coefficient is a float number
          * is the pokemon is resistant to the attack type
-         *
-         */
-
-     void print() const;
-        /** \brief Print type characteristics
          *
          */
 

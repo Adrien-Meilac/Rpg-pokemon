@@ -85,16 +85,6 @@ double PKMN::Type::effectiveness(PKMN::Type const Type_att) const
     return typeMultiplicativeFactor;
 }
 
-void PKMN::Type::print() const
-{
-    std::cout   << "PKMN_Type " << m_InternalName << std::endl
-                << "\t" << "Name = " << m_Name << std::endl
-                << "\t" << "Weaknesses = " << vector_join(m_Weaknesses) << std::endl
-                << "\t" << "Immunities = " << vector_join(m_Immunities) << std::endl
-                << "\t" << "Resistances = " << vector_join(m_Resistances) << std::endl
-                << "\t" << "IsSpecialType = " << m_IsSpecialType << std::endl;
-}
-
 /// ///////////////////////////////////////// ///
 
 double PKMN::Type_effectiveness(PKMN::Type Type_def,

@@ -6,7 +6,7 @@
 	<string>
 	<cmath>
 
-1514025775 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\main.cpp
+1514032982 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\main.cpp
 	<iostream>
 	<vector>
 	<string>
@@ -15,6 +15,7 @@
 	"Field/Place.h"
 	"Pokemon/Pokemon.h"
 	"Battle/BattleWildPokemon.h"
+	"Pokemon/Flag.h"
 
 1513040909 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pkmn_tools\pkmn_statset.cpp
 	"PKMN_StatSet.h"
@@ -151,10 +152,10 @@
 1513376486 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\tools\vectormethod.cpp
 	"VectorMethod.h"
 
-1513376486 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pokemon\type.cpp
+1514033471 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pokemon\type.cpp
 	"Type.h"
 
-1513376486 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pokemon\type.h
+1514033698 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pokemon\type.h
 	"../FilePath.h"
 	"../Tools/Table.h"
 	"../Tools/Conversion.h"
@@ -162,12 +163,13 @@
 	<string>
 	<iostream>
 
-1514026488 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pokemon\move.cpp
+1514033458 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pokemon\move.cpp
 	"Move.h"
 
-1514025830 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pokemon\move.h
+1514033877 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pokemon\move.h
 	"Type.h"
 	"DamageCategory.h"
+	"Flag.h"
 	"../FilePath.h"
 	"../Tools/Table.h"
 	<iostream>
@@ -183,7 +185,7 @@
 	<ctime>
 	<iostream>
 
-1513376485 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pokemon\damagecategory.h
+1514034213 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pokemon\damagecategory.h
 	<iostream>
 	<string>
 
@@ -272,4 +274,16 @@
 
 1513382353 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\field\place.cpp
 	"Place.h"
+
+1514036060 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pokemon\flag.cpp
+	"Flag.h"
+
+1514034786 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pokemon\flag.h
+	<string>
+
+1514036017 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pokemon\target.cpp
+	"Target.h"
+
+1514036004 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pokemon\target.h
+	<string>
 

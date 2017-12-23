@@ -15,77 +15,59 @@ namespace PKMN
 }
 
 class PKMN::DamageCategory
-/** Damage category influence the damage calculus */
+/** Damage category influence the damage calculus
+    it is an attribute of Move **/
 {
 public:
 
 /// CONSTRUCTORS :
 
     DamageCategory();
-    /** \brief
-     *
-     *
-     */
 
     DamageCategory(std::string Name);
-    /** \brief
-     *
-     * \param Name std::string
-     *
-     */
+        /** \brief Construct the damage category given it Name
+         *
+         * \param Name std::string : Name of the damage category
+         *
+         */
 
     DamageCategory(DamageCategory const& other);
-        /** \brief Copy constructor
-         *
-         * \param other DamageCategory const& : other DamageCategory to copy
-         *
-         */
 
     DamageCategory& operator=(DamageCategory const& other);
-        /** \brief to simplify assignment of DamageCategory objects
-         *
-         * \param other DamageCategory const& : other DamageCategory to copy
-         * \return DamageCategory& : *this
-         *
-         */
 
 /// DESTRUCTOR :
 
     ~DamageCategory();
-    /** \brief
-     *
-     *
-     */
 
 /// GETTERS :
 
     std::string getName() const;
-    /** \brief
-     *
-     * \return void
-     *
-     */
+        /** \brief get the name of the damage category
+         *
+         * \return void
+         *
+         */
 
     bool isPhysicalCategory() const;
-    /** \brief
-     *
-     * \return bool
-     *
-     */
+        /** \brief does a move belong to the physical category ?
+         *
+         * \return bool
+         *
+         */
 
     bool isStatusCategory() const;
-    /** \brief
-     *
-     * \return bool
-     *
-     */
+        /** \brief does a move belong to the status category ?
+         *
+         * \return bool
+         *
+         */
 
     bool isSpecialCategory() const;
-    /** \brief
-     *
-     * \return bool
-     *
-     */
+        /** \brief does a move belong to the special category ?
+         *
+         * \return bool
+         *
+         */
 
 private:
 
