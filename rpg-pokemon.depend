@@ -6,12 +6,11 @@
 	<string>
 	<cmath>
 
-1514032982 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\main.cpp
+1514065420 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\main.cpp
 	<iostream>
 	<vector>
 	<string>
 	"Battle/Player.h"
-	"Tools/Conversion.h"
 	"Field/Place.h"
 	"Pokemon/Pokemon.h"
 	"Battle/BattleWildPokemon.h"
@@ -163,10 +162,10 @@
 	<string>
 	<iostream>
 
-1514055235 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pokemon\move.cpp
+1514066255 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pokemon\move.cpp
 	"Move.h"
 
-1514055020 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pokemon\move.h
+1514066236 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pokemon\move.h
 	"Type.h"
 	"DamageCategory.h"
 	"Flag.h"
@@ -192,10 +191,10 @@
 1513376485 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pokemon\damagecategory.cpp
 	"DamageCategory.h"
 
-1513382790 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pokemon\species.cpp
+1514065004 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pokemon\species.cpp
 	"Species.h"
 
-1513382293 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pokemon\species.h
+1514064611 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pokemon\species.h
 	"Type.h"
 	"ExpAndLevel.h"
 	"../FilePath.h"
@@ -213,10 +212,10 @@
 	<iostream>
 	<cmath>
 
-1514055439 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pokemon\pokemon.cpp
+1514066985 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pokemon\pokemon.cpp
 	"Pokemon.h"
 
-1514055285 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pokemon\pokemon.h
+1514067019 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pokemon\pokemon.h
 	"Species.h"
 	"Move.h"
 	"ExpAndLevel.h"
@@ -230,10 +229,10 @@
 	<string>
 	<vector>
 
-1514025762 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\battle\player.cpp
+1514067391 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\battle\player.cpp
 	"Player.h"
 
-1514025649 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\battle\player.h
+1514067284 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\battle\player.h
 	"../Pokemon/Pokemon.h"
 	"../FilePath.h"
 	"../Tools/Table.h"
@@ -243,14 +242,19 @@
 
 1513376485 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\battle\trainer.cpp
 
-1514025524 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\battle\battlewildpokemon.cpp
+1514066546 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\battle\battlewildpokemon.cpp
 	"BattleWildPokemon.h"
 
-1514025505 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\battle\battlewildpokemon.h
+1514066879 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\battle\battlewildpokemon.h
 	"../Pokemon/Pokemon.h"
 	"../Field/Weather.h"
 	"../Field/Place.h"
 	"Player.h"
+	"../FilePath.h"
+	<string>
+	<iostream>
+	<ctime>
+	<cstdlib>
 
 1513379890 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\battle\weather.h
 	"../Pokemon/Move.h"

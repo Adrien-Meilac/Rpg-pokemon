@@ -64,6 +64,10 @@ public:
 
     std::string getSpeciesName() const;
 
+    unsigned int getBaseExp() const;
+
+    std::pair<Type, Type> getTypes() const;
+
 protected:
 
     std::string m_InternalName;

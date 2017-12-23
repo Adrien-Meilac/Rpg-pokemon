@@ -35,16 +35,29 @@ public:
     ~Pokemon();
 
     std::string getName() const;
-    std::vector<std::pair<unsigned int,Move> > getListMove();
+    unsigned int getLevel() const;
+
+    unsigned int getNormalHP() const;
+    unsigned int getNormalAtt() const;
+    unsigned int getNormalDef() const;
+    unsigned int getNormalSpAtt() const;
+    unsigned int getNormalSpDef() const;
+    unsigned int getNormalSpeed() const;
+
+    unsigned int getCurHP() const;
+    unsigned int getCurAtt() const;
+    unsigned int getCurDef() const;
+    unsigned int getCurSpAtt() const;
+    unsigned int getCurSpDef() const;
+    unsigned int getCurSpeed() const;
+
+    std::vector<std::pair<unsigned int, Move> > getListMove();
     void outBattle();
     void heal();
     bool isAlive() const;
-    void deathMessage() const;
-    void messageGetExp(unsigned int expPoint) const;
-    void lowerHP(unsigned int damagePoint);
-    void printStat() const;
-    unsigned int expGained(Pokemon& PkmnDead) const;
-    void attack(Pokemon& Other, unsigned int i);
+    void decrementHP();
+
+
 
 private:
 

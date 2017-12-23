@@ -6,6 +6,13 @@
 #include "../Field/Place.h"
 #include "Player.h"
 
+#include "../FilePath.h"
+
+#include <string>
+#include <iostream>
+#include <ctime>
+#include <cstdlib>
+
 
 namespace PKMN
 {
@@ -21,14 +28,21 @@ public :
     ~BattleWildPokemon();
 
     void throwNewPokemon(unsigned int i = 0);
-//    void launch();
+    void foeIsDead();
+    void choiceMove();
+    void attack(Pokemon &Att, Pokemon &Def, Move &moveUsed);
+    unsigned int dealDamage(Pokemon &pkmn, unsigned int damagePoint);
+    void launch();
+    void printPokemon(const Pokemon &pkmn) const;
 
 private:
 
     Player m_Player;
-    unsigned int m_iactivePkmn;
-    Pokemon m_WildPkmn;
     Place m_Place;
+    Pokemon m_WildPkmn;
+
+    Pokemon m_AllyPkmn;
+    unsigned int m_i_ActivePkmn;
     Weather m_Weather;
     /// Place / background
 };

@@ -39,7 +39,25 @@ unsigned int PKMN::Player::getID() const
     return static_cast<int>(pow(2,16)) * m_PublicID + m_SecretID;
 }
 
-std::string PKMN::Player::getPkmnName(unsigned int i) const
+PKMN::Pokemon PKMN::Player::getPokemon(unsigned int pos)
 {
-    return m_Party[i].getName();
+    return m_Party[pos];
+}
+
+void PKMN::Player::setPokemon(PKMN::Pokemon pkmn,unsigned int pos)
+{
+    m_Party[pos] = pkmn;
+}
+
+bool PKMN::Player::hasPokemonAlive() const
+{
+    const unsigned int length = m_Party.size();
+    for(unsigned int i = 0; i < length; i++)
+    {
+        if(m_Party[0].isAlive())
+        {
+            return true;
+        }
+    }
+    return false;
 }

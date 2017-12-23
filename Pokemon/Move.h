@@ -99,6 +99,8 @@ public:
          *
          */
 
+    unsigned int getPriority() const;
+
 private:
 
 /// MEMBER VARIABLES :

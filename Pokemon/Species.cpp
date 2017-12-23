@@ -156,3 +156,13 @@ std::string PKMN::Species::getSpeciesName() const
 {
     return m_InternalName;
 }
+
+unsigned int PKMN::Species::getBaseExp() const
+{
+    return m_BaseExp;
+}
+
+std::pair<PKMN::Type, PKMN::Type> PKMN::Species::getTypes() const
+{
+    return m_Type;
+}

@@ -16,7 +16,7 @@ PKMN::Move::Move(std::string InternalName)
     m_FunctionCode = table(InternalName,"FunctionCode");
     m_BasePower = PKMN::string_to_int(table(InternalName,"BasePower"));
     m_Type = PKMN::Type(table(InternalName,"Type"));
-    m_DamageCategory = table(InternalName,"DamageCategory");
+    m_DamageCategory = PKMN::DamageCategory(table(InternalName,"DamageCategory"));
     m_Accuracy = PKMN::string_to_int(table(InternalName,"Accuracy"));
     m_TotalPP = PKMN::string_to_int(table(InternalName,"TotalPP"));
     m_AdditionalEffectChance = PKMN::string_to_int(table(InternalName,"AdditionalEffectChance"));
@@ -114,6 +114,11 @@ PKMN::DamageCategory PKMN::Move::getDamageCategory() const
 PKMN::Flag PKMN::Move::getFlags() const
 {
     return m_Flags;
+}
+
+unsigned int PKMN::Move::getPriority() const
+{
+    return m_Priority;
 }
 
 /// ///////////////////////////////////////// ///

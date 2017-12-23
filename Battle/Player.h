@@ -25,7 +25,9 @@ public:
     ~Player();
 
     std::string getName() const;
-    std::string getPkmnName(unsigned int i = 0) const;
+    bool hasPokemonAlive() const;
+    Pokemon getPokemon(unsigned int pos = 0);
+    void setPokemon(Pokemon pkmn,unsigned int pos);
     std::string getFullName() const;
 
 private:

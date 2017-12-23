@@ -11,10 +11,10 @@ using namespace PKMN;
 
 int main()
 {
-//    Place place("ROAD21");
+    Place place("ROAD21");
     Player player;
-//    Pokemon pkmn("RAICHU");
-//    BattleWildPokemon battle(player, place, pkmn);
-//    battle.launch();
+    Pokemon pkmn("4");
+    BattleWildPokemon battle(player, place, pkmn);
+    battle.launch();
     return 0;
 }
