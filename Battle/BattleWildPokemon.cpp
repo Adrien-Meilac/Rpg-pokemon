@@ -20,11 +20,9 @@ PKMN::BattleWildPokemon::~BattleWildPokemon()
 
 }
 
-void PKMN::BattleWildPokemon::throwNewPokemon(unsigned int i)
+void PKMN::BattleWildPokemon::throwNewPokemon()
 {
-    m_i_ActivePkmn = i;
-    m_AllyPkmn = m_Player.getPokemon(m_i_ActivePkmn);
-    std::cout << "Go ! " << m_AllyPkmn.getName() << " !" << std::endl;
+    std::cout << "Go ! " << m_Player.getPokemon(0)->getName() << " !" << std::endl;
 }
 
 
@@ -37,29 +35,63 @@ void PKMN::BattleWildPokemon::launch()
     Move moveUsed, moveUsedFoe;
     while(m_WildPkmn.isAlive() && m_Player.hasPokemonAlive())
     {
-        std::cout << "What will " << m_AllyPkmn.getName() << " do ?" << std::endl;
+        std::cout << "What will " << m_Player.getPokemon(0)->getName() << " do ?" << std::endl;
         std::cout << "FIGHT BAG POKEMON RUN" << std::endl;
         std::cin >> userCommand;
         if(userCommand == "FIGHT")
         {
-            this->printPokemon(m_AllyPkmn);
-            this->printPokemon(m_WildPkmn);
-            this->choiceMove();
+            this->printPokemon(m_Player.getPokemon(0));
+            this->printPokemon(&m_WildPkmn);
+            this->choiceMove(m_Player.getPokemon(0));
             std::cin >> moveNumber;
-            moveUsed = Move(m_AllyPkmn.getListMove()[moveNumber].second);
-            moveUsedFoe = Move(m_WildPkmn.getListMove()[rand() % 4].second);
+            moveUsed = PKMN::Move(m_Player.getPokemon(0)->getListMove()[moveNumber].second);
+            moveUsedFoe = PKMN::Move(m_WildPkmn.getListMove()[rand() % 4].second);
             if(moveUsed.getPriority() > moveUsedFoe.getPriority()
                || (moveUsed.getPriority() > moveUsedFoe.getPriority()
-                        && m_AllyPkmn.getCurSpeed() >= m_WildPkmn.getCurSpeed()))
+                        && m_Player.getPokemon(0)->getCurSpeed() >= m_WildPkmn.getCurSpeed()))
             {
-                this->attack(m_AllyPkmn, m_WildPkmn, moveUsed);
-                this->attack(m_WildPkmn, m_AllyPkmn, moveUsedFoe);
+                this->attack(m_Player.getPokemon(0), &m_WildPkmn, &moveUsed);
+                if(!m_WildPkmn.isAlive())
+                {
+                    break;
+                }
+                else
+                {
+                    this->attack(&m_WildPkmn, m_Player.getPokemon(0), &moveUsedFoe);
+                    if(!m_Player.getPokemon(0)->isAlive())
+                    {
+                        std::cout << m_Player.getPokemon(0) << " fainted !" << std::endl;
+                        if(m_Player.hasPokemonAlive())
+                        {
+                            swapPokemonMenu();
+                        }
+                    }
+                }
             }
             else
             {
-                this->attack(m_WildPkmn, m_AllyPkmn, moveUsedFoe);
-                this->attack(m_AllyPkmn, m_WildPkmn, moveUsed);
+                this->attack(&m_WildPkmn, m_Player.getPokemon(0), &moveUsedFoe);
+                if(!m_Player.getPokemon(0)->isAlive())
+                {
+                    std::cout << m_Player.getPokemon(0)->getName() << " fainted !" << std::endl;
+                    if(m_Player.hasPokemonAlive())
+                    {
+                        swapPokemonMenu();
+                    }
+                    else
+                    {
+                        break;
+                    }
+                }
+                else
+                {
+                    this->attack(m_Player.getPokemon(0), &m_WildPkmn, &moveUsed);
+                }
             }
+        }
+        else if(userCommand == "POKEMON")
+        {
+            swapPokemonMenu();
         }
     }
     if(!m_WildPkmn.isAlive())
@@ -69,6 +101,10 @@ void PKMN::BattleWildPokemon::launch()
     else
     {
         std::cout << "GAME OVER ... ! ";
+        for(unsigned int i=0; i < NB_OF_PKMN_PER_TRAINOR; i++)
+        {
+            std::cout << m_Player.getPokemon(i)->getName()<< " Lv." << m_Player.getPokemon(i)->getLevel()<< "(" << m_Player.getPokemon(i)->isAlive() << ")" << std::endl;
+        }
     }
 }
 
@@ -79,14 +115,13 @@ void PKMN::BattleWildPokemon::foeIsDead()
     unsigned int b = m_WildPkmn.getBaseExp();
     unsigned int N = m_WildPkmn.getLevel();
     unsigned int expPoint = static_cast<unsigned int>(floor(a * b * N / 7));
-    std::cout << m_AllyPkmn.getName() << " gained " << expPoint << " EXP. Point !" << std::endl;
+    std::cout << m_Player.getPokemon(0)->getName() << " gained " << expPoint << " EXP. Point !" << std::endl;
 }
 
-void PKMN::BattleWildPokemon::choiceMove()
+void PKMN::BattleWildPokemon::choiceMove(PKMN::Pokemon* pkmn)
 {
-    std::vector<std::pair<unsigned int, Move> > listMove = m_AllyPkmn.getListMove();
-    const unsigned int length = listMove.size();
-    for(unsigned int i = 0; i < length; i++)
+    std::array<std::pair<unsigned int, Move>, NB_OF_MOVE_PER_PKMN> listMove = pkmn->getListMove();
+    for(unsigned int i = 0; i < NB_OF_MOVE_PER_PKMN; i++)
     {
         std::cout   << listMove[i].second.getName()
                     << "(PP:" << listMove[i].first << "/"
@@ -96,41 +131,63 @@ void PKMN::BattleWildPokemon::choiceMove()
     }
 }
 
-void PKMN::BattleWildPokemon::attack(PKMN::Pokemon &Att, PKMN::Pokemon &Def, PKMN::Move &moveUsed)
+void PKMN::BattleWildPokemon::attack(PKMN::Pokemon* Att, PKMN::Pokemon* Def, PKMN::Move* moveUsed)
 {
-    std::cout << Att.getName() << " used " << moveUsed.getName() << "." << std::endl;
-    unsigned int lvl = Att.getLevel();
-    unsigned int power = moveUsed.getBasePower();
+    std::cout << Att->getName() << " used " << moveUsed->getName() << "." << std::endl;
+    unsigned int lvl = Att->getLevel();
+    unsigned int power = moveUsed->getBasePower();
     double damagePoint = 0;
-    double typeEffect = Type_effectiveness(Def.getTypes(), moveUsed.getType());
+    double typeEffect = Type_effectiveness(Def->getTypes(), moveUsed->getType());
     double CM = typeEffect;
-    DamageCategory damCategory = moveUsed.getDamageCategory();
+    DamageCategory damCategory = moveUsed->getDamageCategory();
     if(damCategory.isPhysicalCategory())
     {
-        damagePoint = ((lvl * 0.4 + 2) * Att.getCurAtt() * power)/(Def.getCurDef() * 50) + 2 * CM;
+        damagePoint = ((lvl * 0.4 + 2) * Att->getCurAtt() * power)/(Def->getCurDef() * 50) + 2 * CM;
     }
     else if(damCategory.isSpecialCategory())
     {
-        damagePoint = ((lvl * 0.4 + 2) * Att.getCurSpAtt() * power)/(Def.getCurSpDef() * 50) + 2 * CM;
+        damagePoint = ((lvl * 0.4 + 2) * Att->getCurSpAtt() * power)/(Def->getCurSpDef() * 50) + 2 * CM;
     }
     std::cout << Type_message(typeEffect);
     unsigned int realDamage = dealDamage(Def, static_cast<unsigned int>(ceil(damagePoint)));
-    std::cout << Def.getName() << " lost " << realDamage << " HP !" << std::endl;
+    std::cout << Def->getName() << " lost " << realDamage << " HP !" << std::endl;
 }
 
-unsigned int PKMN::BattleWildPokemon::dealDamage(Pokemon &pkmn, unsigned int damagePoint)
+unsigned int PKMN::BattleWildPokemon::dealDamage(Pokemon* pkmn, unsigned int damagePoint)
 {
-    const unsigned int c = pkmn.getCurHP();
-    for(unsigned int i = 0; i < damagePoint && pkmn.isAlive(); i++)
+    const unsigned int c = pkmn->getCurHP();
+    for(unsigned int i = 0; i < damagePoint && pkmn->isAlive(); i++)
     {
-        pkmn.decrementHP();
+        pkmn->decrementHP();
     }
     return std::min(damagePoint, c);
 }
 
-void PKMN::BattleWildPokemon::printPokemon(const PKMN::Pokemon &pkmn) const
+void PKMN::BattleWildPokemon::printPokemon(const PKMN::Pokemon* pkmn) const
 {
-    std::cout << "Pokemon " << pkmn.getName() << " Lv." << pkmn.getLevel() << "(";
-    std::cout << "HP = " << pkmn.getCurHP() << "/" <<  pkmn.getNormalHP() << ")" << std::endl;
+    std::cout   << pkmn->getName()
+                << " Lv." << pkmn->getLevel() << "(";
+    std::cout   << "HP = " << pkmn->getCurHP() << "/"
+                <<  pkmn->getNormalHP() << ")" << std::endl;
 
+}
+
+void PKMN::BattleWildPokemon::swapPokemonMenu(bool isNecessary)
+{
+    unsigned int swapNumber = 0;
+    if(isNecessary)
+    {
+        do
+        {
+            for(unsigned int i=0; i < NB_OF_PKMN_PER_TRAINOR; i++)
+            {
+                printPokemon(m_Player.getPokemon(i));
+            }
+            std::cout   << "Do you want to swap "
+                        << m_Player.getPokemon(0)->getName()
+                        << " with another Pokemon ?" << std::endl;
+            std::cin >> swapNumber;
+        }while(!m_Player.getPokemon(swapNumber)->isAlive());
+        m_Player.swapPokemon(swapNumber, 0);
+    }
 }

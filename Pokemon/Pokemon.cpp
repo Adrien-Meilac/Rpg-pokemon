@@ -18,7 +18,11 @@ Pokemon::Pokemon(std::string Position):
     m_Pokemon_ExpAndLevel = PKMN::ExpAndLevel(m_GrowthRate,
                                               string_to_int(table(Position, "Level")),
                                               string_to_int(table(Position, "Experience")));
-    m_Pokemon_Moves = read_move(table(Position, "Moves"));
+    std::vector<std::pair<unsigned int, Move> > L = read_move(table(Position, "Moves"));
+    for(unsigned int i = 0; i < NB_OF_MOVE_PER_PKMN; i++)
+    {
+        m_Pokemon_Moves[i] = L[i];
+    }
     m_Pokemon_gender = table(Position, "Gender");
     m_Pokemon_NormalStat = NormalStatistics(m_BaseStats,
                                             m_Pokemon_IV,
@@ -59,7 +63,7 @@ unsigned int PKMN::Pokemon::getLevel() const
     return m_Pokemon_ExpAndLevel.getLevel();
 }
 
-std::vector<std::pair<unsigned int, PKMN::Move> > PKMN::Pokemon::getListMove()
+std::array<std::pair<unsigned int, PKMN::Move>, NB_OF_MOVE_PER_PKMN> PKMN::Pokemon::getListMove()
 {
     return m_Pokemon_Moves;
 }

@@ -11,7 +11,8 @@
 #include <vector>
 #include <cmath>
 
-#define NUMBER_OF_PKMN_PER_TRAINOR 6
+#define NB_OF_PKMN_PER_TRAINOR 6
+#define NB_OF_BADGE 8
 
 namespace PKMN
 {
@@ -26,8 +27,8 @@ public:
 
     std::string getName() const;
     bool hasPokemonAlive() const;
-    Pokemon getPokemon(unsigned int pos = 0);
-    void setPokemon(Pokemon pkmn,unsigned int pos);
+    Pokemon* getPokemon(unsigned int pos);
+    void swapPokemon(unsigned int pos1, unsigned int pos2);
     std::string getFullName() const;
 
 private:
@@ -42,10 +43,10 @@ private:
     //unsigned int m_outfit; // linked to the image ?
     std::string m_Language; //language used by the computer
     unsigned int m_Money;
-    std::vector<bool> m_Badges;
+    std::array<bool, NB_OF_BADGE> m_Badges;
     //m_numbadges; number of badges
     bool m_Pokedex; // has a pokedex
-    std::vector<Pokemon> m_Party;
+    std::array<Pokemon, NB_OF_PKMN_PER_TRAINOR> m_Party;
 };
 
 #endif // PKMN_PLAYER_H_INCLUDED

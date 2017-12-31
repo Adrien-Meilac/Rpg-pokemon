@@ -19,7 +19,7 @@
 #include <vector>
 #include <array>
 
-#define NB_OF_MOVE_PER_PKMN 4
+#define NB_OF_MOVE_PER_PKMN
 
 namespace PKMN
 {

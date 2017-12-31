@@ -10,11 +10,15 @@ PKMN::Player::Player()
     m_SecretID = PKMN::string_to_int(table("Player", "Secret ID"));
     m_Language = PKMN::string_to_int(table("Player", "Language"));
     m_Money = PKMN::string_to_int(table("Player", "Money"));
-    m_Badges = PKMN::split_string_to_bool(table("Player", "Bagdes"));
-    m_Pokedex = PKMN::string_to_bool(table("Player", "Has Pokedex"));
-    for(unsigned int i = 0; i < NUMBER_OF_PKMN_PER_TRAINOR; i++)
+    std::vector<bool> L = PKMN::split_string_to_bool(table("Player", "Bagdes"));
+    for(unsigned int i = 0; i < NB_OF_BADGE; i++)
     {
-        m_Party.push_back(PKMN::Pokemon(int_to_string(i)));
+        m_Badges[i] = L[i];
+    }
+    m_Pokedex = PKMN::string_to_bool(table("Player", "Has Pokedex"));
+    for(unsigned int i = 0; i < NB_OF_PKMN_PER_TRAINOR; i++)
+    {
+        m_Party[i] = PKMN::Pokemon(int_to_string(i));
 //        std::cout << "Creation of " << m_team[i].getName() << std::endl;
     }
 }
@@ -39,22 +43,23 @@ unsigned int PKMN::Player::getID() const
     return static_cast<int>(pow(2,16)) * m_PublicID + m_SecretID;
 }
 
-PKMN::Pokemon PKMN::Player::getPokemon(unsigned int pos)
+PKMN::Pokemon* PKMN::Player::getPokemon(unsigned int pos)
 {
-    return m_Party[pos];
+    return &m_Party[pos];
 }
 
-void PKMN::Player::setPokemon(PKMN::Pokemon pkmn,unsigned int pos)
+void PKMN::Player::swapPokemon(unsigned int pos1, unsigned int pos2)
 {
-    m_Party[pos] = pkmn;
+    Pokemon temp = m_Party[pos1];
+    m_Party[pos1] = m_Party[pos2];
+    m_Party[pos2] = temp;
 }
 
 bool PKMN::Player::hasPokemonAlive() const
 {
-    const unsigned int length = m_Party.size();
-    for(unsigned int i = 0; i < length; i++)
+    for(unsigned int i = 0; i < NB_OF_PKMN_PER_TRAINOR; i++)
     {
-        if(m_Party[0].isAlive())
+        if(m_Party[i].isAlive())
         {
             return true;
         }

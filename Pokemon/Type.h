@@ -9,6 +9,9 @@
 
 #include <string>
 #include <iostream>
+#include <array>
+
+#define NB_OF_TYPES 18
 
 #define TYPE_INEFFECTIVE             0
 #define TYPE_NOT_VERY_EFFECTIVE      0.5

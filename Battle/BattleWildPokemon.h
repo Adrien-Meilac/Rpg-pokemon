@@ -27,13 +27,14 @@ public :
     BattleWildPokemon(Player& player, Place place, Pokemon wildPkmn);
     ~BattleWildPokemon();
 
-    void throwNewPokemon(unsigned int i = 0);
+    void throwNewPokemon();
     void foeIsDead();
-    void choiceMove();
-    void attack(Pokemon &Att, Pokemon &Def, Move &moveUsed);
-    unsigned int dealDamage(Pokemon &pkmn, unsigned int damagePoint);
+    void choiceMove(Pokemon* pkmn);
+    void attack(Pokemon* Att, Pokemon* Def, Move* moveUsed);
+    unsigned int dealDamage(Pokemon* pkmn, unsigned int damagePoint);
     void launch();
-    void printPokemon(const Pokemon &pkmn) const;
+    void printPokemon(const Pokemon* pkmn) const;
+    void swapPokemonMenu(bool isNecessary = 1);
 
 private:
 
@@ -41,8 +42,6 @@ private:
     Place m_Place;
     Pokemon m_WildPkmn;
 
-    Pokemon m_AllyPkmn;
-    unsigned int m_i_ActivePkmn;
     Weather m_Weather;
     /// Place / background
 };

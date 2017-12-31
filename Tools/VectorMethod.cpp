@@ -15,11 +15,16 @@ bool PKMN::vector_in(const std::vector<std::string>& L,
 }
 
 std::vector<std::string> PKMN::string_split(const std::string& line,
-                                            const char& delim)
+                                            const char& delim,
+                                            int reserv)
 {
     std::stringstream ss(line);
     std::string item;
     std::vector<std::string> L;
+    if(reserv >= 0)
+    {
+        L.reserve(reserv);
+    }
     while (getline(ss, item, delim))
     {
         L.push_back(item);
