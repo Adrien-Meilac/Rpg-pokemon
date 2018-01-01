@@ -13,6 +13,7 @@ PKMN::BattleWildPokemon::BattleWildPokemon(Player& player,
     m_WildPkmn(wildPkmn)
 {
     m_Weather = m_Place.getWeather();
+    m_WeatherCount = -1;
 }
 
 PKMN::BattleWildPokemon::~BattleWildPokemon()
@@ -35,6 +36,7 @@ void PKMN::BattleWildPokemon::launch()
     Move moveUsed, moveUsedFoe;
     while(m_WildPkmn.isAlive() && m_Player.hasPokemonAlive())
     {
+        this->weatherMessage();
         std::cout << "What will " << m_Player.getPokemon(0)->getName() << " do ?" << std::endl;
         std::cout << "FIGHT BAG POKEMON RUN" << std::endl;
         std::cin >> userCommand;
@@ -101,10 +103,6 @@ void PKMN::BattleWildPokemon::launch()
     else
     {
         std::cout << "GAME OVER ... ! ";
-        for(unsigned int i=0; i < NB_OF_PKMN_PER_TRAINOR; i++)
-        {
-            std::cout << m_Player.getPokemon(i)->getName()<< " Lv." << m_Player.getPokemon(i)->getLevel()<< "(" << m_Player.getPokemon(i)->isAlive() << ")" << std::endl;
-        }
     }
 }
 
@@ -134,23 +132,37 @@ void PKMN::BattleWildPokemon::choiceMove(PKMN::Pokemon* pkmn)
 void PKMN::BattleWildPokemon::attack(PKMN::Pokemon* Att, PKMN::Pokemon* Def, PKMN::Move* moveUsed)
 {
     std::cout << Att->getName() << " used " << moveUsed->getName() << "." << std::endl;
-    unsigned int lvl = Att->getLevel();
-    unsigned int power = moveUsed->getBasePower();
-    double damagePoint = 0;
-    double typeEffect = Type_effectiveness(Def->getTypes(), moveUsed->getType());
-    double CM = typeEffect;
-    DamageCategory damCategory = moveUsed->getDamageCategory();
-    if(damCategory.isPhysicalCategory())
+    std::string weatherMessage = m_Weather.startMessage(moveUsed);
+    if(weatherMessage.size() > 0)
     {
-        damagePoint = ((lvl * 0.4 + 2) * Att->getCurAtt() * power)/(Def->getCurDef() * 50) + 2 * CM;
+        m_WeatherCount = 5;
+        std::cout << weatherMessage << std::endl;
     }
-    else if(damCategory.isSpecialCategory())
+    else
     {
-        damagePoint = ((lvl * 0.4 + 2) * Att->getCurSpAtt() * power)/(Def->getCurSpDef() * 50) + 2 * CM;
+        unsigned int lvl = Att->getLevel();
+        unsigned int power = moveUsed->getBasePower();
+        double damagePoint = 0;
+        double typeEffect = Type_effectiveness(Def->getTypes(), moveUsed->getType());
+        double CM = typeEffect;
+        if(moveUsed->getType().getInternalName() == Att->getTypes().first.getInternalName()
+           || moveUsed->getType().getInternalName() == Att->getTypes().second.getInternalName())///STAB
+        {
+            CM *= 1.5;
+        }
+        DamageCategory damCategory = moveUsed->getDamageCategory();
+        if(damCategory.isPhysicalCategory())
+        {
+            damagePoint = ((lvl * 0.4 + 2) * Att->getCurAtt() * power)/(Def->getCurDef() * 50) + 2 * CM;
+        }
+        else if(damCategory.isSpecialCategory())
+        {
+            damagePoint = ((lvl * 0.4 + 2) * Att->getCurSpAtt() * power)/(Def->getCurSpDef() * 50) + 2 * CM;
+        }
+        std::cout << Type_message(typeEffect) << std::endl;
+        unsigned int realDamage = dealDamage(Def, static_cast<unsigned int>(ceil(damagePoint)));
+        std::cout << Def->getName() << " lost " << realDamage << " HP !" << std::endl;
     }
-    std::cout << Type_message(typeEffect);
-    unsigned int realDamage = dealDamage(Def, static_cast<unsigned int>(ceil(damagePoint)));
-    std::cout << Def->getName() << " lost " << realDamage << " HP !" << std::endl;
 }
 
 unsigned int PKMN::BattleWildPokemon::dealDamage(Pokemon* pkmn, unsigned int damagePoint)
@@ -189,5 +201,31 @@ void PKMN::BattleWildPokemon::swapPokemonMenu(bool isNecessary)
             std::cin >> swapNumber;
         }while(!m_Player.getPokemon(swapNumber)->isAlive());
         m_Player.swapPokemon(swapNumber, 0);
+    }
+}
+
+void PKMN::BattleWildPokemon::weatherMessage()
+{
+    std::string weatherMessage;
+    if(m_WeatherCount > 0)
+    {
+        weatherMessage = m_Weather.turnMessage();
+    }
+    else if(m_WeatherCount == 0)
+    {
+        weatherMessage = m_Weather.endMessage();
+        m_Weather = m_Place.getWeather();
+    }
+    else
+    {
+        weatherMessage = m_Weather.turnMessage();
+    }
+    if(m_WeatherCount >= 0)
+    {
+        m_WeatherCount -= 1;
+    }
+    if(weatherMessage.size() > 0)
+    {
+        std::cout << weatherMessage << std::endl;
     }
 }

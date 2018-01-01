@@ -42,6 +42,12 @@ public :
 
     void setWeather(std::string weather);
 
+    std::string getInternalName() const;
+
+    std::string startMessage(Move* mv);
+    std::string endMessage() const;
+    std::string turnMessage() const;
+
 private:
 
     std::string m_InternalName;

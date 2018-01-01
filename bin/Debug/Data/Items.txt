@@ -1,0 +1,526 @@
+InternalName;ID;InternalName;Name;Category;Price;Description;Uknown1;Uknown2;Uknown3;Move
+REPEL;1;Repel;Repels;1;350;An item that prevents weak wild Pokémon from appearing for 100 steps after its use.;2;0;0;
+SUPERREPEL;2;Super Repel;Super Repels;1;500;An item that prevents weak wild Pokémon from appearing for 200 steps after its use.;2;0;0;
+MAXREPEL;3;Max Repel;Max Repels;1;700;An item that prevents weak wild Pokémon from appearing for 250 steps after its use.;2;0;0;
+BLACKFLUTE;4;Black Flute;Black Flutes;1;400;A black flute made from blown glass. Its melody makes wild Pokémon less likely to appear.;2;0;0;
+WHITEFLUTE;5;White Flute;White Flutes;1;500;A white flute made from blown glass. Its melody makes wild Pokémon more likely to appear.;2;0;0;
+HONEY;6;Honey;Honey;1;100;A sweet honey with an aroma that attracts wild Pokémon when used in grass, caves or on special trees.;2;0;0;
+ESCAPEROPE;7;Escape Rope;Escape Ropes;1;550;A long, durable rope. Use it to escape instantly from a cave or a dungeon.;2;0;0;
+REDSHARD;8;Red Shard;Red Shards;1;200;A small red shard. It appears to be from some sort of implement made long ago.;0;0;0;
+YELLOWSHARD;9;Yellow Shard;Yellow Shards;1;200;A small yellow shard. It appears to be from some sort of implement made long ago.;0;0;0;
+BLUESHARD;10;Blue Shard;Blue Shards;1;200;A small blue shard. It appears to be from some sort of implement made long ago.;0;0;0;
+GREENSHARD;11;Green Shard;Green Shards;1;200;A small green shard. It appears to be from some sort of implement made long ago.;0;0;0;
+FIRESTONE;12;Fire Stone;Fire Stones;1;2100;A peculiar stone that makes certain species of Pokémon evolve. It is colored orange.;1;0;7;
+THUNDERSTONE;13;Thunder Stone;Thunder Stones;1;2100;A peculiar stone that makes certain species of Pokémon evolve. It has a thunderbolt pattern.;1;0;7;
+WATERSTONE;14;Water Stone;Water Stones;1;2100;A peculiar stone that makes certain species of Pokémon evolve. It is a clear, light blue.;1;0;7;
+LEAFSTONE;15;Leaf Stone;Leaf Stones;1;2100;A peculiar stone that makes certain species of Pokémon evolve. It has a leaf pattern.;1;0;7;
+MOONSTONE;16;Moon Stone;Moon Stones;1;2100;A peculiar stone that makes certain species of Pokémon evolve. It is as black as the night sky.;1;0;7;
+SUNSTONE;17;Sun Stone;Sun Stones;1;2100;A peculiar stone that makes certain species of Pokémon evolve. It is as red as the sun.;1;0;7;
+DUSKSTONE;18;Dusk Stone;Dusk Stones;1;2100;A peculiar stone that makes certain species of Pokémon evolve. It is as dark as dark can be.;1;0;7;
+DAWNSTONE;19;Dawn Stone;Dawn Stones;1;2100;A peculiar stone that makes certain species of Pokémon evolve. It sparkles like eyes.;1;0;7;
+SHINYSTONE;20;Shiny Stone;Shiny Stones;1;2100;A peculiar stone that makes certain species of Pokémon evolve. It shines with a dazzling light.;1;0;7;
+REDAPRICORN;21;Red Apricorn;Red Apricorns;1;200;A red Apricorn. It assails your nostrils.;0;0;9;
+YLWAPRICORN;22;Ylw Apricorn;Ylw Apricorns;1;200;A yellow Apricorn. It has an invigorating scent.;0;0;9;
+BLUAPRICORN;23;Blu Apricorn;Blu Apricorns;1;200;A blue Apricorn. It smells a bit like grass.;0;0;9;
+GRNAPRICORN;24;Grn Apricorn;Grn Apricorns;1;200;A green Apricorn. It has a mysterious, aromatic scent.;0;0;9;
+PNKAPRICORN;25;Pnk Apricorn;Pnk Apricorns;1;200;A pink Apricorn. It has a nice, sweet scent.;0;0;9;
+WHTAPRICORN;26;Wht Apricorn;Wht Apricorns;1;200;A white Apricorn. It doesn't smell like anything.;0;0;9;
+BLKAPRICORN;27;Blk Apricorn;Blk Apricorns;1;200;A black Apricorn. It has an indescribable scent.;0;0;9;
+HELIXFOSSIL;28;Helix Fossil;Helix Fossils;1;1000;A fossil of an ancient Pokémon that lived in the sea. It appears to be part of a seashell.;0;0;8;
+DOMEFOSSIL;29;Dome Fossil;Dome Fossils;1;1000;A fossil of an ancient Pokémon that lived in the sea. It appears to be part of a shell.;0;0;8;
+OLDAMBER;30;Old Amber;Old Ambers;1;1000;A piece of amber that contains the genes of an ancient Pokémon. It is clear with a reddish tint.;0;0;8;
+ROOTFOSSIL;31;Root Fossil;Root Fossils;1;1000;A fossil of an ancient Pokémon that lived in the sea. It appears to be part of a plant root.;0;0;8;
+CLAWFOSSIL;32;Claw Fossil;Claw Fossils;1;1000;A fossil of an ancient Pokémon that lived in the sea. It appears to be part of a claw.;0;0;8;
+SKULLFOSSIL;33;Skull Fossil;Skull Fossils;1;1000;A fossil from a prehistoric Pokémon that lived on the land. It appears to be part of a head.;0;0;8;
+ARMORFOSSIL;34;Armor Fossil;Armor Fossils;1;1000;A fossil from a prehistoric Pokémon that lived on the land. It appears to be part of a collar.;0;0;8;
+COVERFOSSIL;35;Cover Fossil;Cover Fossils;1;1000;A fossil of an ancient Pokémon that lived in the sea in ancient times. It appears to be part of its back.;0;0;8;
+PLUMEFOSSIL;36;Plume Fossil;Plume Fossils;1;1000;A fossil of an ancient Pokémon that flew in the sky in ancient times. It appears to be part of its wing.;0;0;8;
+PRETTYWING;37;Pretty Wing;Pretty Wings;1;200;Though this feather is beautiful, it's just a regular feather and has no effect on Pokémon.;0;0;0;
+TINYMUSHROOM;38;Tiny Mushroom;Tiny Mushrooms;1;500;A small and rare mushroom. It is sought after by collectors.;0;0;0;
+BIGMUSHROOM;39;Big Mushroom;Big Mushrooms;1;5000;A large and rare mushroom. It is sought after by collectors.;0;0;0;
+BALMMUSHROOM;40;Balm Mushroom;Balm Mushrooms;1;50000;A rare mushroom which gives off a nice fragrance. A maniac will buy it for a high price.;0;0;0;
+PEARL;41;Pearl;Pearls;1;1400;A somewhat-small pearl that sparkles in a pretty silver color. It can be sold cheaply to shops.;0;0;0;
+BIGPEARL;42;Big Pearl;Big Pearls;1;7500;A quite-large pearl that sparkles in a pretty silver color. It can be sold at a high price to shops.;0;0;0;
+PEARLSTRING;43;Pearl String;Pearl Strings;1;50000;Very large pearls that sparkle in a pretty silver color. A maniac will buy them for a high price.;0;0;0;
+STARDUST;44;Stardust;Stardusts;1;2000;Lovely, red-colored sand with a loose, silky feel. It can be sold at a high price to shops.;0;0;0;
+STARPIECE;45;Star Piece;Star Pieces;1;9800;A shard of a pretty gem that sparkles in a red color. It can be sold at a high price to shops.;0;0;0;
+COMETSHARD;46;Comet Shard;Comet Shards;1;120000;A shard which fell to the ground when a comet approached. A maniac will buy it for a high price.;0;0;0;
+NUGGET;47;Nugget;Nuggets;1;10000;A nugget of pure gold that gives off a lustrous gleam. It can be sold at a high price to shops.;0;0;0;
+BIGNUGGET;48;Big Nugget;Big Nuggets;1;60000;A big nugget of pure gold that gives off a lustrous gleam. A maniac will buy it for a high price.;0;0;0;
+HEARTSCALE;49;Heart Scale;Heart Scales;1;100;A pretty, heart-shaped scale that is extremely rare. It glows faintly in the colors of the rainbow.;0;0;0;
+SLOWPOKETAIL;50;Slowpoke Tail;Slowpoke Tails;1;9800;A very tasty tail of something. It sells for a high price.;0;0;0;
+RAREBONE;51;Rare Bone;Rare Bones;1;10000;A bone that is extremely valuable for Pokémon archaeology. It can be sold for a high price to shops.;0;0;0;
+RELICCOPPER;52;Relic Copper;Relic Coppers;1;2000;A copper coin used in a civilization about 3,000 years ago. A maniac will buy it for a high price.;0;0;0;
+RELICSILVER;53;Relic Silver;Relic Silvers;1;10000;A silver coin used in a civilization about 3,000 years ago. A maniac will buy it for a high price.;0;0;0;
+RELICGOLD;54;Relic Gold;Relic Golds;1;20000;A gold coin used in a civilization about 3,000 years ago. A maniac will buy it for a high price.;0;0;0;
+RELICVASE;55;Relic Vase;Relic Vases;1;100000;A vase made in a civilization about 3,000 years ago. A maniac will buy it for a high price.;0;0;0;
+RELICBAND;56;Relic Band;Relic Bands;1;200000;A bracelet made in a civilization about 3,000 years ago. A maniac will buy it for a high price.;0;0;0;
+RELICSTATUE;57;Relic Statue;Relic Statues;1;400000;A stone figure made in a civilization about 3,000 years ago. A maniac will buy it for a high price.;0;0;0;
+RELICCROWN;58;Relic Crown;Relic Crowns;1;600000;A crown made in a civilization about 3,000 years ago. A maniac will buy it for a high price.;0;0;0;
+GROWTHMULCH;59;Growth Mulch;Growth Mulch;1;200;A fertilizer to be spread on soft soil in regions where Berries are grown. A maniac will buy it for a high price.;0;0;11;
+DAMPMULCH;60;Damp Mulch;Damp Mulch;1;200;A fertilizer to be spread on soft soil in regions where Berries are grown. A maniac will buy it for a high price.;0;0;11;
+STABLEMULCH;61;Stable Mulch;Stable Mulch;1;200;A fertilizer to be spread on soft soil in regions where Berries are grown. A maniac will buy it for a high price.;0;0;11;
+GOOEYMULCH;62;Gooey Mulch;Gooey Mulch;1;200;A fertilizer to be spread on soft soil in regions where Berries are grown. A maniac will buy it for a high price.;0;0;11;
+SHOALSALT;63;Shoal Salt;Shoal Salts;1;20;Pure salt that can be discovered deep inside the Shoal Cave. A maniac will buy it for a high price.;0;0;0;
+SHOALSHELL;64;Shoal Shell;Shoal Shells;1;20;A pretty seashell that can be found deep inside the Shoal Cave. A maniac will buy it for a high price.;0;0;0;
+ODDKEYSTONE;65;Odd Keystone;Odd Keystones;1;2100;A vital item that is needed to keep a stone tower from collapsing. Voices can be heard from it occasionally.;0;0;0;
+AIRBALLOON;66;Air Balloon;Air Balloons;1;200;An item to be held by a Pokémon. The holder will float in the air until hit. Once hit, this item will burst.;0;0;0;
+BRIGHTPOWDER;67;Bright Powder;Bright Powders;1;10;An item to be held by a Pokémon. It casts a tricky glare that lowers the opponent's accuracy.;0;0;0;
+EVIOLITE;68;Eviolite;Eviolites;1;200;A mysterious evolutionary lump. When held, it raises the Defense and Sp. Def if the holder can still evolve.;0;0;0;
+FLOATSTONE;69;Float Stone;Float Stones;1;200;A very light stone. It reduces the weight of a Pokémon when held.;0;0;0;
+DESTINYKNOT;70;Destiny Knot;Destiny Knots;1;200;A long, thin, bright-red string to be held by a Pokémon. If the holder becomes infatuated, so does the foe.;0;0;0;
+ROCKYHELMET;71;Rocky Helmet;Rocky Helmets;1;200;If the holder of this item takes damage, the attacker will also be damaged upon contact.;0;0;0;
+EJECTBUTTON;72;Eject Button;Eject Buttons;1;200;If the holder is hit by an attack, it will switch with another Pokémon in your party.;0;0;0;
+REDCARD;73;Red Card;Red Cards;1;200;A card with a mysterious power. When the holder is struck by a foe, the attacker is removed from battle.;0;0;0;
+SHEDSHELL;74;Shed Shell;Shed Shells;1;100;An item to be held by a Pokémon. This discarded carapace lets the holder switch out of battle without fail.;0;0;0;
+SMOKEBALL;75;Smoke Ball;Smoke Balls;1;200;An item to be held by a Pokémon. It enables the holder to flee from any wild Pokémon without fail.;0;0;0;
+LUCKYEGG;76;Lucky Egg;Lucky Eggs;1;200;An item to be held by a Pokémon. It is an egg filled with happiness that earns extra Exp. Points in battle.;0;0;0;
+EXPSHARE;77;Exp. Share;Exp. Shares;1;3000;An item to be held by a Pokémon. The holder gets a share of a battle's Exp. Points without battling.;0;0;0;
+AMULETCOIN;78;Amulet Coin;Amulet Coins;1;100;An item to be held by a Pokémon. It doubles a battle's prize money if the holding Pokémon joins in.;0;0;0;
+SOOTHEBELL;79;Soothe Bell;Soothe Bells;1;100;An item to be held by a Pokémon. The comforting chime of this bell calms the holder, making it friendly.;0;0;0;
+CLEANSETAG;80;Cleanse Tag;Cleanse Tags;1;200;An item to be held by a Pokémon. It helps keep wild Pokémon away if the holder is the first one in the party.;0;0;0;
+CHOICEBAND;81;Choice Band;Choice Bands;1;100;An item to be held by a Pokémon. This headband ups Attack, but allows the use of only one move.;0;0;0;
+CHOICESPECS;82;Choice Specs;Choice Specs;1;200;An item to be held by a Pokémon. These curious glasses boost Sp. Atk but allows the use of only one move.;0;0;0;
+CHOICESCARF;83;Choice Scarf;Choice Scarves;1;200;An item to be held by a Pokémon. This scarf boosts Speed but allows the use of only one move.;0;0;0;
+HEATROCK;84;Heat Rock;Heat Rocks;1;200;A Pokémon held item that extends the duration of the move Sunny Day used by the holder.;0;0;0;
+DAMPROCK;85;Damp Rock;Damp Rocks;1;200;A Pokémon held item that extends the duration of the move Rain Dance used by the holder.;0;0;0;
+SMOOTHROCK;86;Smooth Rock;Smooth Rocks;1;200;A Pokémon held item that extends the duration of the move Sandstorm used by the holder.;0;0;0;
+ICYROCK;87;Icy Rock;Icy Rocks;1;200;A Pokémon held item that extends the duration of the move Hail used by the holder.;0;0;0;
+LIGHTCLAY;88;Light Clay;Light Clays;1;200;An item to be held by a Pokémon. Protective moves like Light Screen and Reflect will be effective longer.;0;0;0;
+GRIPCLAW;89;Grip Claw;Grip Claws;1;200;A Pokémon held item that extends the duration of multiturn attacks like Bind and Wrap.;0;0;0;
+BINDINGBAND;90;Binding Band;Binding Bands;1;200;A band that increases the power of binding moves when held.;0;0;0;
+BIGROOT;91;Big Root;Big Roots;1;200;A Pokémon held item that boosts the power of HP-stealing moves to let the holder recover more HP.;0;0;0;
+BLACKSLUDGE;92;Black Sludge;Black Sludges;1;200;A held item that gradually restores the HP of Poison-type Pokémon. It inflicts damage on all other types.;0;0;0;
+LEFTOVERS;93;Leftovers;Leftovers;1;200;An item to be held by a Pokémon. The holder's HP is gradually restored during battle.;0;0;0;
+SHELLBELL;94;Shell Bell;Shell Bells;1;200;An item to be held by a Pokémon. The holder's HP is restored a little every time it inflicts damage.;0;0;0;
+MENTALHERB;95;Mental Herb;Mental Herbs;1;100;An item to be held by a Pokémon. It snaps the holder out of infatuation. It can be used only once.;0;0;0;
+WHITEHERB;96;White Herb;White Herbs;1;100;An item to be held by a Pokémon. It restores any lowered stat in battle. It can be used only once.;0;0;0;
+POWERHERB;97;Power Herb;Power Herbs;1;100;A single-use item to be held by a Pokémon. It allows the immediate use of a move that charges up first.;0;0;0;
+ABSORBBULB;98;Absorb Bulb;Absorb Bulbs;1;200;A consumable bulb. If the holder is hit by a Water-type move, its Sp. Atk will rise.;0;0;0;
+CELLBATTERY;99;Cell Battery;Cell Batteries;1;200;A consumable battery. If the holder is hit by an Electric-type move, its Attack will rise.;0;0;0;
+LIFEORB;100;Life Orb;Life Orbs;1;200;An item to be held by a Pokémon. It boosts the power of moves, but at the cost of some HP on each hit.;0;0;0;
+EXPERTBELT;101;Expert Belt;Expert Belts;1;200;An item to be held by a Pokémon. It is a well-worn belt that slightly boosts the power of supereffective moves.;0;0;0;
+METRONOME;102;Metronome;Metronomes;1;200;A Pokémon held item that boosts a move used consecutively. Its effect is reset if another move is used.;0;0;0;
+MUSCLEBAND;103;Muscle Band;Muscle Bands;1;200;An item to be held by a Pokémon. It is a headband that slightly boosts the power of physical moves.;0;0;0;
+WISEGLASSES;104;Wise Glasses;Wise Glasses;1;200;An item to be held by a Pokémon. It is a thick pair of glasses that slightly boosts the power of special moves.;0;0;0;
+RAZORCLAW;105;Razor Claw;Razor Claws;1;2100;An item to be held by a Pokémon. It is a sharply hooked claw that ups the holder's critical-hit ratio.;0;0;0;
+SCOPELENS;106;Scope Lens;Scope Lenses;1;200;An item to be held by a Pokémon. It is a lens that boosts the holder's critical-hit ratio.;0;0;0;
+WIDELENS;107;Wide Lens;Wide Lenses;1;200;An item to be held by a Pokémon. It is a magnifying lens that slightly boosts the accuracy of moves.;0;0;0;
+ZOOMLENS;108;Zoom Lens;Zoom Lenses;1;200;An item to be held by a Pokémon. If the holder moves after its target, its accuracy will be boosted.;0;0;0;
+KINGSROCK;109;King's Rock;King's Rocks;1;100;An item to be held by a Pokémon. When the holder inflicts damage, the target may flinch.;0;0;0;
+RAZORFANG;110;Razor Fang;Razor Fangs;1;2100;An item to be held by a Pokémon. It may make foes and allies flinch when the holder inflicts damage.;0;0;0;
+LAGGINGTAIL;111;Lagging Tail;Lagging Tails;1;200;An item to be held by a Pokémon. It is tremendously heavy and makes the holder move slower than usual.;0;0;0;
+QUICKCLAW;112;Quick Claw;Quick Claws;1;100;An item to be held by a Pokémon. A light, sharp claw that lets the bearer move first occasionally.;0;0;0;
+FOCUSBAND;113;Focus Band;Focus Bands;1;200;An item to be held by a Pokémon. The holder may endure a potential KO attack, leaving it with just 1 HP.;0;0;0;
+FOCUSSASH;114;Focus Sash;Focus Sashes;1;200;An item to be held by a Pokémon. If it has full HP, the holder will endure one potential KO attack, leaving 1 HP.;0;0;0;
+FLAMEORB;115;Flame Orb;Flame Orbs;1;100;An item to be held by a Pokémon. It is a bizarre orb that inflicts a burn on the holder in battle.;0;0;0;
+TOXICORB;116;Toxic Orb;Toxic Orbs;1;100;An item to be held by a Pokémon. It is a bizarre orb that badly poisons the holder in battle.;0;0;0;
+STICKYBARB;117;Sticky Barb;Sticky Barbs;1;200;A held item that damages the holder on every turn. It may latch on to Pokémon that touch the holder.;0;0;0;
+IRONBALL;118;Iron Ball;Iron Balls;1;200;A Pokémon held item that cuts Speed. It makes Flying-type and levitating holders susceptible to Ground moves.;0;0;0;
+RINGTARGET;119;Ring Target;Ring Targets;1;200;Moves that would otherwise have no effect will land on the Pokémon that holds it.;0;0;0;
+MACHOBRACE;120;Macho Brace;Macho Braces;1;3000;An item to be held by a Pokémon. It is a stiff, heavy brace that promotes strong growth but lowers Speed.;0;0;0;
+POWERWEIGHT;121;Power Weight;Power Weights;1;3000;A Pokémon held item that promotes HP gain on leveling, but reduces the Speed stat.;0;0;0;
+POWERBRACER;122;Power Bracer;Power Bracers;1;3000;A Pokémon held item that promotes Attack gain on leveling, but reduces the Speed stat.;0;0;0;
+POWERBELT;123;Power Belt;Power Belts;1;3000;A Pokémon held item that promotes Defense gain on leveling, but reduces the Speed stat.;0;0;0;
+POWERLENS;124;Power Lens;Power Lenses;1;3000;A Pokémon held item that promotes Sp. Atk gain on leveling, but reduces the Speed stat.;0;0;0;
+POWERBAND;125;Power Band;Power Bands;1;3000;A Pokémon held item that promotes Sp. Def gain on leveling, but reduces the Speed stat.;0;0;0;
+POWERANKLET;126;Power Anklet;Power Anklets;1;3000;A Pokémon held item that promotes Speed gain on leveling, but reduces the Speed stat.;0;0;0;
+LAXINCENSE;127;Lax Incense;Lax Incenses;1;9600;An item to be held by a Pokémon. The tricky aroma of this incense may make attacks miss the holder.;0;0;0;
+FULLINCENSE;128;Full Incense;Full Incenses;1;9600;An item to be held by a Pokémon. This exotic-smelling incense makes the holder bloated and slow moving.;0;0;0;
+LUCKINCENSE;129;Luck Incense;Luck Incenses;1;9600;An item to be held by a Pokémon. It doubles a battle's prize money if the holding Pokémon joins in.;0;0;0;
+PUREINCENSE;130;Pure Incense;Pure Incenses;1;9600;An item to be held by a Pokémon. It helps keep wild Pokémon away if the holder is the first one in the party.;0;0;0;
+SEAINCENSE;131;Sea Incense;Sea Incenses;1;9600;An item to be held by a Pokémon. It has a curious aroma that boosts the power of Water-type moves.;0;0;0;
+WAVEINCENSE;132;Wave Incense;Wave Incenses;1;9600;An item to be held by a Pokémon. It has a curious aroma that boosts the power of Water-type moves.;0;0;0;
+ROSEINCENSE;133;Rose Incense;Rose Incenses;1;9600;An item to be held by a Pokémon. This exotic-smelling incense boosts the power of Grass-type moves.;0;0;0;
+ODDINCENSE;134;Odd Incense;Odd Incenses;1;9600;An item to be held by a Pokémon. This exotic-smelling incense boosts the power of Psychic-type moves.;0;0;0;
+ROCKINCENSE;135;Rock Incense;Rock Incenses;1;9600;An item to be held by a Pokémon. This exotic-smelling incense boosts the power of Rock-type moves.;0;0;0;
+CHARCOAL;136;Charcoal;Charcoals;1;9800;An item to be held by a Pokémon. It is a combustible fuel that boosts the power of Fire-type moves.;0;0;0;
+MYSTICWATER;137;Mystic Water;Mystic Waters;1;100;An item to be held by a Pokémon. It is a teardrop-shaped gem that ups the power of Water-type moves.;0;0;0;
+MAGNET;138;Magnet;Magnets;1;100;An item to be held by a Pokémon. It is a powerful magnet that boosts the power of Electric-type moves.;0;0;0;
+MIRACLESEED;139;Miracle Seed;Miracle Seeds;1;100;An item to be held by a Pokémon. It is a seed imbued with life that ups the power of Grass-type moves.;0;0;0;
+NEVERMELTICE;140;Never-Melt Ice;Never-Melt Ices;1;100;An item to be held by a Pokémon. It is a piece of ice that repels heat and boosts Ice-type moves.;0;0;0;
+BLACKBELT;141;Black Belt;Black Belts;1;100;An item to be held by a Pokémon. It is a belt that boosts determination and Fighting-type moves.;0;0;0;
+POISONBARB;142;Poison Barb;Poison Barbs;1;100;An item to be held by a Pokémon. It is a small, poisonous barb that ups the power of Poison-type moves.;0;0;0;
+SOFTSAND;143;Soft Sand;Soft Sand;1;100;An item to be held by a Pokémon. It is a loose, silky sand that boosts the power of Ground-type moves.;0;0;0;
+SHARPBEAK;144;Sharp Beak;Sharp Beaks;1;100;An item to be held by a Pokémon. It is a long, sharp beak that boosts the power of Flying-type moves.;0;0;0;
+TWISTEDSPOON;145;Twisted Spoon;Twisted Spoons;1;100;An item to be held by a Pokémon. It is a spoon imbued with telekinetic power that boosts Psychic-type moves.;0;0;0;
+SILVERPOWDER;146;Silver Powder;Silver Powders;1;100;An item to be held by a Pokémon. It is a shiny, silver powder that ups the power of Bug-type moves.;0;0;0;
+HARDSTONE;147;Hard Stone;Hard Stones;1;100;An item to be held by a Pokémon. It is an unbreakable stone that ups the power of Rock-type moves.;0;0;0;
+SPELLTAG;148;Spell Tag;Spell Tags;1;100;An item to be held by a Pokémon. It is a sinister, eerie tag that boosts the power of Ghost-type moves.;0;0;0;
+DRAGONFANG;149;Dragon Fang;Dragon Fangs;1;100;An item to be held by a Pokémon. It is a hard and sharp fang that ups the power of Dragon-type moves.;0;0;0;
+BLACKGLASSES;150;Black Glasses;Black Glasses;1;100;An item to be held by a Pokémon. It is a shady-looking pair of glasses that boosts Dark-type moves.;0;0;0;
+METALCOAT;151;Metal Coat;Metal Coats;1;100;An item to be held by a Pokémon. It is a special metallic film that ups the power of Steel-type moves.;0;0;0;
+SILKSCARF;152;Silk Scarf;Silk Scarves;1;100;An item to be held by a Pokémon. It is a sumptuous scarf that boosts the power of Normal-type moves.;0;0;0;
+FLAMEPLATE;153;Flame Plate;Flame Plates;1;1000;An item to be held by a Pokémon. It is a stone tablet that boosts the power of Fire-type moves.;0;0;0;
+SPLASHPLATE;154;Splash Plate;Splash Plates;1;1000;An item to be held by a Pokémon. It is a stone tablet that boosts the power of Water-type moves.;0;0;0;
+ZAPPLATE;155;Zap Plate;Zap Plates;1;1000;An item to be held by a Pokémon. It is a stone tablet that boosts the power of Electric-type moves.;0;0;0;
+MEADOWPLATE;156;Meadow Plate;Meadow Plates;1;1000;An item to be held by a Pokémon. It is a stone tablet that boosts the power of Grass-type moves.;0;0;0;
+ICICLEPLATE;157;Icicle Plate;Icicle Plates;1;1000;An item to be held by a Pokémon. It is a stone tablet that boosts the power of Ice-type moves.;0;0;0;
+FISTPLATE;158;Fist Plate;Fist Plates;1;1000;An item to be held by a Pokémon. It is a stone tablet that boosts the power of Fighting-type moves.;0;0;0;
+TOXICPLATE;159;Toxic Plate;Toxic Plates;1;1000;An item to be held by a Pokémon. It is a stone tablet that boosts the power of Poison-type moves.;0;0;0;
+EARTHPLATE;160;Earth Plate;Earth Plates;1;1000;An item to be held by a Pokémon. It is a stone tablet that boosts the power of Ground-type moves.;0;0;0;
+SKYPLATE;161;Sky Plate;Sky Plates;1;1000;An item to be held by a Pokémon. It is a stone tablet that boosts the power of Flying-type moves.;0;0;0;
+MINDPLATE;162;Mind Plate;Mind Plates;1;1000;An item to be held by a Pokémon. It is a stone tablet that boosts the power of Psychic-type moves.;0;0;0;
+INSECTPLATE;163;Insect Plate;Insect Plates;1;1000;An item to be held by a Pokémon. It is a stone tablet that boosts the power of Bug-type moves.;0;0;0;
+STONEPLATE;164;Stone Plate;Stone Plates;1;1000;An item to be held by a Pokémon. It is a stone tablet that boosts the power of Rock-type moves.;0;0;0;
+SPOOKYPLATE;165;Spooky Plate;Spooky Plates;1;1000;An item to be held by a Pokémon. It is a stone tablet that boosts the power of Ghost-type moves.;0;0;0;
+DRACOPLATE;166;Draco Plate;Draco Plates;1;1000;An item to be held by a Pokémon. It is a stone tablet that boosts the power of Dragon-type moves.;0;0;0;
+DREADPLATE;167;Dread Plate;Dread Plates;1;1000;An item to be held by a Pokémon. It is a stone tablet that boosts the power of Dark-type moves.;0;0;0;
+IRONPLATE;168;Iron Plate;Iron Plates;1;1000;An item to be held by a Pokémon. It is a stone tablet that boosts the power of Steel-type moves.;0;0;0;
+FIREGEM;169;Fire Gem;Fire Gems;1;200;A gem with an essence of fire. When held, it strengthens the power of a Fire-type move only once.;0;0;10;
+WATERGEM;170;Water Gem;Water Gems;1;200;A gem with an essence of water. When held, it strengthens the power of a Water-type move only once.;0;0;10;
+ELECTRICGEM;171;Electric Gem;Electric Gems;1;200;A gem with an essence of electricity. When held, it strengthens the power of an Electric-type move only once.;0;0;10;
+GRASSGEM;172;Grass Gem;Grass Gems;1;200;A gem with an essence of nature. When held, it strengthens the power of a Grass-type move only once.;0;0;10;
+ICEGEM;173;Ice Gem;Ice Gems;1;200;A gem with an essence of ice. When held, it strengthens the power of an Ice-type move only once.;0;0;10;
+FIGHTINGGEM;174;Fighting Gem;Fighting Gems;1;200;A gem with an essence of combat. When held, it strengthens the power of a Fighting-type move only once.;0;0;10;
+POISONGEM;175;Poison Gem;Poison Gems;1;200;A gem with an essence of poison. When held, it strengthens the power of a Poison-type move only once.;0;0;10;
+GROUNDGEM;176;Ground Gem;Ground Gems;1;200;A gem with an essence of land. When held, it strengthens the power of a Ground-type move only once.;0;0;10;
+FLYINGGEM;177;Flying Gem;Flying Gems;1;200;A gem with an essence of air. When held, it strengthens the power of a Flying-type move only once.;0;0;10;
+PSYCHICGEM;178;Psychic Gem;Psychic Gems;1;200;A gem with an essence of the mind. When held, it strengthens the power of a Psychic-type move only once.;0;0;10;
+BUGGEM;179;Bug Gem;Bug Gems;1;200;A gem with an insect-like essence. When held, it strengthens the power of a Bug-type move only once.;0;0;10;
+ROCKGEM;180;Rock Gem;Rock Gems;1;200;A gem with an essence of rock. When held, it strengthens the power of a Rock-type move only once.;0;0;10;
+GHOSTGEM;181;Ghost Gem;Ghost Gems;1;200;A gem with a spectral essence. When held, it strengthens the power of a Ghost-type move only once.;0;0;10;
+DRAGONGEM;182;Dragon Gem;Dragon Gems;1;200;A gem with a draconic essence. When held, it strengthens the power of a Dragon-type move only once.;0;0;10;
+DARKGEM;183;Dark Gem;Dark Gems;1;200;A gem with an essence of darkness. When held, it strengthens the power of a Dark-type move only once.;0;0;10;
+STEELGEM;184;Steel Gem;Steel Gems;1;200;A gem with an essence of steel. When held, it strengthens the power of a Steel-type move only once.;0;0;10;
+NORMALGEM;185;Normal Gem;Normal Gems;1;200;A gem with an ordinary essence. When held, it strengthens the power of a Normal-type move only once.;0;0;10;
+LIGHTBALL;186;Light Ball;Light Balls;1;100;An item to be held by Pikachu. It is a puzzling orb that raises the Attack and Sp. Atk stat.;0;0;0;
+LUCKYPUNCH;187;Lucky Punch;Lucky Punches;1;10;An item to be held by Chansey. It is a pair of gloves that boosts Chansey's critical-hit ratio.;0;0;0;
+METALPOWDER;188;Metal Powder;Metal Powders;1;10;An item to be held by Ditto. Extremely fine yet hard, this odd powder boosts the Defense stat.;0;0;0;
+QUICKPOWDER;189;Quick Powder;Quick Powders;1;10;An item to be held by Ditto. Extremely fine yet hard, this odd powder boosts the Speed stat.;0;0;0;
+THICKCLUB;190;Thick Club;Thick Clubs;1;500;An item to be held by Cubone or Marowak. It is a hard bone of some sort that boosts the Attack stat.;0;0;0;
+STICK;191;Stick;Sticks;1;200;An item to be held by Farfetch'd. It is a very long and stiff stalk of leek that boosts the critical-hit ratio.;0;0;0;
+SOULDEW;192;Soul Dew;Soul Dews;1;200;A wondrous orb to be held by Latios or Latias. It raises both the Sp. Atk and Sp. Def stats.;0;0;0;
+DEEPSEATOOTH;193;Deep Sea Tooth;Deep Sea Teeth;1;200;An item to be held by Clamperl. A fang that gleams a sharp silver, it raises the Sp. Atk stat.;0;0;0;
+DEEPSEASCALE;194;Deep Sea Scale;Deep Sea Scales;1;200;An item to be held by Clamperl. A scale that shines a faint pink, it raises the Sp. Def stat.;0;0;0;
+ADAMANTORB;195;Adamant Orb;Adamant Orbs;1;10000;A brightly gleaming orb to be held by Dialga. It boosts the power of Dragon- and Steel-type moves.;0;0;0;
+LUSTROUSORB;196;Lustrous Orb;Lustrous Orbs;1;10000;A beautifully glowing orb to be held by Palkia. It boosts the power of Dragon- and Water-type moves.;0;0;0;
+GRISEOUSORB;197;Griseous Orb;Griseous Orbs;1;10000;A glowing orb to be held by Giratina. It boosts the power of Dragon- and Ghost-type moves.;0;0;0;
+DOUSEDRIVE;198;Douse Drive;Douse Drives;1;1000;A cassette to be held by Genesect. It changes Techno Blast to a Water-type move.;0;0;0;
+SHOCKDRIVE;199;Shock Drive;Shock Drives;1;1000;A cassette to be held by Genesect. It changes Techno Blast to an Electric-type move.;0;0;0;
+BURNDRIVE;200;Burn Drive;Burn Drives;1;1000;A cassette to be held by Genesect. It changes Techno Blast to a Fire-type move.;0;0;0;
+CHILLDRIVE;201;Chill Drive;Chill Drives;1;1000;A cassette to be held by Genesect. It changes Techno Blast to an Ice-type move.;0;0;0;
+EVERSTONE;202;Everstone;Everstones;1;200;An item to be held by a Pokémon. The Pokémon holding this peculiar stone is prevented from evolving.;0;0;0;
+DRAGONSCALE;203;Dragon Scale;Dragon Scales;1;2100;A thick and tough scale. Dragon-type Pokémon may be holding this item when caught.;0;0;0;
+UPGRADE;204;Up-Grade;Up-Grades;1;2100;A transparent device filled with all sorts of data. It was produced by Silph Co.;0;0;0;
+DUBIOUSDISC;205;Dubious Disc;Dubious Discs;1;2100;A transparent device overflowing with dubious data.  Its producer is unknown.;0;0;0;
+PROTECTOR;206;Protector;Protectors;1;2100;A protective item of some sort. It is extremely stiff and heavy. It is loved by a certain Pokémon.;0;0;0;
+ELECTIRIZER;207;Electirizer;Electirizers;1;2100;A box packed with a tremendous amount of electric energy. It is loved by a certain Pokémon.;0;0;0;
+MAGMARIZER;208;Magmarizer;Magmarizers;1;2100;A box packed with a tremendous amount of magma energy. It is loved by a certain Pokémon.;0;0;0;
+REAPERCLOTH;209;Reaper Cloth;Reaper Cloths;1;2100;A cloth imbued with horrifyingly strong spiritual energy. It is loved by a certain Pokémon.;0;0;0;
+PRISMSCALE;210;Prism Scale;Prism Scales;1;500;A mysterious scale that evolves certain Pokémon. It shines in rainbow colors.;0;0;0;
+OVALSTONE;211;Oval Stone;Oval Stones;1;2100;A peculiar stone that makes certain species of Pokémon evolve. It is shaped like an egg.;0;0;0;
+REDSCARF;212;Red Scarf;Red Scarves;1;100;An item to be held by a Pokémon. It boosts the Cool aspect of the holder in a Contest.;0;0;0;
+BLUESCARF;213;Blue Scarf;Blue Scarves;1;100;An item to be held by a Pokémon. It boosts the Beauty aspect of the holder in a Contest.;0;0;0;
+PINKSCARF;214;Pink Scarf;Pink Scarves;1;100;An item to be held by a Pokémon. It boosts the Cute aspect of the holder in a Contest.;0;0;0;
+GREENSCARF;215;Green Scarf;Green Scarves;1;100;An item to be held by a Pokémon. It boosts the Smart aspect of the holder in a Contest.;0;0;0;
+YELLOWSCARF;216;Yellow Scarf;Yellow Scarves;1;100;An item to be held by a Pokémon. It boosts the Tough aspect of the holder in a Contest.;0;0;0;
+POTION;217;Potion;Potions;2;300;A spray-type medicine for wounds. It restores the HP of one Pokémon by just 20 points.;1;1;0;
+SUPERPOTION;218;Super Potion;Super Potions;2;700;A spray-type medicine for wounds. It restores the HP of one Pokémon by 50 points.;1;1;0;
+HYPERPOTION;219;Hyper Potion;Hyper Potions;2;1200;A spray-type medicine for wounds. It restores the HP of one Pokémon by 200 points.;1;1;0;
+MAXPOTION;220;Max Potion;Max Potions;2;2500;A spray-type medicine for wounds. It completely restores the HP of a single Pokémon.;1;1;0;
+FULLRESTORE;221;Full Restore;Full Restores;2;3000;A medicine that fully restores the HP and heals any status problems of a single Pokémon.;1;1;0;
+SACREDASH;222;Sacred Ash;Sacred Ashes;2;200;It revives all fainted Pokémon. In doing so, it also fully restores their HP.;2;0;0;
+AWAKENING;223;Awakening;Awakenings;2;250;A spray-type medicine. It awakens a Pokémon from the clutches of sleep.;1;1;0;
+ANTIDOTE;224;Antidote;Antidotes;2;100;A spray-type medicine. It lifts the effect of poison from one Pokémon.;1;1;0;
+BURNHEAL;225;Burn Heal;Burn Heals;2;250;A spray-type medicine. It heals a single Pokémon that is suffering from a burn.;1;1;0;
+PARALYZEHEAL;226;Paralyze Heal;Paralyze Heals;2;200;A spray-type medicine. It eliminates paralysis from a single Pokémon.;1;1;0;
+ICEHEAL;227;Ice Heal;Ice Heals;2;250;A spray-type medicine. It defrosts a Pokémon that has been frozen solid.;1;1;0;
+FULLHEAL;228;Full Heal;Full Heals;2;600;A spray-type medicine. It heals all the status problems of a single Pokémon.;1;1;0;
+LAVACOOKIE;229;Lava Cookie;Lava Cookies;2;200;Lavaridge Town's local specialty. It heals all the status problems of one Pokémon.;1;1;0;
+OLDGATEAU;230;Old Gateau;Old Gateaux;2;200;Old Chateau's hidden specialty. It heals all the status problems of a single Pokémon.;1;1;0;
+CASTELIACONE;231;Casteliacone;Casteliacones;2;100;Castelia City's specialty, soft-serve ice cream. It heals all the status problems of a single Pokémon.;1;1;0;
+REVIVE;232;Revive;Revives;2;1500;A medicine that revives a fainted Pokémon. It restores half the Pokémon's maximum HP.;1;1;0;
+MAXREVIVE;233;Max Revive;Max Revives;2;4000;A medicine that revives a fainted Pokémon. It fully restores the Pokémon's HP.;1;1;0;
+BERRYJUICE;234;Berry Juice;Berry Juices;2;100;A 100% pure juice made of Berries. It restores the HP of one Pokémon by just 20 points.;1;1;0;
+RAGECANDYBAR;235;Rage Candy Bar;Rage Candy Bars;2;400;A famous Mahogany Town candy that tourists like to buy. It restores the HP of one Pokémon by 20 points.;1;1;0;
+SWEETHEART;236;Sweet Heart;Sweet Hearts;2;100;Very sweet chocolate. It restores the HP of one Pokémon by only 20 points.;1;1;0;
+FRESHWATER;237;Fresh Water;Fresh Waters;2;200;Water with a high mineral content. It restores the HP of one Pokémon by 50 points.;1;1;0;
+SODAPOP;238;Soda Pop;Soda Pops;2;300;A fizzy soda drink. It restores the HP of one Pokémon by 60 points.;1;1;0;
+LEMONADE;239;Lemonade;Lemonades;2;350;A very sweet drink. It restores the HP of one Pokémon by 80 points.;1;1;0;
+MOOMOOMILK;240;Moomoo Milk;Moomoo Milks;2;500;Milk with a very high nutrition content. It restores the HP of one Pokémon by 100 points.;1;1;0;
+ENERGYPOWDER;241;Energy Powder;Energy Powders;2;500;A very bitter medicine powder. It restores the HP of one Pokémon by 50 points.;1;1;0;
+ENERGYROOT;242;Energy Root;Energy Roots;2;800;A very bitter root. It restores the HP of one Pokémon by 200 points.;1;1;0;
+HEALPOWDER;243;Heal Powder;Heal Powders;2;450;A very bitter medicine powder. It heals all the status problems of a single Pokémon.;1;1;0;
+REVIVALHERB;244;Revival Herb;Revival Herbs;2;2800;A very bitter medicinal herb. It revives a fainted Pokémon, fully restoring its HP.;1;1;0;
+ETHER;245;Ether;Ethers;2;1200;It restores the PP of a Pokémon's selected move by a maximum of 10 points.;1;1;0;
+MAXETHER;246;Max Ether;Max Ethers;2;2000;It fully restores the PP of a single selected move that has been learned by the target Pokémon.;1;1;0;
+ELIXIR;247;Elixir;Elixirs;2;3000;It restores the PP of all the moves learned by the targeted Pokémon by 10 points each.;1;1;0;
+MAXELIXIR;248;Max Elixir;Max Elixirs;2;4500;It fully restores the PP of all the moves learned by the targeted Pokémon.;1;1;0;
+PPUP;249;PP Up;PP Ups;2;9800;It slightly raises the maximum PP of a selected move that has been learned by the target Pokémon.;1;0;0;
+PPMAX;250;PP Max;PP Maxes;2;9800;It maximally raises the top PP of a selected move that has been learned by the target Pokémon.;1;0;0;
+HPUP;251;HP Up;HP Ups;2;9800;A nutritious drink for Pokémon. It raises the base HP of a single Pokémon.;1;0;0;
+PROTEIN;252;Protein;Proteins;2;9800;A nutritious drink for Pokémon. It raises the base Attack stat of a single Pokémon.;1;0;0;
+IRON;253;Iron;Irons;2;9800;A nutritious drink for Pokémon. It raises the base Defense stat of a single Pokémon.;1;0;0;
+CALCIUM;254;Calcium;Calciums;2;9800;A nutritious drink for Pokémon. It raises the base Sp. Atk (Special Attack) stat of a single Pokémon.;1;0;0;
+ZINC;255;Zinc;Zincs;2;9800;A nutritious drink for Pokémon. It raises the base Sp. Def (Special Defense) stat of a single Pokémon.;1;0;0;
+CARBOS;256;Carbos;Carbos;2;9800;A nutritious drink for Pokémon. It raises the base Speed stat of a single Pokémon.;1;0;0;
+HEALTHWING;257;Health Wing;Health Wings;2;3000;An item for use on a Pokémon. It slightly increases the base HP of a single Pokémon.;1;0;0;
+MUSCLEWING;258;Muscle Wing;Muscle Wings;2;3000;An item for use on a Pokémon. It slightly increases the base Attack stat of a single Pokémon.;1;0;0;
+RESISTWING;259;Resist Wing;Resist Wings;2;3000;An item for use on a Pokémon. It slightly increases the base Defense stat of a single Pokémon.;1;0;0;
+GENIUSWING;260;Genius Wing;Genius Wings;2;3000;An item for use on a Pokémon. It slightly increases the base Sp. Atk stat of a single Pokémon.;1;0;0;
+CLEVERWING;261;Clever Wing;Clever Wings;2;3000;An item for use on a Pokémon. It slightly increases the base Sp. Def stat of a single Pokémon.;1;0;0;
+SWIFTWING;262;Swift Wing;Swift Wings;2;3000;An item for use on a Pokémon. It slightly increases the base Speed stat of a single Pokémon.;1;0;0;
+RARECANDY;263;Rare Candy;Rare Candies;2;4800;A candy that is packed with energy. It raises the level of a single Pokémon by one.;1;0;0;
+MASTERBALL;264;Master Ball;Master Balls;3;0;The best Ball with the ultimate level of performance. It will catch any wild Pokémon without fail.;0;2;4;
+ULTRABALL;265;Ultra Ball;Ultra Balls;3;1200;An ultra-performance Ball that provides a higher Pokémon catch rate than a Great Ball.;0;2;4;
+GREATBALL;266;Great Ball;Great Balls;3;600;A good, high-performance Ball that provides a higher Pokémon catch rate than a standard Poké Ball.;0;2;4;
+POKEBALL;267;Poké Ball;Poké Balls;3;200;A device for catching wild Pokémon. It is thrown like a ball at the target. It is designed as a capsule system.;0;2;4;
+SAFARIBALL;268;Safari Ball;Safari Balls;3;0;A special Poké Ball that is used only in the Safari Zone. It is decorated in a camouflage pattern.;0;2;4;
+SPORTBALL;269;Sport Ball;Sport Balls;3;0;A special Poké Ball for the Bug-Catching Contest.;0;2;4;
+NETBALL;270;Net Ball;Net Balls;3;1000;A somewhat different Poké Ball that works especially well on Water- and Bug-type Pokémon.;0;2;4;
+DIVEBALL;271;Dive Ball;Dive Balls;3;1000;A somewhat different Poké Ball that works especially well on Pokémon that underwater.;0;2;4;
+NESTBALL;272;Nest Ball;Nest Balls;3;1000;A somewhat different Poké Ball that works especially well on weaker Pokémon in the wild.;0;2;4;
+REPEATBALL;273;Repeat Ball;Repeat Balls;3;1000;A somewhat different Poké Ball that works especially well on Pokémon species that were previously caught.;0;2;4;
+TIMERBALL;274;Timer Ball;Timer Balls;3;1000;A somewhat different Ball that becomes progressively better the more turns there are in a battle.;0;2;4;
+LUXURYBALL;275;Luxury Ball;Luxury Balls;3;1000;A comfortable Poké Ball that makes a caught wild Pokémon quickly grow friendly.;0;2;4;
+PREMIERBALL;276;Premier Ball;Premier Balls;3;200;A somewhat rare Poké Ball that has been specially made to commemorate an event of some sort.;0;2;4;
+DUSKBALL;277;Dusk Ball;Dusk Balls;3;1000;A somewhat different Poké Ball that makes it easier to catch wild Pokémon at night or in dark places like caves.;0;2;4;
+HEALBALL;278;Heal Ball;Heal Balls;3;300;A remedial Poké Ball that restores the caught Pokémon's HP and eliminates any status problem.;0;2;4;
+QUICKBALL;279;Quick Ball;Quick Balls;3;1000;A somewhat different Poké Ball that provides a better catch rate if used at the start of a wild encounter.;0;2;4;
+CHERISHBALL;280;Cherish Ball;Cherish Balls;3;1000;A quite rare Poké Ball that has been specially crafted to commemorate an occasion of some sort.;0;2;4;
+FASTBALL;281;Fast Ball;Fast Balls;3;300;A Poké Ball that makes it easier to catch fast Pokémon.;0;2;4;
+LEVELBALL;282;Level Ball;Level Balls;3;300;A Poké Ball for catching Pokémon that are a lower level than your own.;0;2;4;
+LUREBALL;283;Lure Ball;Lure Balls;3;300;A Poké Ball for catching Pokémon hooked by a Rod when fishing.;0;2;4;
+HEAVYBALL;284;Heavy Ball;Heavy Balls;3;300;A Poké Ball for catching very heavy Pokémon.;0;2;4;
+LOVEBALL;285;Love Ball;Love Balls;3;300;A Poké Ball for catching Pokémon that are the opposite gender of your Pokémon.;0;2;4;
+FRIENDBALL;286;Friend Ball;Friend Balls;3;300;A Poké Ball that makes caught Pokémon more friendly.;0;2;4;
+MOONBALL;287;Moon Ball;Moon Balls;3;300;A Poké Ball for catching Pokémon that evolve using the Moon Stone.;0;2;4;
+TM01;288;TM01;TM01s;4;3000;The user sharpens its claws to boost its Attack stat and accuracy.;3;0;0;HONECLAWS
+TM02;289;TM02;TM02s;4;3000;The user slashes the target with huge, sharp claws.;3;0;0;DRAGONCLAW
+TM03;290;TM03;TM03s;4;3000;The user materializes an odd psychic wave to attack the target. This attack does physical damage.;3;0;0;PSYSHOCK
+TM04;291;TM04;TM04s;4;1500;The user quietly focuses its mind and calms its spirit to raise its Sp. Atk and Sp. Def stats.;3;0;0;CALMMIND
+TM05;292;TM05;TM05s;4;1000;The target is scared off and replaced by another Pokémon in its party. In the wild, the battle ends.;3;0;0;ROAR
+TM06;293;TM06;TM06s;4;3000;A move that leaves the target badly poisoned. Its poison damage worsens every turn.;3;0;0;TOXIC
+TM07;294;TM07;TM07s;4;3000;Summons a hailstorm that lasts for five turns. The hailstorm damages all types except Ice.;3;0;0;HAIL
+TM08;295;TM08;TM08s;4;1500;The user tenses its muscles to bulk up its body, boosting both its Attack and Defense stats.;3;0;0;BULKUP
+TM09;296;TM09;TM09s;4;2000;The user drenches the target in a special poisonous liquid. Its power is doubled if the target is poisoned.;3;0;0;VENOSHOCK
+TM10;297;TM10;TM10s;4;2000;A unique attack that varies in type and intensity depending on the Pokémon using it.;3;0;0;HIDDENPOWER
+TM11;298;TM11;TM11s;4;2000;The user intensifies the sun for five turns, powering up Fire-type moves.;3;0;0;SUNNYDAY
+TM12;299;TM12;TM12s;4;1500;The target is taunted into a rage that allows it to use only attack moves for three turns.;3;0;0;TAUNT
+TM13;300;TM13;TM13s;4;3000;The target is struck with an icy-cold beam of energy. It may also freeze the target solid.;3;0;0;ICEBEAM
+TM14;301;TM14;TM14s;4;5500;A howling blizzard is summoned to strike the opposing team. It may also freeze them solid.;3;0;0;BLIZZARD
+TM15;302;TM15;TM15s;4;7500;The target is attacked with a powerful beam. The user must rest on the next turn to regain its energy.;3;0;0;HYPERBEAM
+TM16;303;TM16;TM16s;4;2000;A wondrous wall of light is put up to suppress damage from special attacks for five turns.;3;0;0;LIGHTSCREEN
+TM17;304;TM17;TM17s;4;2000;It enables the user to evade all attacks. Its chance of failing rises if it is used in succession.;3;0;0;PROTECT
+TM18;305;TM18;TM18s;4;2000;The user summons a heavy rain that falls for five turns, powering up Water-type moves.;3;0;0;RAINDANCE
+TM19;306;TM19;TM19s;4;3000;The user makes the target float with its psychic power. The target is easier to hit for three turns.;3;0;0;TELEKINESIS
+TM20;307;TM20;TM20s;4;2000;The user creates a protective field that prevents status problems for five turns.;3;0;0;SAFEGUARD
+TM21;308;TM21;TM21s;4;1000;A full-power attack that grows more powerful the less the user likes its Trainer.;3;0;0;FRUSTRATION
+TM22;309;TM22;TM22s;4;3000;A two-turn attack. The user gathers light, then blasts a bundled beam on the second turn.;3;0;0;SOLARBEAM
+TM23;310;TM23;TM23s;4;3000;The user throws a stone or similar projectile to attack a foe. A flying Pokémon will fall to the ground if hit.;3;0;0;SMACKDOWN
+TM24;311;TM24;TM24s;4;3000;A strong electric blast is loosed at the target. It may also leave the target with paralysis.;3;0;0;THUNDERBOLT
+TM25;312;TM25;TM25s;4;5500;A wicked thunderbolt is dropped on the target to inflict damage. It may also leave the target with paralysis.;3;0;0;THUNDER
+TM26;313;TM26;TM26s;4;3000;The user sets off an earthquake that strikes every Pokémon around it.;3;0;0;EARTHQUAKE
+TM27;314;TM27;TM27s;4;1000;A full-power attack that grows more powerful the more the user likes its Trainer.;3;0;0;RETURN
+TM28;315;TM28;TM28s;4;2000;The user burrows, then attacks on the second turn. It can also be used to exit dungeons.;3;0;0;DIG
+TM29;316;TM29;TM29s;4;3000;The target is hit by a strong telekinetic force. It may also reduce the target's Sp. Def stat.;3;0;0;PSYCHIC
+TM30;317;TM30;TM30s;4;3000;The user hurls a shadowy blob at the target. It may also lower the target's Sp. Def stat.;3;0;0;SHADOWBALL
+TM31;318;TM31;TM31s;4;3000;The user attacks with tough fists, etc. It can also break any barrier such as Light Screen and Reflect.;3;0;0;BRICKBREAK
+TM32;319;TM32;TM32s;4;1000;By moving rapidly, the user makes illusory copies of itself to raise its evasiveness.;3;0;0;DOUBLETEAM
+TM33;320;TM33;TM33s;4;2000;A wondrous wall of light is put up to suppress damage from physical attacks for five turns.;3;0;0;REFLECT
+TM34;321;TM34;TM34s;4;3000;It swamps the area around the user with a giant sludge wave. It may also poison those hit.;3;0;0;SLUDGEWAVE
+TM35;322;TM35;TM35s;4;3000;The target is scorched with an intense blast of fire. It may also leave the target with a burn.;3;0;0;FLAMETHROWER
+TM36;323;TM36;TM36s;4;3000;Unsanitary sludge is hurled at the target. It may also poison the target.;3;0;0;SLUDGEBOMB
+TM37;324;TM37;TM37s;4;2000;A five-turn sandstorm is summoned to hurt all combatants except the Rock, Ground, and Steel types.;3;0;0;SANDSTORM
+TM38;325;TM38;TM38s;4;5500;The foe is attacked with an intense blast of all-consuming fire. It may also leave the target with a burn.;3;0;0;FIREBLAST
+TM39;326;TM39;TM39s;4;2000;Boulders are hurled at the target. It also lowers the target's Speed by preventing its movement.;3;0;0;ROCKTOMB
+TM40;327;TM40;TM40s;4;3000;The user confounds the target with speed, then slashes. The attack lands without fail.;3;0;0;AERIALACE
+TM41;328;TM41;TM41s;4;1500;The user torments and enrages the target, making it incapable of using the same move twice in a row.;3;0;0;TORMENT
+TM42;329;TM42;TM42s;4;3000;An attack move that doubles its power if the user is poisoned, paralyzed, or has a burn.;3;0;0;FACADE
+TM43;330;TM43;TM43s;4;2000;The user cloaks itself with flame and attacks. Building up more power, it raises the user's Speed stat.;3;0;0;FLAMECHARGE
+TM44;331;TM44;TM44s;4;3000;The user goes to sleep for two turns. It fully restores the user's HP and heals any status problem.;3;0;0;REST
+TM45;332;TM45;TM45s;4;3000;If it is the opposite gender of the user, the target becomes infatuated and less likely to attack.;3;0;0;ATTRACT
+TM46;333;TM46;TM46s;4;2000;The user attacks and steals the target's held item simultaneously. It can't steal if the user holds an item.;3;0;0;THIEF
+TM47;334;TM47;TM47s;4;3000;The user attacks the target's legs swiftly, reducing the target's Speed stat.;3;0;0;LOWSWEEP
+TM48;335;TM48;TM48s;4;3000;The user attacks the target with a song. Others can join in the Round to increase the power of the attack.;3;0;0;ROUND
+TM49;336;TM49;TM49s;4;1500;The user attacks the target with an echoing voice. If this move is used every turn, it does greater damage.;3;0;0;ECHOEDVOICE
+TM50;337;TM50;TM50s;4;5500;The user attacks the target at full power. The attack's recoil sharply reduces the user's Sp. Atk stat.;3;0;0;OVERHEAT
+TM51;338;TM51;TM51s;4;1000;The user teleports using a strange power and switches its place with one of its allies.;3;0;0;ALLYSWITCH
+TM52;339;TM52;TM52s;4;5500;The user heightens its mental focus and unleashes its power. It may also lower the target's Sp. Def.;3;0;0;FOCUSBLAST
+TM53;340;TM53;TM53s;4;3000;The user draws power from nature and fires it at the target. It may also lower the target's Sp. Def.;3;0;0;ENERGYBALL
+TM54;341;TM54;TM54s;4;2000;A restrained attack that prevents the target from fainting. The target is left with at least 1 HP.;3;0;0;FALSESWIPE
+TM55;342;TM55;TM55s;4;3000;The user shoots boiling hot water at its target. It may also leave the target with a burn.;3;0;0;SCALD
+TM56;343;TM56;TM56s;4;2000;The user flings its held item at the target as an attack. Its power and effects depend on the item.;3;0;0;FLING
+TM57;344;TM57;TM57s;4;3000;The user fires a concentrated bundle of electricity. It may also raise the user's Sp. Atk stat.;3;0;0;CHARGEBEAM
+TM58;345;TM58;TM58s;4;2000;The user hurls the foe into the sky, then drops it on the next turn. The foe cannot attack while in the sky.;3;0;0;SKYDROP
+TM59;346;TM59;TM59s;4;1500;The user attacks the target with fire. If the target is holding a Berry, it becomes burnt up and unusable.;3;0;0;INCINERATE
+TM60;347;TM60;TM60s;4;3000;The user suppresses the target and makes its move go last.;3;0;0;QUASH
+TM61;348;TM61;TM61s;4;2000;The user shoots a sinister, bluish-white flame at the target to inflict a burn.;3;0;0;WILLOWISP
+TM62;349;TM62;TM62s;4;3000;The user nimbly strikes the target. If the user is not holding an item, this attack inflicts massive damage.;3;0;0;ACROBATICS
+TM63;350;TM63;TM63s;4;2000;It prevents the target from using its held item. Its Trainer is also prevented from using items on it.;3;0;0;EMBARGO
+TM64;351;TM64;TM64s;4;7500;The user explodes to inflict damage on those around it. The user faints upon using this move.;3;0;0;EXPLOSION
+TM65;352;TM65;TM65s;4;3000;The user slashes with a sharp claw made from shadows. It has a high critical-hit ratio.;3;0;0;SHADOWCLAW
+TM66;353;TM66;TM66s;4;3000;The user stores power, then attacks. If the user can use this attack after the foe, its power is doubled.;3;0;0;PAYBACK
+TM67;354;TM67;TM67s;4;1000;The user gets revenge for a fainted ally. If an ally fainted in the last turn, this move's power is increased.;3;0;0;RETALIATE
+TM68;355;TM68;TM68s;4;7500;The user charges at the target using every bit of its power. The user must rest on the next turn.;3;0;0;GIGAIMPACT
+TM69;356;TM69;TM69s;4;1500;The user polishes its body to reduce drag. It sharply raises the Speed stat.;3;0;0;ROCKPOLISH
+TM70;357;TM70;TM70s;4;1000;The user flashes a bright light that cuts the target's accuracy. It can also be used to illuminate caves.;3;0;0;FLASH
+TM71;358;TM71;TM71s;4;3000;The user stabs the foe with sharpened stones from below. It has a high critical-hit ratio.;3;0;0;STONEEDGE
+TM72;359;TM72;TM72s;4;3000;After making its attack, the user rushes back to switch places with a party Pokémon in waiting.;3;0;0;VOLTSWITCH
+TM73;360;TM73;TM73s;4;2000;A weak electric charge is launched at the target. It causes paralysis if it hits.;3;0;0;THUNDERWAVE
+TM74;361;TM74;TM74s;4;3000;The user tackles the target with a high-speed spin. The slower the user, the greater the damage.;3;0;0;GYROBALL
+TM75;362;TM75;TM75s;4;1500;A frenetic dance to uplift the fighting spirit. It sharply raises the user's Attack stat.;3;0;0;SWORDSDANCE
+TM76;363;TM76;TM76s;4;2000;Resisting, the user attacks the opposing Pokémon. The targets' Sp. Atk stat is reduced.;3;0;0;STRUGGLEBUG
+TM77;364;TM77;TM77s;4;1500;The user hypnotizes itself into copying any stat change made by the target.;3;0;0;PSYCHUP
+TM78;365;TM78;TM78s;4;1500;The user stomps down on the ground and attacks everything in the area. The targets' Speed stat is reduced.;3;0;0;BULLDOZE
+TM79;366;TM79;TM79s;4;3000;The user blows a cold breath on the target. This attack always results in a critical hit.;3;0;0;FROSTBREATH
+TM80;367;TM80;TM80s;4;3000;Large boulders are hurled at the opposing team to inflict damage. They may also make the targets flinch.;3;0;0;ROCKSLIDE
+TM81;368;TM81;TM81s;4;3000;The user slashes at the target by crossing its scythes or claws as if they were a pair of scissors.;3;0;0;XSCISSOR
+TM82;369;TM82;TM82s;4;1000;The user knocks away the target and drags out another Pokémon in its party. In the wild, the battle ends.;3;0;0;DRAGONTAIL
+TM83;370;TM83;TM83s;4;2000;The user is roused, and its Attack and Sp. Atk stats increase.;3;0;0;WORKUP
+TM84;371;TM84;TM84s;4;3000;The target is stabbed with a tentacle or arm steeped in poison. It may also poison the target.;3;0;0;POISONJAB
+TM85;372;TM85;TM85s;4;3000;The user eats the dreams of a sleeping target. It absorbs half the damage caused to heal the user's HP.;3;0;0;DREAMEATER
+TM86;373;TM86;TM86s;4;3000;The user snares the target with grass and trips it. The heavier the target, the greater the damage.;3;0;0;GRASSKNOT
+TM87;374;TM87;TM87s;4;1500;The user enrages and confuses the target. However, it also sharply raises the target's Attack stat.;3;0;0;SWAGGER
+TM88;375;TM88;TM88s;4;3000;The user pecks the target. If the target is holding a Berry, the user plucks it and gains its effect.;3;0;0;PLUCK
+TM89;376;TM89;TM89s;4;3000;After making its attack, the user rushes back to switch places with a party Pokémon in waiting.;3;0;0;UTURN
+TM90;377;TM90;TM90s;4;2000;The user makes a copy of itself using some of its HP. The copy serves as the user's decoy.;3;0;0;SUBSTITUTE
+TM91;378;TM91;TM91s;4;3000;The user gathers all its light energy and releases it at once. It may also lower the target's Sp. Def stat.;3;0;0;FLASHCANNON
+TM92;379;TM92;TM92s;4;5500;The user creates a bizarre space in which slower Pokémon get to move first for five turns.;3;0;0;TRICKROOM
+TM93;380;TM93;TM93s;4;3000;The user shrouds itself in electricity and smashes into its target. It also damages the user a little.;3;0;0;WILDCHARGE
+TM94;381;TM94;TM94s;4;1000;The user attacks with a punch that can shatter a rock. It may also lower the target's Defense stat.;3;0;0;ROCKSMASH
+TM95;382;TM95;TM95s;4;3000;The user yells as if it is ranting about something, making the target's Sp. Atk stat decrease.;3;0;0;SNARL
+HM01;383;HM01;HM01s;4;0;The target is cut with a scythe or claw. It can also be used to cut down thin trees.;4;0;0;CUT
+HM02;384;HM02;HM02s;4;0;The user soars, then strikes on the second turn. It can also be used to fly to any familiar town.;4;0;0;FLY
+HM03;385;HM03;HM03s;4;0;It swamps the area around the user with a giant wave. It can also be used for crossing water.;4;0;0;SURF
+HM04;386;HM04;HM04s;4;0;The target is slugged with a punch thrown at maximum power. This move can also be used to move boulders.;4;0;0;STRENGTH
+HM05;387;HM05;HM05s;4;0;The user charges the target at an awesome speed. It can also be used to climb a waterfall.;4;0;0;WATERFALL
+HM06;388;HM06;HM06s;4;0;The user dives on the first turn, and floats up and attacks on the second. It can be used to dive in the ocean.;4;0;0;DIVE
+CHERIBERRY;389;Cheri Berry;Cheri Berries;5;20;It may be used or held by a Pokémon to recover from paralysis.;1;1;5;
+CHESTOBERRY;390;Chesto Berry;Chesto Berries;5;20;It may be used or held by a Pokémon to recover from sleep.;1;1;5;
+PECHABERRY;391;Pecha Berry;Pecha Berries;5;20;It may be used or held by a Pokémon to recover from poison.;1;1;5;
+RAWSTBERRY;392;Rawst Berry;Rawst Berries;5;20;It may be used or held by a Pokémon to recover from a burn.;1;1;5;
+ASPEARBERRY;393;Aspear Berry;Aspear Berries;5;20;It may be used or held by a Pokémon to defrost it.;1;1;5;
+LEPPABERRY;394;Leppa Berry;Leppa Berries;5;20;It may be used or held by a Pokémon to restore a move's PP by 10.;1;1;5;
+ORANBERRY;395;Oran Berry;Oran Berries;5;20;It may be used or held by a Pokémon to heal the user by just 10 HP.;1;1;5;
+PERSIMBERRY;396;Persim Berry;Persim Berries;5;20;It may be used or held by a Pokémon to recover from confusion.;0;1;5;
+LUMBERRY;397;Lum Berry;Lum Berries;5;20;It may be used or held by a Pokémon to recover from any status problem.;1;1;5;
+SITRUSBERRY;398;Sitrus Berry;Sitrus Berries;5;20;It may be used or held by a Pokémon to heal the user's HP a little.;1;1;5;
+FIGYBERRY;399;Figy Berry;Figy Berries;5;20;If held by a Pokémon, it restores the user's HP in a pinch, but will cause confusion if it hates the taste.;0;0;5;
+WIKIBERRY;400;Wiki Berry;Wiki Berries;5;20;If held by a Pokémon, it restores the user's HP in a pinch, but will cause confusion if it hates the taste.;0;0;5;
+MAGOBERRY;401;Mago Berry;Mago Berries;5;20;If held by a Pokémon, it restores the user's HP in a pinch, but will cause confusion if it hates the taste.;0;0;5;
+AGUAVBERRY;402;Aguav Berry;Aguav Berries;5;20;If held by a Pokémon, it restores the user's HP in a pinch, but will cause confusion if it hates the taste.;0;0;5;
+IAPAPABERRY;403;Iapapa Berry;Iapapa Berries;5;20;If held by a Pokémon, it restores the user's HP in a pinch, but will cause confusion if it hates the taste.;0;0;5;
+RAZZBERRY;404;Razz Berry;Razz Berries;5;20;In the Sinnoh region, they like to make sweets known as Poffins with this Berry.;0;0;5;
+BLUKBERRY;405;Bluk Berry;Bluk Berries;5;20;In the Sinnoh region, they like to make sweets known as Poffins with this Berry.;0;0;5;
+NANABBERRY;406;Nanab Berry;Nanab Berries;5;20;In the Sinnoh region, they like to make sweets known as Poffins with this Berry.;0;0;5;
+WEPEARBERRY;407;Wepear Berry;Wepear Berries;5;20;In the Sinnoh region, they like to make sweets known as Poffins with this Berry.;0;0;5;
+PINAPBERRY;408;Pinap Berry;Pinap Berries;5;20;In the Sinnoh region, they like to make sweets known as Poffins with this Berry.;0;0;5;
+POMEGBERRY;409;Pomeg Berry;Pomeg Berries;5;20;Using it on a Pokémon makes it more friendly, but it also lowers its base HP.;1;0;5;
+KELPSYBERRY;410;Kelpsy Berry;Kelpsy Berries;5;20;Using it on a Pokémon makes it more friendly, but it also lowers its base Attack stat.;1;0;5;
+QUALOTBERRY;411;Qualot Berry;Qualot Berries;5;20;Using it on a Pokémon makes it more friendly, but it also lowers its base Defense stat.;1;0;5;
+HONDEWBERRY;412;Hondew Berry;Hondew Berries;5;20;Using it on a Pokémon makes it more friendly, but it also lowers its base Sp. Atk stat.;1;0;5;
+GREPABERRY;413;Grepa Berry;Grepa Berries;5;20;Using it on a Pokémon makes it more friendly, but it also lowers its base Sp. Def stat.;1;0;5;
+TAMATOBERRY;414;Tamato Berry;Tamato Berries;5;20;Using it on a Pokémon makes it more friendly, but it also lowers its base Speed stat.;1;0;5;
+CORNNBERRY;415;Cornn Berry;Cornn Berries;5;20;In the Sinnoh region, they like to make sweets known as Poffins with this Berry.;0;0;5;
+MAGOSTBERRY;416;Magost Berry;Magost Berries;5;20;In the Sinnoh region, they like to make sweets known as Poffins with this Berry.;0;0;5;
+RABUTABERRY;417;Rabuta Berry;Rabuta Berries;5;20;In the Sinnoh region, they like to make sweets known as Poffins with this Berry.;0;0;5;
+NOMELBERRY;418;Nomel Berry;Nomel Berries;5;20;In the Sinnoh region, they like to make sweets known as Poffins with this Berry.;0;0;5;
+SPELONBERRY;419;Spelon Berry;Spelon Berries;5;20;In the Sinnoh region, they like to make sweets known as Poffins with this Berry.;0;0;5;
+PAMTREBERRY;420;Pamtre Berry;Pamtre Berries;5;20;In the Sinnoh region, they like to make sweets known as Poffins with this Berry.;0;0;5;
+WATMELBERRY;421;Watmel Berry;Watmel Berries;5;20;In the Sinnoh region, they like to make sweets known as Poffins with this Berry.;0;0;5;
+DURINBERRY;422;Durin Berry;Durin Berries;5;20;In the Sinnoh region, they like to make sweets known as Poffins with this Berry.;0;0;5;
+BELUEBERRY;423;Belue Berry;Belue Berries;5;20;In the Sinnoh region, they like to make sweets known as Poffins with this Berry.;0;0;5;
+OCCABERRY;424;Occa Berry;Occa Berries;5;20;Weakens a supereffective Fire-type attack against the holding Pokémon.;0;0;5;
+PASSHOBERRY;425;Passho Berry;Passho Berries;5;20;Weakens a supereffective Water-type attack against the holding Pokémon.;0;0;5;
+WACANBERRY;426;Wacan Berry;Wacan Berries;5;20;Weakens a supereffective Electric-type attack against the holding Pokémon.;0;0;5;
+RINDOBERRY;427;Rindo Berry;Rindo Berries;5;20;Weakens a supereffective Grass-type attack against the holding Pokémon.;0;0;5;
+YACHEBERRY;428;Yache Berry;Yache Berries;5;20;Weakens a supereffective Ice-type attack against the holding Pokémon.;0;0;5;
+CHOPLEBERRY;429;Chople Berry;Chople Berries;5;20;Weakens a supereffective Fighting-type attack against the holding Pokémon.;0;0;5;
+KEBIABERRY;430;Kebia Berry;Kebia Berries;5;20;Weakens a supereffective Poison-type attack against the holding Pokémon.;0;0;5;
+SHUCABERRY;431;Shuca Berry;Shuca Berries;5;20;Weakens a supereffective Ground-type attack against the holding Pokémon.;0;0;5;
+COBABERRY;432;Coba Berry;Coba Berries;5;20;Weakens a supereffective Flying-type attack against the holding Pokémon.;0;0;5;
+PAYAPABERRY;433;Payapa Berry;Payapa Berries;5;20;Weakens a supereffective Psychic-type attack against the holding Pokémon.;0;0;5;
+TANGABERRY;434;Tanga Berry;Tanga Berries;5;20;Weakens a supereffective Bug-type attack against the holding Pokémon.;0;0;5;
+CHARTIBERRY;435;Charti Berry;Charti Berries;5;20;Weakens a supereffective Rock-type attack against the holding Pokémon.;0;0;5;
+KASIBBERRY;436;Kasib Berry;Kasib Berries;5;20;Weakens a supereffective Ghost-type attack against the holding Pokémon.;0;0;5;
+HABANBERRY;437;Haban Berry;Haban Berries;5;20;Weakens a supereffective Dragon-type attack against the holding Pokémon.;0;0;5;
+COLBURBERRY;438;Colbur Berry;Colbur Berries;5;20;Weakens a supereffective Dark-type attack against the holding Pokémon.;0;0;5;
+BABIRIBERRY;439;Babiri Berry;Babiri Berries;5;20;Weakens a supereffective Steel-type attack against the holding Pokémon.;0;0;5;
+CHILANBERRY;440;Chilan Berry;Chilan Berries;5;20;Weakens a Normal-type attack against the Pokémon holding this berry.;0;0;5;
+LIECHIBERRY;441;Liechi Berry;Liechi Berries;5;20;If held by a Pokémon, it raises its Attack stat in a pinch.;0;0;5;
+GANLONBERRY;442;Ganlon Berry;Ganlon Berries;5;20;If held by a Pokémon, it raises its Defense stat in a pinch.;0;0;5;
+SALACBERRY;443;Salac Berry;Salac Berries;5;20;If held by a Pokémon, it raises its Speed stat in a pinch.;0;0;5;
+PETAYABERRY;444;Petaya Berry;Petaya Berries;5;20;If held by a Pokémon, it raises its Sp. Atk stat in a pinch.;0;0;5;
+APICOTBERRY;445;Apicot Berry;Apicot Berries;5;20;If held by a Pokémon, it raises its Sp. Def stat in a pinch.;0;0;5;
+LANSATBERRY;446;Lansat Berry;Lansat Berries;5;20;If held by a Pokémon, it raises its critical-hit ratio in a pinch.;0;0;5;
+STARFBERRY;447;Starf Berry;Starf Berries;5;20;If held by a Pokémon, it sharply raises one of its stats in a pinch.;0;0;5;
+ENIGMABERRY;448;Enigma Berry;Enigma Berries;5;20;If held by a Pokémon, it restores its HP if it is hit by any supereffective attack.;0;0;5;
+MICLEBERRY;449;Micle Berry;Micle Berries;5;20;If held by a Pokémon, it raises the accuracy of a move just once in a pinch.;0;0;5;
+CUSTAPBERRY;450;Custap Berry;Custap Berries;5;20;If held by a Pokémon, it gets to move first just once in a pinch.;0;0;5;
+JABOCABERRY;451;Jaboca Berry;Jaboca Berries;5;20;If held by a Pokémon and a physical attack lands, the attacker also takes damage.;0;0;5;
+ROWAPBERRY;452;Rowap Berry;Rowap Berries;5;20;If held by a Pokémon and a special attack lands, the attacker also takes damage.;0;0;5;
+GRASSMAIL;453;Grass Mail;Grass Mail;6;50;Stationery featuring a print of a refreshingly green field. Let a Pokémon hold it for delivery.;0;0;2;
+FLAMEMAIL;454;Flame Mail;Flame Mail;6;50;Stationery featuring a print of flames in blazing red. Let a Pokémon hold it for delivery.;0;0;2;
+BUBBLEMAIL;455;Bubble Mail;Bubble Mail;6;50;Stationery featuring a print of a blue world underwater. Let a Pokémon hold it for delivery.;0;0;2;
+BLOOMMAIL;456;Bloom Mail;Bloom Mail;6;50;Stationery featuring a print of pretty floral patterns. Let a Pokémon hold it for delivery.;0;0;2;
+TUNNELMAIL;457;Tunnel Mail;Tunnel Mail;6;50;Stationery featuring a print of a dimly lit coal mine. Let a Pokémon hold it for delivery.;0;0;2;
+STEELMAIL;458;Steel Mail;Steel Mail;6;50;Stationery featuring a print of cool mechanical designs. Let a Pokémon hold it for delivery.;0;0;2;
+HEARTMAIL;459;Heart Mail;Heart Mail;6;50;Stationery featuring a print of giant heart patterns. Let a Pokémon hold it for delivery.;0;0;2;
+SNOWMAIL;460;Snow Mail;Snow Mail;6;50;Stationery featuring a print of a chilly, snow-covered world. Let a Pokémon hold it for delivery.;0;0;2;
+SPACEMAIL;461;Space Mail;Space Mail;6;50;Stationery featuring a print depicting the huge expanse of space. Let a Pokémon hold it for delivery.;0;0;2;
+AIRMAIL;462;Air Mail;Air Mail;6;50;Stationery featuring a print of colorful letter sets. Let a Pokémon hold it for delivery.;0;0;2;
+MOSAICMAIL;463;Mosaic Mail;Mosaic Mail;6;50;Stationery featuring a print of a vivid rainbow pattern. Let a Pokémon hold it for delivery.;0;0;2;
+BRICKMAIL;464;Brick Mail;Brick Mail;6;50;Stationery featuring a print of a tough-looking brick pattern. Let a Pokémon hold it for delivery.;0;0;2;
+XATTACK;465;X Attack;X Attacks;7;500;An item that raises the Attack stat of a Pokémon in battle. It wears off if the Pokémon is withdrawn.;0;2;0;
+XATTACK2;466;X Attack 2;X Attack 2s;7;0;It sharply raises the Attack stat of a Pokémon in battle. It wears off if the Pokémon is withdrawn.;0;2;0;
+XATTACK3;467;X Attack 3;X Attack 3s;7;0;It drastically raises the Attack stat of a Pokémon in battle. It wears off if the Pokémon is withdrawn.;0;2;0;
+XATTACK6;468;X Attack 6;X Attack 6s;7;0;It raises the Attack stat of a Pokémon in battle immensely. It wears off if the Pokémon is withdrawn.;0;2;0;
+XDEFENSE;469;X Defense;X Defenses;7;550;An item that raises the Defense of a Pokémon in battle. It wears off if the Pokémon is withdrawn.;0;2;0;
+XDEFENSE2;470;X Defense 2;X Defense 2s;7;0;It sharply raises the Defense stat of a Pokémon in battle. It wears off if the Pokémon is withdrawn.;0;2;0;
+XDEFENSE3;471;X Defense 3;X Defense 3s;7;0;It drastically raises the Defense stat of a Pokémon in battle. It wears off if the Pokémon is withdrawn.;0;2;0;
+XDEFENSE6;472;X Defense 6;X Defense 6s;7;0;It raises the Defense stat of a Pokémon in battle immensely. It wears off if the Pokémon is withdrawn.;0;2;0;
+XSPATK;473;X Sp. Atk;X Sp. Atks;7;350;An item that raises the Sp. Atk stat of a Pokémon in battle. It wears off if the Pokémon is withdrawn.;0;2;0;
+XSPATK2;474;X Sp. Atk 2;X Sp. Atk 2s;7;0;It sharply raises the Sp. Atk stat of a Pokémon in battle. It wears off if the Pokémon is withdrawn.;0;2;0;
+XSPATK3;475;X Sp. Atk 3;X Sp. Atk 3s;7;0;It drastically raises the Sp. Atk stat of a Pokémon in battle. It wears off if the Pokémon is withdrawn.;0;2;0;
+XSPATK6;476;X Sp. Atk 6;X Sp. Atk 6s;7;0;It raises the Sp. Atk stat of a Pokémon in battle immensely. It wears off if the Pokémon is withdrawn.;0;2;0;
+XSPDEF;477;X Sp. Def;X Sp. Defs;7;350;An item that raises the Sp. Def stat of a Pokémon in battle. It wears off if the Pokémon is withdrawn.;0;2;0;
+XSPDEF2;478;X Sp. Def 2;X Sp. Def 2s;7;0;It sharply raises the Sp. Def stat of a Pokémon in battle. It wears off if the Pokémon is withdrawn.;0;2;0;
+XSPDEF3;479;X Sp. Def 3;X Sp. Def 3s;7;0;It drastically raises the Sp. Def stat of a Pokémon in battle. It wears off if the Pokémon is withdrawn.;0;2;0;
+XSPDEF6;480;X Sp. Def 6;X Sp. Def 6s;7;0;It raises the Sp. Def stat of a Pokémon in battle immensely. It wears off if the Pokémon is withdrawn.;0;2;0;
+XSPEED;481;X Speed;X Speeds;7;350;An item that raises the Speed stat of a Pokémon in battle. It wears off if the Pokémon is withdrawn.;0;2;0;
+XSPEED2;482;X Speed 2;X Speed 2s;7;0;It sharply raises the Speed stat of a Pokémon in battle. It wears off if the Pokémon is withdrawn.;0;2;0;
+XSPEED3;483;X Speed 3;X Speed 3s;7;0;It drastically raises the Speed stat of a Pokémon in battle. It wears off if the Pokémon is withdrawn.;0;2;0;
+XSPEED6;484;X Speed 6;X Speed 6s;7;0;It raises the Speed stat of a Pokémon in battle immensely. It wears off if the Pokémon is withdrawn.;0;2;0;
+XACCURACY;485;X Accuracy;X Accuracies;7;950;An item that raises the accuracy of a Pokémon in battle. It wears off if the Pokémon is withdrawn.;0;2;0;
+XACCURACY2;486;X Accuracy 2;X Accuracy 2s;7;0;It sharply raises the accuracy of a Pokémon in battle. It wears off if the Pokémon is withdrawn.;0;2;0;
+XACCURACY3;487;X Accuracy 3;X Accuracy 3s;7;0;It drastically raises the accuracy of a Pokémon in battle. It wears off if the Pokémon is withdrawn.;0;2;0;
+XACCURACY6;488;X Accuracy 6;X Accuracy 6s;7;0;It raises the accuracy of a Pokémon in battle immensely. It wears off if the Pokémon is withdrawn.;0;2;0;
+DIREHIT;489;Dire Hit;Dire Hits;7;650;It raises the critical-hit ratio. It can be used only once and wears off if the Pokémon is withdrawn.;0;2;0;
+DIREHIT2;490;Dire Hit 2;Dire Hit 2s;7;0;It sharply raises the critical-hit ratio. It wears off if the Pokémon is withdrawn.;0;2;0;
+DIREHIT3;491;Dire Hit 3;Dire Hit 3s;7;0;It greatly raises the critical-hit ratio. It wears off if the Pokémon is withdrawn.;0;2;0;
+GUARDSPEC;492;Guard Spec.;Guard Specs.;7;700;An item that prevents stat reduction among the Trainer's party Pokémon for five turns after use.;0;2;0;
+RESETURGE;493;Reset Urge;Reset Urges;7;0;When used, it restores any stat changes of an ally Pokémon.;0;2;0;
+ABILITYURGE;494;Ability Urge;Ability Urges;7;0;When used, it activates the Ability of an ally Pokémon.;0;2;0;
+ITEMURGE;495;Item Urge;Item Urges;7;0;When used, it causes an ally Pokémon to use its held item.;0;2;0;
+ITEMDROP;496;Item Drop;Item Drops;7;0;When used, it causes an ally Pokémon to drop a held item.;0;2;0;
+BLUEFLUTE;497;Blue Flute;Blue Flutes;7;100;A blue flute made from blown glass. Its melody awakens a single Pokémon from sleep.;5;3;0;
+YELLOWFLUTE;498;Yellow Flute;Yellow Flutes;7;300;A yellow flute made from blown glass. Its melody snaps a single Pokémon out of confusion.;0;2;0;
+REDFLUTE;499;Red Flute;Red Flutes;7;200;A red flute made from blown glass. Its melody snaps a single Pokémon out of infatuation.;0;2;0;
+POKEDOLL;500;Poké Doll;Poké Dolls;7;1000;A doll that attracts Pokémon. Use it to flee from any battle with a wild Pokémon.;0;2;0;
+FLUFFYTAIL;501;Fluffy Tail;Fluffy Tails;7;1000;An item that attracts Pokémon. Use it to flee from any battle with a wild Pokémon.;0;2;0;
+POKETOY;502;Poké Toy;Poké Toys;7;500;An item that attracts Pokémon. Use it to flee from any battle with a wild Pokémon.;0;2;0;
+BICYCLE;503;Bicycle;Bicycles;8;0;A folding Bicycle that enables much faster movement than the Running Shoes.;2;0;6;
+OLDROD;504;Old Rod;Old Rods;8;0;An old and beat-up fishing rod. Use it by any body of water to fish for wild aquatic Pokémon.;2;0;6;
+GOODROD;505;Good Rod;Good Rods;8;0;A new, good-quality fishing rod. Use it by any body of water to fish for wild aquatic Pokémon.;2;0;6;
+SUPERROD;506;Super Rod;Super Rods;8;0;An awesome, high-tech fishing rod. Use it by any body of water to fish for wild aquatic Pokémon.;2;0;6;
+ITEMFINDER;507;Itemfinder;Itemfinders;8;0;A device used for finding items. If there is a hidden item nearby when it is used, it emits a signal.;2;0;6;
+DOWSINGMACHINE;508;Dowsing Machine;Dowsing Machines;8;0;It checks for unseen items in the area and makes noise and lights when it finds something.;2;0;6;
+POKERADAR;509;Poké Radar;Poké Radars;8;0;A tool that can search out Pokémon that are hiding in grass. Its battery is recharged as you walk.;2;0;6;
+TOWNMAP;510;Town Map;Town Maps;8;0;A very convenient map that can be viewed anytime. It even shows your present location.;2;0;6;
+POKEFLUTE;511;Poké Flute;Poké Flutes;8;7000;A flute that is said to instantly awaken any Pokémon. It has a lovely tone.;5;3;6;
+COINCASE;512;Coin Case;Coin Cases;8;0;A case for holding coins obtained at the Game Corner. It holds up to 50,000 coins.;2;0;6;
+SOOTSACK;513;Soot Sack;Soot Sacks;8;0;A sack used to gather and hold volcanic ash.;0;0;6;
+SILPHSCOPE;514;Silph Scope;Silph Scopes;8;0;A scope that makes unseeable Pokémon visible. It is made by Silph Co.;0;0;6;
+DEVONSCOPE;515;Devon Scope;Devon Scopes;8;0;A device by Devon that signals any unseeable Pokémon.;0;0;6;
+SQUIRTBOTTLE;516;Squirt Bottle;Squirt Bottles;8;0;A watering can shaped like a Squirtle. It helps promote healthy growth of Berries planted in soft soil.;0;0;6;
+SPRAYDUCK;517;Sprayduck;Sprayducks;8;0;A watering can shaped like a Psyduck. It helps promote healthy growth of Berries planted in soft soil.;0;0;6;
+WAILMERPAIL;518;Wailmer Pail;Wailmer Pails;8;0;A nifty watering pail. Use it to promote strong growth in Berries planted in soft soil.;0;0;6;
+GRACIDEA;519;Gracidea;Gracideas;8;0;A flower sometimes bundled in bouquets to convey gratitude on special occasions like birthdays.;5;0;6;
+AURORATICKET;520;Aurora Ticket;Aurora Tickets;8;0;A ticket required to board the ship to Doxy Island. It glows beautifully.;0;0;6;
+OLDSEAMAP;521;Old Sea Map;Old Sea Maps;8;0;A faded sea chart that shows the way to a certain island.;0;0;6;
+DNASPLICERS;522;DNA Splicers;DNA Splicers;8;0;A splicer that fuses Kyurem and a certain Pokémon. They are said to have been one in the beginning.;5;0;6;
+REVEALGLASS;523;Reveal Glass;Reveal Glasses;8;0;A glass that reveals the truth. It is a mysterious glass that returns a Pokémon back to its original shape.;5;0;6;
+OVALCHARM;524;Oval Charm;Oval Charms;8;0;An oval charm said to increase the chance of Eggs being found at the Day Care.;0;0;6;
+SHINYCHARM;525;Shiny Charm;Shiny Charms;8;0;A shiny charm said to increase the chance of finding a Shiny Pokémon.;0;0;6;

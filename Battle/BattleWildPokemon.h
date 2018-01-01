@@ -35,6 +35,7 @@ public :
     void launch();
     void printPokemon(const Pokemon* pkmn) const;
     void swapPokemonMenu(bool isNecessary = 1);
+    void weatherMessage();
 
 private:
 
@@ -43,6 +44,7 @@ private:
     Pokemon m_WildPkmn;
 
     Weather m_Weather;
+    int m_WeatherCount;
     /// Place / background
 };
 
