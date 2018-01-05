@@ -123,22 +123,28 @@ std::vector<unsigned int> PKMN::Table::dimension() const
 std::string PKMN::Table::operator()(std::string nameLine, std::string nameColumn) const
 {
     std::vector<unsigned int> dim =  this->dimension();
-    std::vector<unsigned int> i_value(2);
+    std::pair<int, int> i_value;
+    i_value.first = -1;
+    i_value.second = -1;
     for(unsigned int i = 0; i < dim[0]; i++)
     {
         if(m_headerLine[i] == nameLine)
         {
-            i_value[0] = i;
+            i_value.first = i;
         }
     }
     for(unsigned int j = 0; j < dim[1]; j++)
     {
         if(m_headerColumn[j] == nameColumn)
         {
-            i_value[1] = j;
+            i_value.second = j;
         }
     }
-    return m_table[i_value[0]][i_value[1]];
+    if(i_value.first >= 0 && i_value.second >= 0)
+    {
+        return m_table[i_value.first][i_value.second];
+    }
+    return "";
 }
 
 std::string PKMN::Table::text(const char& delim) const
