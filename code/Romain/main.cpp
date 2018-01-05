@@ -1,11 +1,17 @@
-#define largeur 16
-#define hauteur 12
-#include <stdlib.h>
-#include <stdio.h>
+#include <iostream>
+#include <vector>
+#include <array>
+
 #include <SDL/SDL.h>
 #include <SDL/SDL_image.h>
-#include "DimScreen.h"
 
+#define BLOCK_SIZE 32 /// Heigh = Width
+#define NB_OF_CASE_WIDTH 16
+#define NB_OF_CASE_HEIGHT 12
+#define SCREEN_WIDTH 16 * BLOCK_SIZE
+#define SCREEN_HEIGHT 12 * BLOCK_SIZE
+
+extern "C"
 void f(SDL_Surface* screen)
 {
     std::array<std::array<SDL_Surface*, NB_OF_CASE_WIDTH>, NB_OF_CASE_HEIGHT> background;
@@ -36,6 +42,7 @@ void f(SDL_Surface* screen)
     //Move handling
     SDL_EnableKeyRepeat(10, 10); /* Repeated hotkey activation */
     bool stop = false;
+    SDL_Event event;
     while (!stop)
     {
         while(SDL_PollEvent(&event))
@@ -86,9 +93,9 @@ void f(SDL_Surface* screen)
                     SDL_BlitSurface(background[i][j], NULL, screen, &backgroundpos[i][j]);
                 }
             }
-            SDL_BlitSurface(player, &playerPartpos, ecran, &playerpos);
+            SDL_BlitSurface(player, &playerPartpos, screen, &playerpos);
             /* On met à jour l'affichage */
-            SDL_Flip(ecran);
+            SDL_Flip(screen);
             SDL_Delay(50);
         }
         playerMovepos.x = 0;
@@ -108,7 +115,7 @@ void f(SDL_Surface* screen)
 
 int main(int argc, char *argv[])
 {
-    SDL_Surface *screen = NULL, *background = NULL, *trainer = NULL; // Le pointeur qui va stocker la surface de l'écran
+    SDL_Surface *screen = NULL; // Le pointeur qui va stocker la surface de l'écran
 
     SDL_Init(SDL_INIT_VIDEO);
 
@@ -121,6 +128,6 @@ int main(int argc, char *argv[])
 
     SDL_WM_SetCaption("Map du jeu", NULL);
     f(screen);
-    SDL_QUIT();
+    SDL_Quit();
     return EXIT_SUCCESS;
 }

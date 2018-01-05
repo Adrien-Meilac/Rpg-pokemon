@@ -200,7 +200,7 @@
 1515163480 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\code\graphics\swapmenu.cpp
 	"Battle.h"
 
-1515159703 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\code\main.cpp
+1515174477 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\code\main.cpp
 	<iostream>
 	<vector>
 	<string>
@@ -213,8 +213,9 @@
 	"Pokemon/Flag.h"
 	"Tools/Random.h"
 	"Graphics/Battle.h"
+	"Graphics/Field.h"
 
-1515158194 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\code\dimscreen.h
+1515175206 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\code\dimscreen.h
 
 1514843268 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\code\pokemon\damagecategory.cpp
 	"DamageCategory.h"
@@ -262,4 +263,15 @@
 
 1514733921 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\code\tools\vectormethod.cpp
 	"VectorMethod.h"
+
+1515175180 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\code\graphics\field.cpp
+	"Field.h"
+
+1515173752 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\code\graphics\field.h
+	<iostream>
+	<vector>
+	<array>
+	"../DimScreen.h"
+	<SDL/SDL.h>
+	<SDL/SDL_image.h>
 

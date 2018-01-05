@@ -10,6 +10,7 @@
 #include "Pokemon/Flag.h"
 #include "Tools/Random.h"
 #include "Graphics/Battle.h"
+#include "Graphics/Field.h"
 
 using namespace PKMN;
 
@@ -27,11 +28,12 @@ int main(int argc, char* argv[])
         std::cout << "Error when loading screen" << std::endl;
         exit(EXIT_FAILURE);
     }
-    Place place("ROAD21");
-    Player player;
-    Pokemon* pkmn = player.getPokemon(4);
-    BattleWildPokemon battle(screen, player, place, pkmn);
-    battle.start();
+    f(screen);
+//    Place place("ROAD21");
+//    Player player;
+//    Pokemon* pkmn = player.getPokemon(4);
+//    BattleWildPokemon battle(screen, player, place, pkmn);
+//    battle.start();
     SDL_Quit();
     TTF_Quit();
 
