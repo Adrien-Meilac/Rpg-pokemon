@@ -140,8 +140,24 @@ int Battle_SwapMenu(SDL_Surface* screen,
         {
             SDL_FreeSurface(PkmnSlot[selected]);
             SDL_FreeSurface(PkmnSlot[current]);
-            PkmnSlot[selected] = IMG_Load("./Pictures/Characters/Trainer/Party/panel_rect.png");
-            PkmnSlot[current] = IMG_Load("./Pictures/Characters/Trainer/Party/panel_rect_sel.png");
+            PkmnSlot[selected] = NULL;
+            PkmnSlot[current] = NULL;
+            if(player->getPokemon(selected)->isAlive())
+            {
+                PkmnSlot[selected] = IMG_Load("./Pictures/Characters/Trainer/Party/panel_rect.png");
+            }
+            else
+            {
+                PkmnSlot[selected] = IMG_Load("./Pictures/Characters/Trainer/Party/panel_rect_faint.png");
+            }
+            if(player->getPokemon(current)->isAlive())
+            {
+                PkmnSlot[current] = IMG_Load("./Pictures/Characters/Trainer/Party/panel_rect_sel.png");
+            }
+            else
+            {
+                PkmnSlot[current] = IMG_Load("./Pictures/Characters/Trainer/Party/panel_rect_faint_sel.png");
+            }
             selected = current;
         }
         SDL_BlitSurface(swapMenuBackgroud, NULL, screen, &swapMenuBackgroudpos);

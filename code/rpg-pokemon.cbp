@@ -48,10 +48,6 @@
 			<Add option="-std=c++11" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Linker>
-			<Add library="C:/Ajout/CodeBlocks/MinGW/include/SDL/SDL_ttf.lib" />
-			<Add library="C:/Ajout/CodeBlocks/MinGW/include/SDL/SDL_image.lib" />
-		</Linker>
 		<Unit filename="Battle/BattleWildPokemon.cpp" />
 		<Unit filename="Battle/BattleWildPokemon.h" />
 		<Unit filename="Battle/Player.cpp" />
