@@ -7,9 +7,9 @@
 		<Option compiler="gcc" />
 		<Build>
 			<Target title="Debug">
-				<Option output="bin/Debug/rpg-pokemon" prefix_auto="1" extension_auto="1" />
+				<Option output="../bin/rpg-pokemon" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Debug/" />
-				<Option type="1" />
+				<Option type="0" />
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
@@ -18,7 +18,7 @@
 			<Target title="Release">
 				<Option output="bin/Release/rpg-pokemon" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Release/" />
-				<Option type="1" />
+				<Option type="0" />
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
@@ -30,9 +30,77 @@
 		</Build>
 		<Compiler>
 			<Add option="-Wall" />
+			<Add option="-std=c++11" />
+			<Add option="-m32" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Linker>
+			<Add option="-m32" />
+			<Add option="-lmingw32" />
+			<Add option="-lSDLmain" />
+			<Add option="-lSDL" />
+			<Add option="-lSDL_Image" />
+			<Add option="-lSDL_ttf" />
+			<Add library="C:/Users/adrie/OneDrive/Documents/2017 - ENSAE 2A/S1/Projet C++/rpg-pokemon/bin/SDL_image.lib" />
+			<Add library="C:/Users/adrie/OneDrive/Documents/2017 - ENSAE 2A/S1/Projet C++/rpg-pokemon/bin/SDL_ttf.lib" />
+		</Linker>
+		<Unit filename="Battle/BattleWildPokemon.cpp" />
+		<Unit filename="Battle/BattleWildPokemon.h" />
+		<Unit filename="Battle/Player.cpp" />
+		<Unit filename="Battle/Player.h" />
+		<Unit filename="Battle/Trainer.cpp" />
+		<Unit filename="Battle/Trainer.h" />
+		<Unit filename="DimScreen.h" />
+		<Unit filename="Field/Place.cpp" />
+		<Unit filename="Field/Place.h" />
+		<Unit filename="Field/Weather.cpp" />
+		<Unit filename="Field/Weather.h" />
+		<Unit filename="FilePath.h" />
+		<Unit filename="Graphics/Battle.cpp" />
+		<Unit filename="Graphics/Battle.h" />
+		<Unit filename="Graphics/DeathAllyPokemon.cpp" />
+		<Unit filename="Graphics/DeathFoePokemon.cpp" />
+		<Unit filename="Graphics/FadeToBlack.cpp" />
+		<Unit filename="Graphics/FightMenu.cpp" />
+		<Unit filename="Graphics/HPAllyDecrease.cpp" />
+		<Unit filename="Graphics/HPFoeDecrease.cpp" />
+		<Unit filename="Graphics/LaunchAllyPokemon.cpp" />
+		<Unit filename="Graphics/LaunchFoePokemon.cpp" />
+		<Unit filename="Graphics/MainMenu.cpp" />
+		<Unit filename="Graphics/ScreenMessage.cpp" />
+		<Unit filename="Graphics/SwapMenu.cpp" />
+		<Unit filename="Pokemon/DamageCategory.cpp" />
+		<Unit filename="Pokemon/DamageCategory.h" />
+		<Unit filename="Pokemon/ExpAndLevel.cpp" />
+		<Unit filename="Pokemon/ExpAndLevel.h" />
+		<Unit filename="Pokemon/Flag.cpp" />
+		<Unit filename="Pokemon/Flag.h" />
+		<Unit filename="Pokemon/Move.cpp" />
+		<Unit filename="Pokemon/Move.h" />
+		<Unit filename="Pokemon/Pokemon.cpp" />
+		<Unit filename="Pokemon/Pokemon.h" />
+		<Unit filename="Pokemon/Species.cpp" />
+		<Unit filename="Pokemon/Species.h" />
+		<Unit filename="Pokemon/Target.cpp" />
+		<Unit filename="Pokemon/Target.h" />
+		<Unit filename="Pokemon/Type.cpp" />
+		<Unit filename="Pokemon/Type.h" />
+		<Unit filename="Tools/Conversion.cpp" />
+		<Unit filename="Tools/Conversion.h" />
+		<Unit filename="Tools/Random.cpp" />
+		<Unit filename="Tools/Random.h" />
+		<Unit filename="Tools/StatSet.cpp" />
+		<Unit filename="Tools/StatSet.h" />
+		<Unit filename="Tools/StatSetExtended.cpp" />
+		<Unit filename="Tools/StatSetExtended.h" />
+		<Unit filename="Tools/Table.cpp" />
+		<Unit filename="Tools/Table.h" />
+		<Unit filename="Tools/VectorMethod.cpp" />
+		<Unit filename="Tools/VectorMethod.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="ressources.rc">
+			<Option compilerVar="WINDRES" />
+		</Unit>
 		<Extensions>
 			<code_completion />
 			<envvars />
