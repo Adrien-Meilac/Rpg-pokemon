@@ -22,10 +22,14 @@ void Battle_HPAllyDecrease(SDL_Surface* screen,
             switch(event.type)
             {
             case SDL_QUIT:
-                {
-                    exit(EXIT_SUCCESS);
-                    break;
-                }
+            {
+                exit(EXIT_SUCCESS);
+                break;
+            }
+            default:
+            {
+                break;
+            }
             }
         }
         BLIT_BATTLE_BACKGROUND
@@ -61,10 +65,10 @@ void Battle_HPAllyDecrease(SDL_Surface* screen,
                 SDL_FillRect(lifeBarAlly, NULL, SDL_MapRGB(lifeBarAlly->format, 0, 206, 0));
             }
             textHPAlly = TTF_RenderText_Blended(fontSmall,
-                                        (PKMN::int_to_string(Ally->getCurHP())
-                                        + "/"
-                                        + PKMN::int_to_string(Ally->getNormalHP())).c_str()
-                                        , textColor);
+                                                (PKMN::int_to_string(Ally->getCurHP())
+                                                 + "/"
+                                                 + PKMN::int_to_string(Ally->getNormalHP())).c_str()
+                                                , textColor);
         }
         else
         {

@@ -23,20 +23,20 @@ void Battle_LauchFoePokemon(SDL_Surface* screen,
             switch(event.type)
             {
             case SDL_QUIT:
-                {
-                    exit(EXIT_SUCCESS);
-                    break;
-                }
+            {
+                exit(EXIT_SUCCESS);
+                break;
+            }
             case SDL_KEYDOWN:
             {
-                switch(event.key.keysym.sym)
+                switch(event.key.keysym.sym == SDLK_RETURN)
                 {
-                case SDLK_RETURN:
-                    {
-                        stop = true;
-                        break;
-                    }
+                    stop = true;
                 }
+                break;
+            }
+            default:
+            {
                 break;
             }
             }

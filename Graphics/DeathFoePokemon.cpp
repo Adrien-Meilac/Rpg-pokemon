@@ -15,32 +15,29 @@ void Battle_DeathFoePokemon(SDL_Surface* screen,
     pkmnFoeposcopy.y = pkmnFoepos.y;
     SET_BATTLE_DATABOX
 
-    unsigned int pkmnAllyTransparency = 0;
-    bool increment = true;
     bool stop = false;
     SDL_Event event;
     while (!stop)
     {
-        //SDL_WaitEvent(&event);
         while (SDL_PollEvent(&event))
         {
             switch(event.type)
             {
             case SDL_QUIT:
-                {
-                    exit(EXIT_SUCCESS);
-                    break;
-                }
+            {
+                exit(EXIT_SUCCESS);
+                break;
+            }
             case SDL_KEYDOWN:
             {
-                switch(event.key.keysym.sym)
+                if(event.key.keysym.sym == SDLK_RETURN)
                 {
-                case SDLK_RETURN:
-                    {
-                        stop = true;
-                        break;
-                    }
+                    stop = true;
                 }
+                break;
+            }
+            default:
+            {
                 break;
             }
             }

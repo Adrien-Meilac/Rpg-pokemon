@@ -36,56 +36,44 @@ std::string Battle_MainMenu(SDL_Surface* screen,
             switch(event.type)
             {
             case SDL_QUIT:
-                {
-                    exit(EXIT_SUCCESS);
-                    break;
-                }
+            {
+                exit(EXIT_SUCCESS);
+                break;
+            }
             case SDL_KEYDOWN:
             {
-                switch(event.key.keysym.sym)
+                if(event.key.keysym.sym == SDLK_LEFT || event.key.keysym.sym == SDLK_RIGHT)
                 {
-                    case SDLK_LEFT:
-                        {
-                            cursorpos.x = 250 + 130 * (cursorpos.x == 250);
-                            break;
-                        }
-                    case SDLK_RIGHT:
-                        {
-                            cursorpos.x = 250 + 130 * (cursorpos.x == 250);
-                            break;
-                        }
-                    case SDLK_UP:
-                        {
-                            cursorpos.y = 290 + 48 *(cursorpos.y == 290);
-                            break;
-                        }
-                    case SDLK_DOWN:
-                        {
-                            cursorpos.y = 290 + 48 *(cursorpos.y == 290);
-                            break;
-                        }
-                case SDLK_RETURN:
-                    {
-                        if(cursorpos.x == 250 && cursorpos.y == 290)
-                        {
-                            choice = "FIGHT";
-                        }
-                        else if(cursorpos.x != 250 && cursorpos.y == 290)
-                        {
-                            choice = "BAG";
-                        }
-                        else if(cursorpos.x == 250 && cursorpos.y != 290)
-                        {
-                            choice = "POKEMON";
-                        }
-                        else
-                        {
-                            choice = "RUN";
-                        }
-                        stop = true;
-                        break;
-                    }
+                    cursorpos.x = 250 + 130 * (cursorpos.x == 250);
                 }
+                else if(event.key.keysym.sym == SDLK_UP || event.key.keysym.sym == SDLK_DOWN)
+                {
+                    cursorpos.y = 290 + 48 *(cursorpos.y == 290);
+                }
+                else if(event.key.keysym.sym == SDLK_RETURN)
+                {
+                    if(cursorpos.x == 250 && cursorpos.y == 290)
+                    {
+                        choice = "FIGHT";
+                    }
+                    else if(cursorpos.x != 250 && cursorpos.y == 290)
+                    {
+                        choice = "BAG";
+                    }
+                    else if(cursorpos.x == 250 && cursorpos.y != 290)
+                    {
+                        choice = "POKEMON";
+                    }
+                    else
+                    {
+                        choice = "RUN";
+                    }
+                    stop = true;
+                }
+                break;
+            }
+            default:
+            {
                 break;
             }
             }

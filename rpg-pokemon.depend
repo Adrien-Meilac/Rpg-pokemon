@@ -15,7 +15,7 @@
 	"../Tools/Random.h"
 	"../Graphics/Battle.h"
 
-1515073322 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pokemon\pokemon.h
+1515159787 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pokemon\pokemon.h
 	"Species.h"
 	"Move.h"
 	"ExpAndLevel.h"
@@ -69,9 +69,10 @@
 	<iostream>
 	"Conversion.h"
 
-1513376486 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\tools\conversion.h
+1515159068 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\tools\conversion.h
 	<string>
 	<cmath>
+	<sstream>
 	<iostream>
 
 1513376486 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pokemon\expandlevel.h
@@ -151,11 +152,12 @@
 
 1514805659 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\graphics\battlemode.cpp
 
-1515147041 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\main.cpp
+1515159703 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\main.cpp
 	<iostream>
 	<vector>
 	<string>
 	<stdio.h>
+	"DimScreen.h"
 	"Battle/Player.h"
 	"Field/Place.h"
 	"Pokemon/Pokemon.h"
@@ -176,7 +178,7 @@
 1514803613 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pokemon\move.cpp
 	"Move.h"
 
-1515073925 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pokemon\pokemon.cpp
+1515159669 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pokemon\pokemon.cpp
 	"Pokemon.h"
 
 1514912551 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pokemon\species.cpp
@@ -193,7 +195,7 @@
 
 1514842691 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\ressources.rc
 
-1513376486 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\tools\conversion.cpp
+1515159179 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\tools\conversion.cpp
 	"Conversion.h"
 
 1514821188 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\tools\random.cpp
@@ -228,36 +230,38 @@
 	<SDL/SDL_image.h>
 	<SDL/SDL_ttf.h>
 
-1515058282 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\graphics\fightmenu.cpp
+1515161764 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\graphics\fightmenu.cpp
 	"Battle.h"
 
-1515063341 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\graphics\mainmenu.cpp
+1515161690 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\graphics\mainmenu.cpp
 	"Battle.h"
 
-1515057810 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\graphics\screenmessage.cpp
+1515161727 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\graphics\screenmessage.cpp
 	"Battle.h"
 
-1515064279 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\graphics\hpallydecrease.cpp
+1515160365 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\graphics\hpallydecrease.cpp
 	"Battle.h"
 
-1515064186 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\graphics\hpfoedecrease.cpp
+1515160394 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\graphics\hpfoedecrease.cpp
 	"Battle.h"
 
-1515064048 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\graphics\launchallypokemon.cpp
+1515161563 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\graphics\launchallypokemon.cpp
 	"Battle.h"
 
-1515064027 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\graphics\launchfoepokemon.cpp
+1515161583 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\graphics\launchfoepokemon.cpp
 	"Battle.h"
 
-1515063745 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\graphics\deathfoepokemon.cpp
+1515161367 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\graphics\deathfoepokemon.cpp
 	"Battle.h"
 
-1515064504 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\graphics\fadetoblack.cpp
+1515160357 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\graphics\fadetoblack.cpp
 	"Battle.h"
 
-1515066985 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\graphics\deathallypokemon.cpp
+1515161304 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\graphics\deathallypokemon.cpp
 	"Battle.h"
 
-1515147380 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\graphics\swapmenu.cpp
+1515162679 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\graphics\swapmenu.cpp
 	"Battle.h"
+
+1515158194 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\dimscreen.h
 

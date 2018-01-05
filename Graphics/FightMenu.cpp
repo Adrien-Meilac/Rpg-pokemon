@@ -18,7 +18,6 @@ int Battle_FightMenu(SDL_Surface* screen,
     std::array<SDL_Surface*, NB_OF_MOVE_PER_PKMN> textMove;
     SDL_Surface* textMovePP = NULL;
     SDL_Surface* moveType = NULL;
-    SDL_Surface* moveDescriptionBG = NULL;
     for(unsigned int i = 0; i < NB_OF_MOVE_PER_PKMN; i++)
     {
         textMove[i] = NULL;
@@ -42,13 +41,13 @@ int Battle_FightMenu(SDL_Surface* screen,
     SDL_Rect cursorpos;
     cursorpos.x = 25;
     cursorpos.y = 315;
-    unsigned int i_cur = 0;
+    int i_cur = 0;
     cursor = IMG_Load("./Pictures/Battle/selarrow.png");
 
     textMovePP = TTF_RenderText_Blended(fontSmall,
-                                       (PKMN::int_to_string(listMove->operator[](i_cur).first)
-                                        + "/"
-                                        + PKMN::int_to_string(listMove->operator[](i_cur).second.getTotalPP()) ).c_str(),
+                                        (PKMN::int_to_string(listMove->operator[](i_cur).first)
+                                         + "/"
+                                         + PKMN::int_to_string(listMove->operator[](i_cur).second.getTotalPP()) ).c_str(),
                                         textColor);
     moveType = IMG_Load(listMove->operator[](i_cur).second.getType().getPathImage().c_str());
 
@@ -62,46 +61,33 @@ int Battle_FightMenu(SDL_Surface* screen,
             switch(event.type)
             {
             case SDL_QUIT:
-                {
-                    exit(EXIT_SUCCESS);
-                    break;
-                }
+            {
+                exit(EXIT_SUCCESS);
+                break;
+            }
             case SDL_KEYDOWN:
             {
-                switch(event.key.keysym.sym)
+                if(event.key.keysym.sym == SDLK_LEFT || event.key.keysym.sym == SDLK_RIGHT)
                 {
-                    case SDLK_LEFT:
-                        {
-                            cursorpos.x = 25 + 130 * (cursorpos.x == 25);
-                            break;
-                        }
-                    case SDLK_RIGHT:
-                        {
-                            cursorpos.x = 25 + 130 * (cursorpos.x == 25);
-                            break;
-                        }
-                    case SDLK_UP:
-                        {
-                            cursorpos.y = 315 + 30 *(cursorpos.y == 315);
-                            break;
-                        }
-                    case SDLK_DOWN:
-                        {
-                            cursorpos.y = 315 + 30 *(cursorpos.y == 315);
-                            break;
-                        }
-                case SDLK_RETURN:
-                    {
-                        attackNumber = i_cur;
-                        stop = true;
-                        break;
-                    }
-                case SDLK_BACKSPACE:
-                    {
-                        stop = true;
-                        break;
-                    }
+                    cursorpos.x = 25 + 130 * (cursorpos.x == 25);
                 }
+                else if(event.key.keysym.sym == SDLK_UP || event.key.keysym.sym == SDLK_DOWN)
+                {
+                    cursorpos.y = 315 + 30 *(cursorpos.y == 315);
+                }
+                else if(event.key.keysym.sym == SDLK_RETURN)
+                {
+                    attackNumber = i_cur;
+                    stop = true;
+                }
+                else if(event.key.keysym.sym == SDLK_BACKSPACE)
+                {
+                    stop = true;
+                }
+                break;
+            }
+            default:
+            {
                 break;
             }
             }
@@ -112,10 +98,10 @@ int Battle_FightMenu(SDL_Surface* screen,
             SDL_FreeSurface(textMovePP);
             SDL_FreeSurface(moveType);
             textMovePP = TTF_RenderText_Blended(fontSmall,
-                                           (PKMN::int_to_string(listMove->operator[](i_cur).first)
-                                            + "/"
-                                            + PKMN::int_to_string(listMove->operator[](i_cur).second.getTotalPP()) ).c_str(),
-                                            textColor);
+                                                (PKMN::int_to_string(listMove->operator[](i_cur).first)
+                                                 + "/"
+                                                 + PKMN::int_to_string(listMove->operator[](i_cur).second.getTotalPP()) ).c_str(),
+                                                textColor);
             moveType = IMG_Load(listMove->operator[](i_cur).second.getType().getPathImage().c_str());
         }
         BLIT_BATTLE_BACKGROUND

@@ -22,10 +22,14 @@ void Battle_HPFoeDecrease(SDL_Surface* screen,
             switch(event.type)
             {
             case SDL_QUIT:
-                {
-                    exit(EXIT_SUCCESS);
-                    break;
-                }
+            {
+                exit(EXIT_SUCCESS);
+                break;
+            }
+            default:
+            {
+                break;
+            }
             }
         }
         BLIT_BATTLE_BACKGROUND

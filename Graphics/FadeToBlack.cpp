@@ -15,10 +15,10 @@ void Battle_FadeToBlack(SDL_Surface* screen,
             switch(event.type)
             {
             case SDL_QUIT:
-                {
-                    exit(EXIT_SUCCESS);
-                    break;
-                }
+            {
+                exit(EXIT_SUCCESS);
+                break;
+            }
             }
         }
         SDL_FillRect(screen, NULL, SDL_MapRGB(screen->format, i, i, i));
@@ -71,10 +71,14 @@ void Battle_FadeToBlack(SDL_Surface* screen,
             switch(event.type)
             {
             case SDL_QUIT:
-                {
-                    exit(EXIT_SUCCESS);
-                    break;
-                }
+            {
+                exit(EXIT_SUCCESS);
+                break;
+            }
+            default:
+            {
+                break;
+            }
             }
         }
         SDL_BlitSurface(blackBG, NULL, screen, &battleCommandBackgroudpos);

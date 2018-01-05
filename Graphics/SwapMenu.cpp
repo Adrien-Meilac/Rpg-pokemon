@@ -12,9 +12,10 @@ int Battle_SwapMenu(SDL_Surface* screen,
     swapMenuBackgroud = IMG_Load("./Pictures/Characters/Trainer/Party/bg.png");
 
     std::array<SDL_Surface*, NB_OF_PKMN_PER_TRAINOR> PkmnSlot, PkmnIcon, PkmnName, PkmnLvl,
-                                                    PkmnHP, PkmnLifeBarBG, PkmnLifeBar;
+        PkmnHP, PkmnLifeBarBG, PkmnLifeBar;
     std::array<SDL_Rect, NB_OF_PKMN_PER_TRAINOR> PkmnSlotpos, PkmnIconpos, PkmnNamepos, PkmnLvlpos,
-                                                PkmnHPpos,PkmnLifeBarBGpos, PkmnLifeBarpos;
+        PkmnHPpos,PkmnLifeBarBGpos, PkmnLifeBarpos;
+    SDL_Rect PkmnIconPartpos;
     for(unsigned int i = 0; i < NB_OF_PKMN_PER_TRAINOR; i ++)
     {
         PkmnSlotpos[i].x = 1 + 257 * (i % 2);
@@ -32,6 +33,10 @@ int Battle_SwapMenu(SDL_Surface* screen,
         PkmnLifeBarpos[i].x = PkmnLifeBarBGpos[i].x + 30;
         PkmnLifeBarpos[i].y = PkmnLifeBarBGpos[i].y + 2;
     }
+    PkmnIconPartpos.x = 0;
+    PkmnIconPartpos.y = 0;
+    PkmnIconPartpos.h = 64;
+    PkmnIconPartpos.w = 64;
     unsigned int lifeBarLength;
     for(unsigned int i = 0; i < NB_OF_PKMN_PER_TRAINOR; i ++)
     {
@@ -47,10 +52,10 @@ int Battle_SwapMenu(SDL_Surface* screen,
         PkmnName[i] = TTF_RenderText_Blended(fontSmall, player->getPokemon(i)->getName().c_str(), textColor);
         PkmnLvl[i] = TTF_RenderText_Blended(fontSmall, ("Lvl." + PKMN::int_to_string(player->getPokemon(i)->getLevel())).c_str(), textColor);
         PkmnHP[i] = TTF_RenderText_Blended(fontSmall,
-                                            (PKMN::int_to_string(player->getPokemon(i)->getCurHP())
+                                           (PKMN::int_to_string(player->getPokemon(i)->getCurHP())
                                             + "/"
                                             + PKMN::int_to_string(player->getPokemon(i)->getNormalHP())).c_str()
-                                            , textColor);
+                                           , textColor);
         PkmnLifeBarBG[i] = IMG_Load("./Pictures/Characters/Trainer/Party/overlay_hp_back.png");
         lifeBarLength = static_cast<int>(100.0 * static_cast<double>(player->getPokemon(i)->getCurHP())/static_cast<double>(player->getPokemon(i)->getNormalHP()));
         PkmnLifeBar[i] = SDL_CreateRGBSurface(SDL_HWSURFACE, lifeBarLength, 6, 32, 0, 0, 0, 0);
@@ -68,7 +73,7 @@ int Battle_SwapMenu(SDL_Surface* screen,
         }
     }
 
-    unsigned int selected = 0, current = 0;
+    int selected = 0, current = 0;
     SDL_FreeSurface(PkmnSlot[selected]);
     PkmnSlot[selected] = IMG_Load("./Pictures/Characters/Trainer/Party/panel_rect_sel.png");
 
@@ -82,94 +87,76 @@ int Battle_SwapMenu(SDL_Surface* screen,
             switch(event.type)
             {
             case SDL_QUIT:
-                {
-                    exit(EXIT_SUCCESS);
-                    break;
-                }
+            {
+                exit(EXIT_SUCCESS);
+                break;
+            }
             case SDL_KEYDOWN:
             {
-                switch(event.key.keysym.sym)
+                if(event.key.keysym.sym == SDLK_LEFT || event.key.keysym.sym == SDLK_RIGHT)
                 {
-                case SDLK_LEFT:
+                    if(current % 2 == 0)
                     {
-                        if(current % 2 == 0)
-                        {
-                            current += 1;
-                        }
-                        else
-                        {
-                            current -= 1;
-                        }
-                        break;
+                        current += 1;
                     }
-                case SDLK_RIGHT:
+                    else
                     {
-                        if(current % 2 == 0)
-                        {
-                            current += 1;
-                        }
-                        else
-                        {
-                            current -= 1;
-                        }
-                        break;
+                        current -= 1;
                     }
-                case SDLK_DOWN:
+                    break;
+                }
+                else if(event.key.keysym.sym == SDLK_DOWN || event.key.keysym.sym == SDLK_UP)
+                {
+                    current = (current + 2) % 6;
+                    break;
+                }
+                else if(event.key.keysym.sym == SDLK_RETURN)
+                {
+                    if(selected!= 0 && player->getPokemon(selected)->isAlive())
                     {
-                        current = (current + 2) % 6;
-                        break;
+                        stop = true;
                     }
-                case SDLK_UP:
+                    break;
+                }
+                else if(event.key.keysym.sym == SDLK_BACKSPACE)
+                {
+                    if(!aNewPokemonMustBeSelected)
                     {
-                        current = (current - 2) % 6;
-                        break;
-                    }
-                case SDLK_RETURN:
-                    {
-                        if(selected!= 0 && player->getPokemon(selected)->isAlive())
-                        {
-                            stop = true;
-                        }
-                        break;
-                    }
-                case SDLK_BACKSPACE:
-                    {
-                        if(!aNewPokemonMustBeSelected)
-                        {
-                            selected = -1;
-                            stop = true;
-                        }
-                        break;
+                        selected = -1;
+                        stop = true;
                     }
                 }
+                break;
             }
-            }
-            for(unsigned int i = 0; i < NB_OF_PKMN_PER_TRAINOR; i ++)
+            default:
             {
-
+                break;
             }
-            if(selected != -1 && current != selected)
-            {
-                SDL_FreeSurface(PkmnSlot[selected]);
-                SDL_FreeSurface(PkmnSlot[current]);
-                PkmnSlot[selected] = IMG_Load("./Pictures/Characters/Trainer/Party/panel_rect.png");
-                PkmnSlot[current] = IMG_Load("./Pictures/Characters/Trainer/Party/panel_rect_sel.png");
-                selected = current;
             }
-            SDL_BlitSurface(swapMenuBackgroud, NULL, screen, &swapMenuBackgroudpos);
-            for(unsigned int i = 0; i < NB_OF_PKMN_PER_TRAINOR; i ++)
-            {
-                SDL_BlitSurface(PkmnSlot[i], NULL, screen, &PkmnSlotpos[i]);
-                SDL_BlitSurface(PkmnIcon[i], NULL, screen, &PkmnIconpos[i]);
-                SDL_BlitSurface(PkmnName[i], NULL, screen, &PkmnNamepos[i]);
-                SDL_BlitSurface(PkmnLvl[i], NULL, screen, &PkmnLvlpos[i]);
-                SDL_BlitSurface(PkmnHP[i], NULL, screen, &PkmnHPpos[i]);
-                SDL_BlitSurface(PkmnLifeBarBG[i], NULL, screen, &PkmnLifeBarBGpos[i]);
-                SDL_BlitSurface(PkmnLifeBar[i], NULL, screen, &PkmnLifeBarpos[i]);
-            }
-            SDL_Flip(screen);
-            SDL_Delay(50);
         }
+        PkmnIconPartpos.x = (PkmnIconPartpos.x + 64)% 128;
+        PkmnIconPartpos.h = PkmnIconPartpos.x + 64;
+        if(selected != -1 && current != selected)
+        {
+            SDL_FreeSurface(PkmnSlot[selected]);
+            SDL_FreeSurface(PkmnSlot[current]);
+            PkmnSlot[selected] = IMG_Load("./Pictures/Characters/Trainer/Party/panel_rect.png");
+            PkmnSlot[current] = IMG_Load("./Pictures/Characters/Trainer/Party/panel_rect_sel.png");
+            selected = current;
+        }
+        SDL_BlitSurface(swapMenuBackgroud, NULL, screen, &swapMenuBackgroudpos);
+        for(unsigned int i = 0; i < NB_OF_PKMN_PER_TRAINOR; i ++)
+        {
+            SDL_BlitSurface(PkmnSlot[i], NULL, screen, &PkmnSlotpos[i]);
+            SDL_BlitSurface(PkmnIcon[i], &PkmnIconPartpos, screen, &PkmnIconpos[i]);
+            SDL_BlitSurface(PkmnName[i], NULL, screen, &PkmnNamepos[i]);
+            SDL_BlitSurface(PkmnLvl[i], NULL, screen, &PkmnLvlpos[i]);
+            SDL_BlitSurface(PkmnHP[i], NULL, screen, &PkmnHPpos[i]);
+            SDL_BlitSurface(PkmnLifeBarBG[i], NULL, screen, &PkmnLifeBarBGpos[i]);
+            SDL_BlitSurface(PkmnLifeBar[i], NULL, screen, &PkmnLifeBarpos[i]);
+        }
+        SDL_Flip(screen);
+        SDL_Delay(100);
     }
     SDL_FreeSurface(swapMenuBackgroud);
     for(unsigned int i = 0; i < NB_OF_PKMN_PER_TRAINOR; i ++)

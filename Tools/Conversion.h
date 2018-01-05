@@ -3,10 +3,15 @@
 
 #include <string> // To manipulate string
 #include <cmath> // To use pow function
+#include <sstream>
 #include <iostream>
 
 namespace PKMN
 {
+
+template <typename T> std::string NumberToString (T Number);
+
+template <typename T> T StringToNumber (const std::string &Text);
 
 bool string_to_bool(const std::string& str);
     /** \brief Convert a string into a boolean variable (Supposing that true = "True" and false = "False")
