@@ -11,7 +11,7 @@ PKMN::Species::Species(std::string InternalName)
 {
     PKMN::Table table(FILE_PKMN_SPECIES);
     m_InternalName = InternalName;
-    m_ID = PKMN::string_to_int(table(InternalName, "id"));
+    m_ID = table(InternalName, "id");
     m_Name = table(InternalName, "Name");
     m_FormName = table(InternalName, "FormName");
     m_Type.first = PKMN::Type(table(InternalName, "Type1"));

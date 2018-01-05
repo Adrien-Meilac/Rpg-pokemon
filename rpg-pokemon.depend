@@ -1,222 +1,21 @@
 # depslib dependency file v1.0
-1512910549 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pkmn_tools\pkmn_conversion.cpp
-	"PKMN_Conversion.h"
+1515148726 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\battle\battlewildpokemon.cpp
+	"BattleWildPokemon.h"
 
-1512910532 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pkmn_tools\pkmn_conversion.h
-	<string>
-	<cmath>
-
-1514065420 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\main.cpp
-	<iostream>
-	<vector>
-	<string>
-	"Battle/Player.h"
-	"Field/Place.h"
-	"Pokemon/Pokemon.h"
-	"Battle/BattleWildPokemon.h"
-	"Pokemon/Flag.h"
-
-1513040909 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pkmn_tools\pkmn_statset.cpp
-	"PKMN_StatSet.h"
-
-1513037281 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pkmn_tools\pkmn_statset.h
-	<cmath>
-	<string>
-	<iostream>
-	<cstdlib>
-	<ctime>
-	<vector>
-	"PKMN_Conversion.h"
-	"PKMN_VectorMethod.h"
-
-1512921465 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pkmn_tools\pkmn_vectormethod.cpp
-	"PKMN_VectorMethod.h"
-
-1512921206 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pkmn_tools\pkmn_vectormethod.h
-	<vector>
-	<string>
-	<sstream>
-	<iostream>
-
-1513034196 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pkmn_tools\pkmn_table.cpp
-	"PKMN_Table.h"
-
-1512912190 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pkmn_tools\pkmn_table.h
-	"PKMN_VectorMethod.h"
-	"../PKMN_FilePath.h"
-	<iostream>
-	<string>
-	<vector>
-	<fstream>
-
-1512943236 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pkmn_filepath.h
-
-1512922065 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pkmn_pokemon\pkmn_type.h
-	"../PKMN_Tools/PKMN_Table.h"
-	"../PKMN_FilePath.h"
-	"../PKMN_Tools/PKMN_Conversion.h"
-	"../PKMN_Tools/PKMN_VectorMethod.h"
-	<string>
-	<iostream>
-
-1513034269 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pkmn_pokemon\pkmn_type.cpp
-	"PKMN_Type.h"
-
-1513034364 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pkmn_pokemon\pkmn_moves.h
-	"PKMN_Type.h"
-	"../PKMN_Tools/PKMN_Table.h"
-	"../PKMN_FilePath.h"
-	<iostream>
-	<string>
-
-1513034385 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pkmn_pokemon\pkmn_moves.cpp
-	"PKMN_Moves.h"
-
-1513034234 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pkmn_pokemon\pkmn_expandlevel.cpp
-	"PKMN_ExpAndLevel.h"
-
-1512924820 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pkmn_pokemon\pkmn_expandlevel.h
-	<cmath>
-	<string>
-	<cstdlib>
-	<ctime>
-	<iostream>
-
-1513041467 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pkmn_pokemon\pkmn_species.cpp
-	"PKMN_Species.h"
-
-1513037608 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pkmn_pokemon\pkmn_species.h
-	"PKMN_Type.h"
-	"PKMN_ExpAndLevel.h"
-	"PKMN_Moves.h"
-	"../PKMN_Tools/PKMN_StatSet.h"
-	<string>
-	<vector>
-	<iostream>
-
-1513042395 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pkmn_pokemon\pkmn_pokemon.cpp
-	"PKMN_Pokemon.h"
-
-1513042338 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pkmn_pokemon\pkmn_pokemon.h
-	"../PKMN_Tools/PKMN_StatSet.h"
-	"../PKMN_FilePath.h"
-	"PKMN_Species.h"
-	"PKMN_Moves.h"
-	"PKMN_ExpAndLevel.h"
-
-1513376486 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\tools\conversion.h
-	<string>
-	<cmath>
-	<iostream>
-
-1513376486 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\tools\conversion.cpp
-	"Conversion.h"
-
-1513376486 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\tools\statset.cpp
-	"StatSet.h"
-
-1513376486 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\tools\statset.h
-	"Conversion.h"
-	"VectorMethod.h"
-	<cmath>
-	<iostream>
-	<cstdlib>
-	<ctime>
-	<vector>
-	<string>
-
-1514734000 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\tools\vectormethod.h
-	<vector>
-	<string>
-	<sstream>
-	<iostream>
-	"Conversion.h"
-
-1513690924 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\tools\table.cpp
-	"Table.h"
-
-1513690555 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\tools\table.h
-	"VectorMethod.h"
+1515147200 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\battle\battlewildpokemon.h
+	"../Pokemon/Pokemon.h"
+	"../Field/Weather.h"
+	"../Field/Place.h"
+	"Player.h"
 	"../FilePath.h"
-	<iostream>
 	<string>
-	<vector>
-	<fstream>
-
-1513383023 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\filepath.h
-	<string>
-	<iostream>
-	<fstream>
-
-1514733921 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\tools\vectormethod.cpp
-	"VectorMethod.h"
-
-1514735237 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pokemon\type.cpp
-	"Type.h"
-
-1514734246 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pokemon\type.h
-	"../FilePath.h"
-	"../Tools/Table.h"
-	"../Tools/Conversion.h"
-	"../Tools/VectorMethod.h"
-	<string>
-	<iostream>
-	<array>
-
-1514066255 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pokemon\move.cpp
-	"Move.h"
-
-1514066236 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pokemon\move.h
-	"Type.h"
-	"DamageCategory.h"
-	"Flag.h"
-	"../FilePath.h"
-	"../Tools/Table.h"
-	<iostream>
-	<string>
-
-1513376485 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pokemon\expandlevel.cpp
-	"ExpAndLevel.h"
-
-1513376486 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pokemon\expandlevel.h
-	<cmath>
-	<string>
-	<cstdlib>
-	<ctime>
-	<iostream>
-
-1514034213 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pokemon\damagecategory.h
-	<iostream>
-	<string>
-
-1513376485 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pokemon\damagecategory.cpp
-	"DamageCategory.h"
-
-1514065004 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pokemon\species.cpp
-	"Species.h"
-
-1514761639 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pokemon\species.h
-	"Type.h"
-	"ExpAndLevel.h"
-	"../FilePath.h"
-	"../Tools/StatSet.h"
-	"../Tools/Table.h"
-	<string>
-	<vector>
-	<iostream>
-
-1513376486 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\tools\statsetextended.cpp
-	"StatSetExtended.h"
-
-1513376486 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\tools\statsetextended.h
-	"StatSet.h"
+	<string.h>
 	<iostream>
 	<cmath>
+	"../Tools/Random.h"
+	"../Graphics/Battle.h"
 
-1514735185 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pokemon\pokemon.cpp
-	"Pokemon.h"
-
-1514734764 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pokemon\pokemon.h
+1515073322 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pokemon\pokemon.h
 	"Species.h"
 	"Move.h"
 	"ExpAndLevel.h"
@@ -231,46 +30,87 @@
 	<vector>
 	<array>
 
-1514738653 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\battle\player.cpp
-	"Player.h"
-
-1514736648 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\battle\player.h
-	"../Pokemon/Pokemon.h"
+1514912611 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pokemon\species.h
+	"Type.h"
+	"ExpAndLevel.h"
 	"../FilePath.h"
+	"../Tools/StatSet.h"
 	"../Tools/Table.h"
 	<string>
 	<vector>
-	<cmath>
+	<iostream>
 
-1513376485 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\battle\trainer.cpp
-
-1514768428 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\battle\battlewildpokemon.cpp
-	"BattleWildPokemon.h"
-
-1514768246 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\battle\battlewildpokemon.h
-	"../Pokemon/Pokemon.h"
-	"../Field/Weather.h"
-	"../Field/Place.h"
-	"Player.h"
+1514996675 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pokemon\type.h
 	"../FilePath.h"
+	"../Tools/Table.h"
+	"../Tools/Conversion.h"
+	"../Tools/VectorMethod.h"
 	<string>
 	<iostream>
-	<ctime>
+	<array>
+
+1513383023 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\filepath.h
+	<string>
+	<iostream>
+	<fstream>
+
+1513690555 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\tools\table.h
+	"VectorMethod.h"
+	"../FilePath.h"
+	<iostream>
+	<string>
+	<vector>
+	<fstream>
+
+1514734000 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\tools\vectormethod.h
+	<vector>
+	<string>
+	<sstream>
+	<iostream>
+	"Conversion.h"
+
+1513376486 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\tools\conversion.h
+	<string>
+	<cmath>
+	<iostream>
+
+1513376486 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pokemon\expandlevel.h
+	<cmath>
+	<string>
 	<cstdlib>
+	<ctime>
+	<iostream>
 
-1513379890 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\battle\weather.h
-	"../Pokemon/Move.h"
+1513376486 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\tools\statset.h
+	"Conversion.h"
+	"VectorMethod.h"
+	<cmath>
+	<iostream>
+	<cstdlib>
+	<ctime>
+	<vector>
 	<string>
 
-1513379946 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\battle\weather.cpp
-	"Weather.h"
-
-1514767346 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\field\weather.h
-	"../Pokemon/Move.h"
+1514803438 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pokemon\move.h
+	"Type.h"
+	"DamageCategory.h"
+	"Flag.h"
+	"../FilePath.h"
+	"../Tools/Table.h"
+	<iostream>
 	<string>
 
-1514767359 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\field\weather.cpp
-	"Weather.h"
+1514034213 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pokemon\damagecategory.h
+	<iostream>
+	<string>
+
+1514054620 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pokemon\flag.h
+	<string>
+
+1515015509 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\tools\statsetextended.h
+	"StatSet.h"
+	<iostream>
+	<cmath>
 
 1513380985 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\field\place.h
 	"../Tools/Table.h"
@@ -280,18 +120,144 @@
 	<iostream>
 	<fstream>
 
+1514822391 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\field\weather.h
+	"../Pokemon/Move.h"
+	"../Pokemon/Type.h"
+	<string>
+
+1514736648 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\battle\player.h
+	"../Pokemon/Pokemon.h"
+	"../FilePath.h"
+	"../Tools/Table.h"
+	<string>
+	<vector>
+	<cmath>
+
+1514819778 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\tools\random.h
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
+1514738653 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\battle\player.cpp
+	"Player.h"
+
+1513376485 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\battle\trainer.cpp
+
 1513382353 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\field\place.cpp
 	"Place.h"
+
+1514822475 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\field\weather.cpp
+	"Weather.h"
+
+1514805659 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\graphics\battlemode.cpp
+
+1515147041 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\main.cpp
+	<iostream>
+	<vector>
+	<string>
+	<stdio.h>
+	"Battle/Player.h"
+	"Field/Place.h"
+	"Pokemon/Pokemon.h"
+	"Battle/BattleWildPokemon.h"
+	"Pokemon/Flag.h"
+	"Tools/Random.h"
+	"Graphics/Battle.h"
+
+1514843268 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pokemon\damagecategory.cpp
+	"DamageCategory.h"
+
+1513376485 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pokemon\expandlevel.cpp
+	"ExpAndLevel.h"
 
 1514054691 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pokemon\flag.cpp
 	"Flag.h"
 
-1514054620 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pokemon\flag.h
-	<string>
+1514803613 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pokemon\move.cpp
+	"Move.h"
+
+1515073925 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pokemon\pokemon.cpp
+	"Pokemon.h"
+
+1514912551 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pokemon\species.cpp
+	"Species.h"
 
 1514036017 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pokemon\target.cpp
 	"Target.h"
 
 1514036004 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pokemon\target.h
 	<string>
+
+1514996763 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\pokemon\type.cpp
+	"Type.h"
+
+1514842691 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\ressources.rc
+
+1513376486 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\tools\conversion.cpp
+	"Conversion.h"
+
+1514821188 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\tools\random.cpp
+	"Random.h"
+
+1513376486 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\tools\statset.cpp
+	"StatSet.h"
+
+1515015337 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\tools\statsetextended.cpp
+	"StatSetExtended.h"
+
+1513690924 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\tools\table.cpp
+	"Table.h"
+
+1514733921 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\tools\vectormethod.cpp
+	"VectorMethod.h"
+
+1515002234 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\graphics\battle.cpp
+	"Battle.h"
+
+1515076377 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\graphics\battle.h
+	"../Pokemon/Pokemon.h"
+	"../Field/Weather.h"
+	"../Field/Place.h"
+	"../Battle/Player.h"
+	"../FilePath.h"
+	<string>
+	<iostream>
+	<cmath>
+	"../Tools/Random.h"
+	<SDL/SDL.h>
+	<SDL/SDL_image.h>
+	<SDL/SDL_ttf.h>
+
+1515058282 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\graphics\fightmenu.cpp
+	"Battle.h"
+
+1515063341 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\graphics\mainmenu.cpp
+	"Battle.h"
+
+1515057810 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\graphics\screenmessage.cpp
+	"Battle.h"
+
+1515064279 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\graphics\hpallydecrease.cpp
+	"Battle.h"
+
+1515064186 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\graphics\hpfoedecrease.cpp
+	"Battle.h"
+
+1515064048 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\graphics\launchallypokemon.cpp
+	"Battle.h"
+
+1515064027 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\graphics\launchfoepokemon.cpp
+	"Battle.h"
+
+1515063745 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\graphics\deathfoepokemon.cpp
+	"Battle.h"
+
+1515064504 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\graphics\fadetoblack.cpp
+	"Battle.h"
+
+1515066985 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\graphics\deathallypokemon.cpp
+	"Battle.h"
+
+1515147380 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\graphics\swapmenu.cpp
+	"Battle.h"
 

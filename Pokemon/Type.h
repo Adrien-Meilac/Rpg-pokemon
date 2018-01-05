@@ -64,6 +64,8 @@ public:
          *
          */
 
+    std::string getPathImage() const;
+
 /// METHODS :
 
     double effectiveness(Type const Type_att) const;
@@ -118,6 +120,9 @@ std::string Type_message(double typeMultiplicativeFactor);
      * \return std::string : message
      *
      */
+
+bool operator==(Type type1, Type type2);
+bool operator==(Type type1, std::string typeInternalName);
 
 }
 

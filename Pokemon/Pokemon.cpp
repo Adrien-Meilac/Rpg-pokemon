@@ -63,9 +63,9 @@ unsigned int PKMN::Pokemon::getLevel() const
     return m_Pokemon_ExpAndLevel.getLevel();
 }
 
-std::array<std::pair<unsigned int, PKMN::Move>, NB_OF_MOVE_PER_PKMN> PKMN::Pokemon::getListMove()
+std::array<std::pair<unsigned int, PKMN::Move>, NB_OF_MOVE_PER_PKMN>* PKMN::Pokemon::getListMove()
 {
-    return m_Pokemon_Moves;
+    return &m_Pokemon_Moves;
 }
 
 void PKMN::Pokemon::decrementHP()
@@ -73,6 +73,10 @@ void PKMN::Pokemon::decrementHP()
     m_Pokemon_CurrentStat.decrementHP();
 }
 
+void PKMN::Pokemon::incrementHP()
+{
+    m_Pokemon_CurrentStat.incrementHP();
+}
 unsigned int PKMN::Pokemon::getCurHP() const
 {
     return m_Pokemon_CurrentStat.getHP();
@@ -131,4 +135,86 @@ unsigned int PKMN::Pokemon::getNormalSpDef() const
 unsigned int PKMN::Pokemon::getNormalSpeed() const
 {
     return m_Pokemon_NormalStat.getSpeed();
+}
+
+unsigned int PKMN::Pokemon::getPPMove(unsigned int pos)
+{
+    return m_Pokemon_Moves[pos].first;
+}
+
+PKMN::Move* PKMN::Pokemon::getMove(unsigned int pos)
+{
+    return &m_Pokemon_Moves[pos].second;
+}
+
+void PKMN::Pokemon::decrementPPMove(unsigned int pos)
+{
+    m_Pokemon_Moves[pos].first -= 1;
+}
+
+bool PKMN::Pokemon::hasPPMove(unsigned int pos)
+{
+    return getPPMove(pos) > 0;
+}
+
+double PKMN::Pokemon::STABmultiplicator(const PKMN::Move& mv) const
+{
+    if(mv.getType() == m_Type.first || mv.getType() == m_Type.second)
+    {
+        return 1.5;
+    }
+    return 1;
+}
+
+bool PKMN::isPkmn1attackingBeforePkmn2(const PKMN::Pokemon* pkmn1,
+                                       const PKMN::Move* move1,
+                                       const PKMN::Pokemon* pkmn2,
+                                       const PKMN::Move* move2)
+{
+    if(move1->getPriority() > move2->getPriority())
+    {
+        return true;
+    }
+    else if(move1->getPriority() == move2->getPriority() && pkmn1->getCurSpeed() >= pkmn2->getCurSpeed())
+    {
+        return true;
+    }
+    return false;
+}
+
+std::string PKMN::Pokemon::getBattleImage(bool isFoe) const
+{
+    std::string path = "./Pictures/Pokemon/Battle/";
+    if(m_ID.size() == 2)
+    {
+        path += "0";
+    }
+    else if(m_ID.size() == 1)
+    {
+        path += "00";
+    }
+    path += m_ID;
+    if(m_IsShiney)
+    {
+        path += "s";
+    }
+    if(!isFoe)
+    {
+        path += "b";
+    }
+    return path + ".png";
+}
+
+std::string PKMN::Pokemon::getIcon() const
+{
+    std::string path = "./Pictures/Pokemon/Icon/icon";
+    if(m_ID.size() == 2)
+    {
+        path += "0";
+    }
+    else if(m_ID.size() == 1)
+    {
+        path += "00";
+    }
+    return path + m_ID + ".png";
 }

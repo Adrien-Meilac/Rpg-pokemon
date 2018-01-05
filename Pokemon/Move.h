@@ -101,6 +101,27 @@ public:
 
     unsigned int getPriority() const;
 
+    bool isPhysicalCategory() const;
+        /** \brief does a move belong to the physical category ?
+         *
+         * \return bool
+         *
+         */
+
+    bool isStatusCategory() const;
+        /** \brief does a move belong to the status category ?
+         *
+         * \return bool
+         *
+         */
+
+    bool isSpecialCategory() const;
+        /** \brief does a move belong to the special category ?
+         *
+         * \return bool
+         *
+         */
+
 private:
 
 /// MEMBER VARIABLES :
@@ -132,6 +153,9 @@ std::vector<std::pair<unsigned int, Move> > read_move(std::string moves);
      * \return std::vector<Move> : vector of move objects
      *
      */
+
+bool operator==(Move move1, Move move2);
+bool operator==(Move move1, std::string moveInternalName);
 
 }
 

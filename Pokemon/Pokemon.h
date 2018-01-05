@@ -54,13 +54,20 @@ public:
     unsigned int getCurSpDef() const;
     unsigned int getCurSpeed() const;
 
-    std::array<std::pair<unsigned int, Move>, NB_OF_MOVE_PER_PKMN> getListMove();
+    std::array<std::pair<unsigned int, Move>, NB_OF_MOVE_PER_PKMN>* getListMove();
+    unsigned int getPPMove(unsigned int pos);
+    void decrementPPMove(unsigned int pos);
+    bool hasPPMove(unsigned int pos);
+    Move* getMove(unsigned int pos);
     void outBattle();
     void heal();
     bool isAlive() const;
     void decrementHP();
+    void incrementHP();
+    double STABmultiplicator(const Move& mv) const;
 
-
+    std::string getBattleImage(bool isFoe) const;
+    std::string getIcon() const;
 
 private:
 
@@ -76,5 +83,11 @@ private:
     // Status //
 };
 
+namespace PKMN
+{
+
+bool isPkmn1attackingBeforePkmn2(const Pokemon* pkmn1, const Move* move1, const Pokemon* pkmn2, const Move* move2);
+
+}
 
 #endif // PKMN_POKEMON_H_INCLUDED

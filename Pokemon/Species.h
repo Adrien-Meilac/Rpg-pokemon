@@ -71,7 +71,7 @@ public:
 protected:
 
     std::string m_InternalName;
-    unsigned int m_ID;
+    std::string m_ID;
     std::string m_Name;
     std::string m_FormName;
     std::pair<Type, Type> m_Type;

@@ -118,3 +118,18 @@ std::string PKMN::Type_message(double typeMultiplicativeFactor)
     }
     return message;
 }
+
+bool PKMN::operator==(PKMN::Type type1, PKMN::Type type2)
+{
+    return type1.getInternalName() == type2.getInternalName();
+}
+
+bool PKMN::operator==(PKMN::Type type1, std::string typeInternalName)
+{
+    return type1.getInternalName() == typeInternalName;
+}
+
+std::string PKMN::Type::getPathImage() const
+{
+    return "./Pictures/Battle/Types/" + m_InternalName + ".png";
+}

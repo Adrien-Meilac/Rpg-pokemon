@@ -167,6 +167,11 @@ void PKMN::StatSetExtended::decrementHP()
     m_HP -= 1;
 }
 
+void PKMN::StatSetExtended::incrementHP()
+{
+    m_HP += 1;
+}
+
 /// ///////////////////////////////////////// ///
 
                 /// FRIEND METHODS ///

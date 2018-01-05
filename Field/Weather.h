@@ -2,6 +2,7 @@
 #define PKMN_WEATHER_H_INCLUDED
 
 #include "../Pokemon/Move.h"
+#include "../Pokemon/Type.h"
 
 #include <string>
 
@@ -44,14 +45,24 @@ public :
 
     std::string getInternalName() const;
 
-    std::string startMessage(Move* mv);
+    std::string startMessage(const Move& mv);
     std::string endMessage() const;
     std::string turnMessage() const;
+
+    double weatherEffect(const Type& type) const;
 
 private:
 
     std::string m_InternalName;
 
 };
+
+namespace PKMN
+{
+
+bool operator==(Weather weather1, Weather weather2);
+bool operator==(Weather weather1, std::string weatherInternalName);
+
+}
 
 #endif // PKMN_WEATHER_H_INCLUDED

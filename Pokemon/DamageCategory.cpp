@@ -20,6 +20,7 @@ PKMN::DamageCategory::DamageCategory(DamageCategory const& other)
 PKMN::DamageCategory& PKMN::DamageCategory::operator=(PKMN::DamageCategory const& other)
 {
     m_Name = other.m_Name;
+    return *this;
 }
 
 /// ///////////////////////////////////////// ///

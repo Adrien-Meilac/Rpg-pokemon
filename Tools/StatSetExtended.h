@@ -124,6 +124,12 @@ public :
          *
          */
 
+    void incrementHP();
+        /** \brief HP are increased from 1 point
+         *
+         *
+         */
+
 private:
 
 /// FRIEND FUNCTION :

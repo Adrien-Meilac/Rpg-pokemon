@@ -139,3 +139,29 @@ std::vector<std::pair<unsigned int, Move> > read_move(std::string moves)
     return M;
 }
 }
+
+bool PKMN::operator==(PKMN::Move move1, PKMN::Move move2)
+{
+    return move1.getInternalName() == move2.getInternalName();
+}
+
+bool PKMN::operator==(PKMN::Move move1, std::string moveInternalName)
+{
+    return move1.getInternalName() == moveInternalName;
+}
+
+bool PKMN::Move::isPhysicalCategory() const
+{
+    return m_DamageCategory.isPhysicalCategory();
+}
+
+bool PKMN::Move::isStatusCategory() const
+{
+    return m_DamageCategory.isStatusCategory();
+}
+
+bool PKMN::Move::isSpecialCategory() const
+{
+    return m_DamageCategory.isSpecialCategory();
+}
+
