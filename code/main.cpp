@@ -28,9 +28,13 @@ int main(int argc, char* argv[])
         std::cout << "Error when loading screen" << std::endl;
         exit(EXIT_FAILURE);
     }
-    f(screen);
+    std::string flag = f(screen);
+    if(flag == "PARTY")
+    {
+        Player player;
+        Battle_SwapMenu(screen,&player, false);
+    }
 //    Place place("ROAD21");
-//    Player player;
 //    Pokemon* pkmn = player.getPokemon(4);
 //    BattleWildPokemon battle(screen, player, place, pkmn);
 //    battle.start();

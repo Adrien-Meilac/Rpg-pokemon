@@ -16,6 +16,7 @@
 #include <SDL/SDL.h>
 #include <SDL/SDL_image.h>
 #include <SDL/SDL_ttf.h>
+#include "../DimScreen.h"
 
 #define SET_BATTLE_FONT_AND_COLOR \
     TTF_Font *font = NULL, *fontSmall = NULL; \

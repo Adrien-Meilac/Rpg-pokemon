@@ -139,7 +139,7 @@
 	<stdlib.h>
 	<time.h>
 
-1515076377 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\code\graphics\battle.h
+1515190969 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\code\graphics\battle.h
 	"../Pokemon/Pokemon.h"
 	"../Field/Weather.h"
 	"../Field/Place.h"
@@ -152,6 +152,7 @@
 	<SDL/SDL.h>
 	<SDL/SDL_image.h>
 	<SDL/SDL_ttf.h>
+	"../DimScreen.h"
 
 1514738653 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\code\battle\player.cpp
 	"Player.h"
@@ -258,20 +259,21 @@
 1515015337 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\code\tools\statsetextended.cpp
 	"StatSetExtended.h"
 
-1513690924 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\code\tools\table.cpp
+1515189424 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\code\tools\table.cpp
 	"Table.h"
 
 1514733921 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\code\tools\vectormethod.cpp
 	"VectorMethod.h"
 
-1515175180 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\code\graphics\field.cpp
+1515193026 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\code\graphics\field.cpp
 	"Field.h"
 
-1515173752 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\code\graphics\field.h
+1515193038 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\code\graphics\field.h
 	<iostream>
 	<vector>
 	<array>
 	"../DimScreen.h"
+	"Battle.h"
 	<SDL/SDL.h>
 	<SDL/SDL_image.h>
 
