@@ -61,6 +61,8 @@
 		<Unit filename="Graphics/DeathAllyPokemon.cpp" />
 		<Unit filename="Graphics/DeathFoePokemon.cpp" />
 		<Unit filename="Graphics/FadeToBlack.cpp" />
+		<Unit filename="Graphics/Field.cpp" />
+		<Unit filename="Graphics/Field.h" />
 		<Unit filename="Graphics/FightMenu.cpp" />
 		<Unit filename="Graphics/HPAllyDecrease.cpp" />
 		<Unit filename="Graphics/HPFoeDecrease.cpp" />
