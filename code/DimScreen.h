@@ -2,6 +2,8 @@
 #define DIMSCREEN_H_INCLUDED
 
 #define BLOCK_SIZE 32 /// Heigh = Width
+#define NB_OF_CASE_WIDTH 16
+#define NB_OF_CASE_HEIGHT 12
 #define SCREEN_WIDTH 16 * BLOCK_SIZE
 #define SCREEN_HEIGHT 12 * BLOCK_SIZE
 
