@@ -41,8 +41,8 @@
 			<Add option="-lSDL" />
 			<Add option="-lSDL_Image" />
 			<Add option="-lSDL_ttf" />
-			<Add library="C:/Users/adrie/OneDrive/Documents/2017 - ENSAE 2A/S1/Projet C++/rpg-pokemon/bin/SDL_image.lib" />
-			<Add library="C:/Users/adrie/OneDrive/Documents/2017 - ENSAE 2A/S1/Projet C++/rpg-pokemon/bin/SDL_ttf.lib" />
+			<Add library="./SDL_image.lib" />
+			<Add library="./SDL_ttf.lib" />
 		</Linker>
 		<Unit filename="Battle/BattleWildPokemon.cpp" />
 		<Unit filename="Battle/BattleWildPokemon.h" />
