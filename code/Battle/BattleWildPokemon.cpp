@@ -276,7 +276,7 @@ void PKMN::BattleWildPokemon::playerRunAway()
 
 void PKMN::BattleWildPokemon::start()
 {
-    //printFadeToBlack();
+    printFadeToBlack();
     printLauchFoePokemon(false);
     print("Wild " + m_WildPkmn->getName() + " appeared !", false, true);
     this->throwNewPokemon();

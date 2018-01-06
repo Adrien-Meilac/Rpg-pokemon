@@ -2,6 +2,9 @@
 
 std::string f(SDL_Surface* screen)
 {
+    std::random_device rd;
+    std::mt19937 gen(rd());
+    std::bernoulli_distribution dis(PROBA_ENCOUNTER);
     SET_BATTLE_FONT_AND_COLOR
     std::array<std::array<SDL_Surface*, NB_OF_CASE_WIDTH>, NB_OF_CASE_HEIGHT> background;
     std::array<std::array<SDL_Rect, NB_OF_CASE_WIDTH>, NB_OF_CASE_HEIGHT> backgroundpos;
@@ -86,7 +89,7 @@ std::string f(SDL_Surface* screen)
     menuOptionDescription[5].second = TTF_RenderText_Blended(fontSmall, "", textColor);
 
     bool stop = false;
-    bool menuIsOpen = false;
+    bool menuIsOpen = false, launchBattle = false;
     std::string flag = "";
     SDL_Event event;
     SDL_EnableKeyRepeat(1, 10);
@@ -109,8 +112,9 @@ std::string f(SDL_Surface* screen)
                 }
                 else if(event.key.keysym.sym == SDLK_DOWN)
                 {
-                    if(!menuIsOpen)
+                    if(!menuIsOpen && playerpos.y < SCREEN_HEIGHT - 48)
                     {
+                        launchBattle = dis(gen);
                         playerPartpos.y = 0 * 48;
                         if(playerMovepos.x == 0)
                         {
@@ -124,8 +128,9 @@ std::string f(SDL_Surface* screen)
                 }
                 else if(event.key.keysym.sym == SDLK_UP)
                 {
-                    if(!menuIsOpen)
+                    if(!menuIsOpen&& playerpos.y > 0)
                     {
+                        launchBattle = dis(gen);
                         playerPartpos.y = 3 * 48;
                         if(playerMovepos.x == 0)
                         {
@@ -143,8 +148,9 @@ std::string f(SDL_Surface* screen)
                 }
                 else if(event.key.keysym.sym == SDLK_LEFT)
                 {
-                    if(!menuIsOpen)
+                    if(!menuIsOpen && playerpos.x > 0)
                     {
+                        launchBattle = dis(gen);
                         playerPartpos.y = 1 * 48;
                         if(playerMovepos.y == 0 && !menuIsOpen)
                         {
@@ -154,8 +160,9 @@ std::string f(SDL_Surface* screen)
                 }
                 else if(event.key.keysym.sym == SDLK_RIGHT)
                 {
-                    if(!menuIsOpen)
+                    if(!menuIsOpen && playerpos.x < SCREEN_WIDTH - 32)
                     {
+                        launchBattle = dis(gen);
                         playerPartpos.y = 2 * 48;
                         if(playerMovepos.y == 0 && !menuIsOpen)
                         {
@@ -259,6 +266,11 @@ std::string f(SDL_Surface* screen)
                 SDL_BlitSurface(menuOptionDescriptionBackground, NULL, screen, &menuOptionDescriptionBackgroundpos);
                 SDL_BlitSurface(menuOptionDescription[i_cur].first, NULL, screen, &menuOptionDescriptionL1pos);
                 SDL_BlitSurface(menuOptionDescription[i_cur].second, NULL, screen, &menuOptionDescriptionL2pos);
+            }
+            if(launchBattle)
+            {
+                flag = "WILDBATTLE";
+                stop = true;
             }
             SDL_Flip(screen);
             SDL_Delay(100);

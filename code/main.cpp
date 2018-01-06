@@ -2,6 +2,9 @@
 #include <vector>
 #include <string>
 #include <stdio.h>
+#include <time.h>
+#include <cstdlib>
+#include <ctime>
 #include "DimScreen.h"
 #include "Battle/Player.h"
 #include "Field/Place.h"
@@ -12,11 +15,18 @@
 #include "Graphics/Battle.h"
 #include "Graphics/Field.h"
 
+
+#include <iostream>
+#include <iomanip>
+#include <string>
+#include <map>
+#include <random>
+
 using namespace PKMN;
 
 int main(int argc, char* argv[])
 {
-    seed();
+    srand(time(NULL));
     TTF_Init();
     SDL_Init(SDL_INIT_VIDEO|SDL_INIT_AUDIO);
     SDL_WM_SetIcon(IMG_Load("pokeball.png"), NULL);
@@ -28,19 +38,20 @@ int main(int argc, char* argv[])
         std::cout << "Error when loading screen" << std::endl;
         exit(EXIT_FAILURE);
     }
-//    std::string flag = f(screen);
-//    SDL_SaveBMP(screen, "test.bmp");
-//    if(flag == "PARTY")
-//    {
-//        Player player;
-//        Battle_SwapMenu(screen,&player, false);
-//    }
+
     Player player;
     Place place("ROAD21");
     Pokemon* pkmn = player.getPokemon(4);
-    Battle_FadeToBlack(screen, place);
-//    BattleWildPokemon battle(screen, player, place, pkmn);
-//    battle.start();
+    std::string flag = f(screen);
+    if(flag == "PARTY")
+    {
+        Battle_SwapMenu(screen,&player, false);
+    }
+    else if(flag == "WILDBATTLE")
+    {
+        BattleWildPokemon battle(screen, player, place, pkmn);
+        battle.start();
+    }
     SDL_Quit();
     TTF_Quit();
 

@@ -4,11 +4,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <cstdlib>
+#include <ctime>
 
 namespace PKMN
 {
-
-void seed();
 
 double rand_uniform(double a, double b);
 

@@ -3,7 +3,7 @@
 void Battle_FadeToBlack(SDL_Surface* screen,
                         const PKMN::Place& place)
 {
-//    SDL_SaveBMP(screen, "temp.bmp");
+    SDL_SaveBMP(screen, "temp.bmp");
     SDL_Surface* fieldBackgroud = NULL;
     SDL_Rect fieldBackgroudpos;
     fieldBackgroudpos.x = 0;
