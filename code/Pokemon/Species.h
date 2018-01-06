@@ -28,10 +28,6 @@ public:
 /// CONSTRUCTORS :
 
     Species();
-        /** \brief
-         *
-         *
-         */
 
     Species(std::string InternalName);
         /** \brief
@@ -48,14 +44,14 @@ public:
 /// DESTRUCTOR :
 
     virtual ~Species();
-        /** \brief
+        /** \brief Virtual destructor
          *
          *
          */
 
 /// GETTERS :
 
-    StatSet getBaseStats() const; /// necessary ???
+    StatSet getBaseStats() const;
         /** \brief
          *
          * \return StatSet
@@ -63,10 +59,33 @@ public:
          */
 
     std::string getSpeciesName() const;
+        /** \brief Return Species name
+         *
+         * \return std::string
+         *
+         */
 
     unsigned int getBaseExp() const;
+        /** \brief Return the base exp of a pokemon
+         *
+         * \return unsigned int
+         *
+         */
 
     std::pair<Type, Type> getTypes() const;
+        /** \brief Return the types of a pokemon
+         *
+         * \return unsigned int
+         *
+         */
+
+    virtual unsigned int getLevel() const = 0;
+        /** \brief Level is a specific arg of a pokemon
+         *
+         * \return unsigned int
+         *
+         */
+
 
 protected:
 

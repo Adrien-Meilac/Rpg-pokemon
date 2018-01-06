@@ -221,6 +221,9 @@ std::pair<int,std::string> PKMN::BattleWildPokemon::attack(PKMN::Pokemon* Att, P
 
 bool PKMN::BattleWildPokemon::battleCanContinue()
 {
+    std::cout << "Wild = " << m_WildPkmn->isAlive() << std::endl;
+    std::cout << "Player = " << m_Player.hasPokemonAlive() << std::endl;
+    std::cout << "RA = " <<(!m_PlayerRunAway) << std::endl;
     return m_WildPkmn->isAlive() && m_Player.hasPokemonAlive() && (!m_PlayerRunAway);
 }
 

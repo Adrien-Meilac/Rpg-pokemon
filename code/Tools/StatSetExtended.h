@@ -12,6 +12,8 @@ namespace PKMN
 }
 
 class PKMN::StatSetExtended : public PKMN::StatSet
+/** Inherit from StatSet, this class will be used to contain current life
+    of the pokemon **/
 {
 public :
 
@@ -83,9 +85,6 @@ public :
 /// DESTRUCTOR :
 
     ~StatSetExtended();
-        /** \brief Virtual destructor because of StatSetExtended
-         *
-         */
 
 
 /// GETTERS :

@@ -89,6 +89,8 @@
 		<Unit filename="Pokemon/Type.h" />
 		<Unit filename="Tools/Conversion.cpp" />
 		<Unit filename="Tools/Conversion.h" />
+		<Unit filename="Tools/Others.cpp" />
+		<Unit filename="Tools/Others.h" />
 		<Unit filename="Tools/Random.cpp" />
 		<Unit filename="Tools/Random.h" />
 		<Unit filename="Tools/StatSet.cpp" />

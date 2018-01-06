@@ -11,8 +11,22 @@ namespace PKMN
 {
 
 double rand_uniform(double a, double b);
+    /** \brief Generate a uniform law
+     *
+     * \param a double : lower bound
+     * \param b double : upper bound
+     * \return double : between a and b
+     *
+     */
 
 bool binom_event(double p);
+    /** \brief bernouilli law
+     *
+     * \param p double : probability of success
+     * \return bool : is it a success or a failure ?
+     *
+     */
+
 }
 
 

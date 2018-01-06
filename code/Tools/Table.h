@@ -26,9 +26,6 @@ public:
 /// CONSTRUCTORS :
 
     Table();
-        /** \brief Void constructor ,create a void table
-         *
-         */
 
     Table(std::string FilePath);
         /** \brief create a Table by splitting the text of a file
@@ -41,9 +38,6 @@ public:
 /// DESTRUCTOR :
 
     ~Table();
-        /** \brief Destructor
-         *
-         */
 
 /// GETTERS :
 
@@ -126,12 +120,28 @@ public:
          *
          */
 
-
     void write(std::string FilePath) const;
+        /** \brief Write a table in a path
+         *
+         * \param FilePath std::string : path of the file wi want to write in
+         *
+         */
 
     void setColumn(std::vector<std::string> columnName);
+        /** \brief Set the column name of a table
+         *
+         * \param columnName std::vector<std::string> : names of the column
+         * \return void
+         *
+         */
 
     void addLine(std::vector<std::pair<std::string, std::string> > dictionnary);
+        /** \brief Add a new line to the table
+         *
+         * \param dictionnary std::vector<std::pair<std::string,std::string> > :
+            vector of couple (column name, value)
+         *
+         */
 
 
 private:

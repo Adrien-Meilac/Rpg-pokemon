@@ -9,9 +9,21 @@
 namespace PKMN
 {
 
-template <typename T> std::string NumberToString (T Number);
+template <typename T> std::string NumberToString(T Number);
+    /** \brief Convert T type to string, where T is a number type using sstream
+     *
+     * \param number T
+     * \return std::string
+     *
+     */
 
 template <typename T> T StringToNumber (const std::string &Text);
+    /** \brief Convert a string object into a number #deduction
+     *
+     * \param Text const std::string& : text to convert
+     * \return T : number type of the output
+     *
+     */
 
 bool string_to_bool(const std::string& str);
     /** \brief Convert a string into a boolean variable (Supposing that true = "True" and false = "False")
@@ -37,10 +49,21 @@ double string_to_double(const std::string& str);
      *
      */
 
-std::string int_to_string(int nb); // bug pour les grands nb
+std::string int_to_string(int nb);
+    /** \brief Convert an integer to a string
+     *
+     * \param nb int : number to convert
+     * \return std::string : number as a string
+     *
+     */
 
 unsigned int nb_of_nb(int nb);
-
+    /** \brief Give the number of number of an integer
+     *
+     * \param nb int : number to count number of number
+     * \return unsigned int : number of number
+     *
+     */
 
 }
 

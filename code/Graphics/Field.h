@@ -21,7 +21,7 @@
 #include <SDL/SDL_image.h>
 #include <random>
 
-#define PROBA_ENCOUNTER 0.1
+#define PROBA_ENCOUNTER 0.5
 
 extern "C"
 {

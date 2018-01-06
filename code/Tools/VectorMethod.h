@@ -62,7 +62,14 @@ std::string vector_join(const std::vector<std::string>& L,
      *
      */
 
- std::vector<bool> split_string_to_bool(std::string str);
+std::vector<bool> split_string_to_bool(std::string str);
+     /** \brief Split a string into a vector of bool
+      *
+      * \param str std::string : string to cut
+      * \return std::vector<bool> : vector of boolean values
+      *
+      */
+
 }
 
 #endif // PKMN_VECTORMETHOD_H_INCLUDED

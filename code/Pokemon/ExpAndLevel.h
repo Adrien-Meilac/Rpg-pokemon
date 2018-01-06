@@ -28,17 +28,13 @@ public:
 /// CONSTRUCTORS :
 
     ExpAndLevel();
-    /** \brief
-     *
-     *
-     */
 
     ExpAndLevel(std::string name, unsigned int level = 1, unsigned int exp = 0); // When read save file
-        /** \brief
+        /** \brief construct a growth structure with the type of growth
          *
-         * \param name std::string :
-         * \param unsigned int level = 1 :
-         * \param unsigned int exp = 0 :
+         * \param name std::string : Type of growth
+         * \param unsigned int level = 1 : level of the pokemon
+         * \param unsigned int exp = 0 : exp of the pokemon
          *
          */
 
@@ -54,36 +50,32 @@ public:
 /// DESTRUCTOR :
 
     ~ExpAndLevel();
-        /** \brief
-         *
-         *
-         */
 
 /// GETTERS :
 
     unsigned int getExp() const;
-        /** \brief
+        /** \brief get the current exp of the pokemon
          *
          * \return unsigned int
          *
          */
 
     unsigned int getExpToNextLevel() const;
-        /** \brief
+        /** \brief get the necessary exp to level up
          *
          * \return unsigned int
          *
          */
 
     unsigned int getTotalExp() const;
-        /** \brief
+        /** \brief get the total exp of a pokemon
          *
          * \return unsigned int
          *
          */
 
     unsigned int getLevel() const;
-        /** \brief
+        /** \brief get the level of a pokemon
          *
          * \return unsigned int
          *
@@ -92,14 +84,14 @@ public:
 /// METHODS :
 
     void print() const;
-        /** \brief
+        /** \brief print a ExpAndLevel Structure
          *
          * \return void
          *
          */
 
     void addLevel();
-        /** \brief
+        /** \brief Add one level to the pokemon
          *
          * \return void
          *
@@ -108,14 +100,14 @@ public:
 private:
 
     unsigned int expToNextLevel() const;
-        /** \brief
+        /** \brief calculate the exp to the next level
          *
          * \return unsigned int
          *
          */
 
     unsigned int expLevel(unsigned int level) const;
-        /** \brief
+        /** \brief Calculate the exp at a precise level
          *
          * \param level unsigned int
          * \return unsigned int

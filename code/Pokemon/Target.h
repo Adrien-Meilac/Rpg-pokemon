@@ -144,6 +144,11 @@ public:
 private:
 
     bool isCode(const std::string& code) const;
+        /** \brief General test
+         *
+         * \return bool
+         *
+         */
 
     std::string m_Target;
 

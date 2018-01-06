@@ -65,6 +65,11 @@ public:
          */
 
     std::string getPathImage() const;
+        /** \brief Get the associated image of a type
+         *
+         * \return std::string : path to the image
+         *
+         */
 
 /// METHODS :
 
