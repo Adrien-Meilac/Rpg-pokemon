@@ -28,17 +28,18 @@ int main(int argc, char* argv[])
         std::cout << "Error when loading screen" << std::endl;
         exit(EXIT_FAILURE);
     }
-    std::string flag = f(screen);
-    SDL_SaveBMP(screen, "test.bmp");
-    if(flag == "PARTY")
-    {
-        Player player;
-        Battle_SwapMenu(screen,&player, false);
-    }
-//    Place place("ROAD21");
-//    Pokemon* pkmn = player.getPokemon(4);
-//    BattleWildPokemon battle(screen, player, place, pkmn);
-//    battle.start();
+//    std::string flag = f(screen);
+//    SDL_SaveBMP(screen, "test.bmp");
+//    if(flag == "PARTY")
+//    {
+//        Player player;
+//        Battle_SwapMenu(screen,&player, false);
+//    }
+    Player player;
+    Place place("ROAD21");
+    Pokemon* pkmn = player.getPokemon(4);
+    BattleWildPokemon battle(screen, player, place, pkmn);
+    battle.start();
     SDL_Quit();
     TTF_Quit();
 
