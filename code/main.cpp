@@ -29,6 +29,7 @@ int main(int argc, char* argv[])
         exit(EXIT_FAILURE);
     }
     std::string flag = f(screen);
+    SDL_SaveBMP(screen, "test.bmp");
     if(flag == "PARTY")
     {
         Player player;

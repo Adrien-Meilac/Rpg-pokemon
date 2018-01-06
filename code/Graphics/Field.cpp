@@ -40,12 +40,14 @@ std::string f(SDL_Surface* screen)
     menupos.x = SCREEN_WIDTH - 166;
     menupos.y = 0;
 
-    std::array<SDL_Surface*, 4> menuOption;
-    std::array<SDL_Rect, 4> menuOptionpos;
-    menuOption[0] = TTF_RenderText_Blended(fontSmall, "Party", textColor);
-    menuOption[1] = TTF_RenderText_Blended(fontSmall, "Option2", textColor);
-    menuOption[2] = TTF_RenderText_Blended(fontSmall, "Option3", textColor);
-    menuOption[3] = TTF_RenderText_Blended(fontSmall, "Option4", textColor);
+    std::array<SDL_Surface*, 6> menuOption;
+    std::array<SDL_Rect, menuOption.size()> menuOptionpos;
+    menuOption[0] = TTF_RenderText_Blended(fontSmall, "Pokemon", textColor);
+    menuOption[1] = TTF_RenderText_Blended(fontSmall, "Bag", textColor);
+    menuOption[2] = TTF_RenderText_Blended(fontSmall, "PlayerName", textColor);
+    menuOption[3] = TTF_RenderText_Blended(fontSmall, "Save", textColor);
+    menuOption[4] = TTF_RenderText_Blended(fontSmall, "Option", textColor);
+    menuOption[5] = TTF_RenderText_Blended(fontSmall, "Exit", textColor);
     for(unsigned int i = 0; i < menuOption.size(); i++)
     {
         menuOptionpos[i].x = menupos.x + 40;
@@ -56,6 +58,32 @@ std::string f(SDL_Surface* screen)
     SDL_Rect cursorpos;
     int i_cur = 0;
     cursor = IMG_Load("./Pictures/Field/selarrow.png");
+
+    SDL_Surface *menuOptionDescriptionBackground = NULL;
+    SDL_Rect menuOptionDescriptionBackgroundpos;
+    menuOptionDescriptionBackgroundpos.x = 0;
+    menuOptionDescriptionBackgroundpos.y = 290;
+    menuOptionDescriptionBackground = SDL_CreateRGBSurface(SDL_HWSURFACE, SCREEN_WIDTH, SCREEN_HEIGHT - menuOptionDescriptionBackgroundpos.y, 32, 0, 0, 0, 0);//IMG_Load("./Pictures/Battle/choice 1.png");
+    SDL_FillRect(menuOptionDescriptionBackground, NULL, SDL_MapRGB(menuOptionDescriptionBackground->format,169, 234, 254));
+
+    std::array<std::pair<SDL_Surface*,SDL_Surface*>,menuOption.size()> menuOptionDescription;
+    SDL_Rect menuOptionDescriptionL1pos,menuOptionDescriptionL2pos;
+    menuOptionDescriptionL1pos.x = menuOptionDescriptionBackgroundpos.x + 20;
+    menuOptionDescriptionL1pos.y = menuOptionDescriptionBackgroundpos.y + 20;
+    menuOptionDescriptionL2pos.x = menuOptionDescriptionL1pos.x;
+    menuOptionDescriptionL2pos.y = menuOptionDescriptionL1pos.y + 30;
+    menuOptionDescription[0].first = TTF_RenderText_Blended(fontSmall, "Check and organize pokemon that are traveling", textColor);
+    menuOptionDescription[0].second = TTF_RenderText_Blended(fontSmall, "with you in your party", textColor);
+    menuOptionDescription[1].first = TTF_RenderText_Blended(fontSmall, "Equipped with pockets for storing items", textColor);
+    menuOptionDescription[1].second = TTF_RenderText_Blended(fontSmall, "you bought, received, or found", textColor);
+    menuOptionDescription[2].first = TTF_RenderText_Blended(fontSmall, "Check your money and other game data", textColor);
+    menuOptionDescription[2].second = TTF_RenderText_Blended(fontSmall, "", textColor);
+    menuOptionDescription[3].first = TTF_RenderText_Blended(fontSmall, "Save your game with a complete record of", textColor);
+    menuOptionDescription[3].second = TTF_RenderText_Blended(fontSmall, "your progress to take a break", textColor);
+    menuOptionDescription[4].first = TTF_RenderText_Blended(fontSmall, "Adjust various game settings such as", textColor);
+    menuOptionDescription[4].second = TTF_RenderText_Blended(fontSmall, "text speed, game rules, etc", textColor);
+    menuOptionDescription[5].first = TTF_RenderText_Blended(fontSmall, "Close this menu widow", textColor);
+    menuOptionDescription[5].second = TTF_RenderText_Blended(fontSmall, "", textColor);
 
     bool stop = false;
     bool menuIsOpen = false;
@@ -91,7 +119,7 @@ std::string f(SDL_Surface* screen)
                     }
                     else
                     {
-                        i_cur = (i_cur + 1) % 4;
+                        i_cur = (i_cur + 1) % menuOption.size();
                     }
                 }
                 else if(event.key.keysym.sym == SDLK_UP)
@@ -109,7 +137,7 @@ std::string f(SDL_Surface* screen)
                         i_cur = i_cur - 1;
                         if(i_cur < 0)
                         {
-                            i_cur += 4;
+                            i_cur += menuOption.size();
                         }
                     }
                 }
@@ -135,20 +163,49 @@ std::string f(SDL_Surface* screen)
                         }
                     }
                 }
-                else if(event.key.keysym.sym == SDLK_RETURN)
+                else if(event.key.keysym.sym == SDLK_RETURN && menuIsOpen)
                 {
                     switch(i_cur)
                     {
                     case 0:
-                        {
-                            flag = "PARTY";
-                        }
-                    default:
-                        {
-                            break;
-                        }
+                    {
+                        flag = "PARTY";
+                        break;
                     }
-                    stop = true;
+                    case 1:
+                    {
+                        flag = "BAG";
+                        break;
+                    }
+                    case 2:
+                    {
+                        flag = "PLAYERCARD";
+                        break;
+                    }
+                    case 3:
+                    {
+                        flag = "SAVE";
+                        break;
+                    }
+                    case 4:
+                    {
+                        flag = "OPTION";
+                        break;
+                    }
+                    case 5:
+                    {
+                        menuIsOpen = false;
+                        break;
+                    }
+                    default:
+                    {
+                        break;
+                    }
+                    }
+                    if(flag.size() > 0)
+                    {
+                        stop = true;
+                    }
                 }
                 break;
             }
@@ -199,6 +256,9 @@ std::string f(SDL_Surface* screen)
                     SDL_BlitSurface(menuOption[i], NULL, screen, &menuOptionpos[i]);
                 }
                 SDL_BlitSurface(cursor, NULL, screen, &cursorpos);
+                SDL_BlitSurface(menuOptionDescriptionBackground, NULL, screen, &menuOptionDescriptionBackgroundpos);
+                SDL_BlitSurface(menuOptionDescription[i_cur].first, NULL, screen, &menuOptionDescriptionL1pos);
+                SDL_BlitSurface(menuOptionDescription[i_cur].second, NULL, screen, &menuOptionDescriptionL2pos);
             }
             SDL_Flip(screen);
             SDL_Delay(100);
@@ -217,8 +277,11 @@ std::string f(SDL_Surface* screen)
     for(unsigned int i = 0; i < menuOption.size(); i++)
     {
         SDL_FreeSurface(menuOption[i]);
+        SDL_FreeSurface(menuOptionDescription[i].first);
+        SDL_FreeSurface(menuOptionDescription[i].second);
     }
     SDL_FreeSurface(cursor);
+    SDL_FreeSurface(menuOptionDescriptionBackground);
     FREE_BATTLE_FONT
     return flag;
 }
