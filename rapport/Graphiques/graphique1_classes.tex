@@ -1,0 +1,46 @@
+\documentclass[11 pt]{article}
+
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathrsfs}
+\usepackage{pgf}
+\usepackage{tikz}
+\usetikzlibrary{arrows,automata}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[francais]{babel}
+
+\begin{document}
+\pagestyle{empty}
+\begin{center}
+\large{\textbf{Graphe des classes}}
+\end{center}
+
+\vspace{1 cm}
+Prenons par exemple le graphe suivant pour représenter les liens entre les différentes classes:
+
+\vspace{1 cm}
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=2.8cm,
+                    semithick]
+  \tikzstyle{every state}=[fill=white,draw=black,text=black]
+
+  \node[state]         (A)                    {type};
+  \node[state]         (B) [above right of=A] {species};
+  \node[state]         (D) [below right of=A] {move};
+  \node[state]         (C) [below right of=B] {pokemon};
+  \node[state]         (E) [below of=D]       {exp and level};
+  \node[state]		   (F) [below left of=A]  {target};
+  \node[state]		   (G) [below of=F]       {flag};
+  \node[state]		   (H) [below of=G]       {damage};
+
+  \path (A) edge              node {} (B)
+            edge              node {} (D)
+		(B) edge              node {} (C)
+        (D) edge              node {} (C)
+        (E) edge              node {} (C)
+        (F) edge			  node {} (D)
+        (G) edge			  node {} (D)
+        (H) edge			  node {} (D);
+\end{tikzpicture}
+\end{document}

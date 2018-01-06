@@ -299,3 +299,281 @@
 	<SDL/SDL_image.h>
 	<random>
 
+1515166715 source:e:\bibliothèques\documents\github\rpg-pokemon\code\battle\battlewildpokemon.cpp
+	"BattleWildPokemon.h"
+
+1515166715 e:\bibliothèques\documents\github\rpg-pokemon\code\battle\battlewildpokemon.h
+	"../Pokemon/Pokemon.h"
+	"../Field/Weather.h"
+	"../Field/Place.h"
+	"Player.h"
+	"../FilePath.h"
+	<string>
+	<string.h>
+	<iostream>
+	<cmath>
+	"../Tools/Random.h"
+	"../Graphics/Battle.h"
+
+1515166717 e:\bibliothèques\documents\github\rpg-pokemon\code\pokemon\pokemon.h
+	"Species.h"
+	"Move.h"
+	"ExpAndLevel.h"
+	"Flag.h"
+	"DamageCategory.h"
+	"../FilePath.h"
+	"../Tools/StatSet.h"
+	"../Tools/StatSetExtended.h"
+	"../Tools/Table.h"
+	"../Field/Place.h"
+	<string>
+	<vector>
+	<array>
+
+1515166717 e:\bibliothèques\documents\github\rpg-pokemon\code\pokemon\species.h
+	"Type.h"
+	"ExpAndLevel.h"
+	"../FilePath.h"
+	"../Tools/StatSet.h"
+	"../Tools/Table.h"
+	<string>
+	<vector>
+	<iostream>
+
+1515166717 e:\bibliothèques\documents\github\rpg-pokemon\code\pokemon\type.h
+	"../FilePath.h"
+	"../Tools/Table.h"
+	"../Tools/Conversion.h"
+	"../Tools/VectorMethod.h"
+	<string>
+	<iostream>
+	<array>
+
+1515166715 e:\bibliothèques\documents\github\rpg-pokemon\code\filepath.h
+	<string>
+	<iostream>
+	<fstream>
+
+1515166717 e:\bibliothèques\documents\github\rpg-pokemon\code\tools\table.h
+	"VectorMethod.h"
+	"../FilePath.h"
+	<iostream>
+	<string>
+	<vector>
+	<fstream>
+
+1515166717 e:\bibliothèques\documents\github\rpg-pokemon\code\tools\vectormethod.h
+	<vector>
+	<string>
+	<sstream>
+	<iostream>
+	"Conversion.h"
+
+1515166717 e:\bibliothèques\documents\github\rpg-pokemon\code\tools\conversion.h
+	<string>
+	<cmath>
+	<sstream>
+	<iostream>
+
+1515166717 e:\bibliothèques\documents\github\rpg-pokemon\code\pokemon\expandlevel.h
+	<cmath>
+	<string>
+	<cstdlib>
+	<ctime>
+	<iostream>
+
+1515166717 e:\bibliothèques\documents\github\rpg-pokemon\code\tools\statset.h
+	"Conversion.h"
+	"VectorMethod.h"
+	<cmath>
+	<iostream>
+	<cstdlib>
+	<ctime>
+	<vector>
+	<string>
+
+1515166717 e:\bibliothèques\documents\github\rpg-pokemon\code\pokemon\move.h
+	"Type.h"
+	"DamageCategory.h"
+	"Flag.h"
+	"../FilePath.h"
+	"../Tools/Table.h"
+	<iostream>
+	<string>
+
+1515166717 e:\bibliothèques\documents\github\rpg-pokemon\code\pokemon\damagecategory.h
+	<iostream>
+	<string>
+
+1515166717 e:\bibliothèques\documents\github\rpg-pokemon\code\pokemon\flag.h
+	<string>
+
+1515166717 e:\bibliothèques\documents\github\rpg-pokemon\code\tools\statsetextended.h
+	"StatSet.h"
+	<iostream>
+	<cmath>
+
+1515166715 e:\bibliothèques\documents\github\rpg-pokemon\code\field\place.h
+	"../Tools/Table.h"
+	"Weather.h"
+	"../FilePath.h"
+	<string>
+	<iostream>
+	<fstream>
+
+1515166715 e:\bibliothèques\documents\github\rpg-pokemon\code\field\weather.h
+	"../Pokemon/Move.h"
+	"../Pokemon/Type.h"
+	<string>
+
+1515166715 e:\bibliothèques\documents\github\rpg-pokemon\code\battle\player.h
+	"../Pokemon/Pokemon.h"
+	"../FilePath.h"
+	"../Tools/Table.h"
+	<string>
+	<vector>
+	<cmath>
+
+1515166717 e:\bibliothèques\documents\github\rpg-pokemon\code\tools\random.h
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
+1515247322 e:\bibliothèques\documents\github\rpg-pokemon\code\graphics\battle.h
+	"../Pokemon/Pokemon.h"
+	"../Field/Weather.h"
+	"../Field/Place.h"
+	"../Battle/Player.h"
+	"../FilePath.h"
+	<string>
+	<iostream>
+	<cmath>
+	"../Tools/Random.h"
+	<SDL/SDL.h>
+	<SDL/SDL_image.h>
+	<SDL/SDL_ttf.h>
+	"../DimScreen.h"
+
+1515188439 e:\bibliothèques\documents\github\rpg-pokemon\code\dimscreen.h
+
+1515166715 source:e:\bibliothèques\documents\github\rpg-pokemon\code\battle\player.cpp
+	"Player.h"
+
+1515166715 source:e:\bibliothèques\documents\github\rpg-pokemon\code\battle\trainer.cpp
+
+1515166715 source:e:\bibliothèques\documents\github\rpg-pokemon\code\field\place.cpp
+	"Place.h"
+
+1515166715 source:e:\bibliothèques\documents\github\rpg-pokemon\code\field\weather.cpp
+	"Weather.h"
+
+1515166715 source:e:\bibliothèques\documents\github\rpg-pokemon\code\graphics\battle.cpp
+	"Battle.h"
+
+1515166715 source:e:\bibliothèques\documents\github\rpg-pokemon\code\graphics\deathallypokemon.cpp
+	"Battle.h"
+
+1515166715 source:e:\bibliothèques\documents\github\rpg-pokemon\code\graphics\deathfoepokemon.cpp
+	"Battle.h"
+
+1515166715 source:e:\bibliothèques\documents\github\rpg-pokemon\code\graphics\fadetoblack.cpp
+	"Battle.h"
+
+1515247322 source:e:\bibliothèques\documents\github\rpg-pokemon\code\graphics\field.cpp
+	"Field.h"
+
+1515247322 e:\bibliothèques\documents\github\rpg-pokemon\code\graphics\field.h
+	<iostream>
+	<vector>
+	<array>
+	"../DimScreen.h"
+	"Battle.h"
+	<SDL/SDL.h>
+	<SDL/SDL_image.h>
+
+1515166715 source:e:\bibliothèques\documents\github\rpg-pokemon\code\graphics\fightmenu.cpp
+	"Battle.h"
+
+1515166715 source:e:\bibliothèques\documents\github\rpg-pokemon\code\graphics\hpallydecrease.cpp
+	"Battle.h"
+
+1515166715 source:e:\bibliothèques\documents\github\rpg-pokemon\code\graphics\hpfoedecrease.cpp
+	"Battle.h"
+
+1515166715 source:e:\bibliothèques\documents\github\rpg-pokemon\code\graphics\launchallypokemon.cpp
+	"Battle.h"
+
+1515166715 source:e:\bibliothèques\documents\github\rpg-pokemon\code\graphics\launchfoepokemon.cpp
+	"Battle.h"
+
+1515166715 source:e:\bibliothèques\documents\github\rpg-pokemon\code\graphics\mainmenu.cpp
+	"Battle.h"
+
+1515166715 source:e:\bibliothèques\documents\github\rpg-pokemon\code\graphics\screenmessage.cpp
+	"Battle.h"
+
+1515166715 source:e:\bibliothèques\documents\github\rpg-pokemon\code\graphics\swapmenu.cpp
+	"Battle.h"
+
+1515250753 source:e:\bibliothèques\documents\github\rpg-pokemon\code\main.cpp
+	<iostream>
+	<vector>
+	<string>
+	<stdio.h>
+	"DimScreen.h"
+	"Battle/Player.h"
+	"Field/Place.h"
+	"Pokemon/Pokemon.h"
+	"Battle/BattleWildPokemon.h"
+	"Pokemon/Flag.h"
+	"Tools/Random.h"
+	"Graphics/Battle.h"
+	"Graphics/Field.h"
+
+1515166717 source:e:\bibliothèques\documents\github\rpg-pokemon\code\pokemon\damagecategory.cpp
+	"DamageCategory.h"
+
+1515166717 source:e:\bibliothèques\documents\github\rpg-pokemon\code\pokemon\expandlevel.cpp
+	"ExpAndLevel.h"
+
+1515166717 source:e:\bibliothèques\documents\github\rpg-pokemon\code\pokemon\flag.cpp
+	"Flag.h"
+
+1515166717 source:e:\bibliothèques\documents\github\rpg-pokemon\code\pokemon\move.cpp
+	"Move.h"
+
+1515166717 source:e:\bibliothèques\documents\github\rpg-pokemon\code\pokemon\pokemon.cpp
+	"Pokemon.h"
+
+1515166717 source:e:\bibliothèques\documents\github\rpg-pokemon\code\pokemon\species.cpp
+	"Species.h"
+
+1515166717 source:e:\bibliothèques\documents\github\rpg-pokemon\code\pokemon\target.cpp
+	"Target.h"
+
+1515166717 e:\bibliothèques\documents\github\rpg-pokemon\code\pokemon\target.h
+	<string>
+
+1515166717 source:e:\bibliothèques\documents\github\rpg-pokemon\code\pokemon\type.cpp
+	"Type.h"
+
+1515166717 source:e:\bibliothèques\documents\github\rpg-pokemon\code\ressources.rc
+
+1515166717 source:e:\bibliothèques\documents\github\rpg-pokemon\code\tools\conversion.cpp
+	"Conversion.h"
+
+1515166717 source:e:\bibliothèques\documents\github\rpg-pokemon\code\tools\random.cpp
+	"Random.h"
+
+1515166717 source:e:\bibliothèques\documents\github\rpg-pokemon\code\tools\statset.cpp
+	"StatSet.h"
+
+1515166717 source:e:\bibliothèques\documents\github\rpg-pokemon\code\tools\statsetextended.cpp
+	"StatSetExtended.h"
+
+1515189477 source:e:\bibliothèques\documents\github\rpg-pokemon\code\tools\table.cpp
+	"Table.h"
+
+1515166717 source:e:\bibliothèques\documents\github\rpg-pokemon\code\tools\vectormethod.cpp
+	"VectorMethod.h"
+
