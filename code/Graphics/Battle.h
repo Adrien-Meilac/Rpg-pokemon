@@ -11,6 +11,8 @@
 #include <string>
 #include <iostream>
 #include <cmath>
+#include <algorithm>
+#include <array>
 #include "../Tools/Random.h"
 
 #include <SDL/SDL.h>
@@ -150,7 +152,7 @@
 #define FREE_BATTLE_BACKGROUND \
     SDL_FreeSurface(battleAllyBase); \
     SDL_FreeSurface(battleFoeBase); \
-    SDL_FreeSurface(battleCommandBackgroud); \
+    SDL_FreeSurface(battleBackgroud);
 
 #define FREE_BATTLE_MENU \
     SDL_FreeSurface(battleCommandBackgroud);

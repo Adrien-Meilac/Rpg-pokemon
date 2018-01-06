@@ -139,7 +139,7 @@
 	<stdlib.h>
 	<time.h>
 
-1515190969 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\code\graphics\battle.h
+1515260522 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\code\graphics\battle.h
 	"../Pokemon/Pokemon.h"
 	"../Field/Weather.h"
 	"../Field/Place.h"
@@ -148,6 +148,8 @@
 	<string>
 	<iostream>
 	<cmath>
+	<algorithm>
+	<array>
 	"../Tools/Random.h"
 	<SDL/SDL.h>
 	<SDL/SDL_image.h>
@@ -174,7 +176,7 @@
 1515161367 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\code\graphics\deathfoepokemon.cpp
 	"Battle.h"
 
-1515160357 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\code\graphics\fadetoblack.cpp
+1515260433 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\code\graphics\fadetoblack.cpp
 	"Battle.h"
 
 1515161764 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\code\graphics\fightmenu.cpp
@@ -201,7 +203,7 @@
 1515163480 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\code\graphics\swapmenu.cpp
 	"Battle.h"
 
-1515194167 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\code\main.cpp
+1515255583 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\code\main.cpp
 	<iostream>
 	<vector>
 	<string>
@@ -216,7 +218,7 @@
 	"Graphics/Battle.h"
 	"Graphics/Field.h"
 
-1515175206 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\code\dimscreen.h
+1515258411 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\code\dimscreen.h
 
 1514843268 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\projet c++\rpg-pokemon\code\pokemon\damagecategory.cpp
 	"DamageCategory.h"

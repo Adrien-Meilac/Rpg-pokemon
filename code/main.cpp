@@ -38,8 +38,9 @@ int main(int argc, char* argv[])
     Player player;
     Place place("ROAD21");
     Pokemon* pkmn = player.getPokemon(4);
-    BattleWildPokemon battle(screen, player, place, pkmn);
-    battle.start();
+    Battle_FadeToBlack(screen, place);
+//    BattleWildPokemon battle(screen, player, place, pkmn);
+//    battle.start();
     SDL_Quit();
     TTF_Quit();
 

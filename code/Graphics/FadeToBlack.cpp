@@ -3,11 +3,30 @@
 void Battle_FadeToBlack(SDL_Surface* screen,
                         const PKMN::Place& place)
 {
+//    SDL_SaveBMP(screen, "temp.bmp");
+    SDL_Surface* fieldBackgroud = NULL;
+    SDL_Rect fieldBackgroudpos;
+    fieldBackgroudpos.x = 0;
+    fieldBackgroudpos.y = 0;
+    fieldBackgroud = IMG_Load("temp.bmp");
+
+    std::array<std::array<SDL_Surface*,SCREEN_WIDTH>,SCREEN_HEIGHT> transition;
+    SDL_Rect transitionpos;
+    for(unsigned int i = 0; i < SCREEN_HEIGHT; i++)
+    {
+        for(unsigned int j = 0; j < SCREEN_WIDTH; j++)
+        {
+            transition[i][j] = NULL;
+            transition[i][j] = SDL_CreateRGBSurface(SDL_HWSURFACE, 1, 1, 32, 0, 0, 0, 0);
+            SDL_FillRect(transition[i][j], NULL, SDL_MapRGB(transition[i][j]->format, 255, 255, 255));
+        }
+    }
+
     bool stop = false;
     SDL_Event event;
-    unsigned int i = 0;
-    bool increment = true;
-    unsigned int j = 0;
+    int r = static_cast<int>(ceil(sqrt(pow(SCREEN_HEIGHT/2,2)+pow(SCREEN_WIDTH/2,2))));
+
+    SDL_BlitSurface(fieldBackgroud, NULL, screen, &fieldBackgroudpos);
     while (!stop)
     {
         while (SDL_PollEvent(&event))
@@ -21,48 +40,29 @@ void Battle_FadeToBlack(SDL_Surface* screen,
             }
             }
         }
-        SDL_FillRect(screen, NULL, SDL_MapRGB(screen->format, i, i, i));
+        for(int i = 0; i < SCREEN_HEIGHT; i++)
+        {
+            for(int j = 0; j < SCREEN_WIDTH; j++)
+            {
+                if(pow(r,2) < pow(i - SCREEN_HEIGHT/2,2) + pow(j - SCREEN_WIDTH/2,2))
+                {
+                    transitionpos.x = j;
+                    transitionpos.y = i;
+                    SDL_FillRect(transition[i][j], NULL, SDL_MapRGB(transition[i][j]->format, std::max(0, 255 - r), std::max(0, 255 - r), std::max(0, 255 - r)));
+                    SDL_BlitSurface(transition[i][j], NULL, screen, &transitionpos);
+                }
+            }
+        }
         SDL_Flip(screen);
+        r -= 7;
         SDL_Delay(10);
-        if(increment)
-        {
-            i += 5;
-        }
-        else
-        {
-            i -= 5;
-        }
-        if(i == 255)
-        {
-            increment = false;
-        }
-        if(i == 0)
-        {
-            increment = true;
-            j += 1;
-        }
-        if(j == 2)
+        if(r <= 0)
         {
             stop = true;
         }
     }
-
-    /// Background of the battle
-    SDL_Surface *battleCommandBackgroud = NULL, *blackBG = NULL;
-    SDL_Rect battleCommandBackgroudpos;
-    battleCommandBackgroudpos.x = 0;
-    battleCommandBackgroudpos.y = 0;
-    blackBG = IMG_Load("./Pictures/Battle/blackBG.png");
-    battleCommandBackgroud = IMG_Load("./Pictures/Battle/battlescreen.png");
-
-    /// Text surface for large text message
-    SDL_Surface *textBox = NULL;
-    SDL_Rect textBoxpos;
-    textBoxpos.x = 0;
-    textBoxpos.y = 12 * 32 - 92;
-    textBox = IMG_Load("./Pictures/Battle/choice 1.png");
-
-    unsigned int pkmnAllyTransparency = 0;
+    SET_BATTLE_BACKGROUND
+    SET_BATTLE_MENU("./Pictures/Battle/choice 1.png")
     stop = false;
     while (!stop)
     {
@@ -75,27 +75,40 @@ void Battle_FadeToBlack(SDL_Surface* screen,
                 exit(EXIT_SUCCESS);
                 break;
             }
-            default:
-            {
-                break;
-            }
             }
         }
-        SDL_BlitSurface(blackBG, NULL, screen, &battleCommandBackgroudpos);
-        SDL_SetAlpha(battleCommandBackgroud, SDL_SRCALPHA, pkmnAllyTransparency);
-        SDL_BlitSurface(battleCommandBackgroud, NULL, screen, &battleCommandBackgroudpos);
-        SDL_SetAlpha(textBox, SDL_SRCALPHA, pkmnAllyTransparency);
-        SDL_BlitSurface(textBox, NULL, screen, &textBoxpos);
+        BLIT_BATTLE_BACKGROUND
+        BLIT_BATTLE_MENU
+        for(int i = 0; i < SCREEN_HEIGHT; i++)
+        {
+            for(int j = 0; j < SCREEN_WIDTH; j++)
+            {
+                if(pow(r,2) < pow(i - SCREEN_HEIGHT/2,2) + pow(j - SCREEN_WIDTH/2,2))
+                {
+                    transitionpos.x = j;
+                    transitionpos.y = i;
+                    SDL_FillRect(transition[i][j], NULL, SDL_MapRGB(transition[i][j]->format, std::max(0, 255 - r), std::max(0, 255 - r), std::max(0, 255 - r)));
+                    SDL_BlitSurface(transition[i][j], NULL, screen, &transitionpos);
+                }
+            }
+        }
         SDL_Flip(screen);
-        SDL_Delay(100);
-        pkmnAllyTransparency += 1;
-        if(pkmnAllyTransparency == 255)
+        r += 7;
+        SDL_Delay(10);
+        if(r >= static_cast<int>(ceil(sqrt(pow(SCREEN_HEIGHT/2,2)+pow(SCREEN_WIDTH/2,2)))))
         {
             stop = true;
         }
     }
-    SDL_FreeSurface(blackBG);
-    SDL_FreeSurface(battleCommandBackgroud);
-    SDL_FreeSurface(textBox);
+    FREE_BATTLE_BACKGROUND
+    FREE_BATTLE_MENU
+    SDL_FreeSurface(fieldBackgroud);
+    for(unsigned int i = 0; i < SCREEN_HEIGHT; i++)
+    {
+        for(unsigned int j = 0; j < SCREEN_WIDTH; j++)
+        {
+            SDL_FreeSurface(transition[i][j]);
+        }
+    }
 
 }
