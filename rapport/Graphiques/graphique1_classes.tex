@@ -25,14 +25,14 @@ Prenons par exemple le graphe suivant pour représenter les liens entre les diffé
                     semithick]
   \tikzstyle{every state}=[fill=white,draw=black,text=black]
 
-  \node[state]         (A)                    {type};
-  \node[state]         (B) [above right of=A] {species};
-  \node[state]         (D) [below right of=A] {move};
-  \node[state]         (C) [below right of=B] {pokemon};
-  \node[state]         (E) [below of=D]       {exp and level};
-  \node[state]		   (F) [below left of=A]  {target};
-  \node[state]		   (G) [below of=F]       {flag};
-  \node[state]		   (H) [below of=G]       {damage};
+  \node[draw]         (A)                    {type};
+  \node[draw]         (B) [above right of=A] {species};
+  \node[draw]         (D) [below right of=A] {move};
+  \node[draw]         (C) [below right of=B] {pokemon};
+  \node[draw]         (E) [below of=D]       {exp and level};
+  \node[draw]		   (F) [below left of=A]  {target};
+  \node[draw]		   (G) [below of=F]       {flag};
+  \node[draw]		   (H) [below of=G]       {damage};
 
   \path (A) edge              node {} (B)
             edge              node {} (D)
@@ -42,5 +42,29 @@ Prenons par exemple le graphe suivant pour représenter les liens entre les diffé
         (F) edge			  node {} (D)
         (G) edge			  node {} (D)
         (H) edge			  node {} (D);
+\end{tikzpicture}
+
+\vspace{1 cm}
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=5.2cm,
+                    semithick]
+  \tikzstyle{every state}=[fill=white,draw=black,text=black]
+
+  \node[draw]         (A)                    {Utilisateur};
+  \node[draw]         (B) [right of=A] 		 {Commandes graphiques};
+  \node[draw]         (C) [below right of=B] {Structures du jeu};
+  \node[draw]         (D) [below left of=C]  {Structures de données};
+  \node[draw]         (E) [left of=D]        {Méthodes d'accès aux données};
+  \node[draw]		  (F) [below left of=E]  {Données du jeu};
+  \node[draw]		  (G) [below of=E]       {Données générées par le jeu};
+  \node[draw]		  (H) [below right of=E] {Log};
+
+  \path (A) edge              node {} (B)
+		(B) edge              node {} (C)
+        	edge			  node {} (H)
+        (D) edge              node {} (C)
+        (E) edge              node {} (D)
+        	edge			  node {} (G)
+            edge			  node {} (H)
+        (F) edge			  node {} (E);
 \end{tikzpicture}
 \end{document}
