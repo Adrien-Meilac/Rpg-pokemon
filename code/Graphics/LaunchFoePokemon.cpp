@@ -29,7 +29,7 @@ void Battle_LauchFoePokemon(SDL_Surface* screen,
             }
             case SDL_KEYDOWN:
             {
-                switch(event.key.keysym.sym == SDLK_RETURN)
+                if(event.key.keysym.sym == SDLK_RETURN)
                 {
                     stop = true;
                 }

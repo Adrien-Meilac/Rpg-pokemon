@@ -32,7 +32,7 @@ int main(int argc, char* argv[])
     SDL_WM_SetIcon(IMG_Load("pokeball.png"), NULL);
     SDL_Surface *screen = NULL;
     screen = SDL_SetVideoMode(SCREEN_WIDTH, SCREEN_HEIGHT, 32, SDL_SWSURFACE | SDL_DOUBLEBUF);
-    SDL_WM_SetCaption("Pokemon - MEILAC Adrien", NULL);
+    SDL_WM_SetCaption("Pokemon - MEILAC Adrien / LANGLOIS Romain", NULL);
     if(screen == NULL)
     {
         std::cout << "Error when loading screen" << std::endl;
