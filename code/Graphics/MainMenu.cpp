@@ -28,6 +28,7 @@ std::string Battle_MainMenu(SDL_Surface* screen,
 
     bool stop = false;
     SDL_Event event;
+    SDL_EnableKeyRepeat(100, 10);
     while (!stop)
     {
         //SDL_WaitEvent(&event);

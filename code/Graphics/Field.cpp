@@ -92,7 +92,7 @@ std::string Field(SDL_Surface* screen)
     bool menuIsOpen = false, launchBattle = false;
     std::string flag = "";
     SDL_Event event;
-    SDL_EnableKeyRepeat(1, 10);
+    SDL_EnableKeyRepeat(10, 10);
     while (!stop)
     {
         while(SDL_PollEvent(&event))

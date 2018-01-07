@@ -1,12 +1,31 @@
 #include "Pokemon.h"
 
-PKMN::Pokemon::Pokemon(): Species()
-{
-
-}
-
 namespace PKMN
 {
+PKMN::Pokemon::Pokemon(): Species("BLASTOISE")
+{
+    m_Pokemon_Name = m_Name;
+    StatSet IV, EV;
+    IV.random();
+    EV.zeros();
+    m_Pokemon_IV = IV;
+    m_Pokemon_EV = EV;
+    m_Pokemon_ExpAndLevel = PKMN::ExpAndLevel(m_GrowthRate, 90);
+    std::vector<std::pair<unsigned int, Move> > L = read_move("MEGAHORN,ATTACKORDER,XSCISSOR,UTURN");
+    for(unsigned int i = 0; i < NB_OF_MOVE_PER_PKMN; i++)
+    {
+        m_Pokemon_Moves[i] = L[i];
+    }
+    m_Pokemon_gender = "MALE";
+    m_Pokemon_NormalStat = NormalStatistics(m_BaseStats,
+                                            m_Pokemon_IV,
+                                            m_Pokemon_EV,
+                                            m_Pokemon_ExpAndLevel.getLevel(),
+                                            ""); // nature forgotten
+    m_Pokemon_CurrentStat.heal(m_Pokemon_NormalStat);
+    m_IsShiney = false;
+}
+
 Pokemon::Pokemon(std::string Position):
     Species(Table(BACKUP_PKMN_PLAYER_POKEMON).operator()(Position, "Species"))
 {

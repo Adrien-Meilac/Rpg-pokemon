@@ -41,7 +41,8 @@ int main(int argc, char* argv[])
 
     Player player;
     Place place("ROAD21");
-    Pokemon* pkmn = player.getPokemon(4);
+    Pokemon* pkmn = NULL;
+    pkmn = new Pokemon();
     bool stop = false;
     while(!stop)
     {
@@ -60,6 +61,7 @@ int main(int argc, char* argv[])
             stop = true;
         }
     }
+    delete(pkmn);
     SDL_Quit();
     TTF_Quit();
 

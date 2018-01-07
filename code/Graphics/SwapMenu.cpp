@@ -77,6 +77,7 @@ int Battle_SwapMenu(SDL_Surface* screen,
     SDL_FreeSurface(PkmnSlot[selected]);
     PkmnSlot[selected] = IMG_Load("./Pictures/Characters/Trainer/Party/panel_rect_sel.png");
 
+    SDL_EnableKeyRepeat(100, 10);
     bool stop = false;
     SDL_Event event;
     while (!stop)
