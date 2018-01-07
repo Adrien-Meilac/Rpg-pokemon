@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (MiKTeX 2.9.6350 64-bit) (preloaded format=xelatex 2017.8.28)  7 JAN 2018 13:39
+This is XeTeX, Version 3.14159265-2.6-0.99998 (MiKTeX 2.9.6350 64-bit) (preloaded format=xelatex 2017.8.28)  7 JAN 2018 13:42
 entering extended mode
 **"./Rapport projet C++.tex"
 ("Rapport projet C++.tex"
@@ -2302,14 +2302,19 @@ File: Graphiques/useMove.jpg Graphic file (type QTm)
 <use  "Graphiques/useMove.jpg" >
 File: Graphiques/vrai_jeu_useMove.jpg Graphic file (type QTm)
  <use  "Graphiques/vrai_jeu_useMove.jpg" >
-File: Graphiques/swapMenu.jpg Graphic file (type QTm)
 
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+File: Graphiques/swapMenu.jpg Graphic file (type QTm)
 <use  "Graphiques/swapMenu.jpg" >
 File: Graphiques/vrai_jeu_swapMenu.jpg Graphic file (type QTm)
  <use  "Graphiques/vrai_jeu_swapMenu.jpg" >
 Overfull \hbox (14.14417pt too wide) in paragraph at lines 78--79
 [][] 
  []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 File: Graphiques/map.jpg Graphic file (type QTm)
 <use  "Graphiques/map.jpg" >
@@ -2319,17 +2324,10 @@ Overfull \hbox (11.62419pt too wide) in paragraph at lines 88--89
 [][] 
  []
 
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 [4] [5]
-Underfull \hbox (badness 10000) in paragraph at lines 111--112
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 112--113
-
- []
-
-[6]
 Underfull \hbox (badness 10000) in paragraph at lines 113--114
 
  []
@@ -2339,17 +2337,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 114--115
 
  []
 
-
+[6]
 Underfull \hbox (badness 10000) in paragraph at lines 115--116
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 116--117
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 117--118
+
+ []
+
 [7] [8] [9]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 175.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 175.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 177.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 177.
  ("Rapport projet C++.aux")
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 175.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 175.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 177.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 177.
  ) 
 Here is how much of TeX's memory you used:
  42054 strings out of 427834
@@ -2358,6 +2366,6 @@ Here is how much of TeX's memory you used:
  45370 multiletter control sequences out of 15000+200000
  536770 words of font info for 95 fonts, out of 3000000 for 9000
  1328 hyphenation exceptions out of 8191
- 54i,9n,97p,10564b,502s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 54i,9n,97p,10564b,496s stack positions out of 5000i,500n,10000p,200000b,50000s
 
 Output written on Rapport*projet*C++.pdf (9 pages).
