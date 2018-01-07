@@ -1,1 +1,13 @@
 Wild Blastoise appeared !
+Go ! Nidorina !
+Wild = 1
+Player = 1
+RA = 0
+Nidorina run away !
+Wild Blastoise appeared !
+Go ! Nidorina !
+Wild = 1
+Player = 1
+RA = 0
+Nidorina run away !
+Wild Blastoise appeared !

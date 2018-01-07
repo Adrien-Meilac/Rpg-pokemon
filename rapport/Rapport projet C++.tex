@@ -12,7 +12,6 @@
 \newcommand{\Floor}[1]{\left\lfloor #1 \right\rfloor}
 
 \begin{document}
-\pagestyle{PageNormale}
 \vspace*{0.5cm}
 
 \section*{Introduction}
@@ -109,8 +108,18 @@ La réalisation de ce jeu représentait un immense défi que nous avons décidé
 \caption{Joueur sur la carte Pokémon}
 \end{figure}
 
-\newpage 
+\begin{figure}[!h]
+\begin{minipage}{0.49\textwidth}
+\includegraphics[scale = 0.6]{Images/fieldMenu.jpg}
+\end{minipage}
+\begin{minipage}{0.49\textwidth}
+\includegraphics[scale = 0.84]{Images/vrai_jeu_fieldMenu.jpg}
+\end{minipage}
+\caption{Menu sur le terrain}
+\end{figure}
 
+\newpage 
+\pagestyle{PageNormale}
 \section{Architecture du code}
 
 D'après GitHub, notre code est composé de 35 fichier .cpp et de 23 fichier .h, et notre projet contient environ 11 000 lignes. Pour ne pas se perdre dans notre projet, nous avons donc essayé de hiérarchiser notre code. 

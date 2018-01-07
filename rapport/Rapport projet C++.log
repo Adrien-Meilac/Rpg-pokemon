@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (MiKTeX 2.9.6350 64-bit) (preloaded format=xelatex 2017.8.28)  7 JAN 2018 17:43
+This is XeTeX, Version 3.14159265-2.6-0.99998 (MiKTeX 2.9.6350 64-bit) (preloaded format=xelatex 2017.8.28)  7 JAN 2018 18:47
 entering extended mode
 **"./Rapport projet C++.tex"
 ("Rapport projet C++.tex"
@@ -2275,13 +2275,13 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 ]
 File: Images/Psykokwak.png Graphic file (type QTm)
  <use  "Images/Psykokwak.png" >
-Overfull \hbox (30.5562pt too wide) in paragraph at lines 34--35
+Overfull \hbox (30.5562pt too wide) in paragraph at lines 33--34
 [][] 
  []
 
 File: Images/Pikachu.png Graphic file (type QTm)
 <use  "Images/Pikachu.png" >
-Overfull \hbox (49.87158pt too wide) in paragraph at lines 37--38
+Overfull \hbox (49.87158pt too wide) in paragraph at lines 36--37
 [][] 
  []
 
@@ -2294,7 +2294,7 @@ File: Images/combat_start.jpg Graphic file (type QTm)
 <use  "Images/combat_start.jpg" >
 File: Images/vrai_jeu_combat_start.jpg Graphic file (type QTm)
  <use  "Images/vrai_jeu_combat_start.jpg" >
-Overfull \hbox (14.98416pt too wide) in paragraph at lines 57--58
+Overfull \hbox (14.98416pt too wide) in paragraph at lines 56--57
 [][] 
  []
 
@@ -2305,7 +2305,7 @@ File: Images/mainMenu.jpg Graphic file (type QTm)
 <use  "Images/mainMenu.jpg" >
 File: Images/vrai_jeu_mainMenu.jpg Graphic file (type QTm)
  <use  "Images/vrai_jeu_mainMenu.jpg" >
-Overfull \hbox (10.7842pt too wide) in paragraph at lines 67--68
+Overfull \hbox (10.7842pt too wide) in paragraph at lines 66--67
 [][] 
  []
 
@@ -2316,7 +2316,7 @@ File: Images/fightMenu.jpg Graphic file (type QTm)
 <use  "Images/fightMenu.jpg" >
 File: Images/vrai_jeu_fightMenu.jpg Graphic file (type QTm)
  <use  "Images/vrai_jeu_fightMenu.jpg" >
-Overfull \hbox (12.46417pt too wide) in paragraph at lines 77--78
+Overfull \hbox (12.46417pt too wide) in paragraph at lines 76--77
 [][] 
  []
 
@@ -2334,7 +2334,7 @@ File: Images/swapMenu.jpg Graphic file (type QTm)
 <use  "Images/swapMenu.jpg" >
 File: Images/vrai_jeu_swapMenu.jpg Graphic file (type QTm)
  <use  "Images/vrai_jeu_swapMenu.jpg" >
-Overfull \hbox (14.14417pt too wide) in paragraph at lines 97--98
+Overfull \hbox (14.14417pt too wide) in paragraph at lines 96--97
 [][] 
  []
 
@@ -2345,7 +2345,18 @@ File: Images/map.jpg Graphic file (type QTm)
 <use  "Images/map.jpg" >
 File: Images/vrai_jeu_map.jpg Graphic file (type QTm)
  <use  "Images/vrai_jeu_map.jpg" >
-Overfull \hbox (11.62419pt too wide) in paragraph at lines 107--108
+Overfull \hbox (11.62419pt too wide) in paragraph at lines 106--107
+[][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+File: Images/fieldMenu.jpg Graphic file (type QTm)
+<use  "Images/fieldMenu.jpg" >
+File: Images/vrai_jeu_fieldMenu.jpg Graphic file (type QTm)
+ <use  "Images/vrai_jeu_fieldMenu.jpg" >
+Overfull \hbox (7.42421pt too wide) in paragraph at lines 116--117
 [][] 
  []
 
@@ -2360,42 +2371,42 @@ Underfull \vbox (badness 6412) has occurred while \output is active []
 
  [6]
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 132--133
+Underfull \hbox (badness 10000) in paragraph at lines 141--142
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 133--134
+Underfull \hbox (badness 10000) in paragraph at lines 142--143
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 134--135
+Underfull \hbox (badness 10000) in paragraph at lines 143--144
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 135--136
+Underfull \hbox (badness 10000) in paragraph at lines 144--145
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 136--137
+Underfull \hbox (badness 10000) in paragraph at lines 145--146
 
  []
 
 [8] [9] [10]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 196.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 196.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 205.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 205.
  ("Rapport projet C++.aux")
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 196.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 196.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 205.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 205.
  ) 
 Here is how much of TeX's memory you used:
- 42177 strings out of 427834
- 814932 string characters out of 3153982
+ 42181 strings out of 427834
+ 815016 string characters out of 3153982
  960483 words of memory out of 3000000
- 45483 multiletter control sequences out of 15000+200000
+ 45485 multiletter control sequences out of 15000+200000
  536770 words of font info for 95 fonts, out of 3000000 for 9000
  1328 hyphenation exceptions out of 8191
  54i,9n,97p,10564b,854s stack positions out of 5000i,500n,10000p,200000b,50000s
