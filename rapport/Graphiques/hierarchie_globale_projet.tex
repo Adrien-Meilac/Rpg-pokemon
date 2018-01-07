@@ -1,0 +1,22 @@
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=5.2cm,
+                    semithick]
+  \tikzstyle{every state}=[fill=white,draw=black,text=black]
+
+  \node[draw]         (A)                    {Utilisateur};
+  \node[draw]         (B) [right of=A] 		 {Commandes graphiques};
+  \node[draw]         (C) [below right of=B] {Structures du jeu};
+  \node[draw]         (D) [below left of=C]  {Structures de données};
+  \node[draw]         (E) [left of=D]        {Méthodes d’accès aux données};
+  \node[draw]		  (F) [below left of=E]  {Données du jeu};
+  \node[draw]		  (G) [below of=E]       {Données générées par le jeu};
+  \node[draw]		  (H) [below right of=E] {Log};
+
+  \path (A) edge              node {} (B)
+		(B) edge              node {} (C)
+        	edge			  node {} (H)
+        (D) edge              node {} (C)
+        (E) edge              node {} (D)
+        	edge			  node {} (G)
+            edge			  node {} (H)
+        (F) edge			  node {} (E);
+\end{tikzpicture}

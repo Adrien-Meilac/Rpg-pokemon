@@ -13,79 +13,98 @@
 
 \begin{document}
 \pagestyle{PageNormale}
-
-\vspace*{2cm}
+\vspace*{0.5cm}
 
 \section*{Introduction}
 \phantomsection
 \addcontentsline{toc}{section}{Introduction}
+\vspace*{0.5cm}
 
-Nous avons depuis notre enfance été plongés dans le monde des RPG. Si nos goûts spécifiques ont pu varier, nous partageons néanmoins une passion toute particulière pour ces jeux souvent inimitables. Nous avons ainsi dans le cadre de ce projet décidé de faire partager cette passion. Nous sommes revenus à une des bases fondamentales des RPG, les Pokémon. 
+Nous avons depuis notre enfance été plongés dans le monde des RPG. Si nos goûts spécifiques ont pu varier, nous partageons néanmoins une passion toute particulière pour ces jeux souvent inimitables. Nous avons ainsi dans le cadre de ce projet décidé de la faire partager en reprenant un RPG incontournable, Pokémon. 
+\vspace*{0.5cm}
+
+Pokemon a été créé en 1996 par Satoshi Tajiri. Cette franchise a réalisé des records de ventes dans l'histoire des jeux vidéos dès ses premières éditions Rouge et Bleu, vendues à plus de 30 millions d'exemplaires. Aujourd'hui, Pokémon est exploité sous forme d'animés, de mangas, de jeux de cartes et plus récemment d'application mobile avec Pokémon Go et génère plus de 3.3 milliard de chiffre d'affaires (année 2016). \\
+Nous avons entrepris de coder notre RPG en C++ avec une interface graphique en C. Nous avons également utilisé en Python pour pouvoir créer des bases de données propres à partir de données brutes. Nous avons choisi d’utiliser la bibliothèque SDL (associée avec SDL Image et SDL ttf) pour l'interface graphique car cette dernière contient des fonctions adaptées à la création de jeux de plateforme. 
+\vspace*{0.5cm}
+
+La réalisation de ce jeu représentait un immense défi que nous avons décidé de relever. Notre projet Pokémon est une version épurée qui s'inspire à l'original mais qui rappellera des souvenirs aux connaisseurs.
 \vspace*{1cm}
 
-Nous avons entrepris de coder un Pokémon RPG en C++ avec une interface graphique en C. Nous avons également utilisé en Python pour pouvoir créer des bases de données propres à partir de données brutes. Pour nous, réaliser ce jeu représentait un immense défi, que nous avons décidé de relever. Nous avons choisi d’utiliser la bibliothèque SDL pour l'interface graphique. En effet, SDL contient des fonctions adaptées à la création de jeux de plateforme contrairement à Unreal Engine et Unity qui sont dédié aux jeux 3D. Nous avions beaucoup apprécié la map de Pokémon, qui préfigurait les futurs jeux open world. Nous avons donc choisi de réaliser une map aussi grande que possible pour ne pas limiter la liberté d'évolution du joueur. Nous avons conservé l'interface graphique globale, et bien évidemment les combats de Pokémon qui sont au cœur du jeu. Nous n'avons pas conservé l'inventaire, bien que celui-ci soit vital dans un RPG. 
-\vspace*{1cm}
-
-Notre projet Pokémon est semblable à l'original et rappellera des souvenirs aux connaisseurs.
+\begin{minipage}{0.45\textwidth}
+\includegraphics[scale = 0.42]{Images/Psykokwak.png}
+\end{minipage}
+\begin{minipage}{0.45\textwidth}
+\includegraphics[scale = 0.26]{Images/Pikachu.png}
+\end{minipage}
 
 \newpage
 
+\begin{figure}[!h]\centering
+\import{Graphiques/}{hierarchie_des_classes_de_donnees.tex}
+\caption{Hiérarchie des classes de données}
+\end{figure}
+
+\begin{figure}[!h]\centering
+\import{Graphiques/}{hierarchie_globale_projet.tex}
+\caption{Schéma de l'architecture générale du projet}
+\end{figure}
+
 \begin{figure}[!h]
 \begin{minipage}{0.49\textwidth}
-\includegraphics[scale = 0.6]{Graphiques/combat_start.jpg}
+\includegraphics[scale = 0.6]{Images/combat_start.jpg}
 \end{minipage}
 \begin{minipage}{0.49\textwidth}
-\includegraphics[scale = 0.84]{Graphiques/vrai_jeu_combat_start.jpg}
+\includegraphics[scale = 0.84]{Images/vrai_jeu_combat_start.jpg}
 \end{minipage}
 \caption{Début de combat}
 \end{figure}
 
 \begin{figure}[!h]
 \begin{minipage}{0.49\textwidth}
-\includegraphics[scale = 0.6]{Graphiques/mainMenu.jpg}
+\includegraphics[scale = 0.6]{Images/mainMenu.jpg}
 \end{minipage}
 \begin{minipage}{0.49\textwidth}
-\includegraphics[scale = 0.84]{Graphiques/vrai_jeu_mainMenu.jpg}
+\includegraphics[scale = 0.84]{Images/vrai_jeu_mainMenu.jpg}
 \end{minipage}
 \caption{Menu principal}
 \end{figure}
 
 \begin{figure}[!h]
 \begin{minipage}{0.49\textwidth}
-\includegraphics[scale = 0.6]{Graphiques/fightMenu.jpg}
+\includegraphics[scale = 0.6]{Images/fightMenu.jpg}
 \end{minipage}
 \begin{minipage}{0.49\textwidth}
-\includegraphics[scale = 0.84]{Graphiques/vrai_jeu_fightMenu.jpg}
+\includegraphics[scale = 0.84]{Images/vrai_jeu_fightMenu.jpg}
 \end{minipage}
 \caption{Menu de combat}
 \end{figure}
 
 \begin{figure}[!h]
 \begin{minipage}{0.49\textwidth}
-\includegraphics[scale = 0.6]{Graphiques/useMove.jpg}
+\includegraphics[scale = 0.6]{Images/useMove.jpg}
 \end{minipage}
 \begin{minipage}{0.49\textwidth}
-\includegraphics[scale = 0.84]{Graphiques/vrai_jeu_useMove.jpg}
+\includegraphics[scale = 0.84]{Images/vrai_jeu_useMove.jpg}
 \end{minipage}
 \caption{Joueur sur la carte Pokémon}
 \end{figure}
 
 \begin{figure}[!h]
 \begin{minipage}{0.49\textwidth}
-\includegraphics[scale = 0.6]{Graphiques/swapMenu.jpg}
+\includegraphics[scale = 0.6]{Images/swapMenu.jpg}
 \end{minipage}
 \begin{minipage}{0.49\textwidth}
-\includegraphics[scale = 0.84]{Graphiques/vrai_jeu_swapMenu.jpg}
+\includegraphics[scale = 0.84]{Images/vrai_jeu_swapMenu.jpg}
 \end{minipage}
 \caption{Menu du dresseur}
 \end{figure}
 
 \begin{figure}[!h]
 \begin{minipage}{0.49\textwidth}
-\includegraphics[scale = 0.6]{Graphiques/map.jpg}
+\includegraphics[scale = 0.6]{Images/map.jpg}
 \end{minipage}
 \begin{minipage}{0.49\textwidth}
-\includegraphics[scale = 0.84]{Graphiques/vrai_jeu_map.jpg}
+\includegraphics[scale = 0.84]{Images/vrai_jeu_map.jpg}
 \end{minipage}
 \caption{Joueur sur la carte Pokémon}
 \end{figure}

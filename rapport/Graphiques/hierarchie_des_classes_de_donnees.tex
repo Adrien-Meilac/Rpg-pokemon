@@ -1,0 +1,22 @@
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=2.8cm,
+                    semithick]
+  \tikzstyle{every state}=[fill=white,draw=black,text=black]
+
+  \node[draw]         (A)                    {type};
+  \node[draw]         (B) [above right of=A] {species};
+  \node[draw]         (D) [below right of=A] {move};
+  \node[draw]         (C) [below right of=B] {pokemon};
+  \node[draw]         (E) [below of=D]       {exp and level};
+  \node[draw]		   (F) [below left of=A]  {target};
+  \node[draw]		   (G) [below of=F]       {flag};
+  \node[draw]		   (H) [below of=G]       {damage};
+
+  \path (A) edge              node {} (B)
+            edge              node {} (D)
+		(B) edge              node {} (C)
+        (D) edge              node {} (C)
+        (E) edge              node {} (C)
+        (F) edge			  node {} (D)
+        (G) edge			  node {} (D)
+        (H) edge			  node {} (D);
+\end{tikzpicture}
