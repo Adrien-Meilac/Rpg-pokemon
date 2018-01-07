@@ -9,16 +9,15 @@ PKMN::BattleWildPokemon::BattleWildPokemon():
 }
 
 PKMN::BattleWildPokemon::BattleWildPokemon(SDL_Surface* screen,
-                                           Player& player,
-                                           Place place,
-                                           Pokemon* wildPkmn):
+                                           Player player,
+                                           Place place):
     m_screen(screen),
     m_Player(player),
-    m_WildPkmn(wildPkmn),
     m_AllyPkmn(m_Player.getPokemon(0)),
     m_Place(place)
 
 {
+    m_WildPkmn = new Pokemon();
     m_Weather = m_Place.getWeather();
     m_WeatherCount = -1;
     m_PlayerRunAway = false;
@@ -26,7 +25,7 @@ PKMN::BattleWildPokemon::BattleWildPokemon(SDL_Surface* screen,
 
 PKMN::BattleWildPokemon::~BattleWildPokemon()
 {
-
+    delete(m_WildPkmn);
 }
 
 /// PRINT METHODS :
@@ -381,4 +380,9 @@ void PKMN::BattleWildPokemon::launchTurn(unsigned int moveNumber)
             allyPokemonDie();
         }
     }
+}
+
+PKMN::Player PKMN::BattleWildPokemon::getBackPlayer()
+{
+    return m_Player;
 }

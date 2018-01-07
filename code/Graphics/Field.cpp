@@ -101,6 +101,7 @@ std::string Field(SDL_Surface* screen)
             {
             case SDL_QUIT:
             {
+                flag = "STOPGAME";
                 stop = true;
                 break;
             }

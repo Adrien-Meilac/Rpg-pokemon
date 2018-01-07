@@ -41,8 +41,7 @@ int main(int argc, char* argv[])
 
     Player player;
     Place place("ROAD21");
-    Pokemon* pkmn = NULL;
-    pkmn = new Pokemon();
+    BattleWildPokemon* battle;
     bool stop = false;
     while(!stop)
     {
@@ -53,15 +52,17 @@ int main(int argc, char* argv[])
         }
         else if(flag == "WILDBATTLE")
         {
-            BattleWildPokemon battle(screen, player, place, pkmn);
-            battle.start();
+            battle = new BattleWildPokemon(screen, player, place);
+            battle->start();
+            player = battle->getBackPlayer();
+            delete(battle);
+            battle = NULL;
         }
         else if(flag == "STOPGAME")
         {
             stop = true;
         }
     }
-    delete(pkmn);
     SDL_Quit();
     TTF_Quit();
 

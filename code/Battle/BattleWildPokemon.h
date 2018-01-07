@@ -26,10 +26,12 @@ class PKMN::BattleWildPokemon
 public :
 
     BattleWildPokemon(); /// Place aleatoire pkmn
-    BattleWildPokemon(SDL_Surface* screen, Player& player, Place place, Pokemon* wildPkmn);
+    BattleWildPokemon(SDL_Surface* screen, Player player, Place place);
     ~BattleWildPokemon();
 
     void start();
+
+    Player getBackPlayer();
 
 
 private:
@@ -77,7 +79,6 @@ private:
     int printSwapMenu(bool aNewPokemonMustBeSelected);
     int printFightMenu();
     std::string printMainMenu();
-
 
     SDL_Surface* m_screen;
 
