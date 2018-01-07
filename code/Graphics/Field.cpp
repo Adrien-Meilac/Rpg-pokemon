@@ -27,7 +27,7 @@ std::string Field(SDL_Surface* screen)
 
     SDL_Surface* player = NULL;
     SDL_Rect playerpos, playerPartpos, playerMovepos;
-    player = IMG_Load("./Pictures/Characters/Trainer/Field/trchar020.png");
+    player = IMG_Load("./Pictures/Characters/Trainer/Field/trchar003.png");
     playerpos.x = SCREEN_WIDTH/2;///Where he is on screen.
     playerpos.y = SCREEN_HEIGHT/2;
     playerPartpos.x = 0; ///Where it's taken on trainer image.

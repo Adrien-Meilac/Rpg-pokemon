@@ -1,26 +1,2 @@
 Wild Blastoise appeared !
 Go ! Nidorina !
-Wild = 1
-Player = 1
-RA = 0
-Nidorina run away !
-Wild Blastoise appeared !
-Go ! Nidorina !
-Blastoise used U-turn !
-Nidorina lost 167 HP !
-It's not very effective !
-Nidorina fainted !
-Go ! Arbok !
-Wild = 1
-Player = 1
-RA = 1
-Blastoise used U-turn !
-Arbok lost 10 HP !
-It's not very effective !
-Arbok used X-Scissor !
-Blastoise lost 267 HP !
-The foe's Blastoise fainted !
-Arbok gained 3072 EXP. Point !
-Wild = 0
-Player = 1
-RA = 1
