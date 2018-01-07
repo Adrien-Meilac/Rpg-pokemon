@@ -1,6 +1,6 @@
 #include "Field.h"
 
-std::string f(SDL_Surface* screen)
+std::string Field(SDL_Surface* screen)
 {
     std::random_device rd;
     std::mt19937 gen(rd());
@@ -109,6 +109,11 @@ std::string f(SDL_Surface* screen)
                 if(event.key.keysym.sym == SDLK_SPACE)
                 {
                     menuIsOpen = !menuIsOpen;
+                }
+                else if(event.key.keysym.sym == SDLK_ESCAPE)
+                {
+                    flag = "STOPGAME";
+                    stop = true;
                 }
                 else if(event.key.keysym.sym == SDLK_DOWN)
                 {

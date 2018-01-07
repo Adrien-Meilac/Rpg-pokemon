@@ -25,7 +25,7 @@
 
 extern "C"
 {
-    std::string f(SDL_Surface* screen);
+    std::string Field(SDL_Surface* screen);
 }
 
 #endif // FIELD_H_INCLUDED

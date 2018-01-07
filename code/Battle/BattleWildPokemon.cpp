@@ -35,6 +35,7 @@ void PKMN::BattleWildPokemon::print(std::string message, bool isAllyAlreadyLauch
 {
     if(message.size() > 0)
     {
+        std::cout << message << std::endl;
         Battle_ScreenMessage(m_screen, m_AllyPkmn, m_WildPkmn, m_Place, message, isAllyAlreadyLauched, isFoeAlreadyLauched);
     }
 }

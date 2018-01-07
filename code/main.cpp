@@ -42,15 +42,23 @@ int main(int argc, char* argv[])
     Player player;
     Place place("ROAD21");
     Pokemon* pkmn = player.getPokemon(4);
-    std::string flag = f(screen);
-    if(flag == "PARTY")
+    bool stop = false;
+    while(!stop)
     {
-        Battle_SwapMenu(screen,&player, false);
-    }
-    else if(flag == "WILDBATTLE")
-    {
-        BattleWildPokemon battle(screen, player, place, pkmn);
-        battle.start();
+        std::string flag = Field(screen);
+        if(flag == "PARTY")
+        {
+            Battle_SwapMenu(screen,&player, false);
+        }
+        else if(flag == "WILDBATTLE")
+        {
+            BattleWildPokemon battle(screen, player, place, pkmn);
+            battle.start();
+        }
+        else if(flag == "STOPGAME")
+        {
+            stop = true;
+        }
     }
     SDL_Quit();
     TTF_Quit();
