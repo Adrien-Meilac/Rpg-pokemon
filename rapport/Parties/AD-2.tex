@@ -1,0 +1,41 @@
+\subsection{Structures de données (Pokemon)}
+Pokemon est un répertoire qui contient l'architecture des classes que nous remplissons lorsque le programme est lancé. La plupart des classes ont un constructeur qui prend en paramètre un nom interne d'objet dont les caractéristiques sont définies dans un ou plusieurs fichiers. Le constructeur va alors utiliser la fonction Table pour lire la ligne du fichier qui l’intéresse et construire l'objet, ce qui simplifie énormément la déclaration des classes. Nous avons fait notre code de telle sorte que les arguments des uns soient les noms internes des autres ce qui permet de créer automatiquement les objets associés. 
+
+Par ailleurs, la plupart des objets ont une structure qui n'est pas aléatoire et qui est totalement déterminée par le nom interne de l'objet, nous avons donc surchargé les operateurs == entre un objet et un std::string pour simplifier les déclarations d'égalité et rendre le code plus lisible (cela permet d'écrire par exemple if(type == ''FIRE'') ...)
+
+Voici une description des différentes classes :
+
+\begin{itemize}
+\item \textbf{Type} contient la classe codant le Type des Pokemon ou des attaques. Les méthodes les plus importantes de cette classe sont effectiveness qui donne l'efficacité d'un Type sur un autre (par exemple, une attaque de type Eau sera très efficace contre un Pokemon de Type Feu), ainsi que getPathImage qui permet de donner l'image à afficher pour indiquer le Type d'un Pokemon.
+\item \textbf{Move} contient la classe codant les attaques des Pokemon. Elle est lié au fichier ''Data/Move.txt'' qui contient une grande quantité d'arguments, parfois très complexes. Nous n'avons donc pas tout utilisé. Move contient des objets issus des classes Flag, Target et DamageCategory qui correspondent à des effets particuliers liés au attaques. Ces classes offrent une gamme de test booléen pour éviter d'avoir à gérer des notations abstraites. 
+\item  \textbf{Species} contient les arguments liés à l'espèce d'un Pokemon. Nous avons décidé de sauvegarder les mouvements que peut apprendre un Pokemon (en moyenne, une centaine) sous forme de string pour ne pas utiliser inutilement de la mémoire étant donné que seul 4 sont utilisés (et sont donc converti en Move dans la classe fille Pokemon). 
+\item  \textbf{Pokemon} contient principalement les fonctions qui permettent de faire varier les statistiques des Pokemon. On lui associe 2 Types, 4 Attaques, ainsi que deux structures de statistiques, l'une étant l'état normal, et l'autre l'état actuel (En effet, si un Pokemon est blessé, il n'a pas sa vie au maximum, cette information est stockée dans l'état actuel. Toutefois, si il est soigné, il revient à son état normal. Cet état normal peut aussi jouer dans le calcul des dégâts, d'où l’intérêt de le sauvegarder comme un argument). 
+\end{itemize}
+
+\begin{figure}[!h]\centering
+\import{Graphiques/}{hierarchie_des_classes_de_donnees.tex}
+\caption{Hiérarchie des classes de données}
+\end{figure}
+
+Les formules pour calculer les dégâts dans le vrai Pokemon sont assez compliqués :\\
+Si on note :
+\begin{itemize}
+\item Att la statistique d'attaque si le Move est physique, l'attaque spéciale si l'attaque est spéciale
+\item Def la statistique de défense si le Move est physique, l'attaque spéciale si l'attaque est spéciale
+\item Power le pouvoir de base (statistique lié à Move)
+\item Weather l'effet du temps
+\item Badge l'effet lié aux badges de l'utilisateur
+\item Critical l'effet bonus aléatoire 
+\item random , un nombre entre 0.85 et 1
+\item STAB, l'effet bonus si le Pokemon est du même type que son attaque
+\item Type, l'effet du type de l'attaque sur le Pokemon
+\end{itemize}
+alors 
+\[
+Damage = \Floor{\left(\dfrac{\left(\dfrac{2 * Niv}{5} + 2\right) * Power * \dfrac{Att}{Def}}{50} + 2 \right) * Modifier}
+\]
+avec
+\[
+Move = Targets * Weather * Badge * Critical * random * STAB * Type * Other
+\]
+nous avons donc choisi de faire des simplifications car il nous était impossible de coder tout ces effets qui ont été rajoutés dans les différentes versions du jeu depuis plusieurs décennies.

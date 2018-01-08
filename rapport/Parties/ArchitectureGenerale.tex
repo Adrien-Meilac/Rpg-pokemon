@@ -1,5 +1,6 @@
 \section{Architecture générale du code}
 
+\subsection{Interaction des classes et des fonctions}
 D'après GitHub, notre code est composé de 35 fichier .cpp et de 23 fichier .h, et notre projet contient environ 14 000 lignes. Pour ne pas se perdre dans notre projet, nous avons donc essayé de hiérarchiser au maximum notre code et de créer le namespace PKMN pour pouvoir reconnaître plus facilement nos fonctions. 
 
 \begin{figure}[!h]\centering
@@ -11,15 +12,21 @@ L'organigramme \ref{ArchiGenerale} illustre schématiquement les interactions en
 
 Ces structures de données sont majoritairement composées d'accesseurs et permettent de modifier les données et de les sauvegarder via les méthodes d'accès. Nous avons essayé de les différentier des structures du jeu (qui correspond principalement aux fichiers BattleWildPokemon et main). Ces dernières utilisent les structures de données mais n'agissent pas directement sur les fichiers. 
 
-De l'autre côté, l'utilisateur a uniquement accès aux commandes graphiques (stockées dans Graphics). Nous avons décider de les séparer de la structure du jeu pour :
+De l'autre côté, l'utilisateur a uniquement accès aux commandes graphiques (stockées dans Graphics) et le jeu en lui même est composé de boucles infinies qui s'arrêtent lorsque l'utilisateur ferme la fenêtre.
+Enfin notre programme rédige un log (stocké dans stdout.txt) qui nous permet de tracer les incohérences dans le gameplay. 
+
+\subsection{Précisions sur l'interface graphique}
+L'interface graphique a été intégralement réalisée en SDL. Nous avons décider de la séparer de la structure du jeu pour :
 \begin{itemize}
 \item éviter d'avoir des fonctions trop longues,
 \item  distinguer le cœur de notre code qui est en C++ alors que les fonctions graphiques sont en C
-\item pouvoir utiliser les options avancées de classe qui sont incompatibles avec l'option extern C. 
+\item pouvoir utiliser les options avancées du C++ (telles que les classes) qui sont incompatibles avec l'option extern C. 
 \item avoir des fonctions graphiques qui ne touchent pas aux données et réalisent juste de l'affichage
 \end{itemize}
 Pour pouvoir réaliser une telle coupure, nous avons créé des fonctions graphiques qui prennent l'écran en paramètre et qui le remplissent. Elles fonctionnent avec des boucles infinies qui vont s’arrêter (soit parce que l'utilisateur a sélectionné un choix, soit spontanément dans le cas d'un effet aléatoire) et renvoyer un ''flag'' (codé sous forme de string ici) aux structures du jeu qui vont agir en fonction du flag reçu. Nous nous sommes servis du double buffering pour que l'utilisateur ne puisse pas voir les jointures entre nos différents affichages. 
 
-Enfin notre programme rédige un log (stocké dans stdout.txt) qui nous permet de tracer les incohérences dans le gameplay. 
+L'installation de SDL a été une difficulté à surmonter car les fonctions changent entre les différentes versions de cette bibliothèque. Nous avons préféré installer la version 1.2 qui était la plus documentée. Nous avons installé en plus les librairies SDL\_Images pour la gestion des images compressées (jpeg, png,\dots), et SDL\_TTF pour la gestion des polices de caractères (utilisée pour charger les polices de caractères de Pokemon dans nos divers menus et boîte de dialogues). 
 
-Le jeu en lui même est une boucle infinie qui s'arrête lorsque l'utilisateur ferme la fenêtre. 
+Cela nous a appris d'apprendre à gérer l'ajout de bibliothèques dans les options du linker. Pour pouvoir faire fonctionner notre code nous avons en effet du rajouter les options  -mingw32 -lSDL -lSDLmain - lSDL\_Image -lSDL\_Ttf. Nous avons aussi découvert l'utilisation des flag pour le compilateur. Nous avons utilisé l'option -std=c++11 pour écrire en C++ 11 ainsi que l'option -m32 qui permet de réaliser des applications 32 bits étant donné que nous utilisons la version 32 bit de SDL. Il ne nous a pas paru nécessaire d'utiliser l'option -O2 pour rendre l’exécutable plus rapide car notre jeu ne prenait quasiment pas de temps de chargement. 
+
+Nous n'avons cependant pas réussi à installer la bibliothèque FMOD et à l'utiliser car nous n'avons pas trouvé de bon tutoriel sur le sujet et nous n'arrivions pas à résoudre nos erreurs liés à des problèmes de versions. 
