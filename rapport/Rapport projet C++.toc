@@ -6,8 +6,8 @@
 \contentsline {section}{\numberline {II}Architecture générale du code}{8}{section.0.2}
 \contentsline {section}{\numberline {III}Architecture détaillée et problèmes rencontrés}{9}{section.0.3}
 \contentsline {subsection}{\numberline {1}Méthodes d'accès et de conversion des données (Tools)}{9}{subsection.0.3.1}
-\contentsline {subsection}{\numberline {2}Structures de données (Pokémon)}{11}{subsection.0.3.2}
+\contentsline {subsection}{\numberline {2}Structures de données (Pokemon)}{11}{subsection.0.3.2}
 \contentsline {subsection}{\numberline {3}Structure du jeu (Battle)}{13}{subsection.0.3.3}
-\contentsline {subsection}{\numberline {4}Fonctions graphiques réalisées en C (Graphics)}{13}{subsection.0.3.4}
+\contentsline {subsection}{\numberline {4}Fonctions graphiques réalisées en C (Graphics)}{14}{subsection.0.3.4}
 \contentsline {section}{Conclusion}{15}{section*.3}
 \contentsfinish 
