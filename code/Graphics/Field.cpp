@@ -14,11 +14,11 @@ std::string Field(SDL_Surface* screen)
         {
             if(((i < 3) || (i > 8)) && ((j < 3) || (j > 10)))
             {
-                background[i][j] = IMG_Load("./Pictures/Field/Texture/Red_cave_floor/0_0.png");
+                background[i][j] = IMG_Load("./Pictures/Field/Texture/Flowers1/0_0.png");
             }
             else
             {
-                background[i][j] = IMG_Load("./Pictures/Field/Texture/White_cave_floor/0_0.png");
+                background[i][j] = IMG_Load("./Pictures/Field/Texture/Dirt/2_1.png");
             }
             backgroundpos[i][j].x = BLOCK_SIZE * j;
             backgroundpos[i][j].y = BLOCK_SIZE * i;
@@ -27,7 +27,7 @@ std::string Field(SDL_Surface* screen)
 
     SDL_Surface* player = NULL;
     SDL_Rect playerpos, playerPartpos, playerMovepos;
-    player = IMG_Load("./Pictures/Characters/Trainer/Field/trchar001.png");
+    player = IMG_Load("./Pictures/Characters/Trainer/Field/trchar025.png");
     playerpos.x = SCREEN_WIDTH/2;///Where he is on screen.
     playerpos.y = SCREEN_HEIGHT/2;
     playerPartpos.x = 0; ///Where it's taken on trainer image.

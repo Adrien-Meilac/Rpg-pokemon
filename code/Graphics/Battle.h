@@ -37,9 +37,9 @@
     battleAllyBaseposcopy.y = battleAllyBasepos.y; \
     battleFoeBasepos.x = 260; \
     battleFoeBasepos.y = 110; \
-    battleBackgroud = IMG_Load("./Pictures/Battle/Background/battlebgMountainEve.png"); \
-    battleFoeBase = IMG_Load("./Pictures/Battle/Enemy base/enemybaseMountainEve.png"); \
-    battleAllyBase = IMG_Load("./Pictures/Battle/Player base/playerbaseMountainEve.png");
+    battleBackgroud = IMG_Load("./Pictures/Battle/Background/battlebgField.png"); \
+    battleFoeBase = IMG_Load("./Pictures/Battle/Enemy base/enemybaseField.png"); \
+    battleAllyBase = IMG_Load("./Pictures/Battle/Player base/playerbaseField.png");
 
 #define SET_BATTLE_MENU(A) \
     SDL_Surface *battleCommandBackgroud = NULL; \

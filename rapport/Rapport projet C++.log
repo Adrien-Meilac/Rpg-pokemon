@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (MiKTeX 2.9.6350 64-bit) (preloaded format=xelatex 2017.8.28)  8 JAN 2018 19:39
+This is XeTeX, Version 3.14159265-2.6-0.99998 (MiKTeX 2.9.6350 64-bit) (preloaded format=xelatex 2017.8.28)  8 JAN 2018 21:14
 entering extended mode
 **"./Rapport projet C++.tex"
 ("Rapport projet C++.tex"
@@ -2425,10 +2425,10 @@ Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 29.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 29.
  ) 
 Here is how much of TeX's memory you used:
- 42310 strings out of 427834
- 817287 string characters out of 3153982
- 960483 words of memory out of 3000000
- 45558 multiletter control sequences out of 15000+200000
+ 42317 strings out of 427834
+ 817418 string characters out of 3153982
+ 960518 words of memory out of 3000000
+ 45565 multiletter control sequences out of 15000+200000
  539729 words of font info for 112 fonts, out of 3000000 for 9000
  1328 hyphenation exceptions out of 8191
  54i,9n,97p,10564b,855s stack positions out of 5000i,500n,10000p,200000b,50000s

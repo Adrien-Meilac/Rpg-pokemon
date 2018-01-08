@@ -2,7 +2,7 @@
 
 namespace PKMN
 {
-PKMN::Pokemon::Pokemon(): Species("BLASTOISE")
+PKMN::Pokemon::Pokemon(): Species("PORYGON")
 {
     m_Pokemon_Name = m_Name;
     StatSet IV, EV;
