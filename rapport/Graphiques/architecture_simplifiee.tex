@@ -1,0 +1,13 @@
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=4.2cm,
+                    semithick]
+  \tikzstyle{every state}=[fill=white,draw=black,text=black]
+
+  \node[draw]         (A) [text width = 3.5 cm]                   {méthodes de calcul};
+  \node[draw]         (B) [right of=A, text width = 3 cm] {méthodes de structures du jeu};
+  \node[draw]         (C) [right of=B] {printMethods};
+  \node[draw]         (D) [right of=C] {fonctions graphiques};
+
+  \path (A) edge              node {} (B)
+  		(C) edge 			  node {} (B)
+        (D) edge              node {} (C);
+\end{tikzpicture}
