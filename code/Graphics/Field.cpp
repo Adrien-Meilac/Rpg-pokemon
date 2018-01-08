@@ -85,7 +85,7 @@ std::string Field(SDL_Surface* screen)
     menuOptionDescription[3].second = TTF_RenderText_Blended(fontSmall, "your progress to take a break", textColor);
     menuOptionDescription[4].first = TTF_RenderText_Blended(fontSmall, "Adjust various game settings such as", textColor);
     menuOptionDescription[4].second = TTF_RenderText_Blended(fontSmall, "text speed, game rules, etc", textColor);
-    menuOptionDescription[5].first = TTF_RenderText_Blended(fontSmall, "Close this menu widow", textColor);
+    menuOptionDescription[5].first = TTF_RenderText_Blended(fontSmall, "Close this menu window", textColor);
     menuOptionDescription[5].second = TTF_RenderText_Blended(fontSmall, "", textColor);
 
     bool stop = false;

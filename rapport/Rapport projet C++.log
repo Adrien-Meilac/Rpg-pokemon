@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (MiKTeX 2.9.6350 64-bit) (preloaded format=xelatex 2017.8.28)  8 JAN 2018 18:14
+This is XeTeX, Version 3.14159265-2.6-0.99998 (MiKTeX 2.9.6350 64-bit) (preloaded format=xelatex 2017.8.28)  8 JAN 2018 19:39
 entering extended mode
 **"./Rapport projet C++.tex"
 ("Rapport projet C++.tex"
@@ -2334,13 +2334,18 @@ File: Parties/../Images/useMove.jpg Graphic file (type QTm)
 <use  "Parties/../Images/useMove.jpg" >
 File: Parties/../Images/vrai_jeu_useMove.jpg Graphic file (type QTm)
 
-<use  "Parties/../Images/vrai_jeu_useMove.jpg" > [5]
+<use  "Parties/../Images/vrai_jeu_useMove.jpg" >
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 69--70
 
  []
 
+[5]
 File: Parties/../Images/map.jpg Graphic file (type QTm)
-<use  "Parties/../Images/map.jpg" >
+ <use  "Parties/../Images/map.jpg" >
 File: Parties/../Images/vrai_jeu_map.jpg Graphic file (type QTm)
 
 <use  "Parties/../Images/vrai_jeu_map.jpg" >
@@ -2348,11 +2353,9 @@ Overfull \hbox (11.62419pt too wide) in paragraph at lines 82--83
 [][] 
  []
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
+[6]
 File: Parties/../Images/fieldMenu.jpg Graphic file (type QTm)
-<use  "Parties/../Images/fieldMenu.jpg" >
+ <use  "Parties/../Images/fieldMenu.jpg" >
 File: Parties/../Images/vrai_jeu_fieldMenu.jpg Graphic file (type QTm)
 
 <use  "Parties/../Images/vrai_jeu_fieldMenu.jpg" >
@@ -2360,18 +2363,22 @@ Overfull \hbox (7.42421pt too wide) in paragraph at lines 96--97
 [][] 
  []
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-) [6] (Parties/ArchitectureGenerale.tex
-(Parties/../Graphiques/hierarchie_globale_projet.tex)
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[7] [8]) [9] (Parties/ArchitectureDetaillee.tex (Parties/./AD-1.tex
+) [7] (Parties/ArchitectureGenerale.tex
+(Parties/../Graphiques/hierarchie_globale_projet.tex) [8]) [9]
+(Parties/ArchitectureDetaillee.tex (Parties/./AD-1.tex
 File: Parties/./../Images/fichierTexteExemple.jpg Graphic file (type QTm)
 
-<use  "Parties/./../Images/fichierTexteExemple.jpg" > [10]
+<use  "Parties/./../Images/fichierTexteExemple.jpg" >
+Underfull \hbox (badness 10000) in paragraph at lines 18--19
+
+ []
+
+[10]
+Underfull \hbox (badness 10000) in paragraph at lines 19--20
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 20--21
 
  []
@@ -2383,16 +2390,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 21--22
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 22--23
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 23--24
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 24--25
 
  []
 

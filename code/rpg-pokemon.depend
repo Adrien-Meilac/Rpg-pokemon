@@ -584,3 +584,310 @@
 	<vector>
 	<map>
 
+1515316329 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\c++ pour la finance\rpg-pokemon\code\battle\battlewildpokemon.cpp
+	"BattleWildPokemon.h"
+
+1515423870 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\c++ pour la finance\rpg-pokemon\code\battle\battlewildpokemon.h
+	"../Pokemon/Pokemon.h"
+	"../Field/Weather.h"
+	"../Field/Place.h"
+	"Player.h"
+	"../FilePath.h"
+	<string>
+	<string.h>
+	<iostream>
+	<cmath>
+	"../Tools/Random.h"
+	"../Graphics/Battle.h"
+
+1515312522 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\c++ pour la finance\rpg-pokemon\code\pokemon\pokemon.h
+	"Species.h"
+	"Move.h"
+	"ExpAndLevel.h"
+	"Flag.h"
+	"DamageCategory.h"
+	"../FilePath.h"
+	"../Tools/StatSet.h"
+	"../Tools/StatSetExtended.h"
+	"../Tools/Table.h"
+	"../Field/Place.h"
+	<string>
+	<vector>
+	<array>
+
+1515274541 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\c++ pour la finance\rpg-pokemon\code\pokemon\species.h
+	"Type.h"
+	"ExpAndLevel.h"
+	"../FilePath.h"
+	"../Tools/StatSet.h"
+	"../Tools/Table.h"
+	<string>
+	<vector>
+	<iostream>
+
+1515274042 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\c++ pour la finance\rpg-pokemon\code\pokemon\type.h
+	"../FilePath.h"
+	"../Tools/Table.h"
+	"../Tools/Conversion.h"
+	"../Tools/VectorMethod.h"
+	<string>
+	<iostream>
+	<array>
+
+1515312522 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\c++ pour la finance\rpg-pokemon\code\filepath.h
+
+1515312522 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\c++ pour la finance\rpg-pokemon\code\tools\table.h
+	"VectorMethod.h"
+	"../FilePath.h"
+	<iostream>
+	<string>
+	<vector>
+	<fstream>
+
+1515274002 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\c++ pour la finance\rpg-pokemon\code\tools\vectormethod.h
+	<vector>
+	<string>
+	<sstream>
+	<iostream>
+	"Conversion.h"
+
+1515272809 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\c++ pour la finance\rpg-pokemon\code\tools\conversion.h
+	<string>
+	<cmath>
+	<sstream>
+	<iostream>
+
+1515275437 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\c++ pour la finance\rpg-pokemon\code\pokemon\expandlevel.h
+	<cmath>
+	<string>
+	<cstdlib>
+	<ctime>
+	<iostream>
+
+1513376486 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\c++ pour la finance\rpg-pokemon\code\tools\statset.h
+	"Conversion.h"
+	"VectorMethod.h"
+	<cmath>
+	<iostream>
+	<cstdlib>
+	<ctime>
+	<vector>
+	<string>
+
+1514803438 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\c++ pour la finance\rpg-pokemon\code\pokemon\move.h
+	"Type.h"
+	"DamageCategory.h"
+	"Flag.h"
+	"../FilePath.h"
+	"../Tools/Table.h"
+	<iostream>
+	<string>
+
+1514034213 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\c++ pour la finance\rpg-pokemon\code\pokemon\damagecategory.h
+	<iostream>
+	<string>
+
+1514054620 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\c++ pour la finance\rpg-pokemon\code\pokemon\flag.h
+	<string>
+
+1515272905 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\c++ pour la finance\rpg-pokemon\code\tools\statsetextended.h
+	"StatSet.h"
+	<iostream>
+	<cmath>
+
+1515312522 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\c++ pour la finance\rpg-pokemon\code\field\place.h
+	"../Tools/Table.h"
+	"Weather.h"
+	"../FilePath.h"
+	<string>
+	<iostream>
+	<fstream>
+
+1514822391 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\c++ pour la finance\rpg-pokemon\code\field\weather.h
+	"../Pokemon/Move.h"
+	"../Pokemon/Type.h"
+	<string>
+
+1515424133 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\c++ pour la finance\rpg-pokemon\code\battle\player.h
+	"../Pokemon/Pokemon.h"
+	"../FilePath.h"
+	"../Tools/Table.h"
+	<string>
+	<vector>
+	<cmath>
+
+1515272554 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\c++ pour la finance\rpg-pokemon\code\tools\random.h
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<cstdlib>
+	<ctime>
+
+1515417741 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\c++ pour la finance\rpg-pokemon\code\graphics\battle.h
+	"../Pokemon/Pokemon.h"
+	"../Field/Weather.h"
+	"../Field/Place.h"
+	"../Battle/Player.h"
+	"../FilePath.h"
+	<string>
+	<iostream>
+	<cmath>
+	<algorithm>
+	<array>
+	"../Tools/Random.h"
+	<SDL/SDL.h>
+	<SDL/SDL_image.h>
+	<SDL/SDL_ttf.h>
+	"../DimScreen.h"
+
+1515271822 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\c++ pour la finance\rpg-pokemon\code\dimscreen.h
+
+1515312522 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\c++ pour la finance\rpg-pokemon\code\battle\player.cpp
+	"Player.h"
+
+1513376485 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\c++ pour la finance\rpg-pokemon\code\battle\trainer.cpp
+
+1515312522 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\c++ pour la finance\rpg-pokemon\code\field\place.cpp
+	"Place.h"
+
+1514822475 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\c++ pour la finance\rpg-pokemon\code\field\weather.cpp
+	"Weather.h"
+
+1515002234 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\c++ pour la finance\rpg-pokemon\code\graphics\battle.cpp
+	"Battle.h"
+
+1515161304 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\c++ pour la finance\rpg-pokemon\code\graphics\deathallypokemon.cpp
+	"Battle.h"
+
+1515161367 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\c++ pour la finance\rpg-pokemon\code\graphics\deathfoepokemon.cpp
+	"Battle.h"
+
+1515261107 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\c++ pour la finance\rpg-pokemon\code\graphics\fadetoblack.cpp
+	"Battle.h"
+
+1515314173 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\c++ pour la finance\rpg-pokemon\code\graphics\fightmenu.cpp
+	"Battle.h"
+
+1515160365 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\c++ pour la finance\rpg-pokemon\code\graphics\hpallydecrease.cpp
+	"Battle.h"
+
+1515160394 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\c++ pour la finance\rpg-pokemon\code\graphics\hpfoedecrease.cpp
+	"Battle.h"
+
+1515161563 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\c++ pour la finance\rpg-pokemon\code\graphics\launchallypokemon.cpp
+	"Battle.h"
+
+1515321715 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\c++ pour la finance\rpg-pokemon\code\graphics\launchfoepokemon.cpp
+	"Battle.h"
+
+1515314181 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\c++ pour la finance\rpg-pokemon\code\graphics\mainmenu.cpp
+	"Battle.h"
+
+1515161727 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\c++ pour la finance\rpg-pokemon\code\graphics\screenmessage.cpp
+	"Battle.h"
+
+1515424406 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\c++ pour la finance\rpg-pokemon\code\graphics\swapmenu.cpp
+	"Battle.h"
+
+1515323527 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\c++ pour la finance\rpg-pokemon\code\main.cpp
+	<iostream>
+	<vector>
+	<string>
+	<stdio.h>
+	<time.h>
+	<cstdlib>
+	<ctime>
+	"DimScreen.h"
+	"Battle/Player.h"
+	"Field/Place.h"
+	"Pokemon/Pokemon.h"
+	"Battle/BattleWildPokemon.h"
+	"Pokemon/Flag.h"
+	"Tools/Random.h"
+	"Graphics/Battle.h"
+	"Graphics/Field.h"
+	<iostream>
+	<iomanip>
+	<string>
+	<map>
+	<random>
+
+1515312877 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\c++ pour la finance\rpg-pokemon\code\graphics\field.h
+	<iostream>
+	<iomanip>
+	<string>
+	<map>
+	<random>
+	<vector>
+	<array>
+	"../DimScreen.h"
+	"Battle.h"
+	"../Tools/Random.h"
+	<stdlib.h>
+	<time.h>
+	<cstdlib>
+	<ctime>
+	<SDL/SDL.h>
+	<SDL/SDL_image.h>
+	<random>
+
+1514843268 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\c++ pour la finance\rpg-pokemon\code\pokemon\damagecategory.cpp
+	"DamageCategory.h"
+
+1513376485 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\c++ pour la finance\rpg-pokemon\code\pokemon\expandlevel.cpp
+	"ExpAndLevel.h"
+
+1514054691 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\c++ pour la finance\rpg-pokemon\code\pokemon\flag.cpp
+	"Flag.h"
+
+1514803613 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\c++ pour la finance\rpg-pokemon\code\pokemon\move.cpp
+	"Move.h"
+
+1515313981 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\c++ pour la finance\rpg-pokemon\code\pokemon\pokemon.cpp
+	"Pokemon.h"
+
+1514912551 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\c++ pour la finance\rpg-pokemon\code\pokemon\species.cpp
+	"Species.h"
+
+1514036017 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\c++ pour la finance\rpg-pokemon\code\pokemon\target.cpp
+	"Target.h"
+
+1515274078 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\c++ pour la finance\rpg-pokemon\code\pokemon\target.h
+	<string>
+
+1514996763 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\c++ pour la finance\rpg-pokemon\code\pokemon\type.cpp
+	"Type.h"
+
+1514842691 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\c++ pour la finance\rpg-pokemon\code\ressources.rc
+
+1515159179 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\c++ pour la finance\rpg-pokemon\code\tools\conversion.cpp
+	"Conversion.h"
+
+1515274722 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\c++ pour la finance\rpg-pokemon\code\tools\others.cpp
+	"Others.h"
+
+1515274729 c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\c++ pour la finance\rpg-pokemon\code\tools\others.h
+	<string>
+	<iostream>
+	<fstream>
+	<vector>
+	<map>
+
+1515262904 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\c++ pour la finance\rpg-pokemon\code\tools\random.cpp
+	"Random.h"
+
+1513376486 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\c++ pour la finance\rpg-pokemon\code\tools\statset.cpp
+	"StatSet.h"
+
+1515015337 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\c++ pour la finance\rpg-pokemon\code\tools\statsetextended.cpp
+	"StatSetExtended.h"
+
+1515312522 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\c++ pour la finance\rpg-pokemon\code\tools\table.cpp
+	"Table.h"
+
+1514733921 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\c++ pour la finance\rpg-pokemon\code\tools\vectormethod.cpp
+	"VectorMethod.h"
+
+1515436532 source:c:\users\adrie\onedrive\documents\2017 - ensae 2a\s1\c++ pour la finance\rpg-pokemon\code\graphics\field.cpp
+	"Field.h"
+
