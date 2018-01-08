@@ -11,13 +11,13 @@ Battle est un répertoire qui contient les fonctions liées aux fonctionnements 
 
 A l'interieur de ce répertoire, nous avons créé deux classes :
 \begin{itemize}
-\item \textbf{Player} qui est lié au joueur. Il contient notamment des objets de type Pokémon. Ses caractéristiques sont décrites dans le fichier Player du répertoire BackUp et elles de ses Pokémon dans le fichier Player\_Pokemon. Ainsi, si l'on souhaite directement tester des configurations précises ou équilibrer le jeu il n'y a qu'à changer les statistiques dans ces fichiers, les Pokémon sélectionnés ou leurs capacités. Une des méthodes importante de la classe Player est SwapPokémon, qui permet de changer le Pokémon retenu pour le combat.
+\item \textbf{Player} qui est lié au joueur. Il contient notamment des objets de type Pokémon. Ses caractéristiques sont décrites dans le fichier Player du répertoire BackUp et elles de ses Pokémon dans le fichier Player\_Pokemon. Ainsi, si l'on souhaite directement tester des configurations précises ou équilibrer le jeu il n'y a qu'à changer les statistiques dans ces fichiers, les Pokémon sélectionnés ou leurs capacités. Une des méthodes importantes de la classe Player est SwapPokémon, qui permet de changer le Pokémon retenu pour le combat.
 
 \item \textbf{BattleWildPokémon} est la classe dont l'architecture est décrite par l'organigramme 11. Nous avons décidé de scinder en 3 types les méthodes de cette classe :
 \begin{itemize}
 \item Les méthodes graphiques commencent par le mot ''print'' et sont l'équivalent des fonctions graphiques commençant par le mot ''Battle\_'', elles permettent de restreindre les interactions entre la classe et le domaine global.
-\item Les méthodes structurelles qui font des choix à partir des flags qu'elle recoivent des méthodes graphiques qui elles même transfère les flags des interfaces de Graphics. 
-\item Les méthodes de calcul qui ne modifient pas les arguments et qui sont appelées par les méthodes structurelles
+\item Les méthodes structurelles qui font des choix à partir des flags qu'elle recoivent des méthodes graphiques qui elles même transfèrent les flags des interfaces de Graphics. 
+\item Les méthodes de calcul qui ne modifient pas les arguments et qui sont appelées par les méthodes structurelles.
 \end{itemize}
 Prenons un exemple pour être plus explicite : Si on utilise la fonction mainMenu, cette dernière fait appel à printMainMenu qui fait appel à Battle\_MainMenu. L'utilisateur voit alors le menu et s'il fait un choix à l'aide du bouton entrée, Battle\_MainMenu s'arrête et renvoit un std::string contenant son choix à printMainMenu, qui le renvoit à mainMenu. mainMenu va alors choisir l'action suivante en fonction du flag qu'elle aura reçu. Dans cet exemple les actions sont choisir un nouveau Pokémon et faire appel au swapMenu, s'enfuir en appelant runAway ou combattre en appelant fightMenu.\\
 
