@@ -1,0 +1,36 @@
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=3.5cm,
+                    semithick]
+  \tikzstyle{every state}=[fill=white,draw=black,text=black]
+
+  \node[draw]         (A)                    {start};
+  \node[draw]         (B) [below of=A] 		 {mainMenu};
+  \node[draw]         (C) [below left of=B]  {swapMenu};
+  \node[draw]         (D) [below of=B]       {fightMenu};
+  \node[draw]         (E) [below right of=B] {runAway};
+  \node[draw]		  (F) [below of=D]       {launchTurn};
+  \node[draw]		  (G) [below of=F]       {attack};
+  \node[draw]		  (H) [below left of=G]{printSwapMenu};
+  \node[draw]		  (I) [left of = H]		 {printMainMenu};
+  \node[draw]		  (J) [right of = H, text width=3 cm]	 {printFadeToBlack printLaunchFoePokemon};
+  \node[draw]		  (K) [right of = J]		 {printFightMenu};
+  \node[draw]		  (L) [below of = H, text width=3.5 cm]	 {printHPFoeDecrease printHPAllyDecrease};
+  \node[draw]		  (M) [below left of=L]		 {battle\_MainMenu};
+  \node[draw]		  (N) [right of=M]		 {battle\_SwapMenu};
+  \node[draw]		  (O) [right of=N]		 {battle\_FightMenu};
+  
+
+
+  \path (A) edge              node {} (B)
+		(B) edge              node {} (C)
+        	edge			  node {} (D)
+            edge			  node {} (E)
+            edge			  node {} (I)
+        (C) edge			  node {} (H)
+        (D) edge              node {} (F)
+        	edge			  node {} (K)
+        (F) edge			  node {} (G)
+        (G) edge			  node {} (L)
+        (H) edge			  node {} (N)
+        (I) edge			  node {} (M)
+        (K) edge			  node {} (O);
+\end{tikzpicture}
