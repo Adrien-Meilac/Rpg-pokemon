@@ -26,10 +26,38 @@ public:
     ~Player();
 
     std::string getName() const;
+    /** \brief get the name of the player
+     *
+     * \return std::string
+     *
+     */
+
     bool hasPokemonAlive() const;
+        /** \brief has the player at least one pokemon alive ?
+         *
+         * \return bool
+         *
+         */
+
     Pokemon* getPokemon(unsigned int pos);
+        /** \brief Return a pokemon at the selected pos for print option
+         *
+         *
+         */
+
     void swapPokemon(unsigned int pos1, unsigned int pos2);
+        /** \brief swap 2 pokemon
+         *
+         * \param pos1, pos2 unsigned int : position of pokemon to swap
+         *
+         */
+
     std::string getFullName() const;
+    /** \brief Return the full name of the player
+     *
+     * \return std::string
+     *
+     */
 
 private:
 

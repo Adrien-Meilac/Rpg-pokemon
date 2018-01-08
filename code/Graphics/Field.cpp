@@ -14,11 +14,11 @@ std::string Field(SDL_Surface* screen)
         {
             if(((i < 3) || (i > 8)) && ((j < 3) || (j > 10)))
             {
-                background[i][j] = IMG_Load("./Pictures/Field/Texture/Light_grass/2_1.png");
+                background[i][j] = IMG_Load("./Pictures/Field/Texture/Red_cave_floor/0_0.png");
             }
             else
             {
-                background[i][j] = IMG_Load("./Pictures/Field/Texture/Sand_shore/2_4.png");
+                background[i][j] = IMG_Load("./Pictures/Field/Texture/White_cave_floor/0_0.png");
             }
             backgroundpos[i][j].x = BLOCK_SIZE * j;
             backgroundpos[i][j].y = BLOCK_SIZE * i;
@@ -27,7 +27,7 @@ std::string Field(SDL_Surface* screen)
 
     SDL_Surface* player = NULL;
     SDL_Rect playerpos, playerPartpos, playerMovepos;
-    player = IMG_Load("./Pictures/Characters/Trainer/Field/trchar005.png");
+    player = IMG_Load("./Pictures/Characters/Trainer/Field/trchar001.png");
     playerpos.x = SCREEN_WIDTH/2;///Where he is on screen.
     playerpos.y = SCREEN_HEIGHT/2;
     playerPartpos.x = 0; ///Where it's taken on trainer image.
@@ -109,7 +109,10 @@ std::string Field(SDL_Surface* screen)
             {
                 if(event.key.keysym.sym == SDLK_SPACE)
                 {
-                    menuIsOpen = !menuIsOpen;
+                    if(flag != "WILDBATTLE")
+                    {
+                        menuIsOpen = !menuIsOpen;
+                    }
                 }
                 else if(event.key.keysym.sym == SDLK_ESCAPE)
                 {
@@ -247,6 +250,11 @@ std::string Field(SDL_Surface* screen)
                 SDL_BlitSurface(player, &playerPartpos, screen, &playerpos);
                 SDL_Flip(screen);
                 SDL_Delay(10);
+                if(launchBattle)
+                {
+                    flag = "WILDBATTLE";
+                    stop = true;
+                }
             }
         }
         else
@@ -272,11 +280,6 @@ std::string Field(SDL_Surface* screen)
                 SDL_BlitSurface(menuOptionDescriptionBackground, NULL, screen, &menuOptionDescriptionBackgroundpos);
                 SDL_BlitSurface(menuOptionDescription[i_cur].first, NULL, screen, &menuOptionDescriptionL1pos);
                 SDL_BlitSurface(menuOptionDescription[i_cur].second, NULL, screen, &menuOptionDescriptionL2pos);
-            }
-            if(launchBattle)
-            {
-                flag = "WILDBATTLE";
-                stop = true;
             }
             SDL_Flip(screen);
             SDL_Delay(100);
