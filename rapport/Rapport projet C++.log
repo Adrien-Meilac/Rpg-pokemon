@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (MiKTeX 2.9.6350 64-bit) (preloaded format=xelatex 2017.8.28)  8 JAN 2018 21:14
+This is XeTeX, Version 3.14159265-2.6-0.99998 (MiKTeX 2.9.6350 64-bit) (preloaded format=xelatex 2017.8.28)  11 JAN 2018 18:03
 entering extended mode
 **"./Rapport projet C++.tex"
 ("Rapport projet C++.tex"
@@ -1344,6 +1344,12 @@ File: ppxetex.def 2017/08/14 v0.5k Pdfpages driver for XeTeX (AM)
 \c@AM@survey=\count284
 \AM@templatesizebox=\box47
 )
+
+Package hyperref Warning: Unexpected value for option `hidelinks'
+(hyperref)                is ignored on input line 47.
+
+Package hyperref Info: Option `breaklinks' set `true' on input line 47.
+Package hyperref Info: Option `unicode' set `true' on input line 47.
 (C:\Ajout\Miktex-2.9\tex\generic\oberdiek\se-ascii-print.def
 File: se-ascii-print.def 2016/05/16 v1.11 stringenc: Printable ASCII characters
 
@@ -2047,6 +2053,777 @@ ogrammation.tex)
 (C:/Users/adrie/OneDrive/Programmation/LATEX/0_macro/Macro_2018_01_06/forme/rap
 port-court.tex (C:\Ajout\Miktex-2.9\tex\latex\titlesec\frame.tss
 File: frame.tss 2016/03/15
+))
+(C:/Users/adrie/OneDrive/Programmation/LATEX/0_macro/Macro_2018_01_06/maths/mod
+erne.tex
+(C:/Users/adrie/OneDrive/Programmation/LATEX/0_macro/Macro_2018_01_06/maths/./m
+oderne/delimiteurs.tex)
+(C:/Users/adrie/OneDrive/Programmation/LATEX/0_macro/Macro_2018_01_06/maths/./m
+oderne/simplification.tex)
+(C:/Users/adrie/OneDrive/Programmation/LATEX/0_macro/Macro_2018_01_06/maths/./m
+oderne/ensembles/algebre.tex
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setDiag with sig. 'o m' on line 4.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setMat with sig. 'o o m' on line 7.
+.................................................
+)
+(C:/Users/adrie/OneDrive/Programmation/LATEX/0_macro/Macro_2018_01_06/maths/./m
+oderne/ensembles/fonctions.tex
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setFonctionPeriodique with sig. 'o m m' on line 9.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setFonctionBorne with sig. 'o o m m' on line 13.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setPolynome with sig. 'm o m' on line 21.
+.................................................
+)
+(C:/Users/adrie/OneDrive/Programmation/LATEX/0_macro/Macro_2018_01_06/maths/./m
+oderne/ensembles/intervalles.tex)
+(C:/Users/adrie/OneDrive/Programmation/LATEX/0_macro/Macro_2018_01_06/maths/./m
+oderne/ensembles/nombres.tex)
+(C:/Users/adrie/OneDrive/Programmation/LATEX/0_macro/Macro_2018_01_06/maths/./m
+oderne/environnement/definition.tex
+\c@nbdefinition=\count344
+.................................................
+. LaTeX info: "xparse/define-environment"
+. 
+. Defining environment 'definition' with sig. 'o' on line 15.
+.................................................
+)
+(C:/Users/adrie/OneDrive/Programmation/LATEX/0_macro/Macro_2018_01_06/maths/./m
+oderne/environnement/enonce.tex)
+(C:/Users/adrie/OneDrive/Programmation/LATEX/0_macro/Macro_2018_01_06/maths/./m
+oderne/environnement/exemple.tex
+\c@nbexemple=\count345
+)
+(C:/Users/adrie/OneDrive/Programmation/LATEX/0_macro/Macro_2018_01_06/maths/./m
+oderne/environnement/exercice.tex
+\c@nbexercice=\count346
+.................................................
+. LaTeX info: "xparse/define-environment"
+. 
+. Defining environment 'exercice' with sig. 'o' on line 15.
+.................................................
+)
+(C:/Users/adrie/OneDrive/Programmation/LATEX/0_macro/Macro_2018_01_06/maths/./m
+oderne/environnement/preuve.tex
+.................................................
+. LaTeX info: "xparse/define-environment"
+. 
+. Defining environment 'preuve' with sig. 'm' on line 1.
+.................................................
+)
+(C:/Users/adrie/OneDrive/Programmation/LATEX/0_macro/Macro_2018_01_06/maths/./m
+oderne/environnement/question.tex
+\c@nbquestion=\count347
+.................................................
+. LaTeX info: "xparse/define-environment"
+. 
+. Defining environment 'question' with sig. 'o' on line 15.
+.................................................
+)
+(C:/Users/adrie/OneDrive/Programmation/LATEX/0_macro/Macro_2018_01_06/maths/./m
+oderne/environnement/theoreme.tex
+\c@nbtheoreme=\count348
+.................................................
+. LaTeX info: "xparse/define-environment"
+. 
+. Defining environment 'theoreme' with sig. 'o' on line 15.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-environment"
+. 
+. Defining environment 'lemme' with sig. 'o' on line 28.
+.................................................
+)
+(C:/Users/adrie/OneDrive/Programmation/LATEX/0_macro/Macro_2018_01_06/maths/./m
+oderne/fonctions/signature.tex)
+(C:/Users/adrie/OneDrive/Programmation/LATEX/0_macro/Macro_2018_01_06/maths/./m
+oderne/fonctions/vect.tex
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \avect with sig. 'o m' on line 3.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \Avect with sig. 'o m' on line 4.
+.................................................
+)
+(C:/Users/adrie/OneDrive/Programmation/LATEX/0_macro/Macro_2018_01_06/maths/./m
+oderne/fonctions/algebre/comatrice.tex
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \pcomatrice with sig. 'o m' on line 3.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \Pcomatrice with sig. 'o m' on line 4.
+.................................................
+)
+(C:/Users/adrie/OneDrive/Programmation/LATEX/0_macro/Macro_2018_01_06/maths/./m
+oderne/fonctions/algebre/dim.tex
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \pdim with sig. 'm' on line 3.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \Pdim with sig. 'm' on line 4.
+.................................................
+)
+(C:/Users/adrie/OneDrive/Programmation/LATEX/0_macro/Macro_2018_01_06/maths/./m
+oderne/fonctions/algebre/im.tex
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \pim with sig. 'm' on line 3.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \Pim with sig. 'm' on line 4.
+.................................................
+)
+(C:/Users/adrie/OneDrive/Programmation/LATEX/0_macro/Macro_2018_01_06/maths/./m
+oderne/fonctions/algebre/ker.tex
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \pker with sig. 'm' on line 3.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \Pker with sig. 'm' on line 4.
+.................................................
+)
+(C:/Users/adrie/OneDrive/Programmation/LATEX/0_macro/Macro_2018_01_06/maths/./m
+oderne/fonctions/algebre/matId.tex)
+(C:/Users/adrie/OneDrive/Programmation/LATEX/0_macro/Macro_2018_01_06/maths/./m
+oderne/fonctions/algebre/norm.tex)
+(C:/Users/adrie/OneDrive/Programmation/LATEX/0_macro/Macro_2018_01_06/maths/./m
+oderne/fonctions/algebre/normCasual.tex)
+(C:/Users/adrie/OneDrive/Programmation/LATEX/0_macro/Macro_2018_01_06/maths/./m
+oderne/fonctions/algebre/pscal.tex)
+(C:/Users/adrie/OneDrive/Programmation/LATEX/0_macro/Macro_2018_01_06/maths/./m
+oderne/fonctions/algebre/rang.tex
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \prang with sig. 'm' on line 3.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \Prang with sig. 'm' on line 4.
+.................................................
+)
+(C:/Users/adrie/OneDrive/Programmation/LATEX/0_macro/Macro_2018_01_06/maths/./m
+oderne/fonctions/algebre/trace.tex
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \ptrace with sig. 'o m' on line 3.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \Ptrace with sig. 'o m' on line 4.
+.................................................
+)
+(C:/Users/adrie/OneDrive/Programmation/LATEX/0_macro/Macro_2018_01_06/maths/./m
+oderne/fonctions/algebre/transpose.tex)
+(C:/Users/adrie/OneDrive/Programmation/LATEX/0_macro/Macro_2018_01_06/maths/./m
+oderne/fonctions/analyse/abs.tex)
+(C:/Users/adrie/OneDrive/Programmation/LATEX/0_macro/Macro_2018_01_06/maths/./m
+oderne/fonctions/analyse/complexArg.tex)
+(C:/Users/adrie/OneDrive/Programmation/LATEX/0_macro/Macro_2018_01_06/maths/./m
+oderne/fonctions/analyse/complexIm.tex)
+(C:/Users/adrie/OneDrive/Programmation/LATEX/0_macro/Macro_2018_01_06/maths/./m
+oderne/fonctions/analyse/complexModulus.tex)
+(C:/Users/adrie/OneDrive/Programmation/LATEX/0_macro/Macro_2018_01_06/maths/./m
+oderne/fonctions/analyse/complexRe.tex)
+(C:/Users/adrie/OneDrive/Programmation/LATEX/0_macro/Macro_2018_01_06/maths/./m
+oderne/fonctions/analyse/exp.tex
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \pexp with sig. 'o m' on line 3.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \Pexp with sig. 'o m' on line 4.
+.................................................
+)
+(C:/Users/adrie/OneDrive/Programmation/LATEX/0_macro/Macro_2018_01_06/maths/./m
+oderne/fonctions/analyse/Id.tex
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \pId with sig. 'm o m' on line 3.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \PId with sig. 'm o m' on line 4.
+.................................................
+)
+(C:/Users/adrie/OneDrive/Programmation/LATEX/0_macro/Macro_2018_01_06/maths/./m
+oderne/fonctions/analyse/indicatrice.tex)
+(C:/Users/adrie/OneDrive/Programmation/LATEX/0_macro/Macro_2018_01_06/maths/./m
+oderne/fonctions/analyse/ln.tex
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \pln with sig. 'o m' on line 3.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \Pln with sig. 'o m' on line 4.
+.................................................
+)
+(C:/Users/adrie/OneDrive/Programmation/LATEX/0_macro/Macro_2018_01_06/maths/./m
+oderne/fonctions/analyse/log.tex
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \plog with sig. 'm o m' on line 3.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \Plog with sig. 'm o m' on line 4.
+.................................................
+)
+(C:/Users/adrie/OneDrive/Programmation/LATEX/0_macro/Macro_2018_01_06/maths/./m
+oderne/fonctions/arithmetique/card.tex
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \acard with sig. 'o m' on line 3.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \Acard with sig. 'o m' on line 4.
+.................................................
+)
+(C:/Users/adrie/OneDrive/Programmation/LATEX/0_macro/Macro_2018_01_06/maths/./m
+oderne/fonctions/arithmetique/ceil.tex)
+(C:/Users/adrie/OneDrive/Programmation/LATEX/0_macro/Macro_2018_01_06/maths/./m
+oderne/fonctions/arithmetique/floor.tex)
+(C:/Users/adrie/OneDrive/Programmation/LATEX/0_macro/Macro_2018_01_06/maths/./m
+oderne/fonctions/arithmetique/max.tex
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \amax with sig. 'o m' on line 3.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \Amax with sig. 'o m' on line 4.
+.................................................
+)
+(C:/Users/adrie/OneDrive/Programmation/LATEX/0_macro/Macro_2018_01_06/maths/./m
+oderne/fonctions/arithmetique/min.tex
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \amin with sig. 'o m' on line 3.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \Amin with sig. 'o m' on line 4.
+.................................................
+)
+(C:/Users/adrie/OneDrive/Programmation/LATEX/0_macro/Macro_2018_01_06/maths/./m
+oderne/fonctions/arithmetique/pgcd.tex
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \ppgcd with sig. 'm m' on line 3.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \Ppgcd with sig. 'm m' on line 4.
+.................................................
+)
+(C:/Users/adrie/OneDrive/Programmation/LATEX/0_macro/Macro_2018_01_06/maths/./m
+oderne/fonctions/arithmetique/ppcm.tex
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \pppcm with sig. 'm m' on line 3.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \Pppcm with sig. 'm m' on line 4.
+.................................................
+)
+(C:/Users/adrie/OneDrive/Programmation/LATEX/0_macro/Macro_2018_01_06/maths/./m
+oderne/fonctions/probabilite/covariance.tex
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \pcovariance with sig. 'o m m' on line 3.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \Pcovariance with sig. 'o m m' on line 4.
+.................................................
+)
+(C:/Users/adrie/OneDrive/Programmation/LATEX/0_macro/Macro_2018_01_06/maths/./m
+oderne/fonctions/probabilite/esperance.tex
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \pesperance with sig. 'm' on line 3.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \Pesperance with sig. 'm' on line 4.
+.................................................
+)
+(C:/Users/adrie/OneDrive/Programmation/LATEX/0_macro/Macro_2018_01_06/maths/./m
+oderne/fonctions/probabilite/probabilite.tex
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \pprobabilite with sig. 'm' on line 3.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \Pprobabilite with sig. 'm' on line 4.
+.................................................
+)
+(C:/Users/adrie/OneDrive/Programmation/LATEX/0_macro/Macro_2018_01_06/maths/./m
+oderne/fonctions/probabilite/variance.tex
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \pvar with sig. 'm' on line 3.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \Pvar with sig. 'm' on line 4.
+.................................................
+)
+(C:/Users/adrie/OneDrive/Programmation/LATEX/0_macro/Macro_2018_01_06/maths/./m
+oderne/fonctions/probabilite/loiBinomiale.tex)
+(C:/Users/adrie/OneDrive/Programmation/LATEX/0_macro/Macro_2018_01_06/maths/./m
+oderne/fonctions/probabilite/suivreLoi.tex)
+(C:/Users/adrie/OneDrive/Programmation/LATEX/0_macro/Macro_2018_01_06/maths/./m
+oderne/fonctions/topologie/inf.tex
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \ainf with sig. 'o m' on line 3.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \Ainf with sig. 'o m' on line 4.
+.................................................
+)
+(C:/Users/adrie/OneDrive/Programmation/LATEX/0_macro/Macro_2018_01_06/maths/./m
+oderne/fonctions/topologie/lim.tex
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \plim with sig. 'o m' on line 3.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \Plim with sig. 'o m' on line 4.
+.................................................
+)
+(C:/Users/adrie/OneDrive/Programmation/LATEX/0_macro/Macro_2018_01_06/maths/./m
+oderne/fonctions/topologie/liminf.tex
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \aliminf with sig. 'o m' on line 3.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \Aliminf with sig. 'o m' on line 4.
+.................................................
+)
+(C:/Users/adrie/OneDrive/Programmation/LATEX/0_macro/Macro_2018_01_06/maths/./m
+oderne/fonctions/topologie/limsup.tex
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \alimsup with sig. 'o m' on line 3.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \Alimsup with sig. 'o m' on line 4.
+.................................................
+)
+(C:/Users/adrie/OneDrive/Programmation/LATEX/0_macro/Macro_2018_01_06/maths/./m
+oderne/fonctions/topologie/sup.tex
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \asup with sig. 'o m' on line 3.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \Asup with sig. 'o m' on line 4.
+.................................................
+)
+(C:/Users/adrie/OneDrive/Programmation/LATEX/0_macro/Macro_2018_01_06/maths/./m
+oderne/fonctions/trigonometrie/arccos.tex
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \parccos with sig. 'o m' on line 3.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \Parccos with sig. 'o m' on line 4.
+.................................................
+)
+(C:/Users/adrie/OneDrive/Programmation/LATEX/0_macro/Macro_2018_01_06/maths/./m
+oderne/fonctions/trigonometrie/arcsin.tex
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \parcsin with sig. 'o m' on line 3.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \Parcsin with sig. 'o m' on line 4.
+.................................................
+)
+(C:/Users/adrie/OneDrive/Programmation/LATEX/0_macro/Macro_2018_01_06/maths/./m
+oderne/fonctions/trigonometrie/arctan.tex
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \parctan with sig. 'o m' on line 3.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \Parctan with sig. 'o m' on line 4.
+.................................................
+)
+(C:/Users/adrie/OneDrive/Programmation/LATEX/0_macro/Macro_2018_01_06/maths/./m
+oderne/fonctions/trigonometrie/argcosh.tex
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \pargcosh with sig. 'o m' on line 3.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \Pargcosh with sig. 'o m' on line 4.
+.................................................
+)
+(C:/Users/adrie/OneDrive/Programmation/LATEX/0_macro/Macro_2018_01_06/maths/./m
+oderne/fonctions/trigonometrie/argsinh.tex
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \pargsinh with sig. 'o m' on line 3.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \Pargsinh with sig. 'o m' on line 4.
+.................................................
+)
+(C:/Users/adrie/OneDrive/Programmation/LATEX/0_macro/Macro_2018_01_06/maths/./m
+oderne/fonctions/trigonometrie/argtanh.tex
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \pargtanh with sig. 'o m' on line 3.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \Pargtanh with sig. 'o m' on line 4.
+.................................................
+)
+(C:/Users/adrie/OneDrive/Programmation/LATEX/0_macro/Macro_2018_01_06/maths/./m
+oderne/fonctions/trigonometrie/cos.tex
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \pcos with sig. 'o m' on line 3.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \Pcos with sig. 'o m' on line 4.
+.................................................
+)
+(C:/Users/adrie/OneDrive/Programmation/LATEX/0_macro/Macro_2018_01_06/maths/./m
+oderne/fonctions/trigonometrie/cosh.tex
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \pcosh with sig. 'o m' on line 3.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \Pcosh with sig. 'o m' on line 4.
+.................................................
+)
+(C:/Users/adrie/OneDrive/Programmation/LATEX/0_macro/Macro_2018_01_06/maths/./m
+oderne/fonctions/trigonometrie/sin.tex
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \psin with sig. 'o m' on line 3.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \Psin with sig. 'o m' on line 4.
+.................................................
+)
+(C:/Users/adrie/OneDrive/Programmation/LATEX/0_macro/Macro_2018_01_06/maths/./m
+oderne/fonctions/trigonometrie/sinh.tex
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \psinh with sig. 'o m' on line 3.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \Psinh with sig. 'o m' on line 4.
+.................................................
+)
+(C:/Users/adrie/OneDrive/Programmation/LATEX/0_macro/Macro_2018_01_06/maths/./m
+oderne/fonctions/trigonometrie/tan.tex
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \ptan with sig. 'o m' on line 3.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \Ptan with sig. 'o m' on line 4.
+.................................................
+)
+(C:/Users/adrie/OneDrive/Programmation/LATEX/0_macro/Macro_2018_01_06/maths/./m
+oderne/fonctions/trigonometrie/tanh.tex
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \ptanh with sig. 'o m' on line 3.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \Ptanh with sig. 'o m' on line 4.
+.................................................
+)
+(C:/Users/adrie/OneDrive/Programmation/LATEX/0_macro/Macro_2018_01_06/maths/./m
+oderne/logique/assertion.tex)
+(C:/Users/adrie/OneDrive/Programmation/LATEX/0_macro/Macro_2018_01_06/maths/./m
+oderne/logique/commentaire.tex)
+(C:/Users/adrie/OneDrive/Programmation/LATEX/0_macro/Macro_2018_01_06/maths/./m
+oderne/logique/logique.tex)
+(C:/Users/adrie/OneDrive/Programmation/LATEX/0_macro/Macro_2018_01_06/maths/./m
+oderne/notation/derivee.tex)
+(C:/Users/adrie/OneDrive/Programmation/LATEX/0_macro/Macro_2018_01_06/maths/./m
+oderne/notation/equivalent.tex)
+(C:/Users/adrie/OneDrive/Programmation/LATEX/0_macro/Macro_2018_01_06/maths/./m
+oderne/notation/fonction.tex
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \fonction with sig. 'm o o m m' on line 1.
+.................................................
+)
+(C:/Users/adrie/OneDrive/Programmation/LATEX/0_macro/Macro_2018_01_06/maths/./m
+oderne/notation/grandO.tex
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \grandO with sig. 'o o m' on line 1.
+.................................................
+)
+(C:/Users/adrie/OneDrive/Programmation/LATEX/0_macro/Macro_2018_01_06/maths/./m
+oderne/notation/petitO.tex
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \petitO with sig. 'o o m' on line 1.
+.................................................
+)
+(C:/Users/adrie/OneDrive/Programmation/LATEX/0_macro/Macro_2018_01_06/maths/./m
+oderne/notation/tend.tex)
+(C:/Users/adrie/OneDrive/Programmation/LATEX/0_macro/Macro_2018_01_06/maths/./m
+oderne/operateurs/bigcap.tex
+.................................................
+. LaTeX info: "xparse/redefine-command"
+. 
+. Redefining command \bigcap with sig. 'm o m' on line 3.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \pbigcap with sig. 'm o m' on line 4.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \Pbigcap with sig. 'm o m' on line 5.
+.................................................
+)
+(C:/Users/adrie/OneDrive/Programmation/LATEX/0_macro/Macro_2018_01_06/maths/./m
+oderne/operateurs/bigcup.tex
+.................................................
+. LaTeX info: "xparse/redefine-command"
+. 
+. Redefining command \bigcup with sig. 'm o m' on line 3.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \pbigcup with sig. 'm o m' on line 4.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \Pbigcup with sig. 'm o m' on line 5.
+.................................................
+)
+(C:/Users/adrie/OneDrive/Programmation/LATEX/0_macro/Macro_2018_01_06/maths/./m
+oderne/operateurs/bigoplus.tex
+.................................................
+. LaTeX info: "xparse/redefine-command"
+. 
+. Redefining command \bigoplus with sig. 'm o m' on line 3.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \pbigoplus with sig. 'm o m' on line 4.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \Pbigoplus with sig. 'm o m' on line 5.
+.................................................
+)
+(C:/Users/adrie/OneDrive/Programmation/LATEX/0_macro/Macro_2018_01_06/maths/./m
+oderne/operateurs/coprod.tex
+.................................................
+. LaTeX info: "xparse/redefine-command"
+. 
+. Redefining command \coprod with sig. 'm o m' on line 3.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \pcoprod with sig. 'm o m' on line 4.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \Pcoprod with sig. 'm o m' on line 5.
+.................................................
+)
+(C:/Users/adrie/OneDrive/Programmation/LATEX/0_macro/Macro_2018_01_06/maths/./m
+oderne/operateurs/int.tex
+.................................................
+. LaTeX info: "xparse/redefine-command"
+. 
+. Redefining command \int with sig. 'o m m o m' on line 3.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \pint with sig. 'o m m o m' on line 4.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \Pint with sig. 'o m m o m' on line 5.
+.................................................
+)
+(C:/Users/adrie/OneDrive/Programmation/LATEX/0_macro/Macro_2018_01_06/maths/./m
+oderne/operateurs/prod.tex
+.................................................
+. LaTeX info: "xparse/redefine-command"
+. 
+. Redefining command \prod with sig. 'm o m' on line 3.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \pprod with sig. 'm o m' on line 4.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \Pprod with sig. 'm o m' on line 5.
+.................................................
+)
+(C:/Users/adrie/OneDrive/Programmation/LATEX/0_macro/Macro_2018_01_06/maths/./m
+oderne/operateurs/sum.tex
+.................................................
+. LaTeX info: "xparse/redefine-command"
+. 
+. Redefining command \sum with sig. 'm o m' on line 3.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \psum with sig. 'm o m' on line 4.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \Psum with sig. 'm o m' on line 5.
+.................................................
 )))
 (C:\Ajout\Miktex-2.9\tex\latex\listings\lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
@@ -2057,7 +2834,7 @@ File: lstlang1.sty 2015/06/04 1.6 listings language file
 (C:\Ajout\Miktex-2.9\tex\latex\listings\lstmisc.sty
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 )
-\g__fontspec_family_SimSun_int=\count344
+\g__fontspec_family_SimSun_int=\count349
 .................................................
 . fontspec info: "no-font-shape"
 . 
@@ -2088,36 +2865,36 @@ File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 
 (C:\Ajout\Miktex-2.9\tex\xelatex\xecjk\xeCJK-listings.sty
 Package: xeCJK-listings 2017/08/07 v3.5.0 xeCJK patch file for listings
-\l__xeCJK_listings_max_char_int=\count345
-\l__xeCJK_listings_flag_int=\count346
+\l__xeCJK_listings_max_char_int=\count350
+\l__xeCJK_listings_flag_int=\count351
 )
 ("Rapport projet C++.aux")
 \openout1 = `"Rapport projet C++.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 14.
-LaTeX Font Info:    Try loading font information for T3+cmr on input line 14.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 13.
+LaTeX Font Info:    Try loading font information for T3+cmr on input line 13.
  (C:\Ajout\Miktex-2.9\tex\latex\tipa\t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
 .................................................
 . fontspec info: "setup-math"
 . 
@@ -2125,58 +2902,58 @@ LaTeX Font Info:    ... okay on input line 14.
 .................................................
 \symlegacymaths=\mathgroup8
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 14.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 14.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 14.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 14.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 14.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 14.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 14.
-LaTeX Font Info:    Redeclaring math accent \check on input line 14.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 14.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 14.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 14.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 14.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 14.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 14.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 14.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 14.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 14.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 14.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 14.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 14.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 14.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 14.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 14.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 14.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 13.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 13.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 13.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 13.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 13.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 13.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 13.
+LaTeX Font Info:    Redeclaring math accent \check on input line 13.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 13.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 13.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 13.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 13.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 13.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 13.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 13.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 13.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 13.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 13.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 13.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 13.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 13.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 13.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 13.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 13.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 14.
+(Font)              `operators' in the math version `normal' on input line 13.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 14.
+(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 13.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 14.
+(Font)              `operators' in the math version `bold' on input line 13.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/lmr/m/n on input line 14.
+(Font)                  OT1/cmr/bx/n --> TU/lmr/m/n on input line 13.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  TU/lmr/m/n --> TU/lmr/m/n on input line 14.
+(Font)                  TU/lmr/m/n --> TU/lmr/m/n on input line 13.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 14.
+(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 13.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/lmr/bx/n on input line 14.
+(Font)                  OT1/cmr/bx/n --> TU/lmr/bx/n on input line 13.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 14.
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 13.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 14.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 13.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  TU/lmr/m/n --> TU/lmr/bx/n on input line 14.
+(Font)                  TU/lmr/m/n --> TU/lmr/bx/n on input line 13.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> TU/lmr/bx/it on input line 14.
+(Font)                  OT1/cmr/bx/it --> TU/lmr/bx/it on input line 13.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/lmss/bx/n on input line 14.
+(Font)                  OT1/cmss/bx/n --> TU/lmss/bx/n on input line 13.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/bx/n on input line 14.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/bx/n on input line 13.
 \AtBeginShipoutBox=\box95
-Package hyperref Info: Link coloring OFF on input line 14.
+Package hyperref Info: Link coloring OFF on input line 13.
 
 (C:\Ajout\Miktex-2.9\tex\latex\hyperref\nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -2184,11 +2961,11 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (C:\Ajout\Miktex-2.9\tex\generic\oberdiek\gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count347
+\c@section@level=\count352
 )
-LaTeX Info: Redefining \ref on input line 14.
-LaTeX Info: Redefining \pageref on input line 14.
-LaTeX Info: Redefining \nameref on input line 14.
+LaTeX Info: Redefining \ref on input line 13.
+LaTeX Info: Redefining \pageref on input line 13.
+LaTeX Info: Redefining \nameref on input line 13.
 
 ("Rapport projet C++.out") ("Rapport projet C++.out")
 \@outlinefile=\write4
@@ -2238,7 +3015,7 @@ ABD: EveryShipout initializing macros
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\c@lstlisting=\count348
+\c@lstlisting=\count353
 
 (C:/Users/adrie/OneDrive/Programmation/LATEX/0_macro/Macro_2018_01_06/pageDeGar
 de/ensae_memoire.tex
@@ -2418,17 +3195,17 @@ File: Parties/../Images/PorygonZ.png Graphic file (type QTm)
 File: Parties/../Images/Farfaduvet.png Graphic file (type QTm)
 
 <use  "Parties/../Images/Farfaduvet.png" >) [17]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 29.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 29.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 28.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 28.
  ("Rapport projet C++.aux")
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 29.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 29.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 28.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 28.
  ) 
 Here is how much of TeX's memory you used:
- 42317 strings out of 427834
- 817418 string characters out of 3153982
- 960518 words of memory out of 3000000
- 45565 multiletter control sequences out of 15000+200000
+ 43025 strings out of 427834
+ 842131 string characters out of 3153982
+ 969618 words of memory out of 3000000
+ 46040 multiletter control sequences out of 15000+200000
  539729 words of font info for 112 fonts, out of 3000000 for 9000
  1328 hyphenation exceptions out of 8191
  54i,9n,97p,10564b,855s stack positions out of 5000i,500n,10000p,200000b,50000s
